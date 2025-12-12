@@ -1,5 +1,7 @@
 let correctCount = 0;
 let wrongCount = 0;
+let currentLanguage = localStorage.getItem('language') || (navigator.language.startsWith('pt') ? 'pt_BR' : 'en_US');
+let translations = {};
 
 const defaultData = {
     "subject": "Basic Learning",
@@ -28,8 +30,8 @@ const defaultData = {
     }
 };
 
-let data = defaultData;
-initializeApp();
+let data = null;
+loadTranslations();
 
 function loadFile() {
     const input = document.createElement('input');
@@ -41,10 +43,13 @@ function loadFile() {
         reader.onload = event => {
             try {
                 data = JSON.parse(event.target.result);
+                if (!data.subject || !data.topics) {
+                    throw new Error('Invalid format');
+                }
                 resetGame();
                 initializeApp();
             } catch (error) {
-                alert('Invalid JSON file');
+                alert(t('invalidJson'));
             }
         };
         reader.readAsText(file);
@@ -67,10 +72,96 @@ function initializeApp() {
     createTopicBoxes();
 }
 
+async function loadTranslations() {
+    console.log('Loading translations for:', currentLanguage);
+    try {
+        const response = await fetch(`i18n/${currentLanguage}.json`);
+        translations = await response.json();
+        console.log('Translations loaded:', Object.keys(translations));
+    } catch (error) {
+        console.error('Translation loading failed:', error);
+        translations = {
+            title: 'Drag & Drop Learning Tool',
+            instructions: 'Instructions', 
+            howToUse: 'How to Use',
+            welcome: 'Welcome!',
+            clickToStart: 'Click "Load JSON File" to start learning.',
+            howItWorks: 'How it works:',
+            step1: '1. Load a JSON file with topics and subtopics',
+            step2: '2. Drag subtopics to matching topic boxes', 
+            step3: '3. Correct matches stay, wrong ones return',
+            step4: '4. Click placed items to see descriptions',
+            topicBoxesAppear: 'Topic boxes will appear here after loading a JSON file.',
+            tryFiles: 'Try loading one of these example files:',
+            loadJsonFile: 'Load JSON File',
+            correct: 'Correct',
+            wrong: 'Wrong',
+            invalidJson: 'Invalid JSON file'
+        };
+    }
+    updateUI();
+    showHelp();
+}
+
+function updateUI() {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+    });
+    
+    document.querySelectorAll('.flag').forEach(flag => flag.classList.remove('active'));
+    const activeFlag = document.querySelector(`[onclick="setLanguage('${currentLanguage}')"]`);
+    if (activeFlag) activeFlag.classList.add('active');
+}
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    loadTranslations();
+}
+
+function t(key) {
+    return translations[key] || key;
+}
+
+function showHelp() {
+    document.getElementById('subtopics-list').innerHTML = `
+        <div style="padding: 20px; text-align: center;">
+            <h3 data-i18n="welcome">Welcome!</h3>
+            <p data-i18n="clickToStart">Click "Load JSON File" to start learning.</p>
+            <br>
+            <p><strong data-i18n="howItWorks">How it works:</strong></p>
+            <p data-i18n="step1">1. Load a JSON file with topics and subtopics</p>
+            <p data-i18n="step2">2. Drag subtopics to matching topic boxes</p>
+            <p data-i18n="step3">3. Correct matches stay, wrong ones return</p>
+            <p data-i18n="step4">4. Click placed items to see descriptions</p>
+        </div>
+    `;
+    
+    document.getElementById('topics-container').innerHTML = `
+        <div style="padding: 20px; text-align: center; color: #666;">
+            <p data-i18n="topicBoxesAppear">Topic boxes will appear here after loading a JSON file.</p>
+            <br>
+            <p data-i18n="tryFiles">Try loading one of these example files:</p>
+            <p>• cobit2019_clean.json</p>
+            <p>• itil4.json</p>
+            <p>• programming.json</p>
+        </div>
+    `;
+    
+    // Update translations for the new elements
+    updateUI();
+}
+
 function updateLabels() {
     document.querySelector('h1').textContent = data.subject;
     document.querySelector('.subtopics-panel h2').textContent = data.subtopicsLabel;
     document.querySelector('.topics-panel h2').textContent = data.topics.name;
+    
+    // Update other UI elements with translations
+    updateUI();
 }
 
 function createSubtopics() {
@@ -98,7 +189,7 @@ function createSubtopics() {
         div.textContent = item.name;
         div.draggable = true;
         div.dataset.correctTopic = item.correctTopic;
-        div.dataset.comment = item.comment;
+        if (item.comment) div.dataset.comment = item.comment;
         
         div.addEventListener('dragstart', handleDragStart);
         div.addEventListener('dragend', handleDragEnd);
@@ -166,7 +257,9 @@ function handleDrop(e) {
         const clickableDiv = document.createElement('div');
         clickableDiv.textContent = draggedElement.textContent;
         clickableDiv.className = 'placed-subtopic';
-        clickableDiv.onclick = () => showModal(draggedElement.textContent, draggedElement.dataset.comment);
+        if (draggedElement.dataset.comment) {
+            clickableDiv.onclick = () => showModal(draggedElement.textContent, draggedElement.dataset.comment);
+        }
         topicBox.appendChild(clickableDiv);
         
         draggedElement.remove();
@@ -192,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('modal');
     const closeBtn = document.querySelector('.close');
     
-    closeBtn.onclick = () => modal.style.display = 'none';
+    if (closeBtn) closeBtn.onclick = () => modal.style.display = 'none';
     window.onclick = (e) => {
         if (e.target === modal) modal.style.display = 'none';
     };

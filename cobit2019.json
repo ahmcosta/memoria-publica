@@ -10,23 +10,28 @@
         "subtopics": [
           {
             "name": "Garantir a Definição e Manutenção do Modelo de Governança",
-            "key": "EDM01"
+            "key": "EDM01",
+            "comment": "Estabelecer e manter estruturas organizacionais, princípios, processos e práticas de governança de TI."
           },
           {
             "name": "Garantir a Realização de Benefícios",
-            "key": "EDM02"
+            "key": "EDM02",
+            "comment": "Otimizar a contribuição de valor para o negócio a partir de investimentos em TI."
           },
           {
             "name": "Garantir a Otimização de Riscos",
-            "key": "EDM03"
+            "key": "EDM03",
+            "comment": "Garantir que o apetite e a tolerância a riscos da organização sejam compreendidos e articulados."
           },
           {
             "name": "Garantir a Otimização de Recursos",
-            "key": "EDM04"
+            "key": "EDM04",
+            "comment": "Otimizar o uso de recursos de TI, incluindo pessoas, processos e tecnologia."
           },
           {
             "name": "Garantir a Transparência com as Partes Interessadas",
-            "key": "EDM05"
+            "key": "EDM05",
+            "comment": "Garantir que a comunicação com as partes interessadas seja transparente e compreensível."
           }
         ]
       },
@@ -34,175 +39,200 @@
         "name": "Alinhar, Planejar e Organizar",
         "key": "APO",
         "subtopics": [
-            {
-              "name": "Gerenciar a Estrutura de Gestão de TI",
-              "key": "APO01"
-            },
-            {
-              "name": "Gerenciar a Estratégia",
-              "key": "APO02"
-            },
-            {
-              "name": "Gerenciar a Arquitetura da Organização",
-              "key": "APO03"
-            },
-            {
-              "name": "Gerenciar Inovação",
-              "key": "APO04"
-            },
-            {
-              "name": "Gerenciar Portfólio",
-              "key": "APO05"
-            },
-            {
-              "name": "Gerenciar Orçamento e Custos",
-              "key": "APO06"
-            },
-            {
-              "name": "Gerenciar Recursos Humanos",
-              "key": "APO07"
-            },
-            {
-              "name": "Gerenciar Relacionamentos",
-              "key": "APO08"
-            },
-            {
-              "name": "Gerenciar Contratos de Prestação de Serviços",
-              "key": "APO09"
-            },
-            {
-              "name": "Gerenciar Fornecedores",
-              "key": "APO10"
-            },
-            {
-              "name": "Gerenciar Qualidade",
-              "key": "APO11"
-            },
-            {
-              "name": "Gerenciar Riscos",
-              "key": "APO12"
-            },
-            {
-              "name": "Gerenciar Segurança",
-              "key": "APO13"
-            },
-            {
-              "name": "Gerenciar Dados",
-              "key": "APO14"
-            }
-          ]
-        }
+          {
+            "name": "Gerenciar a Estrutura de Gestão de TI",
+            "key": "APO01",
+            "comment": "Estabelecer estruturas organizacionais, papéis e responsabilidades para TI."
+          },
+          {
+            "name": "Gerenciar a Estratégia",
+            "key": "APO02",
+            "comment": "Definir e implementar estratégias de TI alinhadas aos objetivos de negócio."
+          },
+          {
+            "name": "Gerenciar a Arquitetura da Organização",
+            "key": "APO03",
+            "comment": "Estabelecer e manter a arquitetura empresarial e de TI."
+          },
+          {
+            "name": "Gerenciar Inovação",
+            "key": "APO04",
+            "comment": "Promover e gerenciar inovações tecnológicas e de processos."
+          },
+          {
+            "name": "Gerenciar Portfólio",
+            "key": "APO05",
+            "comment": "Gerenciar o portfólio de investimentos e projetos de TI."
+          },
+          {
+            "name": "Gerenciar Orçamento e Custos",
+            "key": "APO06",
+            "comment": "Planejar e controlar orçamentos e custos de TI."
+          },
+          {
+            "name": "Gerenciar Recursos Humanos",
+            "key": "APO07",
+            "comment": "Gerenciar competências, capacidades e recursos humanos de TI."
+          },
+          {
+            "name": "Gerenciar Relacionamentos",
+            "key": "APO08",
+            "comment": "Gerenciar relacionamentos entre TI e as áreas de negócio."
+          },
+          {
+            "name": "Gerenciar Contratos de Prestação de Serviços",
+            "key": "APO09",
+            "comment": "Estabelecer e gerenciar acordos de nível de serviço."
+          },
+          {
+            "name": "Gerenciar Fornecedores",
+            "key": "APO10",
+            "comment": "Gerenciar relacionamentos e contratos com fornecedores de TI."
+          },
+          {
+            "name": "Gerenciar Qualidade",
+            "key": "APO11",
+            "comment": "Estabelecer e manter padrões de qualidade para serviços de TI."
+          },
+          {
+            "name": "Gerenciar Riscos",
+            "key": "APO12",
+            "comment": "Identificar, avaliar e gerenciar riscos relacionados à TI."
+          },
+          {
+            "name": "Gerenciar Segurança",
+            "key": "APO13",
+            "comment": "Estabelecer e manter um sistema de gestão de segurança da informação."
+          },
+          {
+            "name": "Gerenciar Dados",
+            "key": "APO14",
+            "comment": "Gerenciar a arquitetura, qualidade e segurança dos dados."
+          }
+        ]
       },
       {
         "name": "Construir, Adquirir e Implementar",
         "key": "BAI",
-        "subtopics": {
-          "name": "Objetivos",
-          "values": [
-            {
-              "name": "Gerenciar Programas",
-              "key": "BAI01"
-            },
-            {
-              "name": "Gerenciar Definição de Requisitos",
-              "key": "BAI02"
-            },
-            {
-              "name": "Gerenciar Identificação e Desenvolvimento de Soluções",
-              "key": "BAI03"
-            },
-            {
-              "name": "Gerenciar Disponibilidade Organizacional",
-              "key": "BAI04"
-            },
-            {
-              "name": "Gerenciar a Mudança Organizacional",
-              "key": "BAI05"
-            },
-            {
-              "name": "Gerenciar Mudanças de TI",
-              "key": "BAI06"
-            },
-            {
-              "name": "Gerenciar Aceitação e Transição de Mudanças de TI",
-              "key": "BAI07"
-            },
-            {
-              "name": "Gerenciar Conhecimento",
-              "key": "BAI08"
-            },
-            {
-              "name": "Gerenciar Ativos",
-              "key": "BAI09"
-            },
-            {
-              "name": "Gerenciar Configuração",
-              "key": "BAI10"
-            },
-            {
-              "name": "Gerenciar Projetos",
-              "key": "BAI11"
-            }
-          ]
-        }
+        "subtopics": [
+          {
+            "name": "Gerenciar Programas",
+            "key": "BAI01",
+            "comment": "Gerenciar programas de investimento em TI de forma integrada."
+          },
+          {
+            "name": "Gerenciar Definição de Requisitos",
+            "key": "BAI02",
+            "comment": "Definir e gerenciar requisitos de negócio e funcionais."
+          },
+          {
+            "name": "Gerenciar Identificação e Desenvolvimento de Soluções",
+            "key": "BAI03",
+            "comment": "Identificar e desenvolver soluções tecnológicas adequadas."
+          },
+          {
+            "name": "Gerenciar Disponibilidade Organizacional",
+            "key": "BAI04",
+            "comment": "Garantir que a organização esteja preparada para mudanças."
+          },
+          {
+            "name": "Gerenciar a Mudança Organizacional",
+            "key": "BAI05",
+            "comment": "Facilitar a adoção de mudanças organizacionais e tecnológicas."
+          },
+          {
+            "name": "Gerenciar Mudanças de TI",
+            "key": "BAI06",
+            "comment": "Controlar mudanças na infraestrutura e sistemas de TI."
+          },
+          {
+            "name": "Gerenciar Aceitação e Transição de Mudanças de TI",
+            "key": "BAI07",
+            "comment": "Garantir aceitação e transição suave de novas soluções."
+          },
+          {
+            "name": "Gerenciar Conhecimento",
+            "key": "BAI08",
+            "comment": "Capturar, organizar e compartilhar conhecimento organizacional."
+          },
+          {
+            "name": "Gerenciar Ativos",
+            "key": "BAI09",
+            "comment": "Gerenciar ativos de TI durante todo seu ciclo de vida."
+          },
+          {
+            "name": "Gerenciar Configuração",
+            "key": "BAI10",
+            "comment": "Manter informações sobre configuração de ativos de TI."
+          },
+          {
+            "name": "Gerenciar Projetos",
+            "key": "BAI11",
+            "comment": "Gerenciar projetos de TI de acordo com metodologias estabelecidas."
+          }
+        ]
       },
       {
         "name": "Entregar, Servir e Suportar",
         "key": "DSS",
-        "subtopics": {
-          "name": "Objetivos",
-          "values": [
-            {
-              "name": "Gerenciar Operações",
-              "key": "DSS01"
-            },
-            {
-              "name": "Gerenciar Solicitações de Serviços e Incidentes",
-              "key": "DSS02"
-            },
-            {
-              "name": "Gerenciar Problemas",
-              "key": "DSS03"
-            },
-            {
-              "name": "Gerenciar Continuidade",
-              "key": "DSS04"
-            },
-            {
-              "name": "Gerenciar Serviços de Segurança",
-              "key": "DSS05"
-            },
-            {
-              "name": "Gerenciar Controles do Processo de Negócio",
-              "key": "DSS06"
-            }
-          ]
-        }
+        "subtopics": [
+          {
+            "name": "Gerenciar Operações",
+            "key": "DSS01",
+            "comment": "Coordenar e executar atividades operacionais de TI."
+          },
+          {
+            "name": "Gerenciar Solicitações de Serviços e Incidentes",
+            "key": "DSS02",
+            "comment": "Responder a solicitações de usuários e resolver incidentes."
+          },
+          {
+            "name": "Gerenciar Problemas",
+            "key": "DSS03",
+            "comment": "Identificar e resolver causas raiz de problemas recorrentes."
+          },
+          {
+            "name": "Gerenciar Continuidade",
+            "key": "DSS04",
+            "comment": "Garantir continuidade dos serviços de TI em situações adversas."
+          },
+          {
+            "name": "Gerenciar Serviços de Segurança",
+            "key": "DSS05",
+            "comment": "Proteger informações e infraestrutura contra ameaças de segurança."
+          },
+          {
+            "name": "Gerenciar Controles do Processo de Negócio",
+            "key": "DSS06",
+            "comment": "Implementar controles automatizados nos processos de negócio."
+          }
+        ]
       },
       {
         "name": "Monitorar, Avaliar e Medir",
         "key": "MEA",
-        "subtopics": {
-          "name": "Objetivos",
-          "values": [
-            {
-              "name": "Gerenciar o Monitoramento do Desempenho e da Conformidade",
-              "key": "MEA01"
-            },
-            {
-              "name": "Gerenciar o Sistema de Controle Interno",
-              "key": "MEA02"
-            },
-            {
-              "name": "Gerenciar Conformidade com Requisitos Externos",
-              "key": "MEA03"
-            },
-            {
-              "name": "Gerenciar a Garantia",
-              "key": "MEA04"
-            }
-          ]
-        }
+        "subtopics": [
+          {
+            "name": "Gerenciar o Monitoramento do Desempenho e da Conformidade",
+            "key": "MEA01",
+            "comment": "Monitorar e medir o desempenho de TI e conformidade com objetivos."
+          },
+          {
+            "name": "Gerenciar o Sistema de Controle Interno",
+            "key": "MEA02",
+            "comment": "Estabelecer e manter sistema de controles internos efetivos."
+          },
+          {
+            "name": "Gerenciar Conformidade com Requisitos Externos",
+            "key": "MEA03",
+            "comment": "Garantir conformidade com leis, regulamentos e contratos."
+          },
+          {
+            "name": "Gerenciar a Garantia",
+            "key": "MEA04",
+            "comment": "Obter garantia independente sobre eficácia dos controles de TI."
+          }
+        ]
       }
     ]
   }

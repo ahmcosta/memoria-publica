@@ -1,0 +1,18 @@
+{
+  "title": "Ferramenta de Aprendizado Arrastar e Soltar",
+  "instructions": "Instruções",
+  "howToUse": "Como Usar",
+  "welcome": "Bem-vindo!",
+  "clickToStart": "Clique em \"Carregar Arquivo JSON\" para começar a aprender.",
+  "howItWorks": "Como funciona:",
+  "step1": "1. Carregue um arquivo JSON com tópicos e subtópicos",
+  "step2": "2. Arraste subtópicos para as caixas de tópicos correspondentes",
+  "step3": "3. Correspondências corretas ficam, erradas retornam",
+  "step4": "4. Clique nos itens colocados para ver descrições",
+  "topicBoxesAppear": "As caixas de tópicos aparecerão aqui após carregar um arquivo JSON.",
+  "tryFiles": "Experimente carregar um destes arquivos de exemplo:",
+  "loadJsonFile": "Carregar Arquivo JSON",
+  "correct": "Correto",
+  "wrong": "Errado",
+  "invalidJson": "Arquivo JSON inválido"
+}

@@ -1,0 +1,148 @@
+{
+  "subject": "ITIL 4",
+  "subtopicsLabel": "Práticas",
+  "topics": {
+    "name": "Categorias de Práticas",
+    "values": [
+      {
+        "name": "Práticas de Gerenciamento Geral",
+        "subtopics": [
+          {
+            "name": "Arquitetura de Gestão",
+            "comment": "Fornecer uma compreensão de todos os diferentes elementos que compõem uma organização e como eles se relacionam."
+          },
+          {
+            "name": "Melhoria Contínua",
+            "comment": "Alinhar as práticas e serviços da organização com as necessidades de negócio em mudança."
+          },
+          {
+            "name": "Segurança da Informação",
+            "comment": "Proteger as informações necessárias para a organização conduzir seus negócios."
+          },
+          {
+            "name": "Gestão do Conhecimento",
+            "comment": "Manter e melhorar o uso efetivo de informações e conhecimento em toda a organização."
+          },
+          {
+            "name": "Medição e Relatórios",
+            "comment": "Apoiar a boa tomada de decisão e melhoria contínua diminuindo os níveis de incerteza."
+          },
+          {
+            "name": "Gestão Organizacional de Mudanças",
+            "comment": "Garantir que as mudanças sejam implementadas de forma suave e bem-sucedida."
+          },
+          {
+            "name": "Gestão de Portfólio",
+            "comment": "Garantir a combinação certa de programas, projetos e serviços para executar a estratégia."
+          },
+          {
+            "name": "Gestão de Projetos",
+            "comment": "Garantir que todos os projetos da organização sejam entregues com sucesso."
+          },
+          {
+            "name": "Gestão de Relacionamento",
+            "comment": "Estabelecer vínculos entre a organização e suas partes interessadas."
+          },
+          {
+            "name": "Gestão de Riscos",
+            "comment": "Garantir que a organização compreenda e lide efetivamente com os riscos."
+          },
+          {
+            "name": "Gestão Financeira de Serviços",
+            "comment": "Apoiar estratégias de negócio através da gestão financeira de recursos e serviços."
+          },
+          {
+            "name": "Gestão de Estratégia",
+            "comment": "Formular os objetivos e direção da organização."
+          },
+          {
+            "name": "Gestão de Fornecedores",
+            "comment": "Garantir que fornecedores e seu desempenho sejam gerenciados adequadamente."
+          },
+          {
+            "name": "Gestão de Talentos e Força de Trabalho",
+            "comment": "Garantir que a organização tenha as pessoas certas com habilidades apropriadas."
+          }
+        ]
+      },
+      {
+        "name": "Práticas de Gerenciamento de Serviços",
+        "subtopics": [
+          {
+            "name": "Gestão de Disponibilidade",
+            "comment": "Garantir que serviços entreguem níveis acordados de disponibilidade."
+          },
+          {
+            "name": "Análise de Negócio",
+            "comment": "Analisar um negócio para definir necessidades e recomendar soluções."
+          },
+          {
+            "name": "Gestão de Capacidade e Desempenho",
+            "comment": "Garantir que serviços alcancem níveis acordados de desempenho."
+          },
+          {
+            "name": "Habilitação de Mudanças",
+            "comment": "Maximizar mudanças bem-sucedidas garantindo avaliação adequada de riscos."
+          },
+          {
+            "name": "Gestão de Incidentes",
+            "comment": "Minimizar impacto de incidentes restaurando operação normal rapidamente."
+          },
+          {
+            "name": "Gestão de Ativos de TI",
+            "comment": "Planejar e gerenciar o ciclo de vida completo de ativos de TI."
+          },
+          {
+            "name": "Monitoramento e Gestão de Eventos",
+            "comment": "Observar sistematicamente serviços e registrar mudanças de estado."
+          },
+          {
+            "name": "Gestão de Problemas",
+            "comment": "Reduzir probabilidade de incidentes identificando causas reais e potenciais."
+          },
+          {
+            "name": "Gestão de Liberação",
+            "comment": "Disponibilizar serviços novos e alterados para uso."
+          },
+          {
+            "name": "Gestão de Configuração de Serviços",
+            "comment": "Garantir informações precisas sobre configuração de serviços."
+          },
+          {
+            "name": "Central de Serviços",
+            "comment": "Capturar demanda por resolução de incidentes e solicitações."
+          },
+          {
+            "name": "Gestão de Nível de Serviço",
+            "comment": "Definir metas claras baseadas no negócio para desempenho do serviço."
+          },
+          {
+            "name": "Gestão de Solicitações de Serviço",
+            "comment": "Apoiar qualidade acordada lidando com solicitações predefinidas."
+          },
+          {
+            "name": "Validação e Teste de Serviços",
+            "comment": "Garantir que produtos e serviços atendam aos requisitos definidos."
+          }
+        ]
+      },
+      {
+        "name": "Práticas de Gerenciamento Técnico",
+        "subtopics": [
+          {
+            "name": "Gestão de Implantação",
+            "comment": "Mover componentes novos ou alterados para ambientes ativos."
+          },
+          {
+            "name": "Gestão de Infraestrutura e Plataforma",
+            "comment": "Supervisionar infraestrutura e plataformas usadas pela organização."
+          },
+          {
+            "name": "Desenvolvimento e Gestão de Software",
+            "comment": "Garantir que aplicações atendam necessidades em funcionalidade e confiabilidade."
+          }
+        ]
+      }
+    ]
+  }
+}
