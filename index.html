@@ -49,7 +49,7 @@ onclick="showWrongLog()" style="cursor: pointer;"
     </div>
 
     <footer class="version-info">
-      <span id="version">v1.0.0</span>
+      <span id="version">__VERSION__</span>
     </footer>
 
     <div id="modal" class="modal">
@@ -62,7 +62,15 @@ onclick="showWrongLog()" style="cursor: pointer;"
 
     <script src="version.js"></script>
     <script src="version.js"></script>
-    <script src="version.js"></script>
+    <script>
+      // Show 'local' if running locally, otherwise show replaced version
+      document.addEventListener('DOMContentLoaded', () => {
+        const versionElement = document.getElementById('version');
+        if (versionElement && versionElement.textContent === '__VERSION__') {
+          versionElement.textContent = 'local';
+        }
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

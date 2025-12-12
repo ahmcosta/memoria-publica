@@ -23,35 +23,16 @@ jobs:
       with:
         fetch-depth: 0
     
-    - name: Generate version info
+    - name: Replace version placeholder
       run: |
         if [ "${{ github.event_name }}" = "release" ]; then
           VERSION="${{ github.event.release.tag_name }}"
-          COMMIT="${{ github.sha }}"
         else
-          VERSION="dev"
-          COMMIT="${{ github.sha }}"
+          VERSION="#${{ github.sha }}"
+          VERSION="${VERSION:0:8}"  # Short hash
         fi
         
-        cat > version.js << EOF
-        const VERSION_INFO = {
-            version: '${VERSION}',
-            commit: '${COMMIT}',
-            buildDate: '$(date -I)'
-        };
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            const versionElement = document.getElementById('version');
-            if (versionElement) {
-                const displayVersion = VERSION_INFO.version.startsWith('v') ? 
-                    VERSION_INFO.version : 
-                    \`#\${VERSION_INFO.commit.substring(0, 7)}\`;
-                
-                versionElement.textContent = displayVersion;
-                versionElement.title = \`Build: \${VERSION_INFO.buildDate}\`;
-            }
-        });
-        EOF
+        sed -i "s/__VERSION__/${VERSION}/g" index.html
     
     - name: Setup Pages
       uses: actions/configure-pages@v4
