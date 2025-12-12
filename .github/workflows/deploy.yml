@@ -28,11 +28,15 @@ jobs:
         if [ "${{ github.event_name }}" = "release" ]; then
           VERSION="${{ github.event.release.tag_name }}"
         else
-          VERSION="#${{ github.sha }}"
-          VERSION="${VERSION:0:8}"  # Short hash
+          COMMIT="${{ github.sha }}"
+          VERSION="#${COMMIT:0:7}"
         fi
         
-        sed -i "s/__VERSION__/${VERSION}/g" index.html
+        echo "Replacing __VERSION__ with: $VERSION"
+        sed -i "s|__VERSION__|${VERSION}|g" index.html
+        
+        # Verify replacement
+        grep "version" index.html || echo "Version replacement failed"
     
     - name: Setup Pages
       uses: actions/configure-pages@v4
