@@ -9,10 +9,16 @@ body {
     background: #f5f5f5;
 }
 
-.container {
+.wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 30px
 }
 
 header {
@@ -46,9 +52,11 @@ header {
 }
 
 .language-selector {
+    position: absolute;
+    right: 0px;
     display: flex;
     gap: 5px;
-    margin-right: 20px;
+    z-index: 1000;
 }
 
 .flag {
