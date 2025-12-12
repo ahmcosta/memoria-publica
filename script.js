@@ -330,4 +330,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onclick = (e) => {
         if (e.target === modal) modal.style.display = 'none';
     };
+    
+    // Handle version display
+    const versionElement = document.getElementById('version');
+    if (versionElement && versionElement.textContent === '__VERSION__') {
+        versionElement.textContent = 'local';
+    }
 });

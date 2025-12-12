@@ -60,19 +60,6 @@
         <p id="modal-comment"></p>
       </div>
     </div>
-    <script>
-      // Check if running locally or on GitHub Pages
-      document.addEventListener('DOMContentLoaded', () => {
-        const versionElement = document.getElementById('version');
-        if (versionElement) {
-          // If placeholder exists, we're running locally
-          if (versionElement.textContent === '__VERSION__') {
-            versionElement.textContent = 'local';
-          }
-          // Otherwise, GitHub Actions already replaced it with actual version
-        }
-      });
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
