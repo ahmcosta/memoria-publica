@@ -179,6 +179,7 @@ function updateLabels() {
 
 function createSubtopics() {
     const container = document.getElementById('subtopics-list');
+    container.innerHTML = '';
     const allSubtopics = [];
     
     // Collect all subtopics from simplified structure
@@ -215,6 +216,7 @@ function createSubtopics() {
 
 function createTopicBoxes() {
     const container = document.getElementById('topics-container');
+    container.innerHTML = '';
     
     data.topics.values.forEach(topic => {
         const div = document.createElement('div');
