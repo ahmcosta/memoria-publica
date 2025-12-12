@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Learning Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Learning Tool</h1>
+            <div class="counters">
+                <button onclick="loadFile()">Load JSON File</button>
+                <span>Correct: <span id="correct">0</span></span>
+                <span>Wrong: <span id="wrong">0</span></span>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="subtopics-panel">
+                <h2>Subtopics</h2>
+                <div id="subtopics-list"></div>
+            </div>
+            
+            <div class="topics-panel">
+                <h2>Topics</h2>
+                <div id="topics-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-comment"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

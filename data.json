@@ -1,0 +1,22 @@
+{
+  "topics": {
+    "Programming": [
+      "Variables",
+      "Functions",
+      "Loops",
+      "Arrays"
+    ],
+    "Mathematics": [
+      "Algebra",
+      "Geometry",
+      "Calculus",
+      "Statistics"
+    ],
+    "Science": [
+      "Physics",
+      "Chemistry",
+      "Biology",
+      "Astronomy"
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "subject": "Cobit 2019",
+  "subtopicsLabel": "Objetivos",
+  "topics": {
+    "name": "Domínios",
+    "values": [
+      {
+        "name": "Avaliar, Dirigir e Monitorar o Governo Corporativo de TI",
+        "key": "EDM",
+        "subtopics": [
+          {
+            "name": "Garantir a Definição e Manutenção do Modelo de Governança",
+            "key": "EDM01",
+            "comment": "Estabelecer e manter estruturas organizacionais, princípios, processos e práticas de governança de TI."
+          },
+          {
+            "name": "Garantir a Realização de Benefícios",
+            "key": "EDM02",
+            "comment": "Otimizar a contribuição de valor para o negócio a partir de investimentos em TI."
+          },
+          {
+            "name": "Garantir a Otimização de Riscos",
+            "key": "EDM03",
+            "comment": "Garantir que o apetite e a tolerância a riscos da organização sejam compreendidos e articulados."
+          },
+          {
+            "name": "Garantir a Otimização de Recursos",
+            "key": "EDM04"
+          },
+          {
+            "name": "Garantir a Transparência com as Partes Interessadas",
+            "key": "EDM05"
+          }
+        ]
+      },
+      {
+        "name": "Alinhar, Planejar e Organizar",
+        "key": "APO",
+        "subtopics": [
+          {
+            "name": "Gerenciar a Estrutura de Gestão de TI",
+            "key": "APO01"
+          },
+          {
+            "name": "Gerenciar a Estratégia",
+            "key": "APO02"
+          },
+          {
+            "name": "Gerenciar a Arquitetura da Organização",
+            "key": "APO03"
+          },
+          {
+            "name": "Gerenciar Inovação",
+            "key": "APO04"
+          },
+          {
+            "name": "Gerenciar Portfólio",
+            "key": "APO05"
+          },
+          {
+            "name": "Gerenciar Orçamento e Custos",
+            "key": "APO06"
+          },
+          {
+            "name": "Gerenciar Recursos Humanos",
+            "key": "APO07"
+          },
+          {
+            "name": "Gerenciar Relacionamentos",
+            "key": "APO08"
+          },
+          {
+            "name": "Gerenciar Contratos de Prestação de Serviços",
+            "key": "APO09"
+          },
+          {
+            "name": "Gerenciar Fornecedores",
+            "key": "APO10"
+          },
+          {
+            "name": "Gerenciar Qualidade",
+            "key": "APO11"
+          },
+          {
+            "name": "Gerenciar Riscos",
+            "key": "APO12"
+          },
+          {
+            "name": "Gerenciar Segurança",
+            "key": "APO13"
+          },
+          {
+            "name": "Gerenciar Dados",
+            "key": "APO14"
+          }
+        ]
+      },
+      {
+        "name": "Construir, Adquirir e Implementar",
+        "key": "BAI",
+        "subtopics": [
+          {
+            "name": "Gerenciar Programas",
+            "key": "BAI01"
+          },
+          {
+            "name": "Gerenciar Definição de Requisitos",
+            "key": "BAI02"
+          },
+          {
+            "name": "Gerenciar Identificação e Desenvolvimento de Soluções",
+            "key": "BAI03"
+          },
+          {
+            "name": "Gerenciar Disponibilidade Organizacional",
+            "key": "BAI04"
+          },
+          {
+            "name": "Gerenciar a Mudança Organizacional",
+            "key": "BAI05"
+          },
+          {
+            "name": "Gerenciar Mudanças de TI",
+            "key": "BAI06"
+          },
+          {
+            "name": "Gerenciar Aceitação e Transição de Mudanças de TI",
+            "key": "BAI07"
+          },
+          {
+            "name": "Gerenciar Conhecimento",
+            "key": "BAI08"
+          },
+          {
+            "name": "Gerenciar Ativos",
+            "key": "BAI09"
+          },
+          {
+            "name": "Gerenciar Configuração",
+            "key": "BAI10"
+          },
+          {
+            "name": "Gerenciar Projetos",
+            "key": "BAI11"
+          }
+        ]
+      },
+      {
+        "name": "Entregar, Servir e Suportar",
+        "key": "DSS",
+        "subtopics": [
+          {
+            "name": "Gerenciar Operações",
+            "key": "DSS01"
+          },
+          {
+            "name": "Gerenciar Solicitações de Serviços e Incidentes",
+            "key": "DSS02"
+          },
+          {
+            "name": "Gerenciar Problemas",
+            "key": "DSS03"
+          },
+          {
+            "name": "Gerenciar Continuidade",
+            "key": "DSS04"
+          },
+          {
+            "name": "Gerenciar Serviços de Segurança",
+            "key": "DSS05"
+          },
+          {
+            "name": "Gerenciar Controles do Processo de Negócio",
+            "key": "DSS06"
+          }
+        ]
+      },
+      {
+        "name": "Monitorar, Avaliar e Medir",
+        "key": "MEA",
+        "subtopics": [
+          {
+            "name": "Gerenciar o Monitoramento do Desempenho e da Conformidade",
+            "key": "MEA01"
+          },
+          {
+            "name": "Gerenciar o Sistema de Controle Interno",
+            "key": "MEA02"
+          },
+          {
+            "name": "Gerenciar Conformidade com Requisitos Externos",
+            "key": "MEA03"
+          },
+          {
+            "name": "Gerenciar a Garantia",
+            "key": "MEA04"
+          }
+        ]
+      }
+    ]
+  }
+}

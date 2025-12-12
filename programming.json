@@ -1,0 +1,39 @@
+{
+  "subject": "Programming Fundamentals",
+  "subtopicsLabel": "Elements",
+  "topics": {
+    "name": "Programming Concepts",
+    "values": [
+      {
+        "name": "Data Structures",
+        "key": "DS",
+        "subtopics": [
+          { "name": "Arrays", "key": "DS01" },
+          { "name": "Linked Lists", "key": "DS02" },
+          { "name": "Stacks", "key": "DS03" },
+          { "name": "Queues", "key": "DS04" }
+        ]
+      },
+      {
+        "name": "Control Flow",
+        "key": "CF",
+        "subtopics": [
+          { "name": "If-Else", "key": "CF01" },
+          { "name": "For Loops", "key": "CF02" },
+          { "name": "While Loops", "key": "CF03" },
+          { "name": "Switch Case", "key": "CF04" }
+        ]
+      },
+      {
+        "name": "Functions",
+        "key": "FN",
+        "subtopics": [
+          { "name": "Parameters", "key": "FN01" },
+          { "name": "Return Values", "key": "FN02" },
+          { "name": "Recursion", "key": "FN03" },
+          { "name": "Scope", "key": "FN04" }
+        ]
+      }
+    ]
+  }
+}
