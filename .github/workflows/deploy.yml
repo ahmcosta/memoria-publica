@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Generate version info
+      run: |
+        if [ "${{ github.event_name }}" = "release" ]; then
+          VERSION="${{ github.event.release.tag_name }}"
+          COMMIT="${{ github.sha }}"
+        else
+          VERSION="dev"
+          COMMIT="${{ github.sha }}"
+        fi
+        
+        cat > version.js << EOF
+        const VERSION_INFO = {
+            version: '${VERSION}',
+            commit: '${COMMIT}',
+            buildDate: '$(date -I)'
+        };
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const versionElement = document.getElementById('version');
+            if (versionElement) {
+                const displayVersion = VERSION_INFO.version.startsWith('v') ? 
+                    VERSION_INFO.version : 
+                    \`#\${VERSION_INFO.commit.substring(0, 7)}\`;
+                
+                versionElement.textContent = displayVersion;
+                versionElement.title = \`Build: \${VERSION_INFO.buildDate}\`;
+            }
+        });
+        EOF
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
