@@ -308,19 +308,42 @@ function showModal(title, comment) {
     document.getElementById('modal').style.display = 'block';
 }
 
+let currentPage = 1;
+const itemsPerPage = 5;
+
 function showWrongLog() {
     if (wrongLog.length === 0) {
         showModal('Histórico de Erros', 'Nenhum erro registrado ainda.');
         return;
     }
     
-    const tableRows = wrongLog.map((entry, index) => 
-        `<tr>
-            <td>${index + 1}</td>
+    currentPage = 1;
+    renderErrorPage();
+}
+
+function renderErrorPage() {
+    const reversedLog = [...wrongLog].reverse();
+    const totalPages = Math.ceil(reversedLog.length / itemsPerPage);
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageItems = reversedLog.slice(startIndex, endIndex);
+    
+    const tableRows = pageItems.map((entry, index) => {
+        const originalIndex = reversedLog.length - (startIndex + index);
+        return `<tr>
+            <td>${originalIndex}</td>
             <td class="subtopic-cell">${entry.subtopic}</td>
             <td class="error-cell">${entry.droppedIn} → ${entry.correctTopic}</td>
-        </tr>`
-    ).join('');
+        </tr>`;
+    }).join('');
+    
+    const paginationHTML = totalPages > 1 ? `
+        <div class="pagination">
+            <button onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>‹</button>
+            <span>Página ${currentPage} de ${totalPages}</span>
+            <button onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>›</button>
+        </div>
+    ` : '';
     
     const tableHTML = `
         <table class="error-table">
@@ -335,11 +358,20 @@ function showWrongLog() {
                 ${tableRows}
             </tbody>
         </table>
+        ${paginationHTML}
     `;
     
     document.getElementById('modal-title').textContent = `Histórico de Erros (${wrongLog.length})`;
     document.getElementById('modal-comment').innerHTML = tableHTML;
     document.getElementById('modal').style.display = 'block';
+}
+
+function changePage(newPage) {
+    const totalPages = Math.ceil(wrongLog.length / itemsPerPage);
+    if (newPage >= 1 && newPage <= totalPages) {
+        currentPage = newPage;
+        renderErrorPage();
+    }
 }
 
 // Close modal when clicking X or outside
