@@ -61,14 +61,15 @@
       </div>
     </div>
     <script>
-      // Show 'local' if running locally, otherwise keep replaced version
+      // Check if running locally or on GitHub Pages
       document.addEventListener('DOMContentLoaded', () => {
         const versionElement = document.getElementById('version');
-        if (
-          versionElement &&
-          versionElement.textContent.trim() === '__VERSION__'
-        ) {
-          versionElement.textContent = 'local';
+        if (versionElement) {
+          // If placeholder exists, we're running locally
+          if (versionElement.textContent === '__VERSION__') {
+            versionElement.textContent = 'local';
+          }
+          // Otherwise, GitHub Actions already replaced it with actual version
         }
       });
     </script>
