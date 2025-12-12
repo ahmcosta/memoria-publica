@@ -67,6 +67,17 @@ header {
     background: rgba(33, 150, 243, 0.2);
 }
 
+.title-section {
+    text-align: left;
+}
+
+.subtitle {
+    margin: -5px 0 0 0;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
 .main-content {
     display: flex;
     gap: 20px;

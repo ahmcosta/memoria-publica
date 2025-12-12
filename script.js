@@ -1,6 +1,6 @@
 let correctCount = 0;
 let wrongCount = 0;
-let currentLanguage = localStorage.getItem('language') || (navigator.language.startsWith('pt') ? 'pt_BR' : 'en_US');
+let currentLanguage = localStorage.getItem('language') || 'pt_BR';
 let translations = {};
 
 const defaultData = {
@@ -81,22 +81,23 @@ async function loadTranslations() {
     } catch (error) {
         console.error('Translation loading failed:', error);
         translations = {
-            title: 'Drag & Drop Learning Tool',
-            instructions: 'Instructions', 
-            howToUse: 'How to Use',
-            welcome: 'Welcome!',
-            clickToStart: 'Click "Load JSON File" to start learning.',
-            howItWorks: 'How it works:',
-            step1: '1. Load a JSON file with topics and subtopics',
-            step2: '2. Drag subtopics to matching topic boxes', 
-            step3: '3. Correct matches stay, wrong ones return',
-            step4: '4. Click placed items to see descriptions',
-            topicBoxesAppear: 'Topic boxes will appear here after loading a JSON file.',
-            tryFiles: 'Try loading one of these example files:',
-            loadJsonFile: 'Load JSON File',
-            correct: 'Correct',
-            wrong: 'Wrong',
-            invalidJson: 'Invalid JSON file'
+            title: 'Memória Pública',
+            subtitle: 'Sua ferramenta de memorização',
+            instructions: 'Instruções', 
+            howToUse: 'Como Usar',
+            welcome: 'Bem-vindo!',
+            clickToStart: 'Clique em "Carregar Arquivo JSON" para começar a aprender.',
+            howItWorks: 'Como funciona:',
+            step1: '1. Carregue um arquivo JSON com tópicos e subtópicos',
+            step2: '2. Arraste subtópicos para as caixas de tópicos correspondentes', 
+            step3: '3. Correspondências corretas ficam, erradas retornam',
+            step4: '4. Clique nos itens colocados para ver descrições',
+            topicBoxesAppear: 'As caixas de tópicos aparecerão aqui após carregar um arquivo JSON.',
+            tryFiles: 'Experimente carregar um destes arquivos de exemplo:',
+            loadJsonFile: 'Carregar Arquivo JSON',
+            correct: 'Correto',
+            wrong: 'Errado',
+            invalidJson: 'Arquivo JSON inválido'
         };
     }
     updateUI();
