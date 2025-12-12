@@ -181,7 +181,8 @@ function createSubtopics() {
             allSubtopics.push({ 
                 name: subtopic.name, 
                 correctTopic: topic.name,
-                comment: subtopic.comment || 'No description available.'
+                comment: subtopic.comment || 'No description available.',
+                key: subtopic.key
             });
         });
     });
@@ -197,6 +198,7 @@ function createSubtopics() {
         div.draggable = true;
         div.dataset.correctTopic = item.correctTopic;
         if (item.comment) div.dataset.comment = item.comment;
+        if (item.key) div.dataset.key = item.key;
         
         div.addEventListener('dragstart', handleDragStart);
         div.addEventListener('dragend', handleDragEnd);
@@ -265,7 +267,12 @@ function handleDrop(e) {
         clickableDiv.textContent = draggedElement.textContent;
         clickableDiv.className = 'placed-subtopic';
         if (draggedElement.dataset.comment) {
-            clickableDiv.onclick = () => showModal(draggedElement.textContent, draggedElement.dataset.comment);
+            clickableDiv.onclick = () => {
+                const title = draggedElement.dataset.key ? 
+                    `${draggedElement.dataset.key} - ${draggedElement.textContent}` : 
+                    draggedElement.textContent;
+                showModal(title, draggedElement.dataset.comment);
+            };
         }
         topicBox.appendChild(clickableDiv);
         
