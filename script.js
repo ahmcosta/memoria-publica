@@ -101,7 +101,9 @@ async function loadTranslations() {
         };
     }
     updateUI();
-    showHelp();
+    if (!data) {
+        showHelp();
+    }
 }
 
 function updateUI() {
@@ -120,7 +122,11 @@ function updateUI() {
 function setLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
-    loadTranslations();
+    loadTranslations().then(() => {
+        if (data) {
+            initializeApp();
+        }
+    });
 }
 
 function t(key) {
