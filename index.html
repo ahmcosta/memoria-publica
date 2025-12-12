@@ -13,39 +13,40 @@
         <span onclick="setLanguage('en_US')" class="flag">🇺🇸</span>
       </div>
       <div class="container">
-      <header>
-        <div class="title-section">
-          <h1 data-i18n="title">Learning Tool</h1>
-          <p class="subtitle" data-i18n="subtitle">Sua ferramenta de memorização</p>
-        </div>
-        <div class="counters">
-          <button onclick="loadFile()" data-i18n="loadJsonFile">
-            Load JSON File
-          </button>
-          <span
-            ><span data-i18n="correct">Correct</span>:
-            <span id="correct">0</span></span
-          >
-          <span
-onclick="showWrongLog()" style="cursor: pointer;"
-            ><span data-i18n="wrong">Wrong</span>:
-            <span id="wrong">0</span></span
-          >
-        </div>
-      </header>
+        <header>
+          <div class="title-section">
+            <h1 data-i18n="title">Learning Tool</h1>
+            <p class="subtitle" data-i18n="subtitle">
+              Sua ferramenta de memorização
+            </p>
+          </div>
+          <div class="counters">
+            <button onclick="loadFile()" data-i18n="loadJsonFile">
+              Load JSON File
+            </button>
+            <span
+              ><span data-i18n="correct">Correct</span>:
+              <span id="correct">0</span></span
+            >
+            <span onclick="showWrongLog()" style="cursor: pointer"
+              ><span data-i18n="wrong">Wrong</span>:
+              <span id="wrong">0</span></span
+            >
+          </div>
+        </header>
 
-      <div class="main-content">
-        <div class="subtopics-panel">
-          <h2 id="subtopics-header">Subtopics</h2>
-          <div id="subtopics-list"></div>
-        </div>
+        <div class="main-content">
+          <div class="subtopics-panel">
+            <h2 id="subtopics-header">Subtopics</h2>
+            <div id="subtopics-list"></div>
+          </div>
 
-        <div class="topics-panel">
-          <h2 id="topics-header">Topics</h2>
-          <div id="topics-container"></div>
+          <div class="topics-panel">
+            <h2 id="topics-header">Topics</h2>
+            <div id="topics-container"></div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <footer class="version-info">
@@ -59,14 +60,14 @@ onclick="showWrongLog()" style="cursor: pointer;"
         <p id="modal-comment"></p>
       </div>
     </div>
-
-    <script src="version.js"></script>
-    <script src="version.js"></script>
     <script>
       // Show 'local' if running locally, otherwise keep replaced version
       document.addEventListener('DOMContentLoaded', () => {
         const versionElement = document.getElementById('version');
-        if (versionElement && versionElement.textContent.trim() === '__VERSION__') {
+        if (
+          versionElement &&
+          versionElement.textContent.trim() === '__VERSION__'
+        ) {
           versionElement.textContent = 'local';
         }
       });
