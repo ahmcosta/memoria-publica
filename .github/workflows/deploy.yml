@@ -36,7 +36,16 @@ jobs:
         sed -i "s|__VERSION__|${VERSION}|g" index.html
         
         # Verify replacement
-        grep "version" index.html || echo "Version replacement failed"
+        echo "Content after replacement:"
+        grep -A2 -B2 "version" index.html
+        
+        # Check if placeholder still exists
+        if grep -q "__VERSION__" index.html; then
+          echo "ERROR: Placeholder still exists!"
+          exit 1
+        else
+          echo "SUCCESS: Placeholder replaced"
+        fi
     
     - name: Setup Pages
       uses: actions/configure-pages@v4
