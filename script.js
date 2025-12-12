@@ -314,11 +314,32 @@ function showWrongLog() {
         return;
     }
     
-    const logText = wrongLog.map((entry, index) => 
-        `${index + 1}. ${entry.timestamp}\n   Você colocou: "${entry.subtopic}"\n   Na categoria: "${entry.droppedIn}"\n   Categoria correta: "${entry.correctTopic}"`
-    ).join('\n\n');
+    const tableRows = wrongLog.map((entry, index) => 
+        `<tr>
+            <td>${index + 1}</td>
+            <td class="subtopic-cell">${entry.subtopic}</td>
+            <td class="error-cell">${entry.droppedIn} → ${entry.correctTopic}</td>
+        </tr>`
+    ).join('');
     
-    showModal(`Histórico de Erros (${wrongLog.length})`, logText);
+    const tableHTML = `
+        <table class="error-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Conceito</th>
+                    <th>Erro → Correto</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${tableRows}
+            </tbody>
+        </table>
+    `;
+    
+    document.getElementById('modal-title').textContent = `Histórico de Erros (${wrongLog.length})`;
+    document.getElementById('modal-comment').innerHTML = tableHTML;
+    document.getElementById('modal').style.display = 'block';
 }
 
 // Close modal when clicking X or outside
