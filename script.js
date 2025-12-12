@@ -1,5 +1,6 @@
 let correctCount = 0;
 let wrongCount = 0;
+let wrongLog = [];
 let currentLanguage = localStorage.getItem('language') || 'pt_BR';
 let translations = {};
 
@@ -60,6 +61,7 @@ function loadFile() {
 function resetGame() {
     correctCount = 0;
     wrongCount = 0;
+    wrongLog = [];
     document.getElementById('correct').textContent = '0';
     document.getElementById('wrong').textContent = '0';
     document.getElementById('subtopics-list').innerHTML = '';
@@ -134,6 +136,10 @@ function t(key) {
 }
 
 function showHelp() {
+    // Set help screen headers
+    document.getElementById('subtopics-header').textContent = t('instructions');
+    document.getElementById('topics-header').textContent = t('howToUse');
+    
     document.getElementById('subtopics-list').innerHTML = `
         <div style="padding: 20px; text-align: center;">
             <h3 data-i18n="welcome">Welcome!</h3>
@@ -164,8 +170,8 @@ function showHelp() {
 
 function updateLabels() {
     document.querySelector('h1').textContent = data.subject;
-    document.querySelector('.subtopics-panel h2').textContent = data.subtopicsLabel;
-    document.querySelector('.topics-panel h2').textContent = data.topics.name;
+    document.getElementById('subtopics-header').textContent = data.subtopicsLabel;
+    document.getElementById('topics-header').textContent = data.topics.name;
     
     // Update other UI elements with translations
     updateUI();
@@ -281,6 +287,12 @@ function handleDrop(e) {
     } else {
         // Wrong answer
         wrongCount++;
+        wrongLog.push({
+            subtopic: draggedElement.textContent,
+            droppedIn: droppedTopic,
+            correctTopic: correctTopic,
+            timestamp: new Date().toLocaleTimeString()
+        });
         document.getElementById('wrong').textContent = wrongCount;
         topicBox.classList.add('incorrect');
         
@@ -292,6 +304,19 @@ function showModal(title, comment) {
     document.getElementById('modal-title').textContent = title;
     document.getElementById('modal-comment').textContent = comment;
     document.getElementById('modal').style.display = 'block';
+}
+
+function showWrongLog() {
+    if (wrongLog.length === 0) {
+        showModal('Histórico de Erros', 'Nenhum erro registrado ainda.');
+        return;
+    }
+    
+    const logText = wrongLog.map((entry, index) => 
+        `${index + 1}. ${entry.timestamp}\n   Você colocou: "${entry.subtopic}"\n   Na categoria: "${entry.droppedIn}"\n   Categoria correta: "${entry.correctTopic}"`
+    ).join('\n\n');
+    
+    showModal(`Histórico de Erros (${wrongLog.length})`, logText);
 }
 
 // Close modal when clicking X or outside

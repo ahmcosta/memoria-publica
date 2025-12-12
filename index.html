@@ -27,6 +27,7 @@
             <span id="correct">0</span></span
           >
           <span
+onclick="showWrongLog()" style="cursor: pointer;"
             ><span data-i18n="wrong">Wrong</span>:
             <span id="wrong">0</span></span
           >
@@ -35,12 +36,12 @@
 
       <div class="main-content">
         <div class="subtopics-panel">
-          <h2 data-i18n="instructions">Subtopics</h2>
+          <h2 id="subtopics-header">Subtopics</h2>
           <div id="subtopics-list"></div>
         </div>
 
         <div class="topics-panel">
-          <h2 data-i18n="howToUse">Topics</h2>
+          <h2 id="topics-header">Topics</h2>
           <div id="topics-container"></div>
         </div>
       </div>
