@@ -6,164 +6,308 @@
     "values": [
       {
         "name": "Data Drift",
-        "key": "DD",
         "subtopics": [
-          { "name": "O que é?", "key": "DD-DEF", "comment": "Mudança na distribuição dos dados de entrada (P(X)) ao longo do tempo." },
-          { "name": "Quando ocorre?", "key": "DD-WHEN", "comment": "Quando o padrão das features muda por fatores externos, mudanças operacionais ou novos perfis de usuários." },
-          { "name": "Exemplo", "key": "DD-EX", "comment": "Modelo de crédito treinado com renda média de R$ 2000, mas usuários atuais têm renda média de R$ 6000." }
+          {
+            "name": "Mudança na distribuição dos dados de entrada (P(X)) ao longo do tempo.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando o padrão das features muda por fatores externos, mudanças operacionais ou novos perfis de usuários.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Modelo de crédito treinado com renda média de R$ 2000, mas usuários atuais têm renda média de R$ 6000.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Concept Drift",
-        "key": "CD",
         "subtopics": [
-          { "name": "O que é?", "key": "CD-DEF", "comment": "Mudança na relação entre entrada e saída, ou seja, mudança em P(Y|X)." },
-          { "name": "Quando ocorre?", "key": "CD-WHEN", "comment": "Quando o fenômeno real muda, mesmo com inputs estáveis." },
-          { "name": "Exemplo", "key": "CD-EX", "comment": "Fraudadores mudam comportamento, alterando padrões usados pelo modelo." }
+          {
+            "name": "Mudança na relação entre entrada e saída, ou seja, mudança em P(Y|X).",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando o fenômeno real muda, mesmo com inputs estáveis.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Fraudadores mudam comportamento, alterando padrões usados pelo modelo.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Label Drift",
-        "key": "LD",
         "subtopics": [
-          { "name": "O que é?", "key": "LD-DEF", "comment": "Mudança na distribuição dos rótulos (P(Y))." },
-          { "name": "Quando ocorre?", "key": "LD-WHEN", "comment": "Quando a proporção das classes muda ao longo do tempo." },
-          { "name": "Exemplo", "key": "LD-EX", "comment": "Casos de uma doença aumentam após uma epidemia." }
+          {
+            "name": "Mudança na distribuição dos rótulos (P(Y)).",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando a proporção das classes muda ao longo do tempo.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Casos de uma doença aumentam após uma epidemia.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Feature Drift",
-        "key": "FD",
         "subtopics": [
-          { "name": "O que é?", "key": "FD-DEF", "comment": "Mudança estatística em uma ou algumas features específicas." },
-          { "name": "Quando ocorre?", "key": "FD-WHEN", "comment": "Quando fatores externos impactam variáveis individuais." },
-          { "name": "Exemplo", "key": "FD-EX", "comment": "Feature 'preço do combustível' muda drasticamente após alta internacional." }
+          {
+            "name": "Mudança estatística em uma ou algumas features específicas.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando fatores externos impactam variáveis individuais.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Feature 'preço do combustível' muda drasticamente após alta internacional.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Covariate Shift",
-        "key": "CS",
         "subtopics": [
-          { "name": "O que é?", "key": "CS-DEF", "comment": "Tipo de data drift onde apenas P(X) muda, mas P(Y|X) permanece igual." },
-          { "name": "Quando ocorre?", "key": "CS-WHEN", "comment": "Quando o contexto muda, mas a relação entre variáveis permanece válida." },
-          { "name": "Exemplo", "key": "CS-EX", "comment": "Mudança de câmeras altera brilho das imagens, mas os objetos continuam os mesmos." }
+          {
+            "name": "Tipo de data drift onde apenas P(X) muda, mas P(Y|X) permanece igual.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando o contexto muda, mas a relação entre variáveis permanece válida.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Mudança de câmeras altera brilho das imagens, mas os objetos continuam os mesmos.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Prior Probability Shift",
-        "key": "PPS",
         "subtopics": [
-          { "name": "O que é?", "key": "PPS-DEF", "comment": "Mudança na distribuição dos rótulos (P(Y))." },
-          { "name": "Quando ocorre?", "key": "PPS-WHEN", "comment": "Quando a frequência das classes muda, sem alterar P(X|Y)." },
-          { "name": "Exemplo", "key": "PPS-EX", "comment": "Aumento da classe 'fraude' por mudanças econômicas." }
+          {
+            "name": "Mudança na distribuição dos rótulos (P(Y)).",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando a frequência das classes muda, sem alterar P(X|Y).",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Aumento da classe 'fraude' por mudanças econômicas.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Posterior Probability Shift",
-        "key": "POPS",
         "subtopics": [
-          { "name": "O que é?", "key": "POPS-DEF", "comment": "Mudança em P(Y|X), equivalente a concept drift." },
-          { "name": "Quando ocorre?", "key": "POPS-WHEN", "comment": "Quando a relação entre as variáveis muda." },
-          { "name": "Exemplo", "key": "POPS-EX", "comment": "Mesmos sintomas, mas nova variante da doença muda diagnóstico." }
+          {
+            "name": "Mudança em P(Y|X), equivalente a concept drift.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando a relação entre as variáveis muda.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Mesmos sintomas, mas nova variante da doença muda diagnóstico.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Model Drift / Decay",
-        "key": "MD",
         "subtopics": [
-          { "name": "O que é?", "key": "MD-DEF", "comment": "Degradação do desempenho do modelo com o tempo." },
-          { "name": "Quando ocorre?", "key": "MD-WHEN", "comment": "Quando drifts não monitorados fazem o modelo se tornar obsoleto." },
-          { "name": "Exemplo", "key": "MD-EX", "comment": "Acurácia cai de 95% para 80% após 4 meses." }
+          {
+            "name": "Degradação do desempenho do modelo com o tempo.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando drifts não monitorados fazem o modelo se tornar obsoleto.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Acurácia cai de 95% para 80% após 4 meses.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Training-Serving Skew",
-        "key": "TSS",
         "subtopics": [
-          { "name": "O que é?", "key": "TSS-DEF", "comment": "Diferença entre dados usados no treinamento e os dados recebidos em produção." },
-          { "name": "Quando ocorre?", "key": "TSS-WHEN", "comment": "Quando pipelines de treino e produção divergem." },
-          { "name": "Exemplo", "key": "TSS-EX", "comment": "Pipeline de produção aplica normalização diferente da usada no treino." }
+          {
+            "name": "Diferença entre dados usados no treinamento e os dados recebidos em produção.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando pipelines de treino e produção divergem.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Pipeline de produção aplica normalização diferente da usada no treino.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Data Leakage",
-        "key": "DL",
         "subtopics": [
-          { "name": "O que é?", "key": "DL-DEF", "comment": "Uso de informações indevidas no treino, incluindo dados do futuro ou variáveis correlatas demais." },
-          { "name": "Quando ocorre?", "key": "DL-WHEN", "comment": "Quando variáveis vazam informações que não estariam presentes no uso real." },
-          { "name": "Exemplo", "key": "DL-EX", "comment": "Modelo prevê churn usando a coluna 'data do cancelamento'." }
+          {
+            "name": "Uso de informações indevidas no treino, incluindo dados do futuro ou variáveis correlatas demais.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando variáveis vazam informações que não estariam presentes no uso real.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Modelo prevê churn usando a coluna 'data do cancelamento'.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Feature Distribution Skew",
-        "key": "FDS",
         "subtopics": [
-          { "name": "O que é?", "key": "FDS-DEF", "comment": "Distribuições das features mudam entre treino e produção." },
-          { "name": "Quando ocorre?", "key": "FDS-WHEN", "comment": "Quando transformações diferem ou dados operacionais mudam." },
-          { "name": "Exemplo", "key": "FDS-EX", "comment": "Dataset de produção não contém valores nulos, mas treinamento continha." }
+          {
+            "name": "Distribuições das features mudam entre treino e produção.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando transformações diferem ou dados operacionais mudam.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Dataset de produção não contém valores nulos, mas treinamento continha.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Real-World Distribution Change",
-        "key": "RWDC",
         "subtopics": [
-          { "name": "O que é?", "key": "RWDC-DEF", "comment": "Mudança real do fenômeno modelado no mundo físico." },
-          { "name": "Quando ocorre?", "key": "RWDC-WHEN", "comment": "Quando eventos reais alteram padrões." },
-          { "name": "Exemplo", "key": "RWDC-EX", "comment": "Pandemia altera totalmente padrões de deslocamento." }
+          {
+            "name": "Mudança real do fenômeno modelado no mundo físico.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando eventos reais alteram padrões.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Pandemia altera totalmente padrões de deslocamento.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Concept Evolution",
-        "key": "CE",
         "subtopics": [
-          { "name": "O que é?", "key": "CE-DEF", "comment": "Surgimento de novos conceitos ou classes que não existiam no treinamento." },
-          { "name": "Quando ocorre?", "key": "CE-WHEN", "comment": "Quando classes novas emergem no mundo real." },
-          { "name": "Exemplo", "key": "CE-EX", "comment": "Novo tipo de spam que não existia antes." }
+          {
+            "name": "Surgimento de novos conceitos ou classes que não existiam no treinamento.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando classes novas emergem no mundo real.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Novo tipo de spam que não existia antes.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Sample Selection Bias",
-        "key": "SSB",
         "subtopics": [
-          { "name": "O que é?", "key": "SSB-DEF", "comment": "Diferença entre a distribuição da amostra e a do mundo real." },
-          { "name": "Quando ocorre?", "key": "SSB-WHEN", "comment": "Quando a coleta não representa o universo." },
-          { "name": "Exemplo", "key": "SSB-EX", "comment": "Treinar reconhecimento facial apenas com pessoas brancas." }
+          {
+            "name": "Diferença entre a distribuição da amostra e a do mundo real.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando a coleta não representa o universo.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Treinar reconhecimento facial apenas com pessoas brancas.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Exposure Bias / Feedback Loop Drift",
-        "key": "EB",
         "subtopics": [
-          { "name": "O que é?", "key": "EB-DEF", "comment": "O modelo influencia o ambiente e os novos dados passam a refletir o próprio modelo." },
-          { "name": "Quando ocorre?", "key": "EB-WHEN", "comment": "Em sistemas de recomendação, policiamento preditivo, ranking algorítmico." },
-          { "name": "Exemplo", "key": "EB-EX", "comment": "Recomendações reforçam apenas músicas populares, que se tornam ainda mais populares." }
+          {
+            "name": "O modelo influencia o ambiente e os novos dados passam a refletir o próprio modelo.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Em sistemas de recomendação, policiamento preditivo, ranking algorítmico.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Recomendações reforçam apenas músicas populares, que se tornam ainda mais populares.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Temporal Drift",
-        "key": "TD",
         "subtopics": [
-          { "name": "O que é?", "key": "TD-DEF", "comment": "Mudanças sazonais, lentas ou gradativas ao longo do tempo." },
-          { "name": "Quando ocorre?", "key": "TD-WHEN", "comment": "Quando padrões variam com meses, dias, estações, ciclos econômicos." },
-          { "name": "Exemplo", "key": "TD-EX", "comment": "Vendas de material escolar aumentam em janeiro e fevereiro." }
+          {
+            "name": "Mudanças sazonais, lentas ou gradativas ao longo do tempo.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando padrões variam com meses, dias, estações, ciclos econômicos.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Vendas de material escolar aumentam em janeiro e fevereiro.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Population Drift",
-        "key": "PD",
         "subtopics": [
-          { "name": "O que é?", "key": "PD-DEF", "comment": "Mudança na composição demográfica ou de perfil do público." },
-          { "name": "Quando ocorre?", "key": "PD-WHEN", "comment": "Quando o público muda com o tempo." },
-          { "name": "Exemplo", "key": "PD-EX", "comment": "App inicialmente usado por jovens passa a ser usado por idosos." }
+          {
+            "name": "Mudança na composição demográfica ou de perfil do público.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando o público muda com o tempo.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "App inicialmente usado por jovens passa a ser usado por idosos.",
+            "comment": "Exemplo"
+          }
         ]
       },
       {
         "name": "Environment Drift",
-        "key": "ED",
         "subtopics": [
-          { "name": "O que é?", "key": "ED-DEF", "comment": "Mudanças físicas ou operacionais no ambiente que afetam dados." },
-          { "name": "Quando ocorre?", "key": "ED-WHEN", "comment": "Quando sensores, câmeras, iluminação ou contexto físico mudam." },
-          { "name": "Exemplo", "key": "ED-EX", "comment": "Troca de câmera altera qualidade das imagens do modelo." }
+          {
+            "name": "Mudanças físicas ou operacionais no ambiente que afetam dados.",
+            "comment": "O que é?"
+          },
+          {
+            "name": "Quando sensores, câmeras, iluminação ou contexto físico mudam.",
+            "comment": "Quando ocorre?"
+          },
+          {
+            "name": "Troca de câmera altera qualidade das imagens do modelo.",
+            "comment": "Exemplo"
+          }
         ]
       }
     ]
