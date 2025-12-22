@@ -1,0 +1,101 @@
+
+{
+  "subject": "Improbidade Administrativa",
+  "subtopicsLabel": "Categorias de Improbidade",
+  "topics": {
+    "name": "Tipos de Atos de Improbidade Administrativa",
+    "values": [
+      {
+        "name": "Enriquecimento Ilícito",
+        "key": "ART9",
+        "comment": "Art. 9º - Constitui ato de improbidade administrativa que importa em enriquecimento ilícito auferir vantagem patrimonial indevida em razão do exercício da função pública.",
+        "subtopics": [
+          {
+            "name": "Uso de bens ou servidores públicos em proveito particular",
+            "key": "ART9-IV",
+            "comment": "Art. 9º, IV - Utilizar, em obra ou serviço particular, bens públicos ou o trabalho de servidores, empregados ou terceiros contratados pela administração."
+          },
+          {
+            "name": "Recebimento de vantagem para declaração técnica falsa",
+            "key": "ART9-VI",
+            "comment": "Art. 9º, VI - Receber vantagem econômica para fazer declaração falsa sobre dados técnicos relativos a obras, serviços ou mercadorias fornecidas ao poder público."
+          },
+          {
+            "name": "Evolução patrimonial incompatível",
+            "key": "ART9-VII",
+            "comment": "Art. 9º, VII - Adquirir bens de valor desproporcional à evolução do patrimônio ou à renda do agente público, assegurada a demonstração da origem lícita."
+          }
+        ]
+      },
+      {
+        "name": "Lesão ao Erário",
+        "key": "ART10",
+        "comment": "Art. 10 - Constitui ato de improbidade administrativa que causa lesão ao erário qualquer ação ou omissão dolosa que resulte em perda patrimonial efetiva.",
+        "subtopics": [
+          {
+            "name": "Incorporação indevida de bens ou valores públicos ao patrimônio privado",
+            "key": "ART10-I",
+            "comment": "Art. 10, I - Facilitar ou concorrer para a incorporação indevida de bens, rendas ou valores públicos ao patrimônio privado."
+          },
+          {
+            "name": "Frustração da licitude de licitação ou processo seletivo",
+            "key": "ART10-VIII",
+            "comment": "Art. 10, VIII - Frustrar a licitude de licitação ou processo seletivo, acarretando perda patrimonial efetiva."
+          },
+          {
+            "name": "Atuação ilícita na arrecadação ou conservação do patrimônio",
+            "key": "ART10-X",
+            "comment": "Art. 10, X - Agir ilicitamente na arrecadação de tributo, de renda ou na conservação do patrimônio público."
+          },
+          {
+            "name": "Agir para configuração de ilícitos em parcerias com entidades privadas",
+            "key": "ART10-XIX",
+            "comment": "Art. 10, XIX - Agir para a configuração de ilícito na celebração, fiscalização ou prestação de contas de parcerias com entidades privadas."
+          },
+          {
+            "name": "Concessão irregular de benefício financeiro ou tributário",
+            "key": "ART10-XXII",
+            "comment": "Art. 10, XXII - Conceder, aplicar ou manter benefício financeiro ou tributário em desacordo com a Lei Complementar nº 116/2003."
+          }
+        ]
+      },
+      {
+        "name": "Violação aos Princípios da Administração Pública",
+        "key": "ART11",
+        "comment": "Art. 11 - Constitui ato de improbidade administrativa que atenta contra os princípios da administração pública a ação ou omissão dolosa que viole deveres de honestidade, imparcialidade e legalidade.",
+        "subtopics": [
+          {
+            "name": "Revelação de informação sigilosa",
+            "key": "ART11-III",
+            "comment": "Art. 11, III - Revelar fato ou circunstância sigilosa para obtenção de benefício indevido ou risco à segurança da sociedade e do Estado."
+          },
+          {
+            "name": "Negativa indevida de publicidade a atos oficiais",
+            "key": "ART11-IV",
+            "comment": "Art. 11, IV - Negar publicidade aos atos oficiais fora das hipóteses legais."
+          },
+          {
+            "name": "Frustração do caráter concorrencial de concurso ou licitação",
+            "key": "ART11-V",
+            "comment": "Art. 11, V - Frustrar o caráter concorrencial de concurso público, chamamento ou licitação visando benefício próprio ou de terceiros."
+          },
+          {
+            "name": "Omissão na prestação de contas",
+            "key": "ART11-VI",
+            "comment": "Art. 11, VI - Deixar de prestar contas quando obrigado, com o objetivo de ocultar irregularidades."
+          },
+          {
+            "name": "Nepotismo",
+            "key": "ART11-XI",
+            "comment": "Art. 11, XI - Nomear cônjuge ou parente até o terceiro grau para cargo em comissão, confiança ou função gratificada."
+          },
+          {
+            "name": "Publicidade institucional com promoção pessoal",
+            "key": "ART11-XII",
+            "comment": "Art. 11, XII - Realizar publicidade oficial com personalização e enaltecimento do agente público."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "subject": "NIST SSDF - Secure Software Development Framework",
+  "subtopicsLabel": "Práticas",
+  "topics": {
+    "name": "Grupos de Práticas NIST SSDF",
+    "values": [
+      {
+        "name": "PO - Preparar a Organização",
+        "subtopics": [
+          {
+            "name": "Definir requisitos de segurança",
+            "key": "PO.1",
+            "comment": "Identificar e documentar requisitos de segurança, conformidade e regulamentação"
+          },
+          {
+            "name": "Implementar papéis e responsabilidades",
+            "key": "PO.2",
+            "comment": "Estabelecer funções organizacionais e fornecer recursos para desenvolvimento seguro"
+          },
+          {
+            "name": "Implementar treinamento de apoio",
+            "key": "PO.3",
+            "comment": "Fornecer treinamento em conscientização e práticas de desenvolvimento seguro"
+          },
+          {
+            "name": "Definir critérios para reutilização de software",
+            "key": "PO.4",
+            "comment": "Estabelecer critérios para avaliar e monitorar componentes de software"
+          },
+          {
+            "name": "Implementar ferramentas e processos de apoio",
+            "key": "PO.5",
+            "comment": "Usar ferramentas para identificar e corrigir problemas de segurança"
+          }
+        ]
+      },
+      {
+        "name": "PS - Proteger o Software",
+        "subtopics": [
+          {
+            "name": "Projetar software para atender aos requisitos de segurança",
+            "key": "PS.1",
+            "comment": "Incorporar requisitos de segurança e privacidade no design"
+          },
+          {
+            "name": "Revisar o design do software",
+            "key": "PS.2",
+            "comment": "Verificar conformidade do design com requisitos de segurança"
+          },
+          {
+            "name": "Reutilizar componentes de software bem protegidos",
+            "key": "PS.3",
+            "comment": "Usar componentes seguros existentes e manter inventário"
+          }
+        ]
+      },
+      {
+        "name": "PW - Produzir Software Bem Protegido",
+        "subtopics": [
+          {
+            "name": "Implementar práticas de codificação segura",
+            "key": "PW.1",
+            "comment": "Seguir práticas seguras e configurar ferramentas de desenvolvimento"
+          },
+          {
+            "name": "Configurar o software para ter configurações seguras por padrão",
+            "key": "PW.2",
+            "comment": "Remover funcionalidades desnecessárias e configurar segurança padrão"
+          },
+          {
+            "name": "Verificar se terceiros atendem aos requisitos de segurança",
+            "key": "PW.3",
+            "comment": "Avaliar componentes de terceiros quanto à segurança"
+          },
+          {
+            "name": "Criar uma versão bem protegida do software",
+            "key": "PW.4",
+            "comment": "Configurar software com segurança padrão e documentar integridade"
+          },
+          {
+            "name": "Criar ou reunir dados de detecção",
+            "key": "PW.5",
+            "comment": "Implementar logging e coleta de dados para detecção de ameaças"
+          },
+          {
+            "name": "Revisar e/ou analisar o código",
+            "key": "PW.6",
+            "comment": "Usar ferramentas automatizadas para verificar vulnerabilidades"
+          },
+          {
+            "name": "Revisar e/ou analisar o código produzido por humanos",
+            "key": "PW.7",
+            "comment": "Realizar revisão manual de código para identificar problemas"
+          },
+          {
+            "name": "Testar executáveis",
+            "key": "PW.8",
+            "comment": "Confirmar que software implementa requisitos de segurança"
+          },
+          {
+            "name": "Configurar o software, sua construção e seu ambiente",
+            "key": "PW.9",
+            "comment": "Criar builds reproduzíveis e rastrear proveniência de componentes"
+          }
+        ]
+      },
+      {
+        "name": "RV - Responder a Vulnerabilidades",
+        "subtopics": [
+          {
+            "name": "Identificar e confirmar vulnerabilidades",
+            "key": "RV.1",
+            "comment": "Reunir informações sobre vulnerabilidades e analisar causas raiz"
+          },
+          {
+            "name": "Avaliar, priorizar e remediar vulnerabilidades",
+            "key": "RV.2",
+            "comment": "Implementar estratégia de divulgação e processos de recebimento"
+          },
+          {
+            "name": "Analisar vulnerabilidades para identificar suas causas raiz",
+            "key": "RV.3",
+            "comment": "Implementar resposta a vulnerabilidades e validar correções"
+          }
+        ]
+      }
+    ]
+  }
+}
