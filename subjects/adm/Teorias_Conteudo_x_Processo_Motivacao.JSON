@@ -1,0 +1,67 @@
+{
+  "subject": "Teorias da Motivação",
+  "subtopicsLabel": "Categorias de Teorias",
+  "topics": {
+    "name": "Classificação das Teorias Motivacionais",
+    "values": [
+      {
+        "name": "Teorias de Conteúdo",
+        "subtopics": [
+          {
+            "name": "Teoria da Hierarquia das Necessidades (Maslow)",
+            "comment": "Propõe que a motivação humana decorre da satisfação progressiva de necessidades organizadas em níveis hierárquicos, das mais básicas às mais elevadas."
+          },
+          {
+            "name": "Teoria ERC / ERG (Alderfer)",
+            "comment": "Reformula Maslow em três categorias de necessidades: Existência, Relacionamento e Crescimento, admitindo regressão entre elas."
+          },
+          {
+            "name": "Teoria dos Dois Fatores / Teoria Bifatorial (Herzberg)",
+            "comment": "Distingue fatores higiênicos, que evitam insatisfação, e fatores motivacionais, que promovem satisfação e desempenho."
+          },
+          {
+            "name": "Teoria das Necessidades Adquiridas (McClelland)",
+            "comment": "Defende que as necessidades de realização, poder e afiliação são desenvolvidas ao longo da vida e influenciam o comportamento."
+          },
+          {
+            "name": "Teoria X e Teoria Y (McGregor)",
+            "comment": "Apresenta duas visões opostas sobre a natureza humana no trabalho: a Teoria X, mais autoritária, e a Teoria Y, participativa."
+          }
+        ]
+      },
+      {
+        "name": "Teorias de Processo",
+        "subtopics": [
+          {
+            "name": "Teoria da Equidade",
+            "comment": "A motivação depende da percepção de justiça na relação entre esforços despendidos e recompensas recebidas em comparação com outros."
+          },
+          {
+            "name": "Teoria da Expectância / Expectativa (Vroom)",
+            "comment": "Sustenta que a motivação resulta da expectativa de que o esforço levará a desempenho e recompensas valorizadas."
+          },
+          {
+            "name": "Teoria da Definição de Objetivos (Locke)",
+            "comment": "Afirma que metas claras, específicas e desafiadoras aumentam o desempenho e a motivação."
+          },
+          {
+            "name": "Teoria da Autoeficácia",
+            "comment": "Destaca a crença do indivíduo em sua própria capacidade de executar tarefas como fator central da motivação."
+          },
+          {
+            "name": "Teoria do Reforço (Skinner)",
+            "comment": "Baseia-se no behaviorismo, defendendo que o comportamento é moldado por recompensas e punições."
+          },
+          {
+            "name": "Teoria da Avaliação Cognitiva",
+            "comment": "Analisa como recompensas externas podem afetar a motivação intrínseca, positiva ou negativamente."
+          },
+          {
+            "name": "Teoria de Campo (Lewin)",
+            "comment": "Explica o comportamento como resultado da interação dinâmica entre o indivíduo e o ambiente psicológico."
+          }
+        ]
+      }
+    ]
+  }
+}
