@@ -123,6 +123,13 @@ function updateUI() {
         }
     });
     
+    document.querySelectorAll('[data-i18n-title]').forEach(element => {
+        const key = element.getAttribute('data-i18n-title');
+        if (translations[key]) {
+            element.title = translations[key];
+        }
+    });
+    
     document.querySelectorAll('.flag').forEach(flag => flag.classList.remove('active'));
     const activeFlag = document.querySelector(`[onclick="setLanguage('${currentLanguage}')"]`);
     if (activeFlag) activeFlag.classList.add('active');

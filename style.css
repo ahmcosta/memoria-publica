@@ -32,6 +32,27 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.restart-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: #666;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restart-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
 .counters span {
     margin-left: 20px;
     font-weight: bold;
