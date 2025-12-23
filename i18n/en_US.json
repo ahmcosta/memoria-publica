@@ -12,6 +12,7 @@
   "step4": "4. Click placed items to see descriptions",
   "topicBoxesAppear": "Topic boxes will appear here after loading a JSON file.",
   "tryFiles": "Try loading one of these example files:",
+  "restart": "Restart",
   "loadJsonFile": "Load JSON File",
   "correct": "Correct",
   "wrong": "Wrong",

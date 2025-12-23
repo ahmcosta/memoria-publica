@@ -58,6 +58,13 @@ function loadFile() {
     input.click();
 }
 
+function restartGame() {
+    if (!data) return;
+    resetGame();
+    createSubtopics();
+    createTopicBoxes();
+}
+
 function resetGame() {
     correctCount = 0;
     wrongCount = 0;
