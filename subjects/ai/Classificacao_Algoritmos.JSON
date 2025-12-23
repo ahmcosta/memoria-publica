@@ -5,90 +5,111 @@
     "name": "Técnicas de Aprendizado de Máquina",
     "values": [
       {
-        "name": "Algoritmo de Classificação",
+        "name": "Classificação",
         "key": "CLASS",
         "subtopics": [
           {
-            "name": "kNN",
-            "key": "KNN",
-            "comment": "k-Nearest Neighbors - Classifica instâncias com base nas classes dos k vizinhos mais próximos no espaço de características."
-          },
-          {
-            "name": "Decision Trees",
-            "key": "DT",
-            "comment": "Árvores de Decisão - Modelo que utiliza uma estrutura de árvore para tomar decisões com base em regras extraídas dos dados."
+            "name": "Regressão Logística",
+            "key": "LOG_REG",
+            "comment": "Classificador probabilístico que estima a probabilidade de uma instância pertencer a uma classe usando a função logística."
           },
           {
             "name": "Naive Bayes",
-            "key": "NB",
-            "comment": "Classificador probabilístico baseado no Teorema de Bayes, assumindo independência condicional entre as características."
+            "key": "NAIVE_BAYES",
+            "comment": "Classificador baseado no Teorema de Bayes que assume independência condicional entre as características."
+          }
+        ]
+      },
+      {
+        "name": "Classificação/Regressão",
+        "key": "CLASS_REGR",
+        "subtopics": [
+          {
+            "name": "Decision Trees",
+            "key": "DECISION_TREES",
+            "comment": "Árvores de Decisão - Modelos versáteis que podem ser usados tanto para classificação quanto para regressão, criando uma estrutura de árvore baseada em regras."
+          },
+          {
+            "name": "Gradient Boosting",
+            "key": "GRAD_BOOST",
+            "comment": "Família de algoritmos ensemble (XGBoost, LightGBM, CatBoost) que combinam múltiplos modelos fracos sequencialmente para classificação ou regressão."
+          },
+          {
+            "name": "KNN",
+            "key": "KNN",
+            "comment": "k-Nearest Neighbors - Algoritmo versátil que pode ser usado tanto para classificação (votação majoritária) quanto para regressão (média dos valores)."
+          },
+          {
+            "name": "Redes Neurais",
+            "key": "NEURAL_NETS",
+            "comment": "Arquiteturas flexíveis que podem ser configuradas para tarefas de classificação (softmax) ou regressão (saída linear) através de sua camada de saída."
+          },
+          {
+            "name": "Random Forest",
+            "key": "RANDOM_FOREST",
+            "comment": "Ensemble de árvores de decisão que pode realizar tanto classificação (votação) quanto regressão (média das previsões)."
           },
           {
             "name": "SVM",
             "key": "SVM",
-            "comment": "Support Vector Machine - Encontra um hiperplano ótimo para separar classes em um espaço de alta dimensão."
-          },
-          {
-            "name": "Rede neural",
-            "key": "NN",
-            "comment": "Redes Neurais Artificiais - Modelos inspirados no cérebro humano, compostos por camadas de neurônios interconectados."
-          },
-          {
-            "name": "Random Forest",
-            "key": "RF",
-            "comment": "Floresta Aleatória - Conjunto de múltiplas árvores de decisão que votam para produzir uma predição mais robusta."
-          },
-          {
-            "name": "Regressão Logística",
-            "key": "LOG_REG",
-            "comment": "Classificador probabilístico que estima a probabilidade de uma instância pertencer a uma classe usando uma função logística, apesar do nome 'regressão'."
+            "comment": "Support Vector Machines - Podem ser usadas para classificação (SVC) ou regressão (SVR) através de diferentes funções de kernel e configurações."
           }
         ]
       },
       {
-        "name": "Algoritmo de Regressão",
+        "name": "Regressão",
         "key": "REGR",
         "subtopics": [
           {
-            "name": "Linear",
+            "name": "Elastic Net",
+            "key": "ELASTIC_NET",
+            "comment": "Combinação das penalizações L1 (Lasso) e L2 (Ridge) para regressão linear regularizada, útil quando há alta correlação entre características."
+          },
+          {
+            "name": "Lasso",
+            "key": "LASSO",
+            "comment": "Regressão linear com regularização L1, que realiza seleção de características ao zerar coeficientes irrelevantes."
+          },
+          {
+            "name": "Ridge",
+            "key": "RIDGE",
+            "comment": "Regressão linear com regularização L2, que reduz a magnitude dos coeficientes para lidar com multicolinearidade."
+          },
+          {
+            "name": "Regression Trees",
+            "key": "REG_TREES",
+            "comment": "Árvores de decisão otimizadas especificamente para tarefas de regressão, usando valores médios nas folhas."
+          },
+          {
+            "name": "Regressão Linear",
             "key": "LIN_REG",
-            "comment": "Regressão Linear - Modela a relação entre variáveis dependentes e independentes para prever valores contínuos através de uma equação linear."
+            "comment": "Modelo estatístico fundamental que estabelece uma relação linear entre variáveis independentes e uma variável dependente contínua."
           }
         ]
       },
       {
-        "name": "Algoritmo de Agrupamento",
+        "name": "Clustering",
         "key": "CLUST",
         "subtopics": [
           {
-            "name": "k-Means",
-            "key": "KMEANS",
-            "comment": "Particiona dados em k clusters, minimizando a variância intra-cluster através de iterações."
-          },
-          {
-            "name": "Minimum Spanning Tree",
-            "key": "MST_CLUST",
-            "comment": "Usa árvore geradora mínima para identificar clusters ao remover arestas mais longas da árvore."
-          },
-          {
-            "name": "K-Medoids",
-            "key": "KMEDOIDS",
-            "comment": "Similar ao k-Means, mas usa medoides (pontos reais do conjunto) como centros dos clusters."
-          },
-          {
-            "name": "Fuzzy k-Means",
-            "key": "FUZZY_KMEANS",
-            "comment": "Permite que pontos pertençam a múltiplos clusters com diferentes graus de pertinência."
-          },
-          {
             "name": "DBSCAN",
             "key": "DBSCAN",
-            "comment": "Density-Based Spatial Clustering - Agrupa pontos baseado em densidade, identificando clusters de formas arbitrárias."
+            "comment": "Density-Based Spatial Clustering - Agrupa pontos baseado em densidade local, identificando clusters de formas arbitrárias e detectando outliers."
           },
           {
-            "name": "Linkage",
-            "key": "LINKAGE",
-            "comment": "Métodos de ligação (single, complete, average) usados em clustering hierárquico aglomerativo."
+            "name": "Gaussian Mixture Models (GMM)",
+            "key": "GMM",
+            "comment": "Modelo probabilístico que assume que os dados são gerados por uma mistura de distribuições gaussianas."
+          },
+          {
+            "name": "Hierarchical Clustering",
+            "key": "HIER_CLUST",
+            "comment": "Cria uma hierarquia de clusters através de abordagens aglomerativas (bottom-up) ou divisivas (top-down)."
+          },
+          {
+            "name": "K-Means",
+            "key": "KMEANS",
+            "comment": "Algoritmo de particionamento que divide dados em k clusters, minimizando a variância intra-cluster."
           }
         ]
       },
@@ -99,33 +120,44 @@
           {
             "name": "Apriori",
             "key": "APRIORI",
-            "comment": "Algoritmo clássico para mineração de regras de associação, usando propriedade 'apriori' para reduzir espaço de busca."
+            "comment": "Algoritmo clássico para mineração de regras de associação, usando a propriedade de antimonotonicidade para reduzir o espaço de busca."
+          },
+          {
+            "name": "Eclat",
+            "key": "ECLAT",
+            "comment": "Equivalence Class Clustering and bottom-up Lattice Traversal - Algoritmo eficiente que usa representação vertical para mineração de itens frequentes."
           },
           {
             "name": "FP-Growth",
             "key": "FP_GROWTH",
-            "comment": "Frequent Pattern Growth - Algoritmo eficiente que usa estrutura FP-tree para mineração de padrões frequentes."
+            "comment": "Frequent Pattern Growth - Usa estrutura FP-tree compacta para mineração eficiente de padrões frequentes sem gerar candidatos."
           }
         ]
       },
       {
-        "name": "Aprendizagem por Reforço",
-        "key": "RL",
+        "name": "Redução de Dimensionalidade",
+        "key": "DIM_RED",
         "subtopics": [
           {
-            "name": "Q-Learning",
-            "key": "Q_LEARNING",
-            "comment": "Algoritmo de aprendizagem por diferença temporal que aprende uma função de valor ação-estado (Q)."
+            "name": "PCA",
+            "key": "PCA",
+            "comment": "Principal Component Analysis - Técnica linear que transforma dados em componentes principais ortogonais de maior variância."
           },
           {
-            "name": "Actor-Critic",
-            "key": "ACTOR_CRITIC",
-            "comment": "Combina abordagens baseadas em política (actor) e valor (critic) para aprendizado mais estável."
-          },
+            "name": "t-SNE",
+            "key": "TSNE",
+            "comment": "t-Distributed Stochastic Neighbor Embedding - Técnica não-linear para visualização que preserva distâncias locais em espaços de alta dimensão."
+          }
+        ]
+      },
+      {
+        "name": "Redução de Dimensionalidade/Extração de Características",
+        "key": "DIM_RED_FEAT",
+        "subtopics": [
           {
-            "name": "Policy Gradient",
-            "key": "POLICY_GRAD",
-            "comment": "Métodos que otimizam diretamente a política através de gradientes, sem necessitar de função de valor."
+            "name": "Autoencoders",
+            "key": "AUTOENCODERS",
+            "comment": "Redes neurais não supervisionadas que aprendem representações comprimidas (codificadores) e reconstroem os dados (decodificadores)."
           }
         ]
       }
