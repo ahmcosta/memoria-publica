@@ -1,0 +1,134 @@
+{
+  "subject": "Algoritmos de Aprendizado de Máquina",
+  "subtopicsLabel": "Categorias",
+  "topics": {
+    "name": "Técnicas de Aprendizado de Máquina",
+    "values": [
+      {
+        "name": "Algoritmo de Classificação",
+        "key": "CLASS",
+        "subtopics": [
+          {
+            "name": "kNN",
+            "key": "KNN",
+            "comment": "k-Nearest Neighbors - Classifica instâncias com base nas classes dos k vizinhos mais próximos no espaço de características."
+          },
+          {
+            "name": "Decision Trees",
+            "key": "DT",
+            "comment": "Árvores de Decisão - Modelo que utiliza uma estrutura de árvore para tomar decisões com base em regras extraídas dos dados."
+          },
+          {
+            "name": "Naive Bayes",
+            "key": "NB",
+            "comment": "Classificador probabilístico baseado no Teorema de Bayes, assumindo independência condicional entre as características."
+          },
+          {
+            "name": "SVM",
+            "key": "SVM",
+            "comment": "Support Vector Machine - Encontra um hiperplano ótimo para separar classes em um espaço de alta dimensão."
+          },
+          {
+            "name": "Rede neural",
+            "key": "NN",
+            "comment": "Redes Neurais Artificiais - Modelos inspirados no cérebro humano, compostos por camadas de neurônios interconectados."
+          },
+          {
+            "name": "Random Forest",
+            "key": "RF",
+            "comment": "Floresta Aleatória - Conjunto de múltiplas árvores de decisão que votam para produzir uma predição mais robusta."
+          },
+          {
+            "name": "Regressão Logística",
+            "key": "LOG_REG",
+            "comment": "Classificador probabilístico que estima a probabilidade de uma instância pertencer a uma classe usando uma função logística, apesar do nome 'regressão'."
+          }
+        ]
+      },
+      {
+        "name": "Algoritmo de Regressão",
+        "key": "REGR",
+        "subtopics": [
+          {
+            "name": "Linear",
+            "key": "LIN_REG",
+            "comment": "Regressão Linear - Modela a relação entre variáveis dependentes e independentes para prever valores contínuos através de uma equação linear."
+          }
+        ]
+      },
+      {
+        "name": "Algoritmo de Agrupamento",
+        "key": "CLUST",
+        "subtopics": [
+          {
+            "name": "k-Means",
+            "key": "KMEANS",
+            "comment": "Particiona dados em k clusters, minimizando a variância intra-cluster através de iterações."
+          },
+          {
+            "name": "Minimum Spanning Tree",
+            "key": "MST_CLUST",
+            "comment": "Usa árvore geradora mínima para identificar clusters ao remover arestas mais longas da árvore."
+          },
+          {
+            "name": "K-Medoids",
+            "key": "KMEDOIDS",
+            "comment": "Similar ao k-Means, mas usa medoides (pontos reais do conjunto) como centros dos clusters."
+          },
+          {
+            "name": "Fuzzy k-Means",
+            "key": "FUZZY_KMEANS",
+            "comment": "Permite que pontos pertençam a múltiplos clusters com diferentes graus de pertinência."
+          },
+          {
+            "name": "DBSCAN",
+            "key": "DBSCAN",
+            "comment": "Density-Based Spatial Clustering - Agrupa pontos baseado em densidade, identificando clusters de formas arbitrárias."
+          },
+          {
+            "name": "Linkage",
+            "key": "LINKAGE",
+            "comment": "Métodos de ligação (single, complete, average) usados em clustering hierárquico aglomerativo."
+          }
+        ]
+      },
+      {
+        "name": "Regras de Associação",
+        "key": "ASSOC",
+        "subtopics": [
+          {
+            "name": "Apriori",
+            "key": "APRIORI",
+            "comment": "Algoritmo clássico para mineração de regras de associação, usando propriedade 'apriori' para reduzir espaço de busca."
+          },
+          {
+            "name": "FP-Growth",
+            "key": "FP_GROWTH",
+            "comment": "Frequent Pattern Growth - Algoritmo eficiente que usa estrutura FP-tree para mineração de padrões frequentes."
+          }
+        ]
+      },
+      {
+        "name": "Aprendizagem por Reforço",
+        "key": "RL",
+        "subtopics": [
+          {
+            "name": "Q-Learning",
+            "key": "Q_LEARNING",
+            "comment": "Algoritmo de aprendizagem por diferença temporal que aprende uma função de valor ação-estado (Q)."
+          },
+          {
+            "name": "Actor-Critic",
+            "key": "ACTOR_CRITIC",
+            "comment": "Combina abordagens baseadas em política (actor) e valor (critic) para aprendizado mais estável."
+          },
+          {
+            "name": "Policy Gradient",
+            "key": "POLICY_GRAD",
+            "comment": "Métodos que otimizam diretamente a política através de gradientes, sem necessitar de função de valor."
+          }
+        ]
+      }
+    ]
+  }
+}
