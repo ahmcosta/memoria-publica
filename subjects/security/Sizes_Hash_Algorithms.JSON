@@ -1,0 +1,74 @@
+{
+  "subject": "Funções Hash Criptográficas",
+  "subtopicsLabel": "Categorias",
+  "topics": {
+    "name": "Classificação por Tamanho do Resultado e dos Blocos",
+    "values": [
+      {
+        "name": "Resultado final do hash (bit) - 128",
+        "subtopics": [
+          { "name": "MD2" },
+          { "name": "MD4" },
+          { "name": "MD5" },
+          { "name": "RIPEMD" }
+        ]
+      },
+      {
+        "name": "Resultado final do hash (bit) - 160",
+        "subtopics": [
+          { "name": "SHA-0" },
+          { "name": "SHA-1" }
+        ]
+      },
+      {
+        "name": "Resultado final do hash (bit) - 224",
+        "subtopics": [
+          { "name": "SHA-224" }
+        ]
+      },
+      {
+        "name": "Resultado final do hash (bit) - 256",
+        "subtopics": [
+          { "name": "SHA-256" }
+        ]
+      },
+      {
+        "name": "Resultado final do hash (bit) - 384",
+        "subtopics": [
+          { "name": "SHA-384" }
+        ]
+      },
+      {
+        "name": "Resultado final do hash (bit) - 512",
+        "subtopics": [
+          { "name": "SHA-512" }
+        ]
+      },
+      {
+        "name": "Blocos de entrada - 128",
+        "subtopics": [
+          { "name": "MD2" }
+        ]
+      },
+      {
+        "name": "Blocos de entrada - 512",
+        "subtopics": [
+          { "name": "MD4" },
+          { "name": "MD5" },
+          { "name": "RIPEMD" },
+          { "name": "SHA-0" },
+          { "name": "SHA-1" },
+          { "name": "SHA-256" },
+          { "name": "SHA-224" }
+        ]
+      },
+      {
+        "name": "Blocos de entrada - 1024",
+        "subtopics": [
+          { "name": "SHA-512" },
+          { "name": "SHA-384" }
+        ]
+      }
+    ]
+  }
+}
