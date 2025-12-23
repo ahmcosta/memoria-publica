@@ -1,0 +1,73 @@
+
+
+{
+  "subject": "Algoritmos de Criptografia",
+  "subtopicsLabel": "Classificação",
+  "topics": {
+    "name": "Tipos de Criptografia",
+    "values": [
+      {
+        "name": "Criptografia Simétrica",
+        "key": "SIM",
+        "subtopics": [
+          {
+            "name": "DES",
+            "key": "DES",
+            "comment": "Data Encryption Standard - Algoritmo simétrico de bloco com chave de 56 bits, desenvolvido nos anos 1970, hoje considerado inseguro para dados sensíveis."
+          },
+          {
+            "name": "3DES",
+            "key": "3DES",
+            "comment": "Triple DES - Evolução do DES que aplica o algoritmo três vezes com chaves diferentes, aumentando a segurança, mas com desempenho inferior ao AES."
+          },
+          {
+            "name": "IDEA",
+            "key": "IDEA",
+            "comment": "International Data Encryption Algorithm - Algoritmo simétrico de bloco com chave de 128 bits, utilizado no PGP (Pretty Good Privacy)."
+          },
+          {
+            "name": "RC4",
+            "key": "RC4",
+            "comment": "Rivest Cipher 4 - Algoritmo simétrico de fluxo (stream cipher), muito usado em protocolos como TLS e WEP, hoje considerado vulnerável."
+          },
+          {
+            "name": "Blowfish",
+            "key": "BLOWFISH",
+            "comment": "Algoritmo simétrico de bloco desenvolvido por Bruce Schneier, com chave variável de até 448 bits, livre de patentes e amplamente utilizado."
+          },
+          {
+            "name": "AES",
+            "key": "AES",
+            "comment": "Advanced Encryption Standard - Algoritmo simétrico de bloco adotado como padrão pelo governo dos EUA. Suporta chaves de 128, 192 ou 256 bits."
+          }
+        ]
+      },
+      {
+        "name": "Criptografia Assimétrica",
+        "key": "ASSIM",
+        "subtopics": [
+          {
+            "name": "Diffie-Hellman",
+            "key": "DH",
+            "comment": "Protocolo para troca de chaves que permite que duas partes estabeleçam uma chave secreta compartilhada por meio de um canal inseguro."
+          },
+          {
+            "name": "ECC",
+            "key": "ECC",
+            "comment": "Elliptic Curve Cryptography - Criptografia de curva elíptica, que oferece segurança equivalente a sistemas RSA com chaves muito menores e maior eficiência."
+          },
+          {
+            "name": "RSA",
+            "key": "RSA",
+            "comment": "Rivest–Shamir–Adleman - Algoritmo assimétrico amplamente utilizado para criptografia e assinatura digital, baseado na fatoração de números inteiros grandes."
+          },
+          {
+            "name": "DSA",
+            "key": "DSA",
+            "comment": "Digital Signature Algorithm - Algoritmo assimétrico usado especificamente para assinatura digital, padrão do governo norte-americano (FIPS)."
+          }
+        ]
+      }
+    ]
+  }
+}
