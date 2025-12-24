@@ -25,13 +25,22 @@ jobs:
     
     - name: Generate changelog
       run: |
-        echo '{' > changelog.json
-        echo '  "version": "'$VERSION'",' >> changelog.json
-        echo '  "date": "'$(date -u +"%Y-%m-%d %H:%M:%S UTC')""," >> changelog.json
-        echo '  "changes": [' >> changelog.json
-        git log --oneline -10 --pretty=format:'    "%s",' | sed '$ s/,$//' >> changelog.json
-        echo '  ]' >> changelog.json
-        echo '}' >> changelog.json
+        if [ "${{ github.event_name }}" = "release" ]; then
+          VERSION="${{ github.event.release.tag_name }}"
+        else
+          COMMIT="${{ github.sha }}"
+          VERSION="#${COMMIT:0:7}"
+        fi
+        
+        cat > changelog.json << EOF
+        {
+          "version": "$VERSION",
+          "date": "$(date -u +"%Y-%m-%d %H:%M:%S UTC")",
+          "changes": [
+        $(git log --oneline -10 --pretty=format:'    "%s",' | sed '$ s/,$//') 
+          ]
+        }
+        EOF
     
     - name: Replace version placeholder
       run: |
