@@ -7,6 +7,7 @@
       {
         "name": "Avaliar, Dirigir e Monitorar o Governo Corporativo de TI",
         "key": "EDM",
+        "comment": "Garante que as partes interessadas tenham suas necessidades, condições e opções avaliadas para determinar objetivos corporativos equilibrados e acordados.",
         "subtopics": [
           {
             "name": "Garantir a Definição e Manutenção do Modelo de Governança",
@@ -38,6 +39,7 @@
       {
         "name": "Alinhar, Planejar e Organizar",
         "key": "APO",
+        "comment": "Aborda a identificação das formas pelas quais a TI pode contribuir melhor para os objetivos de negócio.",
         "subtopics": [
           {
             "name": "Gerenciar a Estrutura de Gestão de TI",
@@ -114,6 +116,7 @@
       {
         "name": "Construir, Adquirir e Implementar",
         "key": "BAI",
+        "comment": "Aborda a definição, aquisição e implementação de soluções de TI e sua integração nos processos de negócio.",
         "subtopics": [
           {
             "name": "Gerenciar Programas",
@@ -175,6 +178,7 @@
       {
         "name": "Entregar, Servir e Suportar",
         "key": "DSS",
+        "comment": "Aborda a entrega e o suporte dos serviços requeridos, incluindo operação, gerenciamento de segurança e continuidade.",
         "subtopics": [
           {
             "name": "Gerenciar Operações",
@@ -211,6 +215,7 @@
       {
         "name": "Monitorar, Avaliar e Medir",
         "key": "MEA",
+        "comment": "Aborda o monitoramento do desempenho de todos os processos para garantir que a direção definida seja seguida.",
         "subtopics": [
           {
             "name": "Gerenciar o Monitoramento do Desempenho e da Conformidade",
