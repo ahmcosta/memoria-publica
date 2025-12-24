@@ -1,0 +1,12 @@
+{
+  "version": "local",
+  "date": "2024-01-15 12:00:00 UTC",
+  "changes": [
+    "Add changelog functionality with version tracking",
+    "Implement topic comments with info icons",
+    "Add pagination to error history modal",
+    "Create restart button with shuffle functionality",
+    "Add NIST SSDF framework support",
+    "Implement original order preservation for subtopics"
+  ]
+}

@@ -429,9 +429,49 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === modal) modal.style.display = 'none';
     };
     
-    // Handle version display
+    // Handle version display and changelog
     const versionElement = document.getElementById('version');
     if (versionElement && versionElement.textContent === '__VERSION__') {
         versionElement.textContent = 'local';
     }
+    
+    checkVersionUpdate();
+    setupVersionTooltip();
 });
+
+function checkVersionUpdate() {
+    const currentVersion = document.getElementById('version').textContent;
+    const storedVersion = localStorage.getItem('appVersion');
+    
+    if (storedVersion && storedVersion !== currentVersion) {
+        const versionElement = document.getElementById('version');
+        const updateIcon = document.createElement('span');
+        updateIcon.textContent = '🔴';
+        updateIcon.style.marginRight = '5px';
+        updateIcon.title = 'Nova versão disponível';
+        versionElement.parentNode.insertBefore(updateIcon, versionElement);
+    }
+    
+    localStorage.setItem('appVersion', currentVersion);
+}
+
+async function setupVersionTooltip() {
+    const versionElement = document.getElementById('version');
+    
+    try {
+        const response = await fetch('changelog.json');
+        const changelog = await response.json();
+        
+        let tooltipContent = `Versão: ${changelog.version}\n`;
+        tooltipContent += `Data: ${changelog.date}\n\n`;
+        tooltipContent += 'Últimas alterações:\n';
+        changelog.changes.forEach((change, index) => {
+            tooltipContent += `${index + 1}. ${change}\n`;
+        });
+        
+        versionElement.title = tooltipContent;
+    } catch (error) {
+        console.log('Changelog not available');
+        versionElement.title = `Versão: ${versionElement.textContent}`;
+    }
+}

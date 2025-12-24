@@ -23,6 +23,16 @@ jobs:
       with:
         fetch-depth: 0
     
+    - name: Generate changelog
+      run: |
+        echo '{' > changelog.json
+        echo '  "version": "'$VERSION'",' >> changelog.json
+        echo '  "date": "'$(date -u +"%Y-%m-%d %H:%M:%S UTC')""," >> changelog.json
+        echo '  "changes": [' >> changelog.json
+        git log --oneline -10 --pretty=format:'    "%s",' | sed '$ s/,$//' >> changelog.json
+        echo '  ]' >> changelog.json
+        echo '}' >> changelog.json
+    
     - name: Replace version placeholder
       run: |
         if [ "${{ github.event_name }}" = "release" ]; then
