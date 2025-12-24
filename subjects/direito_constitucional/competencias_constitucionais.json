@@ -7,6 +7,7 @@
       {
         "name": "Competências Privativas da União",
         "key": "PRIV",
+        "comment": "Competências exclusivas da União para legislar, que podem ser delegadas aos Estados por lei complementar (Art. 22).",
         "subtopics": [
           {
             "name": "Legislar sobre direito civil, comercial, penal, processual",
@@ -53,6 +54,7 @@
       {
         "name": "Competências Exclusivas da União",
         "key": "EXCL",
+        "comment": "Competências materiais indelegáveis da União para executar ações administrativas (Art. 21).",
         "subtopics": [
           {
             "name": "Manter relações com Estados estrangeiros",
@@ -99,6 +101,7 @@
       {
         "name": "Competências Concorrentes",
         "key": "CONC",
+        "comment": "Competências legislativas compartilhadas entre União, Estados e DF, com normas gerais da União e suplementares dos Estados (Art. 24).",
         "subtopics": [
           {
             "name": "Direito tributário, financeiro, penitenciário",
@@ -145,6 +148,7 @@
       {
         "name": "Competências dos Estados",
         "key": "EST",
+        "comment": "Competências residuais dos Estados, incluindo tudo que não for vedado pela Constituição (Art. 25).",
         "subtopics": [
           {
             "name": "Competências remanescentes",
@@ -176,6 +180,7 @@
       {
         "name": "Competências Comuns",
         "key": "COM",
+        "comment": "Competências materiais compartilhadas entre todos os entes federativos para execução de ações administrativas (Art. 23).",
         "subtopics": [
           {
             "name": "Zelar pela guarda da Constituição",
@@ -222,6 +227,7 @@
       {
         "name": "Competências dos Municípios",
         "key": "MUN",
+        "comment": "Competências dos Municípios para legislar sobre assuntos de interesse local e prestar serviços públicos locais (Art. 30).",
         "subtopics": [
           {
             "name": "Legislar sobre assuntos de interesse local",

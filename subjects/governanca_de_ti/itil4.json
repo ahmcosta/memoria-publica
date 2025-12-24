@@ -6,6 +6,7 @@
     "values": [
       {
         "name": "Práticas de Gerenciamento Geral",
+        "comment": "Práticas adaptadas para uso em gerenciamento de serviços a partir de domínios gerais de gerenciamento de negócios.",
         "subtopics": [
           {
             "name": "Arquitetura de Gestão",
@@ -67,6 +68,7 @@
       },
       {
         "name": "Práticas de Gerenciamento de Serviços",
+        "comment": "Práticas desenvolvidas especificamente para gerenciamento de serviços de TI, focadas na entrega de valor.",
         "subtopics": [
           {
             "name": "Gestão de Disponibilidade",
@@ -128,6 +130,7 @@
       },
       {
         "name": "Práticas de Gerenciamento Técnico",
+        "comment": "Práticas adaptadas de domínios de gerenciamento de tecnologia para gerenciamento de serviços de TI.",
         "subtopics": [
           {
             "name": "Gestão de Implantação",

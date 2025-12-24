@@ -7,6 +7,7 @@
       {
         "name": "Classificação",
         "key": "CLASS",
+        "comment": "Algoritmos que predizem categorias ou classes discretas, atribuindo rótulos a instâncias baseado em características.",
         "subtopics": [
           {
             "name": "Regressão Logística",
@@ -23,6 +24,7 @@
       {
         "name": "Classificação/Regressão",
         "key": "CLASS_REGR",
+        "comment": "Algoritmos versáteis que podem ser configurados para resolver tanto problemas de classificação quanto de regressão.",
         "subtopics": [
           {
             "name": "Decision Trees",
@@ -59,6 +61,7 @@
       {
         "name": "Regressão",
         "key": "REGR",
+        "comment": "Algoritmos que predizem valores contínuos ou numéricos, estabelecendo relações entre variáveis independentes e dependentes.",
         "subtopics": [
           {
             "name": "Elastic Net",
@@ -90,6 +93,7 @@
       {
         "name": "Clustering",
         "key": "CLUST",
+        "comment": "Algoritmos não supervisionados que agrupam dados similares em clusters, descobrindo estruturas ocultas nos dados.",
         "subtopics": [
           {
             "name": "DBSCAN",
@@ -116,6 +120,7 @@
       {
         "name": "Regras de Associação",
         "key": "ASSOC",
+        "comment": "Algoritmos que descobrem relações frequentes entre itens, identificando padrões de co-ocorrência em conjuntos de dados.",
         "subtopics": [
           {
             "name": "Apriori",
@@ -137,6 +142,7 @@
       {
         "name": "Redução de Dimensionalidade",
         "key": "DIM_RED",
+        "comment": "Técnicas que reduzem o número de características mantendo informações relevantes, facilitando visualização e processamento.",
         "subtopics": [
           {
             "name": "PCA",
@@ -153,6 +159,7 @@
       {
         "name": "Redução de Dimensionalidade/Extração de Características",
         "key": "DIM_RED_FEAT",
+        "comment": "Técnicas que simultaneamente reduzem dimensionalidade e extraem características relevantes dos dados originais.",
         "subtopics": [
           {
             "name": "Autoencoders",

@@ -6,6 +6,7 @@
     "values": [
       {
         "name": "Resultado final do hash (bit) - 128",
+        "comment": "Funções hash que produzem um resultado de 128 bits (16 bytes). Consideradas obsoletas para segurança devido à vulnerabilidade a ataques de colisão.",
         "subtopics": [
           { "name": "MD2" },
           { "name": "MD4" },
@@ -15,6 +16,7 @@
       },
       {
         "name": "Resultado final do hash (bit) - 160",
+        "comment": "Funções hash que produzem um resultado de 160 bits (20 bytes). SHA-1 é considerado obsoleto para segurança crítica.",
         "subtopics": [
           { "name": "SHA-0" },
           { "name": "SHA-1" }
@@ -22,36 +24,42 @@
       },
       {
         "name": "Resultado final do hash (bit) - 224",
+        "comment": "Funções hash que produzem um resultado de 224 bits (28 bytes). Versão truncada do SHA-256 para casos específicos.",
         "subtopics": [
           { "name": "SHA-224" }
         ]
       },
       {
         "name": "Resultado final do hash (bit) - 256",
+        "comment": "Funções hash que produzem um resultado de 256 bits (32 bytes). Padrão atual para segurança, amplamente utilizado.",
         "subtopics": [
           { "name": "SHA-256" }
         ]
       },
       {
         "name": "Resultado final do hash (bit) - 384",
+        "comment": "Funções hash que produzem um resultado de 384 bits (48 bytes). Versão truncada do SHA-512 para maior segurança.",
         "subtopics": [
           { "name": "SHA-384" }
         ]
       },
       {
         "name": "Resultado final do hash (bit) - 512",
+        "comment": "Funções hash que produzem um resultado de 512 bits (64 bytes). Máxima segurança disponível na família SHA-2.",
         "subtopics": [
           { "name": "SHA-512" }
         ]
       },
       {
         "name": "Blocos de entrada - 128",
+        "comment": "Funções hash que processam dados em blocos de 128 bits (16 bytes). Tamanho menor usado apenas pelo MD2.",
         "subtopics": [
           { "name": "MD2" }
         ]
       },
       {
         "name": "Blocos de entrada - 512",
+        "comment": "Funções hash que processam dados em blocos de 512 bits (64 bytes). Tamanho padrão para a maioria dos algoritmos hash.",
         "subtopics": [
           { "name": "MD4" },
           { "name": "MD5" },
@@ -64,6 +72,7 @@
       },
       {
         "name": "Blocos de entrada - 1024",
+        "comment": "Funções hash que processam dados em blocos de 1024 bits (128 bytes). Usado pelos algoritmos SHA-384 e SHA-512 para maior eficiência.",
         "subtopics": [
           { "name": "SHA-512" },
           { "name": "SHA-384" }

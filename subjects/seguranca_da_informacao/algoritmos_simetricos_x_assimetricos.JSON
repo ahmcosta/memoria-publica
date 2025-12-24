@@ -9,6 +9,7 @@
       {
         "name": "Criptografia Simétrica",
         "key": "SIM",
+        "comment": "Usa a mesma chave para criptografar e descriptografar dados. Rápida e eficiente, mas requer compartilhamento seguro da chave.",
         "subtopics": [
           {
             "name": "DES",
@@ -45,6 +46,7 @@
       {
         "name": "Criptografia Assimétrica",
         "key": "ASSIM",
+        "comment": "Usa um par de chaves (pública e privada) para criptografia e assinatura digital. Mais lenta, mas resolve o problema de distribuição de chaves.",
         "subtopics": [
           {
             "name": "Diffie-Hellman",

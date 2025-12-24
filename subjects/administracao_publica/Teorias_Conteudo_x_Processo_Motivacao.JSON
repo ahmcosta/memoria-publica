@@ -6,6 +6,7 @@
     "values": [
       {
         "name": "Teorias de Conteúdo",
+        "comment": "Focam no que motiva as pessoas, identificando necessidades específicas que impulsionam o comportamento humano.",
         "subtopics": [
           {
             "name": "Teoria da Hierarquia das Necessidades (Maslow)",
@@ -31,6 +32,7 @@
       },
       {
         "name": "Teorias de Processo",
+        "comment": "Explicam como a motivação ocorre, analisando os processos cognitivos e comportamentais envolvidos na motivação.",
         "subtopics": [
           {
             "name": "Teoria da Equidade",
