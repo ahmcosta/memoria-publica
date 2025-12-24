@@ -237,9 +237,26 @@ function createTopicBoxes() {
         div.className = 'topic-box';
         div.dataset.topic = topic.name;
         
+        const header = document.createElement('div');
+        header.className = 'topic-header';
+        
         const title = document.createElement('h3');
         title.textContent = topic.name;
-        div.appendChild(title);
+        header.appendChild(title);
+        
+        if (topic.comment) {
+            const infoIcon = document.createElement('span');
+            infoIcon.className = 'info-icon';
+            infoIcon.textContent = 'ℹ️';
+            infoIcon.onclick = (e) => {
+                e.stopPropagation();
+                const displayTitle = topic.key ? `${topic.key} - ${topic.name}` : topic.name;
+                showModal(displayTitle, topic.comment);
+            };
+            header.appendChild(infoIcon);
+        }
+        
+        div.appendChild(header);
         
         div.addEventListener('dragover', handleDragOver);
         div.addEventListener('drop', handleDrop);
