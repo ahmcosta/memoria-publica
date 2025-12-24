@@ -198,12 +198,13 @@ function createSubtopics() {
     
     // Collect all subtopics from simplified structure
     data.topics.values.forEach(topic => {
-        topic.subtopics.forEach(subtopic => {
+        topic.subtopics.forEach((subtopic, index) => {
             allSubtopics.push({ 
                 name: subtopic.name, 
                 correctTopic: topic.name,
                 comment: subtopic.comment || 'No description available.',
-                key: subtopic.key
+                key: subtopic.key,
+                originalOrder: index
             });
         });
     });
@@ -218,6 +219,7 @@ function createSubtopics() {
         div.textContent = item.name;
         div.draggable = true;
         div.dataset.correctTopic = item.correctTopic;
+        div.dataset.originalOrder = item.originalOrder;
         if (item.comment) div.dataset.comment = item.comment;
         if (item.key) div.dataset.key = item.key;
         
@@ -305,6 +307,7 @@ function handleDrop(e) {
         const clickableDiv = document.createElement('div');
         clickableDiv.textContent = draggedElement.textContent;
         clickableDiv.className = 'placed-subtopic';
+        clickableDiv.dataset.originalOrder = draggedElement.dataset.originalOrder;
         if (draggedElement.dataset.comment) {
             clickableDiv.onclick = () => {
                 const title = draggedElement.dataset.key ? 
@@ -313,7 +316,18 @@ function handleDrop(e) {
                 showModal(title, draggedElement.dataset.comment);
             };
         }
-        topicBox.appendChild(clickableDiv);
+        
+        // Find correct position to insert based on original order
+        const existingItems = Array.from(topicBox.querySelectorAll('.placed-subtopic'));
+        const insertPosition = existingItems.findIndex(item => 
+            parseInt(item.dataset.originalOrder) > parseInt(clickableDiv.dataset.originalOrder)
+        );
+        
+        if (insertPosition === -1) {
+            topicBox.appendChild(clickableDiv);
+        } else {
+            topicBox.insertBefore(clickableDiv, existingItems[insertPosition]);
+        }
         
         draggedElement.remove();
         setTimeout(() => topicBox.classList.remove('correct'), 500);
