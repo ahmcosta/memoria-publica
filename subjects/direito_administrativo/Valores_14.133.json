@@ -1,0 +1,62 @@
+{
+  "subject": "Licitação",
+  "subtopicsLabel": "Valores legais",
+  "topics": {
+    "name": "Valores Literais da Lei 14.133/2021",
+    "values": [
+      {
+        "name": "Superior a R$ 200.000.000,00",
+        "subtopics": [
+          { "name": "Grande vulto" }
+        ],
+        "comment": "Art. 6º, XXII"
+      },
+      {
+        "name": "Superior a R$ 300.000,00",
+        "subtopics": [
+          { "name": "Situação especial de melhor técnica e técnica e preço" }
+        ],
+        "comment": "Art. 37, § 2º"
+      },
+      {
+        "name": "Até R$ 300.000,00",
+        "subtopics": [
+          { "name": "Simplificação da documentação de habilitação para produto de pesquisa e desenvolvimento" },
+          { "name": "Dispensa de licitação para produtos de pesquisa e desenvolvimento (obras e serviços de engenharia)" }
+        ],
+        "comment": "Art. 70, III; Art. 75, IV, “c”"
+      },
+      {
+        "name": "Até R$ 100.000,00",
+        "subtopics": [
+          { "name": "Dispensa de licitação para obras" },
+          { "name": "Dispensa de licitação para serviços de engenharia" },
+          { "name": "Dispensa de licitação para serviços de manutenção de veículos automotores" }
+        ],
+        "comment": "Art. 75, I"
+      },
+      {
+        "name": "Até R$ 50.000,00",
+        "subtopics": [
+          { "name": "Dispensa de licitação para compras" },
+          { "name": "Dispensa de licitação para outros serviços" }
+        ],
+        "comment": "Art. 75, II"
+      },
+      {
+        "name": "Até R$ 8.000,00",
+        "subtopics": [
+          { "name": "Dispensa das regras de somatório de valores para manutenção de veículos automotores" }
+        ],
+        "comment": "Art. 75, § 7º"
+      },
+      {
+        "name": "Até R$ 10.000,00",
+        "subtopics": [
+          { "name": "Contrato verbal" }
+        ],
+        "comment": "Art. 95, § 2º"
+      }
+    ]
+  }
+}

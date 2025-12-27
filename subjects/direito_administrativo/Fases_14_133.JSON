@@ -1,0 +1,51 @@
+{
+  "subject": "Licitação",
+  "subtopicsLabel": "Fases",
+  "topics": {
+    "name": "Fases do Procedimento Licitatório",
+    "values": [
+      {
+        "name": "1ª fase",
+        "subtopics": [
+          { "name": "Preparatória / Planejamento" }
+        ]
+      },
+      {
+        "name": "2ª fase",
+        "subtopics": [
+          { "name": "Divulgação do edital" }
+        ]
+      },
+      {
+        "name": "3ª fase",
+        "subtopics": [
+          { "name": "Apresentação" }
+        ]
+      },
+      {
+        "name": "4ª fase",
+        "subtopics": [
+          { "name": "Julgamento" }
+        ]
+      },
+      {
+        "name": "5ª fase",
+        "subtopics": [
+          { "name": "Habilitação" }
+        ]
+      },
+      {
+        "name": "6ª fase",
+        "subtopics": [
+          { "name": "Recurso" }
+        ]
+      },
+      {
+        "name": "7ª fase",
+        "subtopics": [
+          { "name": "Homologação" }
+        ]
+      }
+    ]
+  }
+}
