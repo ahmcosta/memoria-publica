@@ -5,43 +5,33 @@
     "name": "Hierarquia de Processos",
     "values": [
       {
-        "name": "Macroprocesso",
-        "subtopics": [
-          {
-            "name": "Nível 1"
-          }
-        ]
-      },
-      {
-        "name": "Processo",
-        "subtopics": [
-          {
-            "name": "Nível 2"
-          }
-        ]
-      },
-      {
-        "name": "Subprocesso",
-        "subtopics": [
-          {
-            "name": "Nível 3"
-          }
-        ]
-      },
-      {
         "name": "Atividade",
         "subtopics": [
-          {
-            "name": "Nível 4"
-          }
+          { "name": "Nível 4" }
+        ]
+      },
+      {
+        "name": "Macroprocesso",
+        "subtopics": [
+          { "name": "Nível 1" }
         ]
       },
       {
         "name": "Tarefa",
         "subtopics": [
-          {
-            "name": "Nível 5"
-          }
+          { "name": "Nível 5" }
+        ]
+      },
+      {
+        "name": "Subprocesso",
+        "subtopics": [
+          { "name": "Nível 3" }
+        ]
+      },
+      {
+        "name": "Processo",
+        "subtopics": [
+          { "name": "Nível 2" }
         ]
       }
     ]
