@@ -1,0 +1,39 @@
+{
+  "subject": "Gestão por Processos",
+  "subtopicsLabel": "Estrutura",
+  "topics": {
+    "name": "Hierarquia de Processos",
+    "values": [
+      {
+        "name": "3º Nível",
+        "subtopics": [
+          { "name": "Subprocesso" }
+        ]
+      },
+      {
+        "name": "1º Nível",
+        "subtopics": [
+          { "name": "Macroprocesso" }
+        ]
+      },
+      {
+        "name": "5º Nível",
+        "subtopics": [
+          { "name": "Tarefa" }
+        ]
+      },
+      {
+        "name": "2º Nível",
+        "subtopics": [
+          { "name": "Processo" }
+        ]
+      },
+      {
+        "name": "4º Nível",
+        "subtopics": [
+          { "name": "Atividade" }
+        ]
+      }
+    ]
+  }
+}

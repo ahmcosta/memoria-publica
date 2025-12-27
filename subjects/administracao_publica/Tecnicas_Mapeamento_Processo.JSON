@@ -1,0 +1,45 @@
+{
+  "subject": "Ferramentas de Mapeamento e Análise de Processos",
+  "subtopicsLabel": "Ferramentas",
+  "topics": {
+    "name": "Técnicas de Modelagem e Melhoria de Processos",
+    "values": [
+      {
+        "name": "Ferramenta usada por um time para identificar todos os elementos pertinentes de um projeto de melhoria de processo antes de o trabalho começar",
+        "subtopics": [
+          { "name": "SIPOC" }
+        ]
+      },
+      {
+        "name": "Representa um fluxograma de todas as transações integrantes do processo de prestação de serviço",
+        "subtopics": [
+          { "name": "Blueprinting" }
+        ]
+      },
+      {
+        "name": "Técnica que permite o registro de ações de algum tipo e pontos de tomada de decisão que ocorrem no fluxo real (as is → to be)",
+        "subtopics": [
+          { "name": "Fluxograma" }
+        ]
+      },
+      {
+        "name": "Fluxograma desenhado sobre a planta de um edifício ou layout para visualizar melhor o processo",
+        "subtopics": [
+          { "name": "Mapofluxograma" }
+        ]
+      },
+      {
+        "name": "Estuda a inter-relação entre o trabalho humano e o da máquina, identificando tempos ociosos e balanceando atividades",
+        "subtopics": [
+          { "name": "Diagrama Homem-Máquina" }
+        ]
+      },
+      {
+        "name": "Diagramas que representam um desenho do comportamento dos clientes",
+        "subtopics": [
+          { "name": "IDEF0 a IDEF9" }
+        ]
+      }
+    ]
+  }
+}
