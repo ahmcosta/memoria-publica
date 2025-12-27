@@ -1,0 +1,99 @@
+{
+  "subject": "Modelagem Dimensional - Tipos de Tabela Dimensão",
+  "subtopicsLabel": "Conceitos",
+  "topics": {
+    "name": "Tipos de Dimensões em Data Warehouse",
+    "values": [
+      {
+        "name": "Slowly-Changing Dimension",
+        "comment": "Dimensões que mudam lentamente ao longo do tempo, requerendo estratégias específicas para manter histórico.",
+        "subtopics": [
+          {
+            "name": "Dimensão que muda gradualmente ao longo do tempo, necessitando controle de versionamento dos dados históricos.",
+            "comment": "Descrição"
+          },
+          {
+            "name": "Tabela Cliente com mudanças de endereço, estado civil ou categoria de cliente ao longo do tempo.",
+            "comment": "Exemplo"
+          },
+          {
+            "name": "Sistema de CRM onde clientes mudam de categoria (Bronze→Prata→Ouro) e é necessário analisar vendas por categoria histórica.",
+            "comment": "Cenário"
+          }
+        ]
+      },
+      {
+        "name": "Conformed Dimension",
+        "comment": "Dimensões padronizadas compartilhadas entre múltiplos data marts, garantindo consistência analítica.",
+        "subtopics": [
+          {
+            "name": "Dimensão padronizada compartilhada entre diferentes data marts para garantir consistência nas análises corporativas.",
+            "comment": "Descrição"
+          },
+          {
+            "name": "Dimensão Tempo ou Dimensão Produto usada identicamente em data marts de Vendas, Marketing e Financeiro.",
+            "comment": "Exemplo"
+          },
+          {
+            "name": "Empresa com múltiplas divisões precisa consolidar relatórios de vendas usando a mesma estrutura de produtos e tempo.",
+            "comment": "Cenário"
+          }
+        ]
+      },
+      {
+        "name": "Junk Dimension",
+        "comment": "Dimensão que agrupa múltiplos atributos de baixa cardinalidade para evitar proliferação de dimensões pequenas.",
+        "subtopics": [
+          {
+            "name": "Dimensão que consolida múltiplos atributos de baixa cardinalidade (flags, indicadores) em uma única tabela.",
+            "comment": "Descrição"
+          },
+          {
+            "name": "Dimensão com flags como 'Entrega_Expressa', 'Pagamento_Cartão', 'Cliente_VIP' em vez de dimensões separadas.",
+            "comment": "Exemplo"
+          },
+          {
+            "name": "Sistema de e-commerce com muitos indicadores booleanos que criariam dezenas de mini-dimensões desnecessárias.",
+            "comment": "Cenário"
+          }
+        ]
+      },
+      {
+        "name": "Degenerate Dimension",
+        "comment": "Atributo dimensional armazenado diretamente na tabela fato, sem tabela dimensão própria.",
+        "subtopics": [
+          {
+            "name": "Atributo dimensional que reside na tabela fato sem ter uma tabela dimensão correspondente, geralmente chaves transacionais.",
+            "comment": "Descrição"
+          },
+          {
+            "name": "Número da Nota Fiscal ou Número do Pedido armazenado diretamente na tabela fato de vendas.",
+            "comment": "Exemplo"
+          },
+          {
+            "name": "Sistema de vendas onde o número do pedido é usado para agrupamento mas não possui atributos descritivos suficientes para uma dimensão.",
+            "comment": "Cenário"
+          }
+        ]
+      },
+      {
+        "name": "Role Playing Dimension",
+        "comment": "Uma única dimensão física que desempenha múltiplos papéis lógicos no mesmo modelo dimensional.",
+        "subtopics": [
+          {
+            "name": "Dimensão física única que assume múltiplos papéis lógicos diferentes no mesmo esquema dimensional através de views ou aliases.",
+            "comment": "Descrição"
+          },
+          {
+            "name": "Dimensão Tempo usada como 'Data_Pedido', 'Data_Entrega' e 'Data_Faturamento' na mesma tabela fato.",
+            "comment": "Exemplo"
+          },
+          {
+            "name": "Sistema logístico que precisa analisar diferentes marcos temporais do mesmo processo usando uma única estrutura de tempo.",
+            "comment": "Cenário"
+          }
+        ]
+      }
+    ]
+  }
+}
