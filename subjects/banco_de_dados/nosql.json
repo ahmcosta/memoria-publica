@@ -1,0 +1,165 @@
+{
+  "subject": "Bancos de Dados NoSQL",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Tipos de Bancos de Dados NoSQL",
+    "values": [
+      {
+        "name": "Document Databases",
+        "comment": "Armazenam dados em documentos semiestruturados (JSON, BSON, XML), oferecendo flexibilidade de esquema e consultas complexas.",
+        "subtopics": [
+          {
+            "name": "Bancos que armazenam dados como documentos semiestruturados, permitindo esquemas flexíveis e aninhamento de dados complexos.",
+            "comment": "Definição"
+          },
+          {
+            "name": "Flexibilidade de esquema permite evolução sem migração de dados.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Consultas ricas e indexação avançada para análises complexas.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Possível inconsistência de dados e consumo maior de armazenamento.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Complexidade em relacionamentos e curva de aprendizado.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Gestão de conteúdo, catálogos de produtos e perfis de usuário.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "Aplicações web e mobile, sistemas de blog e CMS.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "MongoDB",
+            "comment": "Softwares"
+          },
+          {
+            "name": "CouchDB",
+            "comment": "Softwares"
+          }
+        ]
+      },
+      {
+        "name": "Key-Value Stores",
+        "comment": "Modelo mais simples de NoSQL, armazenando dados como pares chave-valor para acesso rápido e alta performance.",
+        "subtopics": [
+          {
+            "name": "Modelo de dados mais simples que armazena informações como pares chave-valor, oferecendo acesso direto e rápido aos dados.",
+            "comment": "Definição"
+          },
+          {
+            "name": "Simplicidade extrema e performance muito alta.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Escalabilidade massiva e baixa latência.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Funcionalidade limitada de consulta e sem suporte a relacionamentos complexos.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Cache de sessões e carrinho de compras.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "Configurações de usuário e cache de aplicações.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "Redis",
+            "comment": "Softwares"
+          },
+          {
+            "name": "Amazon DynamoDB",
+            "comment": "Softwares"
+          }
+        ]
+      },
+      {
+        "name": "Column-Family",
+        "comment": "Organizam dados em famílias de colunas, otimizados para consultas analíticas e grandes volumes de dados estruturados.",
+        "subtopics": [
+          {
+            "name": "Bancos que organizam dados em famílias de colunas, permitindo armazenamento eficiente de grandes volumes de dados esparsos.",
+            "comment": "Definição"
+          },
+          {
+            "name": "Excelente para análises e compressão eficiente.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Escalabilidade horizontal e performance em big data.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Complexidade de modelagem e limitações em consultas ad-hoc.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Analytics de big data e sistemas de recomendação.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "IoT e sensores, logs de aplicações.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "Apache Cassandra",
+            "comment": "Softwares"
+          },
+          {
+            "name": "HBase",
+            "comment": "Softwares"
+          }
+        ]
+      },
+      {
+        "name": "Graph Databases",
+        "comment": "Especializados em armazenar e consultar relacionamentos complexos entre entidades através de nós, arestas e propriedades.",
+        "subtopics": [
+          {
+            "name": "Bancos especializados em dados conectados, usando nós, arestas e propriedades para representar e navegar relacionamentos complexos.",
+            "comment": "Definição"
+          },
+          {
+            "name": "Excelente para relacionamentos e consultas de travessia eficientes.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Modelagem intuitiva e performance em grafos complexos.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Complexidade para dados não relacionais e curva de aprendizado.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Redes sociais e sistemas de recomendação.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "Detecção de fraudes e análise de redes.",
+            "comment": "Aplicações"
+          },
+          {
+            "name": "Neo4j",
+            "comment": "Softwares"
+          },
+          {
+            "name": "Amazon Neptune",
+            "comment": "Softwares"
+          }
+        ]
+      }
+    ]
+  }
+}
