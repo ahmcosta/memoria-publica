@@ -69,11 +69,6 @@
             "source": "https://aws.amazon.com/documentdb/"
           },
           {
-            "name": "Azure Cosmos DB",
-            "comment": "Softwares",
-            "source": "https://azure.microsoft.com/en-us/products/cosmos-db"
-          },
-          {
             "name": "Google Firestore",
             "comment": "Softwares",
             "source": "https://cloud.google.com/firestore"
@@ -140,11 +135,6 @@
             "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
-            "name": "Amazon DynamoDB",
-            "comment": "Softwares",
-            "source": "https://aws.amazon.com/dynamodb/"
-          },
-          {
             "name": "Azure Table Storage",
             "comment": "Softwares",
             "source": "https://azure.microsoft.com/en-us/products/storage/tables"
@@ -195,16 +185,6 @@
             "name": "Amazon SimpleDB",
             "comment": "Softwares",
             "source": "https://aws.amazon.com/simpledb/"
-          },
-          {
-            "name": "Azure Cosmos DB (Cassandra API)",
-            "comment": "Softwares",
-            "source": "https://azure.microsoft.com/en-us/products/cosmos-db"
-          },
-          {
-            "name": "Google Cloud Bigtable",
-            "comment": "Softwares",
-            "source": "https://cloud.google.com/bigtable"
           },
           {
             "name": "Estrutura de Colunas Organizadas em Famílias",
@@ -269,7 +249,24 @@
             "source": "https://aws.amazon.com/neptune/"
           },
           {
-            "name": "Azure Cosmos DB (Gremlin API)",
+            "name": "Estrutura de Nós e Relacionamentos",
+            "comment": "Diagrama",
+            "image": "./subjects/banco_de_dados/nosql/graph.png",
+            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+          }
+        ]
+      },
+      {
+        "name": "Multi-Model Databases",
+        "comment": "Suportam múltiplos modelos de dados NoSQL em uma única plataforma, oferecendo flexibilidade para diferentes casos de uso.",
+        "subtopics": [
+          {
+            "name": "Amazon DynamoDB",
+            "comment": "Softwares",
+            "source": "https://aws.amazon.com/dynamodb/"
+          },
+          {
+            "name": "Azure Cosmos DB",
             "comment": "Softwares",
             "source": "https://azure.microsoft.com/en-us/products/cosmos-db"
           },
@@ -277,12 +274,6 @@
             "name": "Google Cloud Spanner",
             "comment": "Softwares",
             "source": "https://cloud.google.com/spanner"
-          },
-          {
-            "name": "Estrutura de Nós e Relacionamentos",
-            "comment": "Diagrama",
-            "image": "./subjects/banco_de_dados/nosql/graph.png",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           }
         ]
       }
