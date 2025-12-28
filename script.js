@@ -205,7 +205,8 @@ function createSubtopics() {
                 comment: subtopic.comment || 'No description available.',
                 key: subtopic.key,
                 originalOrder: index,
-                image: subtopic.image
+                image: subtopic.image,
+                source: subtopic.source
             });
         });
     });
@@ -224,8 +225,9 @@ function createSubtopics() {
         if (item.comment) div.dataset.comment = item.comment;
         if (item.key) div.dataset.key = item.key;
         if (item.image) div.dataset.image = item.image;
+        if (item.source) div.dataset.source = item.source;
         
-        console.log('Created subtopic:', item.name, 'has image:', !!item.image);
+        console.log('Created subtopic:', item.name, 'source:', item.source);
         
         div.addEventListener('dragend', handleDragEnd);
         
@@ -272,7 +274,7 @@ function createTopicBoxes() {
             infoIcon.onclick = (e) => {
                 e.stopPropagation();
                 const displayTitle = topic.key ? `${topic.key} - ${topic.name}` : topic.name;
-                showModal(displayTitle, topic.comment, topic.image);
+                showModal(displayTitle, topic.comment, topic.image, topic.source);
             };
             titleContainer.appendChild(infoIcon);
         }
@@ -340,13 +342,17 @@ function handleDrop(e) {
         clickableDiv.textContent = draggedElement.textContent;
         clickableDiv.className = 'placed-subtopic';
         clickableDiv.dataset.originalOrder = draggedElement.dataset.originalOrder;
+        if (draggedElement.dataset.source) clickableDiv.dataset.source = draggedElement.dataset.source;
+        console.log('Source data:', draggedElement.dataset.source, 'copied to clickable:', clickableDiv.dataset.source);
         if (draggedElement.dataset.comment) {
             clickableDiv.onclick = () => {
                 const title = draggedElement.dataset.key ? 
                     `${draggedElement.dataset.key} - ${draggedElement.textContent}` : 
                     draggedElement.textContent;
                 const image = draggedElement.dataset.image || null;
-                showModal(title, draggedElement.dataset.comment, image);
+                const source = clickableDiv.dataset.source || null;
+                console.log('Modal source:', source);
+                showModal(title, draggedElement.dataset.comment, image, source);
             };
         }
         
@@ -381,20 +387,24 @@ function handleDrop(e) {
     }
 }
 
-function showModal(title, comment, image) {
+function showModal(title, comment, image, source) {
+    console.log('showModal called with source:', source);
     document.getElementById('modal-title').textContent = title;
     
     const modalComment = document.getElementById('modal-comment');
     
+    let content = `<p>${comment}</p>`;
+    
     if (image) {
-        modalComment.innerHTML = `
-            <p>${comment}</p>
-            <img src="${image}" alt="${title}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-        `;
-    } else {
-        modalComment.innerHTML = comment;
+        content += `<img src="${image}" alt="${title}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">`;
     }
     
+    if (source) {
+        console.log('Adding source to modal:', source);
+        content += `<p style="margin-top: 15px; font-size: 12px; color: #666;"><strong>Fonte:</strong> <a href="${source}" target="_blank" style="color: #2196f3;">${source}</a></p>`;
+    }
+    
+    modalComment.innerHTML = content;
     document.getElementById('modal').style.display = 'block';
 }
 
