@@ -257,9 +257,13 @@ function createTopicBoxes() {
         const header = document.createElement('div');
         header.className = 'topic-header';
         
+        const titleContainer = document.createElement('div');
+        titleContainer.style.display = 'flex';
+        titleContainer.style.alignItems = 'center';
+        
         const title = document.createElement('h3');
         title.textContent = topic.name;
-        header.appendChild(title);
+        titleContainer.appendChild(title);
         
         if (topic.comment) {
             const infoIcon = document.createElement('span');
@@ -270,10 +274,23 @@ function createTopicBoxes() {
                 const displayTitle = topic.key ? `${topic.key} - ${topic.name}` : topic.name;
                 showModal(displayTitle, topic.comment, topic.image);
             };
-            header.appendChild(infoIcon);
+            titleContainer.appendChild(infoIcon);
         }
         
+        const collapseIcon = document.createElement('span');
+        collapseIcon.className = 'collapse-icon';
+        collapseIcon.textContent = '▼';
+        
+        header.appendChild(titleContainer);
+        header.appendChild(collapseIcon);
+        
+        const content = document.createElement('div');
+        content.className = 'topic-content';
+        
+        header.onclick = () => toggleTopicBox(div, content, collapseIcon);
+        
         div.appendChild(header);
+        div.appendChild(content);
         
         div.addEventListener('dragover', handleDragOver);
         div.addEventListener('drop', handleDrop);
@@ -339,10 +356,11 @@ function handleDrop(e) {
             parseInt(item.dataset.originalOrder) > parseInt(clickableDiv.dataset.originalOrder)
         );
         
+        const content = topicBox.querySelector('.topic-content');
         if (insertPosition === -1) {
-            topicBox.appendChild(clickableDiv);
+            content.appendChild(clickableDiv);
         } else {
-            topicBox.insertBefore(clickableDiv, existingItems[insertPosition]);
+            content.insertBefore(clickableDiv, existingItems[insertPosition]);
         }
         
         draggedElement.remove();
@@ -532,4 +550,18 @@ function hideImageTooltip(e) {
     }
     // Also remove any orphaned tooltips
     document.querySelectorAll('.image-tooltip').forEach(tooltip => tooltip.remove());
+}
+
+function toggleTopicBox(topicBox, content, collapseIcon) {
+    const isCollapsed = content.classList.contains('hidden');
+    
+    if (isCollapsed) {
+        content.classList.remove('hidden');
+        collapseIcon.classList.remove('collapsed');
+        topicBox.classList.remove('collapsed');
+    } else {
+        content.classList.add('hidden');
+        collapseIcon.classList.add('collapsed');
+        topicBox.classList.add('collapsed');
+    }
 }

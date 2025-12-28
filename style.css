@@ -189,7 +189,23 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.topic-box.collapsed {
+    min-height: 60px;
     justify-content: center;
+}
+
+.topic-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic-content.hidden {
+    display: none;
 }
 
 .topic-header {
@@ -197,6 +213,18 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapse-icon {
+    font-size: 14px;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.collapse-icon.collapsed {
+    transform: rotate(-90deg);
 }
 
 .info-icon {
