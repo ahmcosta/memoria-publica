@@ -140,11 +140,6 @@
             "source": "https://azure.microsoft.com/en-us/products/storage/tables"
           },
           {
-            "name": "Google Cloud Bigtable",
-            "comment": "Softwares",
-            "source": "https://cloud.google.com/bigtable"
-          },
-          {
             "name": "Estrutura Key-Value simples e direta",
             "comment": "Diagrama",
             "image": "./subjects/banco_de_dados/nosql/key-value.png",
@@ -182,15 +177,15 @@
             "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
-            "name": "Amazon SimpleDB",
-            "comment": "Softwares",
-            "source": "https://aws.amazon.com/simpledb/"
-          },
-          {
             "name": "Estrutura de Colunas Organizadas em Famílias",
             "comment": "Diagrama",
             "image": "./subjects/banco_de_dados/nosql/wide-column.png",
             "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+          },
+          {
+            "name": "Google Cloud Bigtable",
+            "comment": "Softwares",
+            "source": "https://cloud.google.com/bigtable"
           }
         ]
       },
@@ -268,7 +263,7 @@
           {
             "name": "Azure Cosmos DB",
             "comment": "Softwares",
-            "source": "https://azure.microsoft.com/en-us/products/cosmos-db"
+            "source": "https://learn.microsoft.com/pt-br/azure/documentdb/compare-cosmos-db?context=%2Fazure%2Fcosmos-db%2Fcontext%2Fcontext#azure-cosmos-db-scale-out-architecture"
           },
           {
             "name": "Google Cloud Spanner",
