@@ -105,7 +105,7 @@
           {
             "name": "Estrutura Key-Value simples e direta",
             "comment": "Diagrama",
-            "image": "https://images.datacamp.com/image/upload/v1656083463/Key_Value_Database_No_SQL_4_7ca269cb7a.png"
+            "image": "./subjects/banco_de_dados/nosql/key-value.png"
           }
         ]
       },
@@ -136,7 +136,7 @@
           {
             "name": "Estrutura de Colunas Organizadas em Famílias",
             "comment": "Diagrama",
-            "image": "https://images.datacamp.com/image/upload/v1656083461/Wide_Column_Database_No_SQL_5_743899267c.png"
+            "image": "./subjects/banco_de_dados/nosql/wide-column.png"
           }
         ]
       },
@@ -183,7 +183,7 @@
           {
             "name": "Estrutura de Nós e Relacionamentos",
             "comment": "Diagrama",
-            "image": "https://images.datacamp.com/image/upload/v1656083461/Graphic_Node_Database_No_SQL_6_7194bb4710.png"
+            "image": "./subjects/banco_de_dados/nosql/graph.png"
           }
         ]
       }

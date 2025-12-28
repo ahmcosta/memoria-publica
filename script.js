@@ -225,8 +225,16 @@ function createSubtopics() {
         if (item.key) div.dataset.key = item.key;
         if (item.image) div.dataset.image = item.image;
         
+        console.log('Created subtopic:', item.name, 'has image:', !!item.image);
+        
         div.addEventListener('dragstart', handleDragStart);
         div.addEventListener('dragend', handleDragEnd);
+        
+        if (item.image) {
+            div.classList.add('has-image');
+            div.addEventListener('mouseenter', showImageTooltip);
+            div.addEventListener('mouseleave', hideImageTooltip);
+        }
         
         container.appendChild(div);
     });
@@ -487,5 +495,34 @@ async function setupVersionTooltip() {
     } catch (error) {
         console.log('Changelog not available');
         versionElement.title = `Versão: ${versionElement.textContent}`;
+    }
+}
+
+function showImageTooltip(e) {
+    const image = e.target.dataset.image;
+    console.log('Showing tooltip for image:', image);
+    if (!image) return;
+    
+    const tooltip = document.createElement('div');
+    tooltip.className = 'image-tooltip';
+    tooltip.innerHTML = `<img src="${image}" alt="Preview" onerror="this.style.display='none'">`;
+    
+    document.body.appendChild(tooltip);
+    
+    const rect = e.target.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    tooltip.style.position = 'fixed';
+    tooltip.style.left = (rect.right + 10) + 'px';
+    tooltip.style.top = rect.top + 'px';
+    
+    e.target._tooltip = tooltip;
+}
+
+function hideImageTooltip(e) {
+    if (e.target._tooltip) {
+        e.target._tooltip.remove();
+        delete e.target._tooltip;
     }
 }
