@@ -227,16 +227,21 @@ function createSubtopics() {
         
         console.log('Created subtopic:', item.name, 'has image:', !!item.image);
         
-        div.addEventListener('dragstart', handleDragStart);
         div.addEventListener('dragend', handleDragEnd);
+        
+        container.appendChild(div);
         
         if (item.image) {
             div.classList.add('has-image');
             div.addEventListener('mouseenter', showImageTooltip);
             div.addEventListener('mouseleave', hideImageTooltip);
+            div.addEventListener('dragstart', (e) => {
+                hideImageTooltip(e);
+                handleDragStart(e);
+            });
+        } else {
+            div.addEventListener('dragstart', handleDragStart);
         }
-        
-        container.appendChild(div);
     });
 }
 
@@ -525,4 +530,6 @@ function hideImageTooltip(e) {
         e.target._tooltip.remove();
         delete e.target._tooltip;
     }
+    // Also remove any orphaned tooltips
+    document.querySelectorAll('.image-tooltip').forEach(tooltip => tooltip.remove());
 }
