@@ -9,31 +9,39 @@
         "comment": "Armazenam dados em documentos semiestruturados (JSON, BSON, XML), oferecendo flexibilidade de esquema e consultas complexas.",
         "subtopics": [
           {
-            "name": "Bancos que armazenam dados como documentos semiestruturados, permitindo esquemas flexíveis e aninhamento de dados complexos.",
+            "name": "Projetado para armazenar e consultar documentos JSON, XML, BSON. Cada documento é uma linha no formato chave-valor.",
             "comment": "Definição"
           },
           {
-            "name": "Flexibilidade de esquema permite evolução sem migração de dados.",
+            "name": "Schemaless: sem limitações no formato e estrutura de armazenamento de dados.",
             "comment": "Vantagens"
           },
           {
-            "name": "Consultas ricas e indexação avançada para análises complexas.",
+            "name": "Fácil de atualizar: novas informações podem ser adicionadas sem alterar campos existentes.",
             "comment": "Vantagens"
           },
           {
-            "name": "Possível inconsistência de dados e consumo maior de armazenamento.",
+            "name": "Performance melhorada: todas as informações estão no mesmo documento.",
+            "comment": "Vantagens"
+          },
+          {
+            "name": "Problemas de consistência: documentos não precisam ter relacionamento entre si.",
             "comment": "Limitações"
           },
           {
-            "name": "Complexidade em relacionamentos e curva de aprendizado.",
+            "name": "Problemas de atomicidade: mudanças em duas coleções requerem consultas separadas.",
             "comment": "Limitações"
           },
           {
-            "name": "Gestão de conteúdo, catálogos de produtos e perfis de usuário.",
+            "name": "Recomendado quando o esquema de dados está sujeito a mudanças constantes no futuro.",
+            "comment": "Quando Usar"
+          },
+          {
+            "name": "Perfis de usuário online com diferentes tipos de informações.",
             "comment": "Aplicações"
           },
           {
-            "name": "Aplicações web e mobile, sistemas de blog e CMS.",
+            "name": "Gestão de conteúdo para armazenar dados de várias fontes.",
             "comment": "Aplicações"
           },
           {
@@ -51,35 +59,47 @@
         "comment": "Modelo mais simples de NoSQL, armazenando dados como pares chave-valor para acesso rápido e alta performance.",
         "subtopics": [
           {
-            "name": "Modelo de dados mais simples que armazena informações como pares chave-valor, oferecendo acesso direto e rápido aos dados.",
+            "name": "Tipo mais simples de NoSQL. Cada item é armazenado como par chave-valor, como tabela com duas colunas.",
             "comment": "Definição"
           },
           {
-            "name": "Simplicidade extrema e performance muito alta.",
+            "name": "Simplicidade: estrutura chave-valor é direta e simples de usar.",
             "comment": "Vantagens"
           },
           {
-            "name": "Escalabilidade massiva e baixa latência.",
+            "name": "Velocidade: formato simples torna operações de leitura e escrita mais rápidas.",
             "comment": "Vantagens"
           },
           {
-            "name": "Funcionalidade limitada de consulta e sem suporte a relacionamentos complexos.",
+            "name": "Não podem filtrar na coluna valor porque retorna toda informação armazenada.",
             "comment": "Limitações"
           },
           {
-            "name": "Cache de sessões e carrinho de compras.",
-            "comment": "Aplicações"
+            "name": "Otimizado apenas para chave e valor únicos. Múltiplos valores requerem parser.",
+            "comment": "Limitações"
           },
           {
-            "name": "Configurações de usuário e cache de aplicações.",
+            "name": "Valor é atualizado inteiro, requerendo processar e armazenar dados completos.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Adaptado para aplicações baseadas em consultas simples por chave.",
+            "comment": "Quando Usar"
+          },
+          {
+            "name": "Usado para aplicações simples que precisam armazenar temporariamente objetos simples como cache.",
+            "comment": "Quando Usar"
+          },
+          {
+            "name": "Quando há necessidade de acesso a dados em tempo real.",
+            "comment": "Quando Usar"
+          },
+          {
+            "name": "Aplicações simples que precisam armazenar temporariamente objetos como cache.",
             "comment": "Aplicações"
           },
           {
             "name": "Redis",
-            "comment": "Softwares"
-          },
-          {
-            "name": "Amazon DynamoDB",
             "comment": "Softwares"
           },
           {
@@ -94,35 +114,23 @@
         "comment": "Organizam dados em famílias de colunas, otimizados para consultas analíticas e grandes volumes de dados estruturados.",
         "subtopics": [
           {
-            "name": "Bancos que organizam dados em famílias de colunas, permitindo armazenamento eficiente de grandes volumes de dados esparsos.",
+            "name": "Bancos orientados por colunas usados para armazenar dados como coleção de colunas, onde cada coluna é tratada separadamente.",
             "comment": "Definição"
           },
           {
-            "name": "Excelente para análises e compressão eficiente.",
-            "comment": "Vantagens"
+            "name": "Baseados na implementação do Google Big Table paper.",
+            "comment": "Definição"
           },
           {
-            "name": "Escalabilidade horizontal e performance em big data.",
-            "comment": "Vantagens"
-          },
-          {
-            "name": "Complexidade de modelagem e limitações em consultas ad-hoc.",
-            "comment": "Limitações"
-          },
-          {
-            "name": "Analytics de big data e sistemas de recomendação.",
+            "name": "Principalmente usados para cargas de trabalho analíticas como business intelligence.",
             "comment": "Aplicações"
           },
           {
-            "name": "IoT e sensores, logs de aplicações.",
+            "name": "Gerenciamento de data warehouse e customer relationship management.",
             "comment": "Aplicações"
           },
           {
             "name": "Apache Cassandra",
-            "comment": "Softwares"
-          },
-          {
-            "name": "HBase",
             "comment": "Softwares"
           },
           {
@@ -134,39 +142,43 @@
       },
       {
         "name": "Graph Databases",
-        "comment": "Especializados em armazenar e consultar relacionamentos complexos entre entidades através de nós, arestas e propriedades.",
+        "comment": "Usados para armazenar, mapear e pesquisar relacionamentos entre nós através de arestas.",
         "subtopics": [
           {
-            "name": "Bancos especializados em dados conectados, usando nós, arestas e propriedades para representar e navegar relacionamentos complexos.",
+            "name": "Usados para armazenar, mapear e pesquisar relacionamentos entre nós através de arestas. Um nó representa um elemento de dados, também chamado de objeto ou entidade. Cada nó tem uma aresta de entrada ou saída. Uma aresta representa o relacionamento entre dois nós.",
             "comment": "Definição"
           },
           {
-            "name": "Excelente para relacionamentos e consultas de travessia eficientes.",
+            "name": "São uma estrutura ágil e flexível.",
             "comment": "Vantagens"
           },
           {
-            "name": "Modelagem intuitiva e performance em grafos complexos.",
+            "name": "O relacionamento entre nós no banco de dados é legível por humanos e explícito, portanto fácil de entender.",
             "comment": "Vantagens"
           },
           {
-            "name": "Complexidade para dados não relacionais e curva de aprendizado.",
+            "name": "Não há linguagem de consulta padronizada porque cada linguagem é dependente da plataforma.",
             "comment": "Limitações"
           },
           {
-            "name": "Redes sociais e sistemas de recomendação.",
+            "name": "A razão anterior torna difícil encontrar suporte online ao enfrentar um problema.",
+            "comment": "Limitações"
+          },
+          {
+            "name": "Podem ser usados quando você precisa criar relacionamentos entre elementos de dados e ser capaz de recuperar rapidamente esses relacionamentos.",
+            "comment": "Quando Usar"
+          },
+          {
+            "name": "Podem ser usados para realizar detecção sofisticada de fraude em transações financeiras em tempo real.",
             "comment": "Aplicações"
           },
           {
-            "name": "Detecção de fraudes e análise de redes.",
+            "name": "Podem ser usados para mineração de dados de mídias sociais. Por exemplo, LinkedIn usa um banco de dados de grafo para identificar quais usuários seguem uns aos outros, e o relacionamento entre esses usuários e sua expertise (ML Engineer).",
             "comment": "Aplicações"
           },
           {
-            "name": "Neo4j",
-            "comment": "Softwares"
-          },
-          {
-            "name": "Amazon Neptune",
-            "comment": "Softwares"
+            "name": "Mapeamento de rede pode ser uma ótima opção para representação como grafo, já que essas redes mapeiam relacionamentos entre hardware e os serviços que eles suportam.",
+            "comment": "Aplicações"
           },
           {
             "name": "Estrutura de Nós e Relacionamentos",
