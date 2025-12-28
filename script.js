@@ -204,7 +204,8 @@ function createSubtopics() {
                 correctTopic: topic.name,
                 comment: subtopic.comment || 'No description available.',
                 key: subtopic.key,
-                originalOrder: index
+                originalOrder: index,
+                image: subtopic.image
             });
         });
     });
@@ -222,6 +223,7 @@ function createSubtopics() {
         div.dataset.originalOrder = item.originalOrder;
         if (item.comment) div.dataset.comment = item.comment;
         if (item.key) div.dataset.key = item.key;
+        if (item.image) div.dataset.image = item.image;
         
         div.addEventListener('dragstart', handleDragStart);
         div.addEventListener('dragend', handleDragEnd);
@@ -253,7 +255,7 @@ function createTopicBoxes() {
             infoIcon.onclick = (e) => {
                 e.stopPropagation();
                 const displayTitle = topic.key ? `${topic.key} - ${topic.name}` : topic.name;
-                showModal(displayTitle, topic.comment);
+                showModal(displayTitle, topic.comment, topic.image);
             };
             header.appendChild(infoIcon);
         }
@@ -313,7 +315,8 @@ function handleDrop(e) {
                 const title = draggedElement.dataset.key ? 
                     `${draggedElement.dataset.key} - ${draggedElement.textContent}` : 
                     draggedElement.textContent;
-                showModal(title, draggedElement.dataset.comment);
+                const image = draggedElement.dataset.image || null;
+                showModal(title, draggedElement.dataset.comment, image);
             };
         }
         
@@ -347,9 +350,20 @@ function handleDrop(e) {
     }
 }
 
-function showModal(title, comment) {
+function showModal(title, comment, image) {
     document.getElementById('modal-title').textContent = title;
-    document.getElementById('modal-comment').textContent = comment;
+    
+    const modalComment = document.getElementById('modal-comment');
+    
+    if (image) {
+        modalComment.innerHTML = `
+            <p>${comment}</p>
+            <img src="${image}" alt="${title}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+        `;
+    } else {
+        modalComment.innerHTML = comment;
+    }
+    
     document.getElementById('modal').style.display = 'block';
 }
 
