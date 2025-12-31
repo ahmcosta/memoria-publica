@@ -1,0 +1,33 @@
+{
+  "subject": "Agentes Inteligentes",
+  "subtopicsLabel": "Tipos de Agente",
+  "topics": {
+    "name": "Foco na Decisão",
+    "values": [
+      {
+        "name": "Satisfação → escolhe o caminho que maximiza um valor numérico ou utilidade (\"Qual a melhor maneira de atingir X?\")",
+        "subtopics": [
+          { "name": "Baseado em Utilidade" }
+        ]
+      },
+      {
+        "name": "Reflexo → age com base apenas na percepção atual, seguindo regras do tipo Condição → Ação",
+        "subtopics": [
+          { "name": "Reativo Simples" }
+        ]
+      },
+      {
+        "name": "Meta → planeja ações para alcançar um estado futuro desejado (\"O que devo fazer para atingir X?\")",
+        "subtopics": [
+          { "name": "Baseado em Objetivos" }
+        ]
+      },
+      {
+        "name": "Contexto → utiliza a percepção atual combinada com um estado interno (modelo do mundo) para compreender a situação",
+        "subtopics": [
+          { "name": "Baseado em Modelo" }
+        ]
+      }
+    ]
+  }
+}
