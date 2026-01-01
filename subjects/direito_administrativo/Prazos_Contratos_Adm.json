@@ -1,0 +1,69 @@
+{
+  "subject": "Contratos Administrativos",
+  "subtopicsLabel": "Prazos",
+  "topics": {
+    "name": "Prazos de Vigência Contratual",
+    "values": [
+      {
+        "name": "De 5 a 10 anos",
+        "subtopics": [
+          {
+            "name": "Serviços e Fornecimentos Contínuos",
+            "comment": "Celebração: até 5 anos, Total: até 10 anos"
+          }
+        ]
+      },
+      {
+        "name": "Até 5 anos",
+        "subtopics": [
+          {
+            "name": "Aluguel de equipamentos e utilização de programas de informática"
+          }
+        ]
+      },
+      {
+        "name": "De 5 a 10 anos",
+        "subtopics": [
+          {
+            "name": "Regime de fornecimento e prestação de serviço associado",
+            "comment": "Fornecimento + Serviço, até 5 anos e prorrogável até 10 anos"
+          }
+        ]
+      },
+      {
+        "name": "Até 10 anos",
+        "subtopics": [
+          {
+            "name": "Casos especiais de dispensa de licitação",
+            "comment": "Tecnologia, inovação, SUS, segurança nacional, entre outros"
+          }
+        ]
+      },
+      {
+        "name": "Até 15 anos",
+        "subtopics": [
+          {
+            "name": "Operação continuada de sistemas estruturantes de TI"
+          }
+        ]
+      },
+      {
+        "name": "De 10 a 35 anos",
+        "subtopics": [
+          {
+            "name": "Contratos que gerem receita e Contratos de Eficiência",
+            "comment": "Sem investimento: até 10 anos, Com investimento: até 35 anos"
+          }
+        ]
+      },
+      {
+        "name": "Prorrogado automaticamente",
+        "subtopics": [
+          {
+            "name": "Por escopo"
+          }
+        ]
+      }
+    ]
+  }
+}
