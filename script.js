@@ -1,6 +1,7 @@
 let correctCount = 0;
 let wrongCount = 0;
 let wrongLog = [];
+let missedSubtopics = [];
 let currentLanguage = localStorage.getItem('language') || 'pt_BR';
 let translations = {};
 
@@ -69,6 +70,7 @@ function resetGame() {
     correctCount = 0;
     wrongCount = 0;
     wrongLog = [];
+    missedSubtopics = [];
     document.getElementById('correct').textContent = '0';
     document.getElementById('wrong').textContent = '0';
     document.getElementById('subtopics-list').innerHTML = '';
@@ -191,7 +193,7 @@ function updateLabels() {
     updateUI();
 }
 
-function createSubtopics() {
+function createSubtopics(useOnlyMissed = false) {
     const container = document.getElementById('subtopics-list');
     container.innerHTML = '';
     const allSubtopics = [];
@@ -199,7 +201,7 @@ function createSubtopics() {
     // Collect all subtopics from simplified structure
     data.topics.values.forEach(topic => {
         topic.subtopics.forEach((subtopic, index) => {
-            allSubtopics.push({ 
+            const subtopicData = { 
                 name: subtopic.name, 
                 correctTopic: topic.name,
                 comment: subtopic.comment || 'No description available.',
@@ -207,7 +209,17 @@ function createSubtopics() {
                 originalOrder: index,
                 image: subtopic.image,
                 source: subtopic.source
-            });
+            };
+            
+            if (useOnlyMissed) {
+                // Only include missed subtopics
+                if (missedSubtopics.some(missed => missed.name === subtopic.name)) {
+                    allSubtopics.push(subtopicData);
+                }
+            } else {
+                // Include all subtopics
+                allSubtopics.push(subtopicData);
+            }
         });
     });
     
@@ -371,9 +383,28 @@ function handleDrop(e) {
         
         draggedElement.remove();
         setTimeout(() => topicBox.classList.remove('correct'), 500);
+        
+        // Check if game is complete
+        if (document.querySelectorAll('.subtopic').length === 0) {
+            setTimeout(() => showGameCompleteModal(), 1000);
+        }
     } else {
         // Wrong answer
         wrongCount++;
+        const missedItem = {
+            name: draggedElement.textContent,
+            correctTopic: correctTopic,
+            comment: draggedElement.dataset.comment,
+            key: draggedElement.dataset.key,
+            image: draggedElement.dataset.image,
+            source: draggedElement.dataset.source
+        };
+        
+        // Add to missed subtopics if not already there
+        if (!missedSubtopics.some(item => item.name === missedItem.name)) {
+            missedSubtopics.push(missedItem);
+        }
+        
         wrongLog.push({
             subtopic: draggedElement.textContent,
             droppedIn: droppedTopic,
@@ -562,6 +593,94 @@ function hideImageTooltip(e) {
     document.querySelectorAll('.image-tooltip').forEach(tooltip => tooltip.remove());
 }
 
+function showGameCompleteModal() {
+    const title = 'Jogo Concluído!';
+    const message = `
+        <p>Parabéns! Você completou o jogo.</p>
+        <p><strong>Acertos:</strong> ${correctCount}</p>
+        <p><strong>Erros:</strong> ${wrongCount}</p>
+        <br>
+        <p>Deseja tentar novamente?</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="handleRetryChoice(true)" style="background: #4caf50; color: white; border: none; padding: 10px 20px; margin: 0 10px; border-radius: 4px; cursor: pointer;">Sim</button>
+            <button onclick="handleRetryChoice(false)" style="background: #f44336; color: white; border: none; padding: 10px 20px; margin: 0 10px; border-radius: 4px; cursor: pointer;">Não</button>
+        </div>
+    `;
+    
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-comment').innerHTML = message;
+    document.getElementById('modal').style.display = 'block';
+}
+
+function handleRetryChoice(retry) {
+    document.getElementById('modal').style.display = 'none';
+    
+    if (retry) {
+        if (missedSubtopics.length > 0) {
+            showRetryOptionsModal();
+        } else {
+            // No missed subtopics, restart with all
+            restartGame();
+        }
+    }
+}
+
+function showRetryOptionsModal() {
+    const title = 'Opções de Repetição';
+    const message = `
+        <p>Você teve ${missedSubtopics.length} erro(s). Como deseja repetir?</p>
+        <br>
+        <div style="text-align: center;">
+            <button onclick="startRetry(false)" style="background: #2196f3; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Todos os subtópicos</button>
+            <button onclick="startRetry(true)" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os que errei (${missedSubtopics.length})</button>
+        </div>
+    `;
+    
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-comment').innerHTML = message;
+    document.getElementById('modal').style.display = 'block';
+}
+
+function createSubtopicsFromList(subtopicsList) {
+    const container = document.getElementById('subtopics-list');
+    container.innerHTML = '';
+    
+    // Shuffle the provided subtopics list
+    const shuffledList = [...subtopicsList].sort(() => Math.random() - 0.5);
+    
+    // Create draggable elements
+    shuffledList.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'subtopic';
+        div.textContent = item.name;
+        div.draggable = true;
+        div.dataset.correctTopic = item.correctTopic;
+        div.dataset.originalOrder = item.originalOrder || 0;
+        if (item.comment) div.dataset.comment = item.comment;
+        if (item.key) div.dataset.key = item.key;
+        if (item.image) div.dataset.image = item.image;
+        if (item.source) div.dataset.source = item.source;
+        
+        console.log('Created subtopic:', item.name, 'source:', item.source);
+        
+        div.addEventListener('dragend', handleDragEnd);
+        
+        container.appendChild(div);
+        
+        if (item.image) {
+            div.classList.add('has-image');
+            div.addEventListener('mouseenter', showImageTooltip);
+            div.addEventListener('mouseleave', hideImageTooltip);
+            div.addEventListener('dragstart', (e) => {
+                hideImageTooltip(e);
+                handleDragStart(e);
+            });
+        } else {
+            div.addEventListener('dragstart', handleDragStart);
+        }
+    });
+}
+
 function toggleTopicBox(topicBox, content, collapseIcon) {
     const isCollapsed = content.classList.contains('hidden');
     
@@ -574,4 +693,25 @@ function toggleTopicBox(topicBox, content, collapseIcon) {
         collapseIcon.classList.add('collapsed');
         topicBox.classList.add('collapsed');
     }
+}
+
+function startRetry(onlyMissed) {
+    document.getElementById('modal').style.display = 'none';
+    
+    // Store missed subtopics before reset if needed
+    const savedMissedSubtopics = onlyMissed ? [...missedSubtopics] : [];
+    
+    resetGame();
+    
+    // If using only missed ones, restore them but clear the tracking array
+    // so we can track new mistakes in this retry session
+    if (onlyMissed) {
+        const subtopicsToRetry = savedMissedSubtopics;
+        missedSubtopics = []; // Clear to track only new mistakes
+        createSubtopicsFromList(subtopicsToRetry);
+    } else {
+        createSubtopics(false);
+    }
+    
+    createTopicBoxes();
 }
