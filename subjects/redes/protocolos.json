@@ -436,7 +436,8 @@
             "comment": "Estrutura cabeçalho",
             "sources": [
               "https://datatracker.ietf.org/doc/html/rfc792"
-            ]
+            ],
+            "image": "./subjects/redes/protocolos/icmp-protocol-packet-format.jpeg"
           }
         ]
       },
