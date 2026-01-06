@@ -18,7 +18,7 @@ The learning tool uses JSON files to define drag-and-drop exercises where users 
         "name": "Topic Name",
         "comment": "Brief description",
         "image": "path/to/image.png",
-        "source": "https://source-url.com",
+        "sources": "https://sources-url.com",
         "subtopics": [
           {
             "name": "Subtopic description",
@@ -47,7 +47,7 @@ The learning tool uses JSON files to define drag-and-drop exercises where users 
 - **`name`** (string, mandatory): Topic name displayed in drop zones
 - **`comment`** (string, optional): Brief description shown in tooltips
 - **`image`** (string, optional): Path to topic image (local or URL)
-- **`source`** (string, optional): Source URL displayed in modal
+- **`sources`** (string, optional): Source URL displayed in modal
 - **`subtopics`** (array, mandatory): Array of subtopic objects
 
 #### Subtopic Object
