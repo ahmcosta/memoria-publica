@@ -71,26 +71,22 @@
         ]
       },
       {
-        "name": "VPN S2S: AWS vs Azure",
-        "comment": "Diferenças de implementação entre provedores",
+        "name": "VPN Site-to-Site AWS",
+        "comment": "Conectividade VPN da AWS",
+        "sources": [
+          "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        ],
         "subtopics": [
           {
-            "name": "AWS: Utiliza Customer Gateway e Virtual Private Gateway para conectividade VPN",
-            "comment": "Componentes AWS",
+            "name": "Utiliza Customer Gateway e Virtual Private Gateway para conectividade VPN",
+            "comment": "Componentes",
             "sources": [
               "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
             ]
           },
           {
-            "name": "Azure: Utiliza Virtual Network Gateway para conectividade VPN",
-            "comment": "Componente Azure",
-            "sources": [
-              "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
-            ]
-          },
-          {
-            "name": "AWS: Throughput até 1.25 Gbps por túnel IPsec individual",
-            "comment": "Performance AWS",
+            "name": "Throughput até 1.25 Gbps por túnel IPsec individual",
+            "comment": "Performance",
             "sources": [
               "https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-limits.html"
             ]
@@ -111,22 +107,45 @@
             ]
           },
           {
-            "name": "Azure: Suporta configurações de alta disponibilidade com múltiplos gateways",
-            "comment": "Alta disponibilidade Azure",
+            "name": "Suporta roteamento BGP para anúncio dinâmico de rotas",
+            "comment": "Roteamento BGP",
+            "sources": [
+              "https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-routing.html"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "VPN Site-to-Site Azure",
+        "comment": "Conectividade VPN do Azure",
+        "sources": [
+          "https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal"
+        ],
+        "subtopics": [
+          {
+            "name": "Utiliza Virtual Network Gateway para conectividade VPN",
+            "comment": "Componente",
+            "sources": [
+              "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+            ]
+          },
+          {
+            "name": "Oferece diferentes SKUs de gateway com variações de throughput",
+            "comment": "Performance",
+            "sources": [
+              "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+            ]
+          },
+          {
+            "name": "Suporta configurações de alta disponibilidade com múltiplos gateways",
+            "comment": "Alta disponibilidade",
             "sources": [
               "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable"
             ]
           },
           {
-            "name": "AWS: Suporta roteamento BGP para anúncio dinâmico de rotas",
-            "comment": "BGP AWS",
-            "sources": [
-              "https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-routing.html"
-            ]
-          },
-          {
-            "name": "Azure: Suporta BGP para roteamento dinâmico em gateways Route-based",
-            "comment": "BGP Azure",
+            "name": "Suporta BGP para roteamento dinâmico em gateways Route-based",
+            "comment": "Roteamento BGP",
             "sources": [
               "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-bgp-overview"
             ]
@@ -134,27 +153,75 @@
         ]
       },
       {
-        "name": "AWS Direct Connect (DX)",
-        "comment": "Conectividade privada dedicada da AWS",
-        "image": "https://docs.aws.amazon.com/images/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect.png",
-        "sources": [
-          "https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html"
-        ],
+        "name": "Conectividade Privada Dedicada",
+        "comment": "Características comuns das conexões dedicadas",
         "subtopics": [
           {
-            "name": "Fornece conexão de rede dedicada entre datacenter do cliente e AWS",
+            "name": "Fornece conexão de rede dedicada entre datacenter do cliente e nuvem",
             "comment": "Definição básica",
             "sources": [
-              "https://docs.aws.amazon.com/directconnect/latest/userguide/Welcome.html"
+              "https://docs.aws.amazon.com/directconnect/latest/userguide/Welcome.html",
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#key-benefits"
             ]
           },
           {
             "name": "Reduz custos de largura de banda e fornece experiência de rede mais consistente",
             "comment": "Benefícios principais",
             "sources": [
+              "https://docs.aws.amazon.com/directconnect/latest/userguide/Welcome.html#overview_benefits",
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#key-benefits"
+            ]
+          },
+          {
+            "name": "Conexões não passam pela Internet pública oferecendo maior segurança",
+            "comment": "Segurança inerente",
+            "sources": [
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#features",
+              "https://docs.aws.amazon.com/directconnect/latest/userguide/Welcome.html"
+            ]
+          },
+          {
+            "name": "Oferece maior confiabilidade, velocidades mais rápidas e latências menores",
+            "comment": "Benefícios de performance",
+            "sources": [
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#key-benefits",
               "https://docs.aws.amazon.com/directconnect/latest/userguide/Welcome.html#overview_benefits"
             ]
           },
+          {
+            "name": "Utiliza BGP para roteamento entre rede do cliente e nuvem",
+            "comment": "Roteamento BGP",
+            "sources": [
+              "https://docs.aws.amazon.com/directconnect/latest/userguide/routing-and-bgp.html",
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-routing"
+            ]
+          },
+          {
+            "name": "Tráfego não é criptografado por padrão na conexão física",
+            "comment": "Segurança padrão",
+            "sources": [
+              "https://docs.aws.amazon.com/directconnect/latest/userguide/encryption-in-transit.html",
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption"
+            ]
+          },
+          {
+            "name": "Facilita conexão com provedor de conectividade em facility de colocation",
+            "comment": "Modelo de conectividade",
+            "sources": [
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models",
+              "https://docs.aws.amazon.com/directconnect/latest/userguide/getting_started.html"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Direct Connect (DX)",
+        "comment": "Conectividade privada dedicada da AWS",
+        "image": "https://docs.aws.amazon.com/images/whitepapers/latest/aws-vpc-connectivity-options/images/aws-direct-connect.png",
+        "sources": [
+          "https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html"
+        ],
+        "subtopics": [
           {
             "name": "Dedicated Connection: conexão Ethernet física associada a um único cliente",
             "comment": "Dedicated connection",
@@ -170,7 +237,7 @@
             ]
           },
           {
-            "name": "Virtual Interface (VIF) permite acesso a recursos AWS usando conexão física",
+            "name": "Virtual Interface (VIF) permite acesso a recursos da nuvem usando conexão física",
             "comment": "VIF conceito",
             "sources": [
               "https://docs.aws.amazon.com/directconnect/latest/userguide/WorkingWithVirtualInterfaces.html"
@@ -179,15 +246,13 @@
           {
             "name": "Private VIF conecta à VPC usando espaço de endereçamento IP privado",
             "comment": "Private VIF",
-            "image": "https://docs.aws.amazon.com/images/directconnect/latest/userguide/images/direct_connect_overview.png",
             "sources": [
               "https://docs.aws.amazon.com/directconnect/latest/userguide/create-vif.html#create-private-vif"
             ]
           },
           {
-            "name": "Public VIF conecta a serviços públicos AWS usando endereços IP públicos",
+            "name": "Public VIF conecta a serviços públicos da nuvem usando endereços IP públicos",
             "comment": "Public VIF",
-            "image": "https://docs.aws.amazon.com/images/directconnect/latest/userguide/images/public-vif.png",
             "sources": [
               "https://docs.aws.amazon.com/directconnect/latest/userguide/create-vif.html#create-public-vif"
             ]
@@ -195,7 +260,6 @@
           {
             "name": "Transit VIF conecta ao Transit Gateway para acessar múltiplas VPCs",
             "comment": "Transit VIF",
-            "image": "https://docs.aws.amazon.com/images/directconnect/latest/userguide/images/transit-vif.png",
             "sources": [
               "https://docs.aws.amazon.com/directconnect/latest/userguide/create-vif.html#create-transit-vif"
             ]
@@ -206,25 +270,11 @@
             "sources": [
               "https://docs.aws.amazon.com/directconnect/latest/userguide/getting_started.html"
             ]
-          },
-          {
-            "name": "Utiliza BGP para roteamento entre rede do cliente e AWS",
-            "comment": "Roteamento BGP",
-            "sources": [
-              "https://docs.aws.amazon.com/directconnect/latest/userguide/routing-and-bgp.html"
-            ]
-          },
-          {
-            "name": "Tráfego não é criptografado por padrão na conexão física",
-            "comment": "Segurança padrão",
-            "sources": [
-              "https://docs.aws.amazon.com/directconnect/latest/userguide/encryption-in-transit.html"
-            ]
           }
         ]
       },
       {
-        "name": "Azure ExpressRoute (ER)",
+        "name": "ExpressRoute (ER)",
         "comment": "Conectividade privada dedicada do Azure",
         "image": "https://learn.microsoft.com/en-us/azure/expressroute/media/expressroute-introduction/expressroute-connection-overview.png",
         "sources": [
@@ -232,45 +282,15 @@
         ],
         "subtopics": [
           {
-            "name": "Estende redes on-premises para nuvem Microsoft através de conexão privada",
-            "comment": "Definição oficial",
-            "sources": [
-              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#key-benefits"
-            ]
-          },
-          {
-            "name": "Facilita conexão com provedor de conectividade em facility de colocation",
-            "comment": "Modelo de conectividade",
-            "sources": [
-              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models"
-            ]
-          },
-          {
-            "name": "Conexões não passam pela Internet pública oferecendo maior segurança",
-            "comment": "Segurança inerente",
-            "sources": [
-              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#features"
-            ]
-          },
-          {
-            "name": "Oferece maior confiabilidade, velocidades mais rápidas e latências menores",
-            "comment": "Benefícios de performance",
-            "sources": [
-              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#key-benefits"
-            ]
-          },
-          {
             "name": "Private peering permite conexão com Virtual Networks usando endereços privados",
             "comment": "Private peering",
-            "image": "https://learn.microsoft.com/en-us/azure/expressroute/media/expressroute-introduction/expressroute-private-peering.png",
             "sources": [
               "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings"
             ]
           },
           {
-            "name": "Microsoft peering permite conexão com serviços públicos Microsoft e Office 365",
+            "name": "Microsoft peering permite conexão com serviços públicos da nuvem e Office 365",
             "comment": "Microsoft peering",
-            "image": "https://learn.microsoft.com/en-us/azure/expressroute/media/expressroute-introduction/expressroute-microsoft-peering.png",
             "sources": [
               "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings"
             ]
@@ -298,17 +318,10 @@
             ]
           },
           {
-            "name": "Suporte a conectividade global com ExpressRoute Premium para todas as regiões",
+            "name": "Suporte a conectividade global com Premium para todas as regiões",
             "comment": "Alcance global",
             "sources": [
               "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-faqs"
-            ]
-          },
-          {
-            "name": "Não fornece criptografia - dados trafegam em texto claro pela conexão privada",
-            "comment": "Consideração de segurança",
-            "sources": [
-              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption"
             ]
           }
         ]
