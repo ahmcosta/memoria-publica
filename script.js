@@ -196,6 +196,16 @@ function updateLabels() {
 function createSubtopics(useOnlyMissed = false) {
     const container = document.getElementById('subtopics-list');
     container.innerHTML = '';
+    
+    // Add search input
+    const searchContainer = document.createElement('div');
+    searchContainer.className = 'search-container';
+    searchContainer.innerHTML = `
+        <input type="text" id="topic-search" placeholder="Digite para filtrar tópicos..." 
+               style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+    `;
+    container.appendChild(searchContainer);
+    
     const allSubtopics = [];
 
     // Collect all subtopics from simplified structure
@@ -226,6 +236,11 @@ function createSubtopics(useOnlyMissed = false) {
     // Shuffle subtopics
     allSubtopics.sort(() => Math.random() - 0.5);
 
+    // Create container for subtopics
+    const subtopicsContainer = document.createElement('div');
+    subtopicsContainer.id = 'subtopics-items';
+    container.appendChild(subtopicsContainer);
+
     // Create draggable elements
     allSubtopics.forEach(item => {
         const div = document.createElement('div');
@@ -243,7 +258,7 @@ function createSubtopics(useOnlyMissed = false) {
 
         div.addEventListener('dragend', handleDragEnd);
 
-        container.appendChild(div);
+        subtopicsContainer.appendChild(div);
 
         if (item.image) {
             div.classList.add('has-image');
@@ -257,11 +272,29 @@ function createSubtopics(useOnlyMissed = false) {
             div.addEventListener('dragstart', handleDragStart);
         }
     });
+    
+    // Add search functionality
+    const searchInput = document.getElementById('topic-search');
+    searchInput.addEventListener('input', filterTopics);
 }
 
 function createTopicBoxes() {
     const container = document.getElementById('topics-container');
     container.innerHTML = '';
+    
+    // Add search input for topics
+    const searchContainer = document.createElement('div');
+    searchContainer.className = 'search-container';
+    searchContainer.innerHTML = `
+        <input type="text" id="subtopic-search" placeholder="Digite para filtrar subtópicos..." 
+               style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+    `;
+    container.appendChild(searchContainer);
+    
+    // Create container for topic boxes
+    const topicsContainer = document.createElement('div');
+    topicsContainer.id = 'topics-items';
+    container.appendChild(topicsContainer);
 
     data.topics.values.forEach(topic => {
         const div = document.createElement('div');
@@ -310,8 +343,12 @@ function createTopicBoxes() {
         div.addEventListener('drop', handleDrop);
         div.addEventListener('dragleave', handleDragLeave);
 
-        container.appendChild(div);
+        topicsContainer.appendChild(div);
     });
+    
+    // Add search functionality for subtopics
+    const subtopicSearch = document.getElementById('subtopic-search');
+    subtopicSearch.addEventListener('input', filterSubtopics);
 }
 
 function handleDragStart(e) {
@@ -648,6 +685,20 @@ function showRetryOptionsModal() {
 function createSubtopicsFromList(subtopicsList) {
     const container = document.getElementById('subtopics-list');
     container.innerHTML = '';
+    
+    // Add search input
+    const searchContainer = document.createElement('div');
+    searchContainer.className = 'search-container';
+    searchContainer.innerHTML = `
+        <input type="text" id="topic-search" placeholder="Digite para filtrar tópicos..." 
+               style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+    `;
+    container.appendChild(searchContainer);
+    
+    // Create container for subtopics
+    const subtopicsContainer = document.createElement('div');
+    subtopicsContainer.id = 'subtopics-items';
+    container.appendChild(subtopicsContainer);
 
     // Shuffle the provided subtopics list
     const shuffledList = [...subtopicsList].sort(() => Math.random() - 0.5);
@@ -669,7 +720,7 @@ function createSubtopicsFromList(subtopicsList) {
 
         div.addEventListener('dragend', handleDragEnd);
 
-        container.appendChild(div);
+        subtopicsContainer.appendChild(div);
 
         if (item.image) {
             div.classList.add('has-image');
@@ -683,6 +734,10 @@ function createSubtopicsFromList(subtopicsList) {
             div.addEventListener('dragstart', handleDragStart);
         }
     });
+    
+    // Add search functionality
+    const searchInput = document.getElementById('topic-search');
+    searchInput.addEventListener('input', filterTopics);
 }
 
 function toggleTopicBox(topicBox, content, collapseIcon) {
@@ -718,4 +773,46 @@ function startRetry(onlyMissed) {
     }
 
     createTopicBoxes();
+}
+
+// Filter functions for search functionality
+function filterTopics() {
+    const searchTerm = document.getElementById('topic-search').value.toLowerCase();
+    const subtopics = document.querySelectorAll('#subtopics-items .subtopic');
+    
+    subtopics.forEach(subtopic => {
+        const text = subtopic.textContent.toLowerCase();
+        const correctTopic = subtopic.dataset.correctTopic.toLowerCase();
+        
+        if (text.includes(searchTerm) || correctTopic.includes(searchTerm)) {
+            subtopic.style.display = 'block';
+        } else {
+            subtopic.style.display = 'none';
+        }
+    });
+}
+
+function filterSubtopics() {
+    const searchTerm = document.getElementById('subtopic-search').value.toLowerCase();
+    const topicBoxes = document.querySelectorAll('#topics-items .topic-box');
+    
+    topicBoxes.forEach(topicBox => {
+        const topicName = topicBox.dataset.topic.toLowerCase();
+        const placedSubtopics = topicBox.querySelectorAll('.placed-subtopic');
+        let hasMatch = topicName.includes(searchTerm);
+        
+        // Check if any placed subtopics match
+        placedSubtopics.forEach(subtopic => {
+            const subtopicText = subtopic.textContent.toLowerCase();
+            if (subtopicText.includes(searchTerm)) {
+                hasMatch = true;
+            }
+        });
+        
+        if (hasMatch) {
+            topicBox.style.display = 'block';
+        } else {
+            topicBox.style.display = 'none';
+        }
+    });
 }
