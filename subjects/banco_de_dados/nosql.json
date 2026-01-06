@@ -11,67 +11,67 @@
           {
             "name": "Armazena dados em formato JSON, XML ou BSON com estrutura flexível.",
             "comment": "Definição",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Sem limitações no formato e estrutura de armazenamento de dados.",
             "comment": "Vantagens",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Novas informações podem ser adicionadas sem alterar campos existentes.",
             "comment": "Vantagens",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Todas as informações ficam agrupadas em uma única estrutura.",
             "comment": "Vantagens",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Registros não precisam ter relacionamento entre si.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Mudanças em múltiplas coleções requerem consultas separadas.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Ideal quando o esquema de dados muda constantemente.",
             "comment": "Quando Usar",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Perfis de usuário online com diferentes tipos de informações.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Gestão de conteúdo para armazenar dados de várias fontes.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "MongoDB",
             "comment": "Softwares",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "CouchDB",
             "comment": "Softwares",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Amazon DocumentDB",
             "comment": "Softwares",
-            "source": "https://aws.amazon.com/documentdb/"
+            "sources": "https://aws.amazon.com/documentdb/"
           },
           {
             "name": "Google Firestore",
             "comment": "Softwares",
-            "source": "https://cloud.google.com/firestore"
+            "sources": "https://cloud.google.com/firestore"
           }
         ]
       },
@@ -82,68 +82,68 @@
           {
             "name": "Cada item armazenado como par de identificador e conteúdo.",
             "comment": "Definição",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Estrutura direta e simples de usar.",
             "comment": "Vantagens",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Operações de leitura e escrita extremamente rápidas.",
             "comment": "Vantagens",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Não permite filtrar no conteúdo, retorna informação completa.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Otimizado apenas para identificador único. Múltiplos valores requerem parser.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Conteúdo é atualizado inteiro, requerendo processar dados completos.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Adaptado para aplicações baseadas em consultas simples por identificador.",
             "comment": "Quando Usar",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Aplicações que precisam armazenar temporariamente objetos como cache.",
             "comment": "Quando Usar",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Necessidade de acesso a dados em tempo real.",
             "comment": "Quando Usar",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Sistemas de cache e armazenamento temporário.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Redis",
             "comment": "Softwares",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Azure Table Storage",
             "comment": "Softwares",
-            "source": "https://azure.microsoft.com/en-us/products/storage/tables"
+            "sources": "https://azure.microsoft.com/en-us/products/storage/tables"
           },
           {
             "name": "Estrutura Key-Value simples e direta",
             "comment": "Diagrama",
             "image": "./subjects/banco_de_dados/nosql/key-value.png",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           }
         ]
       },
@@ -154,38 +154,38 @@
           {
             "name": "Armazena dados como coleção onde cada coluna é tratada separadamente.",
             "comment": "Definição",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Baseado na implementação do Google Big Table paper.",
             "comment": "Definição",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Cargas de trabalho analíticas como business intelligence.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Data warehouse e customer relationship management.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Apache Cassandra",
             "comment": "Softwares",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Estrutura de Colunas Organizadas em Famílias",
             "comment": "Diagrama",
             "image": "./subjects/banco_de_dados/nosql/wide-column.png",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Google Cloud Bigtable",
             "comment": "Softwares",
-            "source": "https://cloud.google.com/bigtable"
+            "sources": "https://cloud.google.com/bigtable"
           }
         ]
       },
@@ -196,58 +196,58 @@
           {
             "name": "Armazena relacionamentos entre entidades através de conexões direcionais.",
             "comment": "Definição",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Relacionamentos são legíveis por humanos e explícitos.",
             "comment": "Vantagens",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Cada linguagem de consulta é dependente da plataforma específica.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Suporte online limitado para resolução de problemas.",
             "comment": "Limitações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Criar relacionamentos entre elementos com recuperação rápida.",
             "comment": "Quando Usar",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Detecção sofisticada de fraude em transações financeiras em tempo real.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Mineração de dados de mídias sociais e análise de conexões entre usuários.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Mapeamento de relacionamentos entre hardware e serviços de rede.",
             "comment": "Aplicações",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Neo4j",
             "comment": "Softwares",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           },
           {
             "name": "Amazon Neptune",
             "comment": "Softwares",
-            "source": "https://aws.amazon.com/neptune/"
+            "sources": "https://aws.amazon.com/neptune/"
           },
           {
             "name": "Estrutura de Nós e Relacionamentos",
             "comment": "Diagrama",
             "image": "./subjects/banco_de_dados/nosql/graph.png",
-            "source": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
+            "sources": "https://www.datacamp.com/blog/nosql-databases-what-every-data-scientist-needs-to-know"
           }
         ]
       },
@@ -258,17 +258,17 @@
           {
             "name": "Amazon DynamoDB",
             "comment": "Softwares",
-            "source": "https://aws.amazon.com/dynamodb/"
+            "sources": "https://aws.amazon.com/dynamodb/"
           },
           {
             "name": "Azure Cosmos DB",
             "comment": "Softwares",
-            "source": "https://learn.microsoft.com/pt-br/azure/documentdb/compare-cosmos-db?context=%2Fazure%2Fcosmos-db%2Fcontext%2Fcontext#azure-cosmos-db-scale-out-architecture"
+            "sources": "https://learn.microsoft.com/pt-br/azure/documentdb/compare-cosmos-db?context=%2Fazure%2Fcosmos-db%2Fcontext%2Fcontext#azure-cosmos-db-scale-out-architecture"
           },
           {
             "name": "Google Cloud Spanner",
             "comment": "Softwares",
-            "source": "https://cloud.google.com/spanner"
+            "sources": "https://cloud.google.com/spanner"
           }
         ]
       }
