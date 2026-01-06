@@ -92,8 +92,16 @@
             ]
           },
           {
-            "name": "Cada conexão Site-to-Site VPN consiste em dois túneis IPsec para redundância",
-            "comment": "Arquitetura",
+            "name": "Azure: Oferece diferentes SKUs de gateway com variações de throughput",
+            "comment": "Performance Azure",
+            "sources": [
+              "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways",
+              "https://learn.microsoft.com/en-us/partner-center/developer/product-resources#sku"
+            ]
+          },
+          {
+            "name": "AWS: Cada conexão Site-to-Site VPN consiste em dois túneis IPsec para redundância",
+            "comment": "Arquitetura AWS",
             "sources": [
               "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
             ]
@@ -291,7 +299,8 @@
             "name": "Larguras de banda de 50 Mbps a 100 Gbps dependendo do SKU escolhido",
             "comment": "Opções de largura",
             "sources": [
-              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#expressroute-connectivity-models"
+              "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction#expressroute-connectivity-models",
+              "https://learn.microsoft.com/en-us/partner-center/developer/product-resources#sku"
             ]
           },
           {
