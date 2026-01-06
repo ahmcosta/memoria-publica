@@ -9,24 +9,74 @@
         "comment": "Protocolo da camada de transporte, orientado à conexão, confiável, com controle de fluxo e congestionamento.",
         "subtopics": [
           {
-            "name": "Opera na camada de transporte estabelecendo conexões antes da transmissão",
-            "comment": "Camada e característica"
+            "name": "Opera na camada de transporte (camada 4 do modelo OSI) estabelecendo conexões antes da transmissão",
+            "comment": "Camada e característica",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
+          },
+          {
+            "name": "Protocolo orientado à conexão que utiliza three-way handshake (SYN, SYN-ACK, ACK) para estabelecer conexões",
+            "comment": "Estabelecimento de conexão",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
           },
           {
             "name": "Garante entrega confiável e ordenada de todos os dados transmitidos",
-            "comment": "Confiabilidade"
+            "comment": "Confiabilidade",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
           },
           {
             "name": "Implementa controle de fluxo e congestionamento para otimizar transmissão",
-            "comment": "Controle"
+            "comment": "Controle",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
           },
           {
             "name": "Apresenta maior overhead e latência devido aos mecanismos de confiabilidade",
-            "comment": "Desvantagem"
+            "comment": "Desvantagem",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
           },
           {
-            "name": "Utilizado por aplicações web, transferência de arquivos e acesso remoto",
-            "comment": "Aplicações"
+            "name": "Utilizado por aplicações web (HTTP/HTTPS), transferência de arquivos (FTP) e acesso remoto (SSH)",
+            "comment": "Aplicações",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
+          },
+          {
+            "name": "Versões seguras: HTTPS porta 443, FTPS porta 990, SSH porta 22, SMTPS porta 465/587",
+            "comment": "Portas seguras TCP",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
+          },
+          {
+            "name": "Protocolo orientado à conexão que utiliza portas de 16 bits (0-65535) com 0-1023 reservadas para serviços do sistema",
+            "comment": "Portas TCP",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
+          },
+          {
+            "name": "Estrutura básica de cabeçalho possui 20 bytes com possibilidade de campo opcional variando até 60 bytes",
+            "comment": "Cabeçalho TCP",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
+          },
+          {
+            "name": "Campo Data Offset informa quantas palavras de 32 bits existem no cabeçalho devido ao tamanho variável",
+            "comment": "Campo cabeçalho",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc793"
+            ]
           }
         ]
       },
@@ -35,28 +85,74 @@
         "comment": "Protocolo da camada de transporte, não orientado à conexão, não confiável, baixa latência.",
         "subtopics": [
           {
-            "name": "Opera na camada de transporte sem estabelecer conexões prévias",
-            "comment": "Camada e característica"
+            "name": "Opera na camada de transporte (camada 4 do modelo OSI) sem estabelecer conexões prévias",
+            "comment": "Camada e característica",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
+          },
+          {
+            "name": "Protocolo não orientado à conexão que envia datagramas sem estabelecimento prévio de conexão",
+            "comment": "Connectionless",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
           },
           {
             "name": "Não oferece garantias de entrega nem ordenação dos pacotes enviados",
-            "comment": "Não confiável"
+            "comment": "Não confiável",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
           },
           {
             "name": "Ausência de controle de congestionamento permite transmissão mais rápida",
-            "comment": "Sem controle"
+            "comment": "Sem controle",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
           },
           {
             "name": "Proporciona baixa latência ideal para aplicações sensíveis ao tempo",
-            "comment": "Vantagem"
+            "comment": "Vantagem",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
           },
           {
             "name": "Protocolo sem estado que não mantém informações sobre conexões anteriores",
-            "comment": "Característica"
+            "comment": "Característica",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
           },
           {
-            "name": "Preferido para resolução de nomes, streaming e jogos online",
-            "comment": "Aplicações"
+            "name": "Preferido para resolução de nomes (DNS porta 53), streaming e jogos online",
+            "comment": "Aplicações",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
+          },
+          {
+            "name": "Versões seguras: DNS over TLS porta 853, DNS over HTTPS porta 443, DHCP não possui versão segura padrão",
+            "comment": "Portas seguras UDP",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
+          },
+          {
+            "name": "Cabeçalho simples de apenas 8 bytes contendo portas origem/destino, comprimento e checksum",
+            "comment": "Cabeçalho",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc768"
+            ]
+          },
+          {
+            "name": "Protocolo não orientado à conexão que utiliza portas de 16 bits (0-65535) com 0-1023 reservadas para serviços do sistema",
+            "comment": "Portas UDP",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -79,10 +175,6 @@
           {
             "name": "Suporta múltiplos endereços IP para redundância e failover automático",
             "comment": "Multi-homing"
-          },
-          {
-            "name": "Amplamente utilizado em redes de telecomunicações e sistemas críticos",
-            "comment": "Aplicação"
           }
         ]
       },
@@ -187,20 +279,54 @@
         "comment": "Protocolo de resolução de nomes em endereços IP.",
         "subtopics": [
           {
-            "name": "Sistema hierárquico da camada de aplicação que traduz nomes legíveis em endereços",
-            "comment": "Camada e função"
+            "name": "Sistema hierárquico da camada de aplicação (camada 7 do modelo OSI) que traduz nomes legíveis em endereços",
+            "comment": "Camada e função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc1035"
+            ]
           },
           {
             "name": "Converte nomes de domínio como www.exemplo.com em endereços IP numéricos",
-            "comment": "Função"
+            "comment": "Função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc1035"
+            ]
           },
           {
             "name": "Utiliza UDP na porta 53 para consultas simples e frequentes",
-            "comment": "Transporte"
+            "comment": "Transporte",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc1035"
+            ]
           },
           {
             "name": "Emprega TCP na porta 53 para transferências completas e respostas extensas",
-            "comment": "Transporte"
+            "comment": "Transporte",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc1035"
+            ]
+          },
+          {
+            "name": "DNS over TLS (DoT) porta 853 e DNS over HTTPS (DoH) porta 443 oferecem resolução segura",
+            "comment": "DNS seguro",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc7858",
+              "https://datatracker.ietf.org/doc/html/rfc8484"
+            ]
+          },
+          {
+            "name": "Estrutura hierárquica com Root Servers, TLD Servers e Authoritative Servers",
+            "comment": "Hierarquia",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc1035"
+            ]
+          },
+          {
+            "name": "Tipos de registros: A (IPv4), AAAA (IPv6), MX (mail), CNAME (alias), NS (name server)",
+            "comment": "Tipos de registro",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc1035"
+            ]
           }
         ]
       },
@@ -209,24 +335,46 @@
         "comment": "Protocolo para atribuição dinâmica de endereços IP e parâmetros de rede.",
         "subtopics": [
           {
-            "name": "Serviço da camada de aplicação que automatiza configuração de parâmetros de rede",
-            "comment": "Camada e função"
+            "name": "Serviço da camada de aplicação (camada 7 do modelo OSI) que automatiza configuração de parâmetros de rede",
+            "comment": "Camada e função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc2131"
+            ]
           },
           {
             "name": "Distribui automaticamente endereços IP disponíveis para dispositivos da rede",
-            "comment": "Função"
+            "comment": "Função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc2131"
+            ]
           },
           {
             "name": "Fornece informações essenciais como gateway padrão e servidores de resolução de nomes",
-            "comment": "Função"
+            "comment": "Função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc2131"
+            ]
           },
           {
-            "name": "Opera com protocolo rápido usando portas dedicadas 67 para servidor e 68 para cliente",
-            "comment": "Transporte"
+            "name": "Opera com protocolo UDP usando portas dedicadas 67 para servidor e 68 para cliente",
+            "comment": "Transporte",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc2131"
+            ]
           },
           {
             "name": "Concentra-se em configuração de rede sem executar tradução de nomes",
-            "comment": "Observação"
+            "comment": "Observação",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc2131"
+            ]
+          },
+          {
+            "name": "Processo DORA: Discover, Offer, Request, Acknowledge para atribuição de endereços",
+            "comment": "Processo",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc2131"
+            ]
           }
         ]
       },
@@ -235,28 +383,60 @@
         "comment": "Protocolo de mensagens de controle e diagnóstico da camada de rede.",
         "subtopics": [
           {
-            "name": "Protocolo da camada de rede especializado em mensagens de controle e diagnóstico",
-            "comment": "Camada e função"
+            "name": "Protocolo da camada de rede (camada 3 do modelo OSI) especializado em mensagens de controle e diagnóstico",
+            "comment": "Camada e função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
           },
           {
             "name": "Transmite notificações de erro e informações de status da rede",
-            "comment": "Função"
+            "comment": "Função",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
           },
           {
             "name": "Fundamental para ferramentas de diagnóstico como ping e traceroute",
-            "comment": "Aplicação"
+            "comment": "Aplicação",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
           },
           {
             "name": "Comunica-se diretamente sobre IP usando protocolo número 1 sem portas de transporte",
-            "comment": "Característica"
+            "comment": "Característica",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
           },
           {
             "name": "Envia mensagem 'Time Exceeded' quando roteador descarta pacote com TTL igual a zero",
-            "comment": "Controle TTL"
+            "comment": "Controle TTL",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
           },
           {
             "name": "Focado exclusivamente em controle não carregando informações de usuário",
-            "comment": "Limitação"
+            "comment": "Limitação",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
+          },
+          {
+            "name": "Tipos principais: Echo Request/Reply (ping), Destination Unreachable, Time Exceeded, Redirect",
+            "comment": "Tipos de mensagem",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
+          },
+          {
+            "name": "Cabeçalho de referência possui 8 bytes sendo 4 primeiros fixos e corpo de mensagem variável",
+            "comment": "Estrutura cabeçalho",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc792"
+            ]
           }
         ]
       },
@@ -279,6 +459,13 @@
           {
             "name": "Transmite informações em texto claro sem proteção criptográfica integrada",
             "comment": "Limitação"
+          },
+          {
+            "name": "Versão segura utiliza portas 990 (implícito) ou 21 (explícito) com TLS/SSL",
+            "comment": "Versão segura",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -295,8 +482,11 @@
             "comment": "Transporte"
           },
           {
-            "name": "Difere fundamentalmente de soluções que adicionam criptografia a protocolos tradicionais",
-            "comment": "Observação"
+            "name": "Opera sobre porta 22 fornecendo transferência de arquivos com criptografia nativa",
+            "comment": "Porta segura",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -309,12 +499,19 @@
             "comment": "Camada e função"
           },
           {
-            "name": "Substituiu definitivamente o Telnet eliminando transmissões em texto claro",
+            "name": "Substituiu definitivamente protocolos inseguros eliminando transmissões em texto claro",
             "comment": "Evolução"
           },
           {
             "name": "Estabelece sessões criptografadas padrão na porta 22 para acesso seguro",
             "comment": "Transporte"
+          },
+          {
+            "name": "Porta 22 é exclusivamente segura não possuindo versão insegura equivalente",
+            "comment": "Segurança nativa",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -333,6 +530,20 @@
           {
             "name": "Transmite dados sem qualquer proteção contra interceptação ou modificação",
             "comment": "Limitação"
+          },
+          {
+            "name": "Cabeçalho Host contém DNS do servidor para identificação do destino",
+            "comment": "Cabeçalho Host",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc7230"
+            ]
+          },
+          {
+            "name": "Cabeçalho Authorization contém credenciais para autenticar agente de usuário com servidor",
+            "comment": "Cabeçalho Auth",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc7235"
+            ]
           }
         ]
       },
@@ -355,6 +566,13 @@
           {
             "name": "Representa extensão segura e não substituição completa do protocolo web original",
             "comment": "Observação"
+          },
+          {
+            "name": "Porta 443 é exclusivamente para navegação segura não sendo compartilhada com versão insegura",
+            "comment": "Porta dedicada",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -373,6 +591,21 @@
           {
             "name": "Limitado ao envio não oferecendo capacidade de recuperação de e-mails",
             "comment": "Limitação"
+          },
+          {
+            "name": "Utilizado por MTA (Mail Transfer Agent) para comunicação entre servidores de email",
+            "comment": "Agente MTA"
+          },
+          {
+            "name": "Implementa funcionamento store-and-forward mantendo mensagens em fila até confirmação de entrega",
+            "comment": "Mecanismo"
+          },
+          {
+            "name": "Versão segura utiliza porta 465 (implícito) ou 587 (explícito STARTTLS) para envio protegido",
+            "comment": "Versão segura",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -395,6 +628,17 @@
           {
             "name": "Permite acesso aos e-mails por apenas um dispositivo devido ao download local",
             "comment": "Limitação"
+          },
+          {
+            "name": "Utilizado por MUA (Mail User Agent) para receber mensagens do servidor",
+            "comment": "Agente MUA"
+          },
+          {
+            "name": "Versão segura utiliza porta 995 com TLS/SSL para recepção protegida de e-mails",
+            "comment": "Versão segura",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -417,6 +661,17 @@
           {
             "name": "Protocolo de e-mails que demanda maior capacidade de armazenamento e processamento no servidor comparado a alternativas",
             "comment": "Desvantagem"
+          },
+          {
+            "name": "Utilizado por MUA (Mail User Agent) para acesso online às mensagens no servidor",
+            "comment": "Agente MUA"
+          },
+          {
+            "name": "Versão segura utiliza porta 993 com TLS/SSL para acesso protegido às mensagens no servidor",
+            "comment": "Versão segura",
+            "sources": [
+              "https://www.iana.org/assignments/service-names-port-numbers/"
+            ]
           }
         ]
       },
@@ -497,31 +752,52 @@
         "subtopics": [
           {
             "name": "Protocolo IEEE 802.1w que reduz estados das portas para apenas três: Discarding, Learning e Forwarding",
-            "comment": "Estados RSTP"
+            "comment": "Estados RSTP",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           },
           {
             "name": "Estado Discarding unifica os estados Blocking, Disabled e Listening do STP tradicional",
-            "comment": "Simplificação"
+            "comment": "Simplificação",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           },
           {
             "name": "Funções das portas: Root, Designated, Alternate e Backup para failover rápido sem convergência",
-            "comment": "Funções RSTP"
+            "comment": "Funções RSTP",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           },
           {
             "name": "Edge Ports conectadas a dispositivos finais fazem transição imediata para estado Forwarding",
-            "comment": "Edge Ports"
+            "comment": "Edge Ports",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           },
           {
             "name": "Portas Non-Edge conectam bridges em segmentos ponto-a-ponto (full-duplex) ou compartilhados (half-duplex)",
-            "comment": "Non-Edge Ports"
+            "comment": "Non-Edge Ports",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           },
           {
             "name": "Porta Alternate oferece caminho redundante para Root Bridge com failover instantâneo",
-            "comment": "Redundância"
+            "comment": "Redundância",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           },
           {
             "name": "Porta Backup substitui imediatamente porta Designated em caso de falha no mesmo segmento",
-            "comment": "Backup local"
+            "comment": "Backup local",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1w/5287/"
+            ]
           }
         ]
       },
@@ -535,27 +811,45 @@
           },
           {
             "name": "Utiliza protocolo EAP (Extensible Authentication Protocol) para encapsulamento de métodos de autenticação",
-            "comment": "Protocolo base"
+            "comment": "Protocolo base",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc3748"
+            ]
           },
           {
             "name": "EAP-TLS oferece máxima segurança com certificados cliente e servidor e autenticação mútua",
-            "comment": "EAP-TLS"
+            "comment": "EAP-TLS",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc5216"
+            ]
           },
           {
             "name": "EAP-MD5 usa apenas usuário e senha sem autenticação mútua nem geração de chaves dinâmicas",
-            "comment": "EAP-MD5"
+            "comment": "EAP-MD5",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc3748"
+            ]
           },
           {
             "name": "EAP-PEAP fornece túnel seguro com certificados apenas do lado servidor para autenticação",
-            "comment": "EAP-PEAP"
+            "comment": "EAP-PEAP",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc4851"
+            ]
           },
           {
             "name": "Aplicável tanto em redes com fio quanto sem fio independente das camadas inferiores e superiores",
-            "comment": "Versatilidade"
+            "comment": "Versatilidade",
+            "sources": [
+              "https://standards.ieee.org/ieee/802.1X/5287/"
+            ]
           },
           {
             "name": "Fluxo de mensagens: Requisição, Resposta, Sucesso e Falha para controle de autenticação",
-            "comment": "Tipos de mensagem"
+            "comment": "Tipos de mensagem",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc3748"
+            ]
           }
         ]
       },
@@ -635,6 +929,122 @@
           {
             "name": "Permite adaptação dinâmica de codecs e taxa de bits baseada no feedback",
             "comment": "Controle adaptativo"
+          }
+        ]
+      },
+      {
+        "name": "IPv4",
+        "comment": "Protocolo da camada de rede com endereçamento de 32 bits e cabeçalho variável.",
+        "subtopics": [
+          {
+            "name": "Cabeçalho variável de 20 a 60 bytes com 12 campos fixos obrigatórios",
+            "comment": "Estrutura cabeçalho",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc791"
+            ]
+          },
+          {
+            "name": "Campo IHL informa quantidade de palavras de 32 bits presentes no cabeçalho devido ao tamanho variável",
+            "comment": "Campo IHL",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc791"
+            ]
+          },
+          {
+            "name": "Header Checksum utiliza algoritmo sobre todo cabeçalho permitindo verificação de integridade apenas do cabeçalho",
+            "comment": "Checksum IPv4",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc791"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "IPv6",
+        "comment": "Protocolo da camada de rede com endereçamento de 128 bits e cabeçalho fixo simplificado.",
+        "subtopics": [
+          {
+            "name": "Cabeçalho fixo de 40 bytes com apenas 8 campos mais simples que versão anterior",
+            "comment": "Estrutura cabeçalho",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc8200"
+            ]
+          },
+          {
+            "name": "Campo Próximo Cabeçalho referencia cabeçalhos de extensão ou protocolo de camada superior",
+            "comment": "Campo Next Header",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc8200"
+            ]
+          },
+          {
+            "name": "Não possui campo checksum no cabeçalho principal delegando verificação para camadas superiores",
+            "comment": "Sem checksum",
+            "sources": [
+              "https://datatracker.ietf.org/doc/html/rfc8200"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MTA",
+        "comment": "Mail Transfer Agent - Servidor responsável pelo envio e recebimento de e-mails entre servidores.",
+        "subtopics": [
+          {
+            "name": "Servidor que envia e-mails para outros servidores externos usando protocolo SMTP",
+            "comment": "Função envio"
+          },
+          {
+            "name": "Atua como cliente ao enviar mensagens e como servidor ao receber mensagens",
+            "comment": "Papel dual"
+          },
+          {
+            "name": "Funciona como relay intermediário na comunicação entre diferentes domínios de email",
+            "comment": "Relay"
+          },
+          {
+            "name": "Responsável por entregar mensagens ao MDA para armazenamento na caixa postal correta",
+            "comment": "Entrega final"
+          }
+        ]
+      },
+      {
+        "name": "MDA",
+        "comment": "Mail Delivery Agent - Responsável pela entrega final de e-mails às caixas postais dos usuários.",
+        "subtopics": [
+          {
+            "name": "Programa responsável por entregar e arquivar mensagens na caixa postal correta do destinatário",
+            "comment": "Função principal"
+          },
+          {
+            "name": "Recebe mensagens do MTA e as armazena no sistema de arquivos ou banco de dados",
+            "comment": "Armazenamento"
+          },
+          {
+            "name": "Processo final de entrega que ocorre após o MTA receber a mensagem",
+            "comment": "Etapa final"
+          }
+        ]
+      },
+      {
+        "name": "MUA",
+        "comment": "Mail User Agent - Cliente de email usado pelos usuários para criar, enviar e receber mensagens.",
+        "subtopics": [
+          {
+            "name": "Programa que recebe mensagens dos usuários do servidor de email com uso dos protocolos IMAP ou POP",
+            "comment": "Recebimento"
+          },
+          {
+            "name": "Interface através da qual usuários acessam e gerenciam suas mensagens de email",
+            "comment": "Interface usuário"
+          },
+          {
+            "name": "Responsável por formatar mensagens e enviá-las ao MTA para distribuição",
+            "comment": "Envio"
+          },
+          {
+            "name": "Processa informações do cabeçalho da mensagem para exibição ao usuário final",
+            "comment": "Processamento"
           }
         ]
       }
