@@ -1,0 +1,643 @@
+{
+  "subject": "Protocolos de Redes - TCU AUFC TI",
+  "subtopicsLabel": "Características dos Protocolos",
+  "topics": {
+    "name": "Protocolos de Rede",
+    "values": [
+      {
+        "name": "TCP",
+        "comment": "Protocolo da camada de transporte, orientado à conexão, confiável, com controle de fluxo e congestionamento.",
+        "subtopics": [
+          {
+            "name": "Opera na camada de transporte estabelecendo conexões antes da transmissão",
+            "comment": "Camada e característica"
+          },
+          {
+            "name": "Garante entrega confiável e ordenada de todos os dados transmitidos",
+            "comment": "Confiabilidade"
+          },
+          {
+            "name": "Implementa controle de fluxo e congestionamento para otimizar transmissão",
+            "comment": "Controle"
+          },
+          {
+            "name": "Apresenta maior overhead e latência devido aos mecanismos de confiabilidade",
+            "comment": "Desvantagem"
+          },
+          {
+            "name": "Utilizado por aplicações web, transferência de arquivos e acesso remoto",
+            "comment": "Aplicações"
+          }
+        ]
+      },
+      {
+        "name": "UDP",
+        "comment": "Protocolo da camada de transporte, não orientado à conexão, não confiável, baixa latência.",
+        "subtopics": [
+          {
+            "name": "Opera na camada de transporte sem estabelecer conexões prévias",
+            "comment": "Camada e característica"
+          },
+          {
+            "name": "Não oferece garantias de entrega nem ordenação dos pacotes enviados",
+            "comment": "Não confiável"
+          },
+          {
+            "name": "Ausência de controle de congestionamento permite transmissão mais rápida",
+            "comment": "Sem controle"
+          },
+          {
+            "name": "Proporciona baixa latência ideal para aplicações sensíveis ao tempo",
+            "comment": "Vantagem"
+          },
+          {
+            "name": "Protocolo sem estado que não mantém informações sobre conexões anteriores",
+            "comment": "Característica"
+          },
+          {
+            "name": "Preferido para resolução de nomes, streaming e jogos online",
+            "comment": "Aplicações"
+          }
+        ]
+      },
+      {
+        "name": "SCTP",
+        "comment": "Protocolo da camada de transporte que combina características de TCP e UDP.",
+        "subtopics": [
+          {
+            "name": "Protocolo da camada de transporte que oferece confiabilidade com multi-streaming e multi-homing",
+            "comment": "Camada e característica"
+          },
+          {
+            "name": "Combina confiabilidade de entrega com flexibilidade de transmissão",
+            "comment": "Híbrido"
+          },
+          {
+            "name": "Permite múltiplos fluxos independentes dentro de uma única associação",
+            "comment": "Multi-streaming"
+          },
+          {
+            "name": "Suporta múltiplos endereços IP para redundância e failover automático",
+            "comment": "Multi-homing"
+          },
+          {
+            "name": "Amplamente utilizado em redes de telecomunicações e sistemas críticos",
+            "comment": "Aplicação"
+          }
+        ]
+      },
+      {
+        "name": "ARP",
+        "comment": "Protocolo que resolve endereços IP em endereços MAC na rede local.",
+        "subtopics": [
+          {
+            "name": "Funciona entre as camadas de enlace e rede mapeando endereços lógicos e físicos",
+            "comment": "Camada"
+          },
+          {
+            "name": "Traduz automaticamente endereços IP em endereços MAC correspondentes",
+            "comment": "Função"
+          },
+          {
+            "name": "Resolve endereços IP em endereços MAC dentro do mesmo segmento de rede",
+            "comment": "Escopo"
+          },
+          {
+            "name": "Opera diretamente sobre Ethernet sem utilizar portas de transporte",
+            "comment": "Característica"
+          },
+          {
+            "name": "Protocolo auxiliar que opera entre camadas de enlace e rede para resolução de endereços",
+            "comment": "Observação"
+          },
+          {
+            "name": "Essencial para comunicação em redes Ethernet onde dispositivos precisam conhecer MACs de destino",
+            "comment": "Necessidade"
+          }
+        ]
+      },
+      {
+        "name": "TLS/SSL",
+        "comment": "Protocolos de segurança que proveem criptografia, integridade e autenticação.",
+        "subtopics": [
+          {
+            "name": "Fornece criptografia, verificação de integridade e autenticação de identidade",
+            "comment": "Função"
+          },
+          {
+            "name": "Versão SSL tornou-se obsoleta sendo substituída por implementações mais seguras",
+            "comment": "Status"
+          },
+          {
+            "name": "Atua como camada intermediária entre transporte e aplicação",
+            "comment": "Funcionamento"
+          },
+          {
+            "name": "Fornece camada de segurança transparente para múltiplos protocolos de aplicação",
+            "comment": "Exemplo"
+          }
+        ]
+      },
+      {
+        "name": "OSPF",
+        "comment": "Protocolo IGP de estado de enlace para roteamento interno.",
+        "subtopics": [
+          {
+            "name": "Protocolo de roteamento interno baseado em algoritmo de estado de enlace",
+            "comment": "Tipo e algoritmo"
+          },
+          {
+            "name": "Protocolo de roteamento especializado em roteamento dentro de um único sistema autônomo",
+            "comment": "Escopo"
+          },
+          {
+            "name": "Protocolo de roteamento que oferece convergência rápida após mudanças na topologia de rede",
+            "comment": "Vantagem"
+          },
+          {
+            "name": "Comunica-se diretamente sobre IP usando protocolo número 89 sem portas de transporte",
+            "comment": "Característica"
+          }
+        ]
+      },
+      {
+        "name": "BGP",
+        "comment": "Protocolo EGP para roteamento entre sistemas autônomos na Internet.",
+        "subtopics": [
+          {
+            "name": "Protocolo de roteamento externo que conecta diferentes sistemas autônomos na Internet",
+            "comment": "Tipo e função"
+          },
+          {
+            "name": "Protocolo de roteamento que gerencia roteamento entre provedores de Internet e grandes organizações",
+            "comment": "Função"
+          },
+          {
+            "name": "Estabelece sessões TCP confiáveis na porta 179 para troca de informações de roteamento",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Toma decisões baseadas em políticas administrativas e não apenas em métricas",
+            "comment": "Decisão"
+          }
+        ]
+      },
+      {
+        "name": "DNS",
+        "comment": "Protocolo de resolução de nomes em endereços IP.",
+        "subtopics": [
+          {
+            "name": "Sistema hierárquico da camada de aplicação que traduz nomes legíveis em endereços",
+            "comment": "Camada e função"
+          },
+          {
+            "name": "Converte nomes de domínio como www.exemplo.com em endereços IP numéricos",
+            "comment": "Função"
+          },
+          {
+            "name": "Utiliza UDP na porta 53 para consultas simples e frequentes",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Emprega TCP na porta 53 para transferências completas e respostas extensas",
+            "comment": "Transporte"
+          }
+        ]
+      },
+      {
+        "name": "DHCP",
+        "comment": "Protocolo para atribuição dinâmica de endereços IP e parâmetros de rede.",
+        "subtopics": [
+          {
+            "name": "Serviço da camada de aplicação que automatiza configuração de parâmetros de rede",
+            "comment": "Camada e função"
+          },
+          {
+            "name": "Distribui automaticamente endereços IP disponíveis para dispositivos da rede",
+            "comment": "Função"
+          },
+          {
+            "name": "Fornece informações essenciais como gateway padrão e servidores de resolução de nomes",
+            "comment": "Função"
+          },
+          {
+            "name": "Opera com protocolo rápido usando portas dedicadas 67 para servidor e 68 para cliente",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Concentra-se em configuração de rede sem executar tradução de nomes",
+            "comment": "Observação"
+          }
+        ]
+      },
+      {
+        "name": "ICMP",
+        "comment": "Protocolo de mensagens de controle e diagnóstico da camada de rede.",
+        "subtopics": [
+          {
+            "name": "Protocolo da camada de rede especializado em mensagens de controle e diagnóstico",
+            "comment": "Camada e função"
+          },
+          {
+            "name": "Transmite notificações de erro e informações de status da rede",
+            "comment": "Função"
+          },
+          {
+            "name": "Fundamental para ferramentas de diagnóstico como ping e traceroute",
+            "comment": "Aplicação"
+          },
+          {
+            "name": "Comunica-se diretamente sobre IP usando protocolo número 1 sem portas de transporte",
+            "comment": "Característica"
+          },
+          {
+            "name": "Envia mensagem 'Time Exceeded' quando roteador descarta pacote com TTL igual a zero",
+            "comment": "Controle TTL"
+          },
+          {
+            "name": "Focado exclusivamente em controle não carregando informações de usuário",
+            "comment": "Limitação"
+          }
+        ]
+      },
+      {
+        "name": "FTP",
+        "comment": "Protocolo de transferência de arquivos sem criptografia.",
+        "subtopics": [
+          {
+            "name": "Protocolo clássico da camada de aplicação para movimentação de arquivos entre sistemas",
+            "comment": "Camada e função"
+          },
+          {
+            "name": "Estabelece canal de comando dedicado na porta 21 para instruções de controle",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Cria canal de dados separado na porta 20 para transferência efetiva dos arquivos",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Transmite informações em texto claro sem proteção criptográfica integrada",
+            "comment": "Limitação"
+          }
+        ]
+      },
+      {
+        "name": "SFTP",
+        "comment": "Protocolo seguro de transferência de arquivos sobre SSH.",
+        "subtopics": [
+          {
+            "name": "Permite transferência protegida de arquivos aproveitando infraestrutura de acesso remoto seguro",
+            "comment": "Função"
+          },
+          {
+            "name": "Funciona como subsistema de transferência de arquivos dentro do protocolo de acesso remoto",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Difere fundamentalmente de soluções que adicionam criptografia a protocolos tradicionais",
+            "comment": "Observação"
+          }
+        ]
+      },
+      {
+        "name": "SSH",
+        "comment": "Protocolo de acesso remoto seguro que substitui o Telnet.",
+        "subtopics": [
+          {
+            "name": "Protocolo da camada de aplicação que revolucionou o acesso remoto com segurança",
+            "comment": "Camada e função"
+          },
+          {
+            "name": "Substituiu definitivamente o Telnet eliminando transmissões em texto claro",
+            "comment": "Evolução"
+          },
+          {
+            "name": "Estabelece sessões criptografadas padrão na porta 22 para acesso seguro",
+            "comment": "Transporte"
+          }
+        ]
+      },
+      {
+        "name": "HTTP",
+        "comment": "Protocolo de comunicação entre clientes e servidores web sem segurança nativa.",
+        "subtopics": [
+          {
+            "name": "Protocolo fundamental da camada de aplicação que viabiliza a World Wide Web",
+            "comment": "Camada e função"
+          },
+          {
+            "name": "Funciona na porta padrão 80 para comunicação entre navegadores e servidores",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Transmite dados sem qualquer proteção contra interceptação ou modificação",
+            "comment": "Limitação"
+          }
+        ]
+      },
+      {
+        "name": "HTTPS",
+        "comment": "HTTP com segurança adicionada através do TLS.",
+        "subtopics": [
+          {
+            "name": "Versão segura da navegação web que adiciona camada de criptografia transparente",
+            "comment": "Definição"
+          },
+          {
+            "name": "Opera na porta dedicada 443 garantindo comunicação protegida por padrão",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Preserva toda funcionalidade da navegação tradicional adicionando apenas segurança",
+            "comment": "Funcionamento"
+          },
+          {
+            "name": "Representa extensão segura e não substituição completa do protocolo web original",
+            "comment": "Observação"
+          }
+        ]
+      },
+      {
+        "name": "SMTP",
+        "comment": "Protocolo exclusivo para envio de mensagens de e-mail.",
+        "subtopics": [
+          {
+            "name": "Protocolo exclusivo para envio de e-mail sem capacidade de recepção",
+            "comment": "Função"
+          },
+          {
+            "name": "Comunica-se através da porta padrão 25 para transferência de correio eletrônico",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Limitado ao envio não oferecendo capacidade de recuperação de e-mails",
+            "comment": "Limitação"
+          }
+        ]
+      },
+      {
+        "name": "POP3",
+        "comment": "Protocolo de recebimento de e-mails que remove e-mails do servidor.",
+        "subtopics": [
+          {
+            "name": "Permite recuperação de e-mails armazenados em servidores remotos",
+            "comment": "Função"
+          },
+          {
+            "name": "Conecta-se ao servidor de email através da porta dedicada 110",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Baixa e-mails localmente removendo-os permanentemente do servidor após transferência",
+            "comment": "Comportamento"
+          },
+          {
+            "name": "Permite acesso aos e-mails por apenas um dispositivo devido ao download local",
+            "comment": "Limitação"
+          }
+        ]
+      },
+      {
+        "name": "IMAP",
+        "comment": "Protocolo de recebimento de e-mails que mantém e-mails no servidor.",
+        "subtopics": [
+          {
+            "name": "Acessa e-mails mantendo-os permanentemente armazenados no servidor",
+            "comment": "Função e comportamento"
+          },
+          {
+            "name": "Estabelece conexões com servidores de email através da porta padrão 143",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Viabiliza acesso simultâneo aos e-mails a partir de múltiplos dispositivos diferentes",
+            "comment": "Vantagem"
+          },
+          {
+            "name": "Protocolo de e-mails que demanda maior capacidade de armazenamento e processamento no servidor comparado a alternativas",
+            "comment": "Desvantagem"
+          }
+        ]
+      },
+      {
+        "name": "VLAN",
+        "comment": "IEEE 802.1Q - Segmentação lógica de rede física com tags de 4 bytes.",
+        "subtopics": [
+          {
+            "name": "Tecnologia IEEE 802.1Q que insere tags de 4 bytes entre campos MAC origem e tipo/comprimento",
+            "comment": "Implementação",
+            "image": "./subjects/redes/protocolos/802_1Q1.png"
+          },
+          {
+            "name": "Suporta até 4094 VLANs úteis usando identificador de 12 bits (VLANs 0 e 4095 são reservadas)",
+            "comment": "Capacidade",
+            "image": "./subjects/redes/protocolos/802_1Q1.png"
+          },
+          {
+            "name": "Cria domínios de broadcast isolados em infraestrutura física compartilhada",
+            "comment": "Segmentação"
+          },
+          {
+            "name": "Requer roteador ou switch Layer 3 para comunicação entre VLANs diferentes",
+            "comment": "Inter-VLAN"
+          },
+          {
+            "name": "Portas TRUNK agregam tráfego de todas VLANs para encaminhamento entre switches",
+            "comment": "Modo TRUNK"
+          },
+          {
+            "name": "VLAN por porta (Port-Based) configura porta do switch para pertencer a VLAN específica",
+            "comment": "Tipo Level 1"
+          },
+          {
+            "name": "VLAN por MAC (MAC Address-Based) considera endereço MAC do dispositivo independente da porta",
+            "comment": "Tipo Level 2"
+          }
+        ]
+      },
+      {
+        "name": "STP",
+        "comment": "Protocolo IEEE 802.1D para prevenção de loops em redes comutadas.",
+        "subtopics": [
+          {
+            "name": "Protocolo IEEE 802.1D que bloqueia portas de switches para eliminar loops e prevenir broadcast storms",
+            "comment": "Padrão e função",
+            "image": "https://www.networkacademy.io/sites/default/files/inline-images/lan-with-spanning-tree-example-2.gif"
+          },
+          {
+            "name": "Bridge ID composta por 8 bytes define Root Bridge como switch com menor identificador",
+            "comment": "Eleição Root Bridge"
+          },
+          {
+            "name": "Switches trocam BPDUs (Bridge Protocol Data Unit) constantemente para manter spanning tree atualizada",
+            "comment": "Comunicação"
+          },
+          {
+            "name": "Estados das portas: Blocking, Listening, Learning, Forwarding e Disabled com transições temporizadas",
+            "comment": "Estados STP"
+          },
+          {
+            "name": "Tempos de transição: Blocking→Listening (20s), Listening→Learning (15s), Learning→Forwarding (15s)",
+            "comment": "Convergência"
+          },
+          {
+            "name": "Convergência máxima de 50 segundos para estabilização completa da rede após mudanças",
+            "comment": "Tempo total"
+          },
+          {
+            "name": "Root Port única por switch define melhor caminho até Root Bridge baseado em menor custo",
+            "comment": "Porta raiz"
+          }
+        ]
+      },
+      {
+        "name": "RSTP",
+        "comment": "IEEE 802.1w - Evolução do STP com convergência mais rápida e apenas 3 estados de porta.",
+        "subtopics": [
+          {
+            "name": "Protocolo IEEE 802.1w que reduz estados das portas para apenas três: Discarding, Learning e Forwarding",
+            "comment": "Estados RSTP"
+          },
+          {
+            "name": "Estado Discarding unifica os estados Blocking, Disabled e Listening do STP tradicional",
+            "comment": "Simplificação"
+          },
+          {
+            "name": "Funções das portas: Root, Designated, Alternate e Backup para failover rápido sem convergência",
+            "comment": "Funções RSTP"
+          },
+          {
+            "name": "Edge Ports conectadas a dispositivos finais fazem transição imediata para estado Forwarding",
+            "comment": "Edge Ports"
+          },
+          {
+            "name": "Portas Non-Edge conectam bridges em segmentos ponto-a-ponto (full-duplex) ou compartilhados (half-duplex)",
+            "comment": "Non-Edge Ports"
+          },
+          {
+            "name": "Porta Alternate oferece caminho redundante para Root Bridge com failover instantâneo",
+            "comment": "Redundância"
+          },
+          {
+            "name": "Porta Backup substitui imediatamente porta Designated em caso de falha no mesmo segmento",
+            "comment": "Backup local"
+          }
+        ]
+      },
+      {
+        "name": "802.1x",
+        "comment": "IEEE 802.1X - Protocolo de autenticação baseado em portas para controle de acesso à rede.",
+        "subtopics": [
+          {
+            "name": "Arquitetura com três elementos: Suplicante (cliente), Autenticador (switch/AP) e Servidor de Autenticação",
+            "comment": "Arquitetura 802.1x"
+          },
+          {
+            "name": "Utiliza protocolo EAP (Extensible Authentication Protocol) para encapsulamento de métodos de autenticação",
+            "comment": "Protocolo base"
+          },
+          {
+            "name": "EAP-TLS oferece máxima segurança com certificados cliente e servidor e autenticação mútua",
+            "comment": "EAP-TLS"
+          },
+          {
+            "name": "EAP-MD5 usa apenas usuário e senha sem autenticação mútua nem geração de chaves dinâmicas",
+            "comment": "EAP-MD5"
+          },
+          {
+            "name": "EAP-PEAP fornece túnel seguro com certificados apenas do lado servidor para autenticação",
+            "comment": "EAP-PEAP"
+          },
+          {
+            "name": "Aplicável tanto em redes com fio quanto sem fio independente das camadas inferiores e superiores",
+            "comment": "Versatilidade"
+          },
+          {
+            "name": "Fluxo de mensagens: Requisição, Resposta, Sucesso e Falha para controle de autenticação",
+            "comment": "Tipos de mensagem"
+          }
+        ]
+      },
+      {
+        "name": "QoS",
+        "comment": "IEEE 802.1p - Conjunto de técnicas para priorizar tráfego e garantir qualidade de serviço.",
+        "subtopics": [
+          {
+            "name": "Protocolo IEEE 802.1p para priorização de tráfego na camada de enlace usando 3 bits",
+            "comment": "Padrão"
+          },
+          {
+            "name": "Estabelece 8 classes de prioridade (0 a 7) usando 3 bits no cabeçalho 802.1p",
+            "comment": "Classificação",
+            "image": "./subjects/redes/protocolos/802_1p_priority_levels.png"
+          },
+          {
+            "name": "Gerencia largura de banda existente sem aumentar capacidade física do enlace",
+            "comment": "Limitação"
+          },
+          {
+            "name": "Implementa marcação DSCP, reserva RSVP e engenharia de tráfego MPLS em camadas superiores",
+            "comment": "Técnicas complementares"
+          },
+          {
+            "name": "Não implementa reserva de banda mas apenas priorização de tráfego por classes",
+            "comment": "Funcionamento"
+          },
+          {
+            "name": "Melhora suporte a tráfegos com tempos críticos como voz e vídeo",
+            "comment": "Objetivo principal"
+          }
+        ]
+      },
+      {
+        "name": "RTP",
+        "comment": "Protocolo de transporte em tempo real para aplicações multimídia como voz e vídeo.",
+        "subtopics": [
+          {
+            "name": "Protocolo RFC 3550 de transporte multimídia que adiciona sequence numbers e timestamps",
+            "comment": "Características únicas"
+          },
+          {
+            "name": "Opera sobre UDP nas portas dinâmicas para minimizar latência em aplicações tempo real",
+            "comment": "Transporte"
+          },
+          {
+            "name": "Trabalha obrigatoriamente com RTCP para controle de sessão e estatísticas de qualidade",
+            "comment": "Protocolo complementar"
+          },
+          {
+            "name": "Padrão obrigatório em H.323 e opcional em SIP para transporte de mídia",
+            "comment": "Uso em VoIP"
+          },
+          {
+            "name": "Identificado pelo payload type que especifica codec de áudio ou vídeo utilizado",
+            "comment": "Identificação de conteúdo"
+          }
+        ]
+      },
+      {
+        "name": "RTCP",
+        "comment": "Protocolo de controle que monitora a qualidade de transmissões RTP.",
+        "subtopics": [
+          {
+            "name": "Protocolo de controle RFC 3550 que envia relatórios periódicos sobre qualidade RTP",
+            "comment": "Padrão e função"
+          },
+          {
+            "name": "Transmite estatísticas como packet loss, jitter, delay e round-trip time",
+            "comment": "Métricas específicas"
+          },
+          {
+            "name": "Utiliza porta RTP+1 (se RTP usa porta par, RTCP usa ímpar seguinte)",
+            "comment": "Convenção de portas"
+          },
+          {
+            "name": "Permite adaptação dinâmica de codecs e taxa de bits baseada no feedback",
+            "comment": "Controle adaptativo"
+          }
+        ]
+      }
+    ]
+  }
+}
