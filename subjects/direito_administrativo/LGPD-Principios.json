@@ -1,0 +1,109 @@
+{
+  "subject": "Lei Geral de Proteção de Dados (LGPD)",
+  "subtopicsLabel": "Definições Legais",
+  "topics": {
+    "name": "Princípios do Tratamento de Dados Pessoais",
+    "values": [
+      {
+        "name": "Finalidade",
+        "key": "PRIN-01",
+        "subtopics": [
+          {
+            "name": "Realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior incompatível",
+            "key": "DEF-01"
+          }
+        ]
+      },
+      {
+        "name": "Adequação",
+        "key": "PRIN-02",
+        "subtopics": [
+          {
+            "name": "Compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto do tratamento",
+            "key": "DEF-02"
+          }
+        ]
+      },
+      {
+        "name": "Necessidade",
+        "key": "PRIN-03",
+        "subtopics": [
+          {
+            "name": "Limitação do tratamento ao mínimo necessário, com dados pertinentes, proporcionais e não excessivos",
+            "key": "DEF-03"
+          }
+        ]
+      },
+      {
+        "name": "Livre acesso",
+        "key": "PRIN-04",
+        "subtopics": [
+          {
+            "name": "Garantia de consulta facilitada e gratuita sobre forma, duração e integralidade dos dados pessoais",
+            "key": "DEF-04"
+          }
+        ]
+      },
+      {
+        "name": "Qualidade dos dados",
+        "key": "PRIN-05",
+        "subtopics": [
+          {
+            "name": "Garantia de exatidão, clareza, relevância e atualização dos dados conforme a finalidade do tratamento",
+            "key": "DEF-05"
+          }
+        ]
+      },
+      {
+        "name": "Transparência",
+        "key": "PRIN-06",
+        "subtopics": [
+          {
+            "name": "Garantia de informações claras, precisas e facilmente acessíveis sobre o tratamento e seus agentes",
+            "key": "DEF-06"
+          }
+        ]
+      },
+      {
+        "name": "Segurança",
+        "key": "PRIN-07",
+        "subtopics": [
+          {
+            "name": "Utilização de medidas técnicas e administrativas para proteger dados contra acessos não autorizados ou ilícitos",
+            "key": "DEF-07"
+          }
+        ]
+      },
+      {
+        "name": "Prevenção",
+        "key": "PRIN-08",
+        "subtopics": [
+          {
+            "name": "Adoção de medidas para prevenir a ocorrência de danos em virtude do tratamento de dados pessoais",
+            "key": "DEF-08"
+          }
+        ]
+      },
+      {
+        "name": "Não discriminação",
+        "key": "PRIN-09",
+        "subtopics": [
+          {
+            "name": "Impossibilidade de realização do tratamento para fins discriminatórios ilícitos ou abusivos",
+            "key": "DEF-09"
+          }
+        ]
+      },
+      {
+        "name": "Responsabilização e prestação de contas",
+        "key": "PRIN-10",
+        "subtopics": [
+          {
+            "name": "Demonstração da adoção de medidas eficazes para comprovar o cumprimento das normas de proteção de dados",
+            "key": "DEF-10"
+          }
+        ]
+      }
+    ]
+  }
+}
