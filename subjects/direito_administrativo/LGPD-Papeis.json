@@ -1,0 +1,79 @@
+{
+  "subject": "Lei Geral de Proteção de Dados (LGPD)",
+  "subtopicsLabel": "Papéis no Tratamento de Dados",
+  "topics": {
+    "name": "Principais Papéis",
+    "values": [
+      {
+        "name": "Encarregado",
+        "key": "DPO",
+        "subtopics": [
+          {
+            "name": "Pessoa indicada para atuar como canal de comunicação entre controlador, titulares dos dados e a autoridade nacional",
+            "key": "DESC-04"
+          }
+        ]
+      },
+      {
+        "name": "Operador",
+        "key": "OPERATOR",
+        "subtopics": [
+          {
+            "name": "Pessoa natural ou jurídica que realiza o tratamento de dados pessoais em nome do controlador",
+            "key": "DESC-03"
+          }
+        ]
+      },
+      {
+        "name": "Autoridade Nacional",
+        "key": "ANPD",
+        "subtopics": [
+          {
+            "name": "Órgão da administração pública responsável por zelar, implementar e fiscalizar o cumprimento da lei de proteção de dados",
+            "key": "DESC-06"
+          }
+        ]
+      },
+      {
+        "name": "Titular",
+        "key": "DATA-SUBJECT",
+        "subtopics": [
+          {
+            "name": "Pessoa natural a quem se referem os dados pessoais que são objeto de tratamento",
+            "key": "DESC-01"
+          }
+        ]
+      },
+      {
+        "name": "Agentes de tratamento",
+        "key": "AGENTS",
+        "subtopics": [
+          {
+            "name": "Conjunto formado pelo controlador e pelo operador responsáveis pelas atividades de tratamento de dados pessoais",
+            "key": "DESC-05"
+          }
+        ]
+      },
+      {
+        "name": "Órgão de pesquisa",
+        "key": "RESEARCH",
+        "subtopics": [
+          {
+            "name": "Entidade pública ou privada sem fins lucrativos que realiza pesquisa de caráter histórico, científico, tecnológico ou estatístico",
+            "key": "DESC-07"
+          }
+        ]
+      },
+      {
+        "name": "Controlador",
+        "key": "CONTROLLER",
+        "subtopics": [
+          {
+            "name": "Pessoa natural ou jurídica a quem competem as decisões referentes ao tratamento de dados pessoais",
+            "key": "DESC-02"
+          }
+        ]
+      }
+    ]
+  }
+}

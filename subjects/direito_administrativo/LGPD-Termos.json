@@ -1,0 +1,129 @@
+{
+  "subject": "Lei Geral de Proteção de Dados (LGPD)",
+  "subtopicsLabel": "Termos e Definições",
+  "topics": {
+    "name": "Conceitos Fundamentais",
+    "values": [
+      {
+        "name": "Consentimento",
+        "key": "CONSENT",
+        "subtopics": [
+          {
+            "name": "Manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de dados para finalidade determinada",
+            "key": "DESC-07"
+          }
+        ]
+      },
+      {
+        "name": "Banco de dados",
+        "key": "DB",
+        "subtopics": [
+          {
+            "name": "Conjunto estruturado de dados pessoais, armazenado em suporte eletrônico ou físico, em um ou vários locais",
+            "key": "DESC-04"
+          }
+        ]
+      },
+      {
+        "name": "Anonimização",
+        "key": "ANONPROC",
+        "subtopics": [
+          {
+            "name": "Uso de meios técnicos razoáveis e disponíveis que eliminam a possibilidade de associação do dado a um indivíduo",
+            "key": "DESC-06"
+          }
+        ]
+      },
+      {
+        "name": "Dado pessoal sensível",
+        "key": "SENS",
+        "subtopics": [
+          {
+            "name": "Informação sobre origem racial ou étnica, convicção religiosa, opinião política, filiação sindical, saúde, vida sexual ou dado genético ou biométrico",
+            "key": "DESC-02"
+          }
+        ]
+      },
+      {
+        "name": "Bloqueio",
+        "key": "BLOCK",
+        "subtopics": [
+          {
+            "name": "Suspensão temporária de qualquer operação de tratamento mediante guarda do dado ou do banco de dados",
+            "key": "DESC-08"
+          }
+        ]
+      },
+      {
+        "name": "Dado anonimizado",
+        "key": "ANON",
+        "subtopics": [
+          {
+            "name": "Dado relativo a titular que não possa ser identificado com meios técnicos razoáveis disponíveis no momento do tratamento",
+            "key": "DESC-03"
+          }
+        ]
+      },
+      {
+        "name": "Tratamento",
+        "key": "PROC",
+        "subtopics": [
+          {
+            "name": "Toda operação realizada com dados pessoais, como coleta, acesso, armazenamento, modificação, transferência ou eliminação",
+            "key": "DESC-05"
+          }
+        ]
+      },
+      {
+        "name": "Eliminação",
+        "key": "DEL",
+        "subtopics": [
+          {
+            "name": "Exclusão de dado ou conjunto de dados armazenados em banco de dados, independentemente do procedimento",
+            "key": "DESC-09"
+          }
+        ]
+      },
+      {
+        "name": "Transferência internacional de dados",
+        "key": "INTTRANS",
+        "subtopics": [
+          {
+            "name": "Transferência de dados pessoais para país estrangeiro ou organismo internacional",
+            "key": "DESC-10"
+          }
+        ]
+      },
+      {
+        "name": "Uso compartilhado de dados",
+        "key": "SHARE",
+        "subtopics": [
+          {
+            "name": "Comunicação ou tratamento conjunto de dados pessoais entre entes públicos e/ou privados com autorização específica",
+            "key": "DESC-11"
+          }
+        ]
+      },
+      {
+        "name": "Relatório de impacto à proteção de dados pessoais",
+        "key": "RIPD",
+        "subtopics": [
+          {
+            "name": "Documentação que descreve processos de tratamento, riscos às liberdades civis e medidas de mitigação",
+            "key": "DESC-12"
+          }
+        ]
+      },
+      {
+        "name": "Dado pessoal",
+        "key": "PERSONAL",
+        "subtopics": [
+          {
+            "name": "Informação relacionada a pessoa natural identificada ou identificável",
+            "key": "DESC-01"
+          }
+        ]
+      }
+    ]
+  }
+}
