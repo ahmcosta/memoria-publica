@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+    paths:
+      - '*.html'
+      - '*.css'
+      - '*.js'
   release:
     types: [ published ]
 
@@ -22,7 +26,7 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    
+
     - name: Generate changelog
       run: |
         if [ "${{ github.event_name }}" = "release" ]; then
@@ -31,17 +35,17 @@ jobs:
           COMMIT="${{ github.sha }}"
           VERSION="#${COMMIT:0:7}"
         fi
-        
+
         cat > changelog.json << EOF
         {
           "version": "$VERSION",
           "date": "$(date -u +"%Y-%m-%d %H:%M:%S UTC")",
           "changes": [
-        $(git log --oneline -10 --pretty=format:'    "%s",' | sed '$ s/,$//') 
+        $(git log --oneline -10 --pretty=format:'    "%s",' | sed '$ s/,$//')
           ]
         }
         EOF
-    
+
     - name: Replace version placeholder
       run: |
         if [ "${{ github.event_name }}" = "release" ]; then
@@ -50,14 +54,14 @@ jobs:
           COMMIT="${{ github.sha }}"
           VERSION="#${COMMIT:0:7}"
         fi
-        
+
         echo "Replacing __VERSION__ with: $VERSION"
         sed -i "s|__VERSION__|${VERSION}|g" index.html
-        
+
         # Verify replacement
         echo "Content after replacement:"
         grep -A2 -B2 "version" index.html
-        
+
         # Check if placeholder still exists
         if grep -q "__VERSION__" index.html; then
           echo "ERROR: Placeholder still exists!"
@@ -65,15 +69,15 @@ jobs:
         else
           echo "SUCCESS: Placeholder replaced"
         fi
-    
+
     - name: Setup Pages
       uses: actions/configure-pages@v4
-    
+
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: './'
-  
+
   deploy:
     environment:
       name: github-pages
