@@ -86,17 +86,14 @@
             "name": "especificar, quando aplicáveis, os seguintes requisitos tecnológicos: de metodologia de trabalho",
             "comment": "Art. 16, II, h"
           },
-
           {
             "name": "especificar, quando aplicáveis, os seguintes requisitos tecnológicos: demais requisitos aplicáveis",
             "comment": "Art. 16, II, j"
           },
-
           {
             "name": "definir os critérios de julgamento da proposta (menor preço, maior desconto, técnica e preço ou maior retorno econômico) e dos critérios para habilitação técnica",
             "comment": "Art. 23"
-          },
-
+          }
         ]
       },
       {
@@ -133,12 +130,10 @@
             "name": "definir, quando aplicáveis, os seguintes requisitos: temporais, que definem datas de entrega da solução de TIC contratada",
             "comment": "Art. 16, I, e"
           },
-
           {
             "name": "definir, quando aplicáveis, os seguintes requisitos: sociais, ambientais e culturais, que definem requisitos que a solução de TIC deve atender para estar em conformidade com costumes, idiomas e ao meio ambiente, dentre outros",
             "comment": "Art. 16, I, g"
-          },
-
+          }
         ]
       },
       {
@@ -173,7 +168,6 @@
             "name": "emitir documento comprobatório da avaliação realizada pelos fiscais técnico, administrativo e setorial quanto ao cumprimento de obrigações assumidas pelo contratado, com menção ao seu desempenho na execução contratual, baseado em indicadores objetivamente definidos e aferidos, e a eventuais penalidades aplicadas, a constarem do cadastro de atesto de cumprimento de obrigações conforme disposto em regulamento",
             "comment": "Art. 33, I, g"
           },
-
           {
             "name": "tomar providências para a formalização de processo administrativo de responsabilização para fins de aplicação de sanções",
             "comment": "Art. 33, I, i"
@@ -252,18 +246,14 @@
             "name": "auxiliar o gestor do contrato com as informações necessárias, na elaboração do documento comprobatório da avaliação realizada na fiscalização do cumprimento de obrigações assumidas pelo contratado",
             "comment": "Art. 33, II, h"
           },
-
-
           {
             "name": "encaminhar as demandas de correção cobertas por garantia à contratada",
             "comment": "Art. 33, II, m"
           },
-
           {
             "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
             "comment": "Art. 33, II, p"
-          },
-
+          }
         ]
       },
       {
@@ -305,15 +295,13 @@
           {
             "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
             "comment": "Art. 33, IV, i"
-          },
-
+          }
         ]
       },
       {
         "name": "Fiscal Requisitante",
         "comment": "Servidor representante da Área Requisitante da solução, indicado pela autoridade competente dessa área para fiscalizar o contrato do ponto de vista de negócio e funcional da solução de TIC.",
         "subtopics": [
-
           {
             "name": "encaminhar as demandas de correção à contratada, caso disponha de delegação de competência do Gestor do Contrato",
             "comment": "Art. 33, III, c"
@@ -322,7 +310,6 @@
             "name": "apoiar o Fiscal Técnico na elaboração do Termo de Recebimento Provisório",
             "comment": "Art. 33, III, d"
           },
-
           {
             "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
             "comment": "Art. 33, III, g"
@@ -336,8 +323,7 @@
           {
             "name": "acompanhar a execução do contrato nos aspectos técnicos ou administrativos em setores distintos ou em unidades desconcentradas de um órgão ou uma entidade",
             "comment": "Art. 2º, V, e"
-          },
-
+          }
         ]
       },
       {
