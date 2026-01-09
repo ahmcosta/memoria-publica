@@ -5,6 +5,52 @@
     "name": "Papéis na Contratação de TIC",
     "values": [
       {
+        "name": "Equipe de Planejamento",
+        "comment": "Equipe responsável pelo planejamento da contratação, composta por Integrante Técnico, Integrante Administrativo e Integrante Requisitante.",
+        "subtopics": [
+          {
+            "name": "realizar todas as atividades das etapas de Planejamento da Contratação e acompanhar a fase de Seleção do Fornecedor quando solicitado pelas áreas responsáveis",
+            "comment": "Art. 9º, § 4º"
+          },
+          {
+            "name": "manter registro histórico de fatos relevantes ocorridos, a exemplo de comunicação e/ou reunião com fornecedores, comunicação e/ou reunião com grupos de trabalho, consulta e audiência públicas, decisão de autoridade competente, ou quaisquer outros fatos que motivem a revisão dos artefatos do Planejamento da Contratação",
+            "comment": "Art. 9º, § 5º, I"
+          },
+          {
+            "name": "manter registro histórico de documentos gerados e/ou recebidos, a exemplo dos artefatos previstos nesta norma, pesquisas de preço de mercado, e-mails, atas de reunião, dentre outros",
+            "comment": "Art. 9º, § 5º, II"
+          },
+          {
+            "name": "elaborar o Termo de Referência a partir do Estudo Técnico Preliminar da Contratação",
+            "comment": "Art. 12"
+          },
+          {
+            "name": "avaliar a viabilidade de realizar o parcelamento da solução de TIC a ser contratada, em tantos itens quanto se comprovarem tecnicamente viável e economicamente vantajoso",
+            "comment": "Art. 12, § 2º, I"
+          },
+          {
+            "name": "avaliar a viabilidade de permitir consórcio ou subcontratação da solução de TIC",
+            "comment": "Art. 12, § 2º, II"
+          },
+          {
+            "name": "garantir o alinhamento entre os requisitos definidos pelo Integrante Requisitante e especificados pelo Integrante Técnico",
+            "comment": "Art. 16, parágrafo único"
+          },
+          {
+            "name": "analisar as sugestões feitas pela Área de Licitações, Área Jurídica, agente de contratação e equipe de apoio para o Termo de Referência e demais documentos de sua responsabilidade",
+            "comment": "Art. 28, I"
+          },
+          {
+            "name": "auxiliar, em sua área de atuação técnica, o agente de contratação, equipe de apoio, comissão de contratação ou atores equivalentes na resposta aos questionamentos e às impugnações dos licitantes, na análise e julgamento das propostas e dos recursos apresentados pelos licitantes e na condução de eventual verificação de Amostra do Objeto",
+            "comment": "Art. 28, II"
+          },
+          {
+            "name": "proceder às ações de gerenciamento de riscos e produzir o Mapa de Gerenciamento de Riscos durante a fase de planejamento",
+            "comment": "Art. 38, § 1º"
+          }
+        ]
+      },
+      {
         "name": "Integrante Técnico",
         "comment": "Servidor representante da Área de TIC, indicado pela autoridade competente dessa área, integrante da Equipe de Planejamento da Contratação.",
         "subtopics": [
@@ -123,126 +169,6 @@
         ]
       },
       {
-        "name": "Equipe de Planejamento",
-        "comment": "Equipe responsável pelo planejamento da contratação, composta por Integrante Técnico, Integrante Administrativo e Integrante Requisitante.",
-        "subtopics": [
-          {
-            "name": "realizar todas as atividades das etapas de Planejamento da Contratação e acompanhar a fase de Seleção do Fornecedor quando solicitado pelas áreas responsáveis",
-            "comment": "Art. 9º, § 4º"
-          },
-          {
-            "name": "manter registro histórico de fatos relevantes ocorridos, a exemplo de comunicação e/ou reunião com fornecedores, comunicação e/ou reunião com grupos de trabalho, consulta e audiência públicas, decisão de autoridade competente, ou quaisquer outros fatos que motivem a revisão dos artefatos do Planejamento da Contratação",
-            "comment": "Art. 9º, § 5º, I"
-          },
-          {
-            "name": "manter registro histórico de documentos gerados e/ou recebidos, a exemplo dos artefatos previstos nesta norma, pesquisas de preço de mercado, e-mails, atas de reunião, dentre outros",
-            "comment": "Art. 9º, § 5º, II"
-          },
-          {
-            "name": "elaborar o Termo de Referência a partir do Estudo Técnico Preliminar da Contratação",
-            "comment": "Art. 12"
-          },
-          {
-            "name": "avaliar a viabilidade de realizar o parcelamento da solução de TIC a ser contratada, em tantos itens quanto se comprovarem tecnicamente viável e economicamente vantajoso",
-            "comment": "Art. 12, § 2º, I"
-          },
-          {
-            "name": "avaliar a viabilidade de permitir consórcio ou subcontratação da solução de TIC",
-            "comment": "Art. 12, § 2º, II"
-          },
-          {
-            "name": "garantir o alinhamento entre os requisitos definidos pelo Integrante Requisitante e especificados pelo Integrante Técnico",
-            "comment": "Art. 16, parágrafo único"
-          },
-          {
-            "name": "analisar as sugestões feitas pela Área de Licitações, Área Jurídica, agente de contratação e equipe de apoio para o Termo de Referência e demais documentos de sua responsabilidade",
-            "comment": "Art. 28, I"
-          },
-          {
-            "name": "auxiliar, em sua área de atuação técnica, o agente de contratação, equipe de apoio, comissão de contratação ou atores equivalentes na resposta aos questionamentos e às impugnações dos licitantes, na análise e julgamento das propostas e dos recursos apresentados pelos licitantes e na condução de eventual verificação de Amostra do Objeto",
-            "comment": "Art. 28, II"
-          },
-          {
-            "name": "proceder às ações de gerenciamento de riscos e produzir o Mapa de Gerenciamento de Riscos durante a fase de planejamento",
-            "comment": "Art. 38, § 1º"
-          }
-        ]
-      },
-      {
-        "name": "Fiscal Técnico",
-        "comment": "Servidor representante da Área de TIC, indicado pela autoridade competente dessa área para fiscalizar tecnicamente o contrato.",
-        "subtopics": [
-          {
-            "name": "prestar apoio técnico e operacional ao gestor do contrato com informações pertinentes às suas competências",
-            "comment": "Art. 33, II, a"
-          },
-          {
-            "name": "anotar no histórico de gerenciamento do contrato todas as ocorrências relacionadas à execução do contrato, com a descrição do que for necessário para a regularização das faltas ou dos defeitos observados",
-            "comment": "Art. 33, II, b"
-          },
-          {
-            "name": "emitir notificações para a correção de rotinas ou de qualquer inexatidão ou irregularidade constatada, com a definição de prazo para a correção",
-            "comment": "Art. 33, II, c"
-          },
-          {
-            "name": "informar ao gestor do contrato, em tempo hábil, a situação que demandar decisão ou adoção de medidas que ultrapassem a sua competência, para que adote as medidas necessárias e saneadoras, se for o caso",
-            "comment": "Art. 33, II, d"
-          },
-          {
-            "name": "comunicar imediatamente ao gestor do contrato quaisquer ocorrências que possam inviabilizar a execução do contrato nas datas estabelecidas",
-            "comment": "Art. 33, II, e"
-          },
-          {
-            "name": "fiscalizar a execução do contrato para que sejam cumpridas as condições estabelecidas, de modo a assegurar os melhores resultados para a administração, com a conferência das notas fiscais e das documentações exigidas para o pagamento e, após o ateste, que certifica o recebimento provisório, encaminhar ao gestor de contrato para ratificação",
-            "comment": "Art. 33, II, f"
-          },
-          {
-            "name": "comunicar ao gestor do contrato, em tempo hábil, o término do contrato sob sua responsabilidade, com vistas à prorrogação contratual",
-            "comment": "Art. 33, II, g"
-          },
-          {
-            "name": "auxiliar o gestor do contrato com as informações necessárias, na elaboração do documento comprobatório da avaliação realizada na fiscalização do cumprimento de obrigações assumidas pelo contratado",
-            "comment": "Art. 33, II, h"
-          },
-          {
-            "name": "confeccionar e assinar o Termo de Recebimento Provisório quando da entrega do objeto constante na Ordem de Serviço ou de Fornecimento de Bens, com o apoio do Fiscal Requisitante",
-            "comment": "Art. 33, II, i"
-          },
-          {
-            "name": "avaliar a qualidade dos serviços realizados ou dos bens entregues e justificativas, a partir da aplicação das listas de verificação e de acordo com os critérios de aceitação definidos em contrato, em conjunto com o Fiscal Requisitante do Contrato",
-            "comment": "Art. 33, II, j"
-          },
-          {
-            "name": "identificar não conformidades com os termos contratuais, em conjunto com o Fiscal Requisitante do Contrato",
-            "comment": "Art. 33, II, k"
-          },
-          {
-            "name": "verificar a manutenção das condições classificatórias referentes à pontuação obtida e à habilitação técnica, em conjunto com o Fiscal Administrativo do Contrato",
-            "comment": "Art. 33, II, l"
-          },
-          {
-            "name": "encaminhar as demandas de correção cobertas por garantia à contratada",
-            "comment": "Art. 33, II, m"
-          },
-          {
-            "name": "apoiar o Fiscal Requisitante do Contrato na verificação da manutenção da necessidade, economicidade e oportunidade da contratação",
-            "comment": "Art. 33, II, n"
-          },
-          {
-            "name": "verificar a manutenção das condições definidas nos Modelos de Execução e de Gestão do contrato, em conjunto com o Fiscal Requisitante do Contrato",
-            "comment": "Art. 33, II, o"
-          },
-          {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato",
-            "comment": "Art. 33, II, p"
-          },
-          {
-            "name": "realizar pesquisa de preços que visa a subsidiar a decisão da Administração em renovar ou prorrogar a contratação com o apoio do Fiscal Administrativo",
-            "comment": "Art. 36, § 1º"
-          }
-        ]
-      },
-      {
         "name": "Gestor do Contrato",
         "comment": "Servidor com atribuições gerenciais, preferencialmente da Área Requisitante da solução, designado para coordenar e comandar o processo de gestão e fiscalização da execução contratual.",
         "subtopics": [
@@ -321,20 +247,76 @@
         ]
       },
       {
-        "name": "Preposto",
-        "comment": "Representante da contratada, responsável por acompanhar a execução do contrato e atuar como interlocutor principal junto à contratante.",
+        "name": "Fiscal Técnico",
+        "comment": "Servidor representante da Área de TIC, indicado pela autoridade competente dessa área para fiscalizar tecnicamente o contrato.",
         "subtopics": [
           {
-            "name": "acompanhar a execução do contrato e atuar como interlocutor principal junto à contratante, incumbido de receber, diligenciar, encaminhar e responder as principais questões técnicas, legais e administrativas referentes ao andamento contratual",
-            "comment": "Art. 2º, VI"
+            "name": "prestar apoio técnico e operacional ao gestor do contrato com informações pertinentes às suas competências",
+            "comment": "Art. 33, II, a"
           },
           {
-            "name": "ser indicado formalmente pela contratada como apto a representá-la junto à contratante, devendo responder pela fiel execução do contrato",
-            "comment": "Art. 17, II, a"
+            "name": "anotar no histórico de gerenciamento do contrato todas as ocorrências relacionadas à execução do contrato, com a descrição do que for necessário para a regularização das faltas ou dos defeitos observados",
+            "comment": "Art. 33, II, b"
           },
           {
-            "name": "entregar ao Fiscal Administrativo do Contrato os Termos de Ciência assinados pelos novos empregados envolvidos na execução dos serviços contratados, no caso de substituição ou inclusão de empregados da contratada",
-            "comment": "Art. 33, parágrafo único"
+            "name": "emitir notificações para a correção de rotinas ou de qualquer inexatidão ou irregularidade constatada, com a definição de prazo para a correção",
+            "comment": "Art. 33, II, c"
+          },
+          {
+            "name": "informar ao gestor do contrato, em tempo hábil, a situação que demandar decisão ou adoção de medidas que ultrapassem a sua competência, para que adote as medidas necessárias e saneadoras, se for o caso",
+            "comment": "Art. 33, II, d"
+          },
+          {
+            "name": "comunicar imediatamente ao gestor do contrato quaisquer ocorrências que possam inviabilizar a execução do contrato nas datas estabelecidas",
+            "comment": "Art. 33, II, e"
+          },
+          {
+            "name": "fiscalizar a execução do contrato para que sejam cumpridas as condições estabelecidas, de modo a assegurar os melhores resultados para a administração, com a conferência das notas fiscais e das documentações exigidas para o pagamento e, após o ateste, que certifica o recebimento provisório, encaminhar ao gestor de contrato para ratificação",
+            "comment": "Art. 33, II, f"
+          },
+          {
+            "name": "comunicar ao gestor do contrato, em tempo hábil, o término do contrato sob sua responsabilidade, com vistas à prorrogação contratual",
+            "comment": "Art. 33, II, g"
+          },
+          {
+            "name": "auxiliar o gestor do contrato com as informações necessárias, na elaboração do documento comprobatório da avaliação realizada na fiscalização do cumprimento de obrigações assumidas pelo contratado",
+            "comment": "Art. 33, II, h"
+          },
+          {
+            "name": "confeccionar e assinar o Termo de Recebimento Provisório quando da entrega do objeto constante na Ordem de Serviço ou de Fornecimento de Bens, com o apoio do Fiscal Requisitante",
+            "comment": "Art. 33, II, i"
+          },
+          {
+            "name": "avaliar a qualidade dos serviços realizados ou dos bens entregues e justificativas, a partir da aplicação das listas de verificação e de acordo com os critérios de aceitação definidos em contrato, em conjunto com o Fiscal Requisitante do Contrato",
+            "comment": "Art. 33, II, j"
+          },
+          {
+            "name": "identificar não conformidades com os termos contratuais, em conjunto com o Fiscal Requisitante do Contrato",
+            "comment": "Art. 33, II, k"
+          },
+          {
+            "name": "verificar a manutenção das condições classificatórias referentes à pontuação obtida e à habilitação técnica, em conjunto com o Fiscal Administrativo do Contrato",
+            "comment": "Art. 33, II, l"
+          },
+          {
+            "name": "encaminhar as demandas de correção cobertas por garantia à contratada",
+            "comment": "Art. 33, II, m"
+          },
+          {
+            "name": "apoiar o Fiscal Requisitante do Contrato na verificação da manutenção da necessidade, economicidade e oportunidade da contratação",
+            "comment": "Art. 33, II, n"
+          },
+          {
+            "name": "verificar a manutenção das condições definidas nos Modelos de Execução e de Gestão do contrato, em conjunto com o Fiscal Requisitante do Contrato",
+            "comment": "Art. 33, II, o"
+          },
+          {
+            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato",
+            "comment": "Art. 33, II, p"
+          },
+          {
+            "name": "realizar pesquisa de preços que visa a subsidiar a decisão da Administração em renovar ou prorrogar a contratação com o apoio do Fiscal Administrativo",
+            "comment": "Art. 36, § 1º"
           }
         ]
       },
@@ -431,8 +413,72 @@
             "comment": "Art. 2º, V, e"
           },
           {
-            "name": "apoiar o Gestor do Contrato na confecção e assinatura do Termo de Recebimento Definitivo",
+            "name": "apoiar o Gestor do Contrato, em conjunto com o Fiscal Técnico do Contrato e do Fiscal Requisitante, na confecção e assinatura do Termo de Recebimento Definitivo",
             "comment": "Art. 33, I, h"
+          }
+        ]
+      },
+      {
+        "name": "Equipe de Fiscalização do Contrato",
+        "comment": "Equipe responsável pela fiscalização do contrato, composta por Gestor do Contrato, Fiscal Técnico, Fiscal Administrativo, Fiscal Requisitante e Fiscal Setorial.",
+        "subtopics": [
+          {
+            "name": "acompanhar e garantir a adequada prestação dos serviços e o fornecimento dos bens que compõem a solução de TIC durante todo o período de execução do contrato",
+            "comment": "Art. 30"
+          },
+          {
+            "name": "verificar o cumprimento das obrigações da contratada previstas no contrato, incluindo as obrigações trabalhistas, quando for o caso",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "anotar em registro próprio todas as ocorrências relacionadas à execução do contrato, determinando o que for necessário à regularização das faltas ou defeitos observados",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "dar ciência de irregularidades à contratada e fixar prazo para a sua correção, certificando-se de que as soluções por ela propostas sejam as mais adequadas",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "propor aplicação das penalidades contratuais e legais em casos de inadimplemento da contratada",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "elaborar relatórios sobre a execução do contrato, sempre que solicitado",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "proceder à atualização contínua do Mapa de Gerenciamento de Riscos, sob coordenação do Gestor do Contrato, realizando reavaliação dos riscos identificados nas fases anteriores e atualização de suas respectivas ações de tratamento",
+            "comment": "Art. 38, § 3º, I"
+          },
+          {
+            "name": "proceder à atualização contínua do Mapa de Gerenciamento de Riscos, sob coordenação do Gestor do Contrato, realizando identificação, análise, avaliação e tratamento de novos riscos",
+            "comment": "Art. 38, § 3º, II"
+          },
+          {
+            "name": "assinar o Mapa de Gerenciamento de Riscos na fase de Gestão do Contrato, juntamente com o Gestor do Contrato",
+            "comment": "Art. 38, § 5º"
+          },
+          {
+            "name": "ter ciência expressa das suas indicações e das suas respectivas atribuições antes de serem formalmente designados",
+            "comment": "Art. 29, § 6º"
+          }
+        ]
+      },
+      {
+        "name": "Preposto",
+        "comment": "Representante da contratada, responsável por acompanhar a execução do contrato e atuar como interlocutor principal junto à contratante.",
+        "subtopics": [
+          {
+            "name": "acompanhar a execução do contrato e atuar como interlocutor principal junto à contratante, incumbido de receber, diligenciar, encaminhar e responder as principais questões técnicas, legais e administrativas referentes ao andamento contratual",
+            "comment": "Art. 2º, VI"
+          },
+          {
+            "name": "ser indicado formalmente pela contratada como apto a representá-la junto à contratante, devendo responder pela fiel execução do contrato",
+            "comment": "Art. 17, II, a"
+          },
+          {
+            "name": "entregar ao Fiscal Administrativo do Contrato os Termos de Ciência assinados pelos novos empregados envolvidos na execução dos serviços contratados, no caso de substituição ou inclusão de empregados da contratada",
+            "comment": "Art. 33, parágrafo único"
           }
         ]
       }
