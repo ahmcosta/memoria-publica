@@ -390,6 +390,13 @@ function handleDrop(e) {
         const clickableDiv = document.createElement('div');
         clickableDiv.textContent = draggedElement.textContent;
         clickableDiv.className = 'placed-subtopic';
+        
+        // Check if this subtopic was previously wrong
+        const wasWrong = missedSubtopics.some(item => item.name === draggedElement.textContent);
+        if (wasWrong) {
+            clickableDiv.classList.add('was-wrong');
+        }
+        
         clickableDiv.dataset.originalOrder = draggedElement.dataset.originalOrder;
         if (draggedElement.dataset.sources) clickableDiv.dataset.sources = draggedElement.dataset.sources;
         console.log('Sources data:', draggedElement.dataset.sources, 'copied to clickable:', clickableDiv.dataset.sources);
@@ -451,13 +458,7 @@ function handleDrop(e) {
         document.getElementById('wrong').textContent = wrongCount;
         topicBox.classList.add('incorrect');
 
-        // Mark the subtopic as wrong with red styling
-        draggedElement.classList.add('wrong-answer');
-        
-        setTimeout(() => {
-            topicBox.classList.remove('incorrect');
-            // Keep the red styling on the subtopic
-        }, 500);
+        setTimeout(() => topicBox.classList.remove('incorrect'), 500);
     }
 }
 
@@ -795,32 +796,47 @@ function printResults() {
                 .topic { margin-bottom: 25px; page-break-inside: avoid; }
                 .topic-title { font-weight: bold; font-size: 18px; color: #2196f3; margin-bottom: 10px; }
                 .subtopic { margin: 5px 0 5px 20px; padding: 5px; background: #f5f5f5; border-left: 3px solid #2196f3; }
+                .subtopic.was-wrong { background: #ffcdd2; border-left: 3px solid #f44336; }
+                .error-mark { color: #f44336; font-weight: bold; }
                 .comment { font-style: italic; color: #666; font-size: 12px; }
+                .stats { margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px; }
                 @media print { body { margin: 15px; } }
             </style>
         </head>
         <body>
             <h1>${data.subject}</h1>
+            <div class="stats">
+                <strong>Resultado:</strong> ${correctCount} corretos, ${wrongCount} erros
+            </div>
     `;
     
-    data.topics.values.forEach(topic => {
-        printContent += `<div class="topic">`;
-        printContent += `<div class="topic-title">${topic.name}</div>`;
+    // Get all topic boxes and their placed subtopics
+    const topicBoxes = document.querySelectorAll('.topic-box');
+    
+    topicBoxes.forEach(topicBox => {
+        const topicName = topicBox.dataset.topic;
+        const placedSubtopics = topicBox.querySelectorAll('.placed-subtopic');
         
-        if (topic.comment) {
-            printContent += `<div class="comment">${topic.comment}</div>`;
-        }
-        
-        topic.subtopics.forEach(subtopic => {
-            printContent += `<div class="subtopic">`;
-            printContent += `<strong>${subtopic.name}</strong>`;
-            if (subtopic.comment) {
-                printContent += `<br><span class="comment">${subtopic.comment}</span>`;
-            }
+        if (placedSubtopics.length > 0) {
+            printContent += `<div class="topic">`;
+            printContent += `<div class="topic-title">${topicName}</div>`;
+            
+            placedSubtopics.forEach(subtopic => {
+                const wasWrong = subtopic.classList.contains('was-wrong');
+                const subtopicClass = wasWrong ? 'subtopic was-wrong' : 'subtopic';
+                
+                printContent += `<div class="${subtopicClass}">`;
+                printContent += `<strong>${subtopic.textContent}</strong>`;
+                
+                if (wasWrong) {
+                    printContent += ` <span class="error-mark">[ERRO]</span>`;
+                }
+                
+                printContent += `</div>`;
+            });
+            
             printContent += `</div>`;
-        });
-        
-        printContent += `</div>`;
+        }
     });
     
     printContent += `</body></html>`;
