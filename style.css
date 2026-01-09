@@ -53,6 +53,21 @@ header {
     color: #333;
 }
 
+.print-btn {
+    background: #9c27b0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.print-btn:hover {
+    background: #7b1fa2;
+}
+
 .solve-btn {
     background: #ff9800;
     color: white;

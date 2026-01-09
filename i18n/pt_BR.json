@@ -15,6 +15,7 @@
   "restart": "Reiniciar",
   "loadJsonFile": "Carregar Arquivo JSON",
   "solve": "Resolver",
+  "print": "Imprimir",
   "correct": "Correto",
   "wrong": "Errado",
   "invalidJson": "Arquivo JSON inválido"

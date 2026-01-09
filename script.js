@@ -781,6 +781,56 @@ function startRetry(onlyMissed) {
     createTopicBoxes();
 }
 
+function printResults() {
+    if (!data) return;
+    
+    let printContent = `
+        <html>
+        <head>
+            <title>${data.subject}</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1 { color: #333; border-bottom: 2px solid #333; padding-bottom: 10px; }
+                h2 { color: #666; margin-top: 30px; }
+                .topic { margin-bottom: 25px; page-break-inside: avoid; }
+                .topic-title { font-weight: bold; font-size: 18px; color: #2196f3; margin-bottom: 10px; }
+                .subtopic { margin: 5px 0 5px 20px; padding: 5px; background: #f5f5f5; border-left: 3px solid #2196f3; }
+                .comment { font-style: italic; color: #666; font-size: 12px; }
+                @media print { body { margin: 15px; } }
+            </style>
+        </head>
+        <body>
+            <h1>${data.subject}</h1>
+    `;
+    
+    data.topics.values.forEach(topic => {
+        printContent += `<div class="topic">`;
+        printContent += `<div class="topic-title">${topic.name}</div>`;
+        
+        if (topic.comment) {
+            printContent += `<div class="comment">${topic.comment}</div>`;
+        }
+        
+        topic.subtopics.forEach(subtopic => {
+            printContent += `<div class="subtopic">`;
+            printContent += `<strong>${subtopic.name}</strong>`;
+            if (subtopic.comment) {
+                printContent += `<br><span class="comment">${subtopic.comment}</span>`;
+            }
+            printContent += `</div>`;
+        });
+        
+        printContent += `</div>`;
+    });
+    
+    printContent += `</body></html>`;
+    
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(printContent);
+    printWindow.document.close();
+    printWindow.print();
+}
+
 function solveAll() {
     if (!data) return;
     

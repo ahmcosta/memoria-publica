@@ -15,6 +15,7 @@
   "restart": "Restart",
   "loadJsonFile": "Load JSON File",
   "solve": "Solve",
+  "print": "Print",
   "correct": "Correct",
   "wrong": "Wrong",
   "invalidJson": "Invalid JSON file"
