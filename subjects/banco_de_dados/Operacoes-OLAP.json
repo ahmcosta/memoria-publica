@@ -1,0 +1,64 @@
+{
+  "subject": "Operações em Cubos OLAP",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Operações OLAP",
+    "values": [
+      {
+        "name": "Slice",
+        "key": "SLICE",
+        "subtopics": [
+          {
+            "name": "Operação que seleciona um subconjunto de dados de um cubo multidimensional fixando uma de suas dimensões em um valor específico.",
+            "key": "CARACTERISTICS",
+            "comment": "Exemplo: Em um cubo com dimensões Tempo, Produto e Região, fixar a Região em 'Sudeste' para analisar apenas os dados dessa região."
+          }
+        ]
+      },
+      {
+        "name": "Dice",
+        "key": "DICE",
+        "subtopics": [
+          {
+            "name": "Extrai um subcubo a partir da seleção de múltiplos valores em uma ou mais dimensões.",
+            "key": "CARACTERISTICS",
+            "comment": "Exemplo: Selecionar dados para os produtos 'Notebook' e 'Tablet' nas regiões 'Norte' e 'Nordeste' durante o ano de 2023."
+          }
+        ]
+      },
+      {
+        "name": "Pivot ou rotate",
+        "key": "PIVOT_ROTATE",
+        "subtopics": [
+          {
+            "name": "Altera a orientação dimensional de um relatório.",
+            "key": "CARACTERISTICS",
+            "comment": "Exemplo: Alterar a exibição de um relatório de linhas por Tempo e colunas por Produto para linhas por Produto e colunas por Tempo."
+          }
+        ]
+      },
+      {
+        "name": "Drill-across",
+        "key": "DRILL_ACROSS",
+        "subtopics": [
+          {
+            "name": "Consultas que envolvem mais de uma tabela fato / navegação entre níveis de dados, saltando níveis.",
+            "key": "CARACTERISTICS",
+            "comment": "Exemplo: Navegar de uma tabela fato de vendas para uma tabela fato de estoque, comparando vendas com níveis de estoque por produto."
+          }
+        ]
+      },
+      {
+        "name": "Drill-through",
+        "key": "DRILL_THROUGH",
+        "subtopics": [
+          {
+            "name": "Utiliza SQL para ir além do nível inferior de um cubo de dados até suas tabelas relacionais back-end, permitindo, desta forma, o acesso aos dados que não estão no modelo multidimensional/ Usuário passa de uma informação contida em uma dimensão para outra.",
+            "key": "CARACTERISTICS",
+            "comment": "Exemplo: A partir de um resumo de vendas por trimestre, acessar os detalhes das transações individuais que compõem aquele período."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "subject": "Tipos de Tabelas de Fato em Modelagem Dimensional",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Classificação de Tabelas de Fato",
+    "values": [
+      {
+        "name": "Fato Transacional",
+        "key": "TRANSACTIONAL_FACT",
+        "subtopics": [
+          {
+            "name": "Cada linha corresponde a um evento de medição em um ponto no espaço e no tempo. Geralmente utilizam métricas aditivas.",
+            "key": "CHARACTERISTICS"
+          }
+        ]
+      },
+      {
+        "name": "Fato Agregada",
+        "key": "AGGREGATED_FACT",
+        "subtopics": [
+          {
+            "name": "Criada com dados da tabela fato, alterando sua granularidade, ou seja, ela sumariza os dados, gerando uma tabela menor. É utilizada para otimizar o tempo de acesso das consultas.",
+            "key": "CHARACTERISTICS"
+          }
+        ]
+      },
+      {
+        "name": "Fato Consolidada",
+        "key": "CONSOLIDATED_FACT",
+        "subtopics": [
+          {
+            "name": "Combina dois tipos de processo. Agrega duas tabelas fato. No processamento do ETL, na hora de carregar o fato, carrega-se uma, depois a outra, e misturam-se as duas, o que gera uma complexidade extra. As duas tabelas devem ter o mesmo nível de granularidade.",
+            "key": "CHARACTERISTICS"
+          }
+        ]
+      },
+      {
+        "name": "Fato Snapshot Periódico",
+        "key": "PERIODIC_SNAPSHOT",
+        "subtopics": [
+          {
+            "name": "Baseada no tempo. Uma linha resume muitos eventos de medição ocorridos em um período padrão, como dia, semana ou mês.",
+            "key": "CHARACTERISTICS"
+          }
+        ]
+      },
+      {
+        "name": "Fato de Snapshot Acumulado",
+        "key": "ACCUMULATING_SNAPSHOT",
+        "subtopics": [
+          {
+            "name": "Há cargas sucessivas em vários momentos diferentes para verificar as diferenças nos dados ao longo do tempo. Uma linha resume os eventos de medição que ocorrem em etapas previsíveis entre o início e o final de um processo.",
+            "key": "CHARACTERISTICS"
+          }
+        ]
+      },
+      {
+        "name": "Fato sem Fato",
+        "key": "FACTLESS_FACT",
+        "subtopics": [
+          {
+            "name": "Serve para fazer intersecção de dimensões. Utilizada quando é necessário comparar ou cruzar algo entre duas dimensões e não existe uma métrica para fazer comparações.",
+            "key": "CHARACTERISTICS"
+          }
+        ]
+      }
+    ]
+  }
+}
