@@ -128,6 +128,16 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.subtopic.wrong-answer {
+    background: #ffcdd2 !important;
+    border-color: #f44336 !important;
+    color: #d32f2f;
+}
+
+.subtopic.wrong-answer:hover {
+    background: #ffb3ba !important;
+}
+
 .subtopic {
     background: #e3f2fd;
     padding: 10px;

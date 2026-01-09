@@ -451,7 +451,13 @@ function handleDrop(e) {
         document.getElementById('wrong').textContent = wrongCount;
         topicBox.classList.add('incorrect');
 
-        setTimeout(() => topicBox.classList.remove('incorrect'), 500);
+        // Mark the subtopic as wrong with red styling
+        draggedElement.classList.add('wrong-answer');
+        
+        setTimeout(() => {
+            topicBox.classList.remove('incorrect');
+            // Keep the red styling on the subtopic
+        }, 500);
     }
 }
 
