@@ -100,10 +100,6 @@
         "name": "Integrante Administrativo",
         "comment": "Servidor representante da Área Administrativa, indicado pela autoridade competente dessa área, integrante da Equipe de Planejamento da Contratação.",
         "subtopics": [
-          {
-            "name": "apoiar o Integrante Técnico na elaboração do orçamento detalhado para a estimativa de preço da contratação",
-            "comment": "Art. 20"
-          }
         ]
       },
       {
@@ -249,10 +245,6 @@
           {
             "name": "encaminhar as demandas de correção cobertas por garantia à contratada",
             "comment": "Art. 33, II, m"
-          },
-          {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
-            "comment": "Art. 33, II, p"
           }
         ]
       },
@@ -287,14 +279,6 @@
           {
             "name": "verificar as regularidades fiscais, trabalhistas e previdenciárias para fins de pagamento",
             "comment": "Art. 33, IV, g"
-          },
-          {
-            "name": "apoiar o Fiscal Requisitante do Contrato na verificação da manutenção da necessidade, economicidade e oportunidade da contratação",
-            "comment": "Art. 33, IV, h"
-          },
-          {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
-            "comment": "Art. 33, IV, i"
           }
         ]
       },
@@ -305,14 +289,6 @@
           {
             "name": "encaminhar as demandas de correção à contratada, caso disponha de delegação de competência do Gestor do Contrato",
             "comment": "Art. 33, III, c"
-          },
-          {
-            "name": "apoiar o Fiscal Técnico na elaboração do Termo de Recebimento Provisório",
-            "comment": "Art. 33, III, d"
-          },
-          {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
-            "comment": "Art. 33, III, g"
           }
         ]
       },
@@ -361,6 +337,10 @@
           {
             "name": "realizar a estimativa de preço da contratação para elaboração do orçamento detalhado, composta por preços unitários",
             "comment": "Art. 20"
+          },
+          {
+            "name": "apoiar na elaboração do orçamento detalhado para a estimativa de preço da contratação",
+            "comment": "Art. 20"
           }
         ]
       },
@@ -399,6 +379,10 @@
           {
             "name": "confeccionar e assinar o Termo de Recebimento Definitivo, com base nas informações produzidas no recebimento provisório, na avaliação da qualidade dos serviços realizados ou dos bens entregues e na conformidade e aderência aos termos contratuais",
             "comment": "Art. 33, I, h"
+          },
+          {
+            "name": "manter o Histórico de Gestão do Contrato, contendo registros formais de todas as ocorrências positivas e negativas da execução do contrato, por ordem histórica",
+            "comment": "Art. 33, I, k"
           }
         ]
       },
@@ -409,6 +393,24 @@
           {
             "name": "confeccionar e assinar o Termo de Recebimento Provisório quando da entrega do objeto constante na Ordem de Serviço ou de Fornecimento de Bens",
             "comment": "Art. 33, II, i"
+          },
+          {
+            "name": "apoiar na elaboração do Termo de Recebimento Provisório",
+            "comment": "Art. 33, III, d"
+          }
+        ]
+      },
+      {
+        "name": "Fiscal Requisitante com apoio do Fiscal Administrativo",
+        "comment": "Competências do Fiscal Requisitante que requerem apoio do Fiscal Administrativo.",
+        "subtopics": [
+          {
+            "name": "verificar a manutenção da necessidade, economicidade e oportunidade da contratação",
+            "comment": "Art. 33, III, e"
+          },
+          {
+            "name": "apoiar na verificação da manutenção da necessidade, economicidade e oportunidade da contratação",
+            "comment": "Art. 33, IV, h"
           }
         ]
       },
