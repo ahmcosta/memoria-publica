@@ -169,6 +169,52 @@
         ]
       },
       {
+        "name": "Equipe de Fiscalização do Contrato",
+        "comment": "Equipe responsável pela fiscalização do contrato, composta por Gestor do Contrato, Fiscal Técnico, Fiscal Administrativo, Fiscal Requisitante e Fiscal Setorial.",
+        "subtopics": [
+          {
+            "name": "acompanhar e garantir a adequada prestação dos serviços e o fornecimento dos bens que compõem a solução de TIC durante todo o período de execução do contrato",
+            "comment": "Art. 30"
+          },
+          {
+            "name": "verificar o cumprimento das obrigações da contratada previstas no contrato, incluindo as obrigações trabalhistas, quando for o caso",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "anotar em registro próprio todas as ocorrências relacionadas à execução do contrato, determinando o que for necessário à regularização das faltas ou defeitos observados",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "dar ciência de irregularidades à contratada e fixar prazo para a sua correção, certificando-se de que as soluções por ela propostas sejam as mais adequadas",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "propor aplicação das penalidades contratuais e legais em casos de inadimplemento da contratada",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "elaborar relatórios sobre a execução do contrato, sempre que solicitado",
+            "comment": "Art. 33"
+          },
+          {
+            "name": "proceder à atualização contínua do Mapa de Gerenciamento de Riscos, sob coordenação do Gestor do Contrato, realizando reavaliação dos riscos identificados nas fases anteriores e atualização de suas respectivas ações de tratamento",
+            "comment": "Art. 38, § 3º, I"
+          },
+          {
+            "name": "proceder à atualização contínua do Mapa de Gerenciamento de Riscos, sob coordenação do Gestor do Contrato, realizando identificação, análise, avaliação e tratamento de novos riscos",
+            "comment": "Art. 38, § 3º, II"
+          },
+          {
+            "name": "assinar o Mapa de Gerenciamento de Riscos na fase de Gestão do Contrato, juntamente com o Gestor do Contrato",
+            "comment": "Art. 38, § 5º"
+          },
+          {
+            "name": "ter ciência expressa das suas indicações e das suas respectivas atribuições antes de serem formalmente designados",
+            "comment": "Art. 29, § 6º"
+          }
+        ]
+      },
+      {
         "name": "Gestor do Contrato",
         "comment": "Servidor com atribuições gerenciais, preferencialmente da Área Requisitante da solução, designado para coordenar e comandar o processo de gestão e fiscalização da execução contratual.",
         "subtopics": [
@@ -311,7 +357,7 @@
             "comment": "Art. 33, II, o"
           },
           {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato",
+            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
             "comment": "Art. 33, II, p"
           },
           {
@@ -357,7 +403,7 @@
             "comment": "Art. 33, IV, h"
           },
           {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato",
+            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
             "comment": "Art. 33, IV, i"
           },
           {
@@ -399,7 +445,7 @@
             "comment": "Art. 33, III, f"
           },
           {
-            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato",
+            "name": "apoiar o Gestor do Contrato na manutenção do Histórico de Gestão do Contrato (fase de Gestão do Contrato)",
             "comment": "Art. 33, III, g"
           }
         ]
@@ -415,52 +461,6 @@
           {
             "name": "apoiar o Gestor do Contrato, em conjunto com o Fiscal Técnico do Contrato e do Fiscal Requisitante, na confecção e assinatura do Termo de Recebimento Definitivo",
             "comment": "Art. 33, I, h"
-          }
-        ]
-      },
-      {
-        "name": "Equipe de Fiscalização do Contrato",
-        "comment": "Equipe responsável pela fiscalização do contrato, composta por Gestor do Contrato, Fiscal Técnico, Fiscal Administrativo, Fiscal Requisitante e Fiscal Setorial.",
-        "subtopics": [
-          {
-            "name": "acompanhar e garantir a adequada prestação dos serviços e o fornecimento dos bens que compõem a solução de TIC durante todo o período de execução do contrato",
-            "comment": "Art. 30"
-          },
-          {
-            "name": "verificar o cumprimento das obrigações da contratada previstas no contrato, incluindo as obrigações trabalhistas, quando for o caso",
-            "comment": "Art. 33"
-          },
-          {
-            "name": "anotar em registro próprio todas as ocorrências relacionadas à execução do contrato, determinando o que for necessário à regularização das faltas ou defeitos observados",
-            "comment": "Art. 33"
-          },
-          {
-            "name": "dar ciência de irregularidades à contratada e fixar prazo para a sua correção, certificando-se de que as soluções por ela propostas sejam as mais adequadas",
-            "comment": "Art. 33"
-          },
-          {
-            "name": "propor aplicação das penalidades contratuais e legais em casos de inadimplemento da contratada",
-            "comment": "Art. 33"
-          },
-          {
-            "name": "elaborar relatórios sobre a execução do contrato, sempre que solicitado",
-            "comment": "Art. 33"
-          },
-          {
-            "name": "proceder à atualização contínua do Mapa de Gerenciamento de Riscos, sob coordenação do Gestor do Contrato, realizando reavaliação dos riscos identificados nas fases anteriores e atualização de suas respectivas ações de tratamento",
-            "comment": "Art. 38, § 3º, I"
-          },
-          {
-            "name": "proceder à atualização contínua do Mapa de Gerenciamento de Riscos, sob coordenação do Gestor do Contrato, realizando identificação, análise, avaliação e tratamento de novos riscos",
-            "comment": "Art. 38, § 3º, II"
-          },
-          {
-            "name": "assinar o Mapa de Gerenciamento de Riscos na fase de Gestão do Contrato, juntamente com o Gestor do Contrato",
-            "comment": "Art. 38, § 5º"
-          },
-          {
-            "name": "ter ciência expressa das suas indicações e das suas respectivas atribuições antes de serem formalmente designados",
-            "comment": "Art. 29, § 6º"
           }
         ]
       },
