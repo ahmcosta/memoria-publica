@@ -1,0 +1,81 @@
+{
+  "subject": "Metodologias de Data Warehouse",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Abordagens de Modelagem de Dados",
+    "values": [
+      {
+        "name": "Inmon (EDW)",
+        "key": "INMON",
+        "subtopics": [
+          {
+            "name": "Abordagem Top-Down",
+            "key": "TOP_DOWN",
+            "comment": "Desenvolvimento do data warehouse corporativo primeiro, seguido pela criação de data marts departamentais."
+          },
+          {
+            "name": "Banco de Dados Relacionais",
+            "key": "RELATIONAL_DB",
+            "comment": "Utiliza metodologias e ferramentas tradicionais de bancos de dados relacionais para implementação."
+          },
+          {
+            "name": "Modelo Normalizado (3FN)",
+            "key": "NORMALIZED_MODEL",
+            "comment": "Estrutura de dados na terceira forma normal (3FN) para minimizar redundância e maximizar integridade."
+          },
+          {
+            "name": "Orientado a Assunto/Dados",
+            "key": "SUBJECT_ORIENTED",
+            "comment": "Foco nos dados corporativos como um todo, independente de processos específicos de negócio."
+          },
+          {
+            "name": "Voltado para TI",
+            "key": "IT_ORIENTED",
+            "comment": "Projetado e mantido por profissionais de TI, com ênfase em governança e qualidade dos dados."
+          },
+          {
+            "name": "Consulta em Data Marts",
+            "key": "QUERY_DATAMARTS",
+            "comment": "Os usuários finais realizam consultas principalmente nos data marts departamentais, não diretamente no EDW."
+          }
+        ]
+      },
+      {
+        "name": "Kimball",
+        "key": "KIMBALL",
+        "subtopics": [
+          {
+            "name": "Abordagem Bottom-Up",
+            "key": "BOTTOM_UP",
+            "comment": "Desenvolvimento incremental começando por data marts departamentais, que posteriormente são integrados."
+          },
+          {
+            "name": "Modelagem Dimensional",
+            "key": "DIMENSIONAL_MODEL",
+            "comment": "Utiliza esquemas estrela ou floco de neve, com tabelas de fatos e dimensões para otimizar consultas analíticas."
+          },
+          {
+            "name": "Modelo Não Normalizado",
+            "key": "DENORMALIZED_MODEL",
+            "comment": "Estrutura de dados desnormalizada propositalmente para melhor desempenho em consultas analíticas."
+          },
+          {
+            "name": "Orientado a Processo",
+            "key": "PROCESS_ORIENTED",
+            "comment": "Foco em processos de negócio específicos e nas necessidades analíticas dos departamentos."
+          },
+          {
+            "name": "Acessível a Usuários Finais",
+            "key": "USER_ACCESSIBLE",
+            "comment": "Projetado para ser compreensível e diretamente acessível por usuários de negócio, com ferramentas de BI amigáveis."
+          },
+          {
+            "name": "Consulta no DW",
+            "key": "QUERY_DW",
+            "comment": "Os usuários realizam consultas diretamente no data warehouse, que é construído como um conjunto integrado de data marts."
+          }
+        ]
+      }
+    ]
+  }
+}
