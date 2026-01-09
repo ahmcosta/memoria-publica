@@ -14,6 +14,7 @@
   "tryFiles": "Try loading one of these example files:",
   "restart": "Restart",
   "loadJsonFile": "Load JSON File",
+  "solve": "Solve",
   "correct": "Correct",
   "wrong": "Wrong",
   "invalidJson": "Invalid JSON file"

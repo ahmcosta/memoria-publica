@@ -53,6 +53,21 @@ header {
     color: #333;
 }
 
+.solve-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.solve-btn:hover {
+    background: #f57c00;
+}
+
 .counters span {
     margin-left: 20px;
     font-weight: bold;

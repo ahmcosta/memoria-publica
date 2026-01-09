@@ -781,6 +781,61 @@ function startRetry(onlyMissed) {
     createTopicBoxes();
 }
 
+function solveAll() {
+    if (!data) return;
+    
+    const subtopics = document.querySelectorAll('.subtopic');
+    
+    subtopics.forEach(subtopic => {
+        const correctTopicName = subtopic.dataset.correctTopic;
+        const targetTopicBox = document.querySelector(`[data-topic="${correctTopicName}"]`);
+        
+        if (targetTopicBox) {
+            // Create clickable element in topic box
+            const clickableDiv = document.createElement('div');
+            clickableDiv.textContent = subtopic.textContent;
+            clickableDiv.className = 'placed-subtopic';
+            clickableDiv.dataset.originalOrder = subtopic.dataset.originalOrder;
+            if (subtopic.dataset.sources) clickableDiv.dataset.sources = subtopic.dataset.sources;
+            
+            if (subtopic.dataset.comment) {
+                clickableDiv.onclick = () => {
+                    const title = subtopic.dataset.key ?
+                        `${subtopic.dataset.key} - ${subtopic.textContent}` :
+                        subtopic.textContent;
+                    const image = subtopic.dataset.image || null;
+                    const sources = clickableDiv.dataset.sources ? JSON.parse(clickableDiv.dataset.sources) : null;
+                    showModal(title, subtopic.dataset.comment, image, sources);
+                };
+            }
+            
+            // Find correct position to insert based on original order
+            const existingItems = Array.from(targetTopicBox.querySelectorAll('.placed-subtopic'));
+            const insertPosition = existingItems.findIndex(item =>
+                parseInt(item.dataset.originalOrder) > parseInt(clickableDiv.dataset.originalOrder)
+            );
+            
+            const content = targetTopicBox.querySelector('.topic-content');
+            if (insertPosition === -1) {
+                content.appendChild(clickableDiv);
+            } else {
+                content.insertBefore(clickableDiv, existingItems[insertPosition]);
+            }
+            
+            correctCount++;
+        }
+        
+        subtopic.remove();
+    });
+    
+    document.getElementById('correct').textContent = correctCount;
+    
+    // Show completion modal after a short delay
+    if (document.querySelectorAll('.subtopic').length === 0) {
+        setTimeout(() => showGameCompleteModal(), 500);
+    }
+}
+
 // Filter functions for search functionality
 function filterTopics() {
     const searchTerm = document.getElementById('topic-search').value.toLowerCase();

@@ -14,6 +14,7 @@
   "tryFiles": "Experimente carregar um destes arquivos de exemplo:",
   "restart": "Reiniciar",
   "loadJsonFile": "Carregar Arquivo JSON",
+  "solve": "Resolver",
   "correct": "Correto",
   "wrong": "Errado",
   "invalidJson": "Arquivo JSON inválido"
