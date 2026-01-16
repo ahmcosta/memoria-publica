@@ -1,0 +1,250 @@
+{
+  "subject": "Poder Judiciário",
+  "subtopicsLabel": "Classificações",
+  "topics": {
+    "name": "Competênciasdo Poder Judiciário",
+    "values": [
+      {
+        "name": "Compete ao Supremo Tribunal Federal",
+        "subtopics": [
+          {
+            "name": "julgar, originariamente, ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual "   
+          }, 
+          {
+            "name": "julgar, originariamente, ação declaratória de constitucionalidade de lei ou ato normativo federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns, o Presidente da República e o Vice-Presidente"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns, os membros do Congresso Nacional"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns, os Ministros do Supremo Tribunal Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns, o Procurador-Geral da República"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns e nos crimes de responsabilidade, os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica nos crimes conexos com o do Presidente da República"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns e nos crimes de responsabilidade, os membros dos Tribunais Superiores"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns e nos crimes de responsabilidade, os membros do Tribunal de Contas da União"   
+          }, 
+          {
+            "name": "julgar, originariamente, nas infrações penais comuns e nos crimes de responsabilidade, os chefes de missão diplomática de caráter permanente"   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas data contra atos do Presidente da República"   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas data contra atos das Mesas da Câmara dos Deputados "   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas data contra atos do Senado Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas data contra atos do Tribunal de Contas da União"   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas data contra atos do Procurador-Geral da República"   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas data contra atos do Supremo Tribunal Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, o mandado de segurança contra atos do Presidente da República"   
+          }, 
+          {
+            "name": "julgar, originariamente, o mandado de segurança contra atos das Mesas da Câmara dos Deputados "   
+          }, 
+          {
+            "name": "julgar, originariamente, o mandado de segurança contra atos do Senado Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, o mandado de segurança contra atos do Tribunal de Contas da União"   
+          }, 
+          {
+            "name": "julgar, originariamente, o mandado de segurança contra atos do Procurador-Geral da República"   
+          }, 
+          {
+            "name": "julgar, originariamente, o mandado de segurança contra atos do Supremo Tribunal Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, o litígio entre Estado estrangeiro ou organismo internacional e a União"   
+          }, 
+          {
+            "name": "julgar, originariamente, o litígio entre Estado estrangeiro ou organismo internacional e o Estado, o Distrito Federal ou o Território"   
+          }, 
+          {
+            "name": "julgar, originariamente, as causas e os conflitos entre a União e os Estados/Distrito Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, as causas entre os conflitos entre Estados"   
+          }, 
+          {
+            "name": "julgar, originariamente, o habeas corpus, quando o coator for Tribunal Superior "   
+          }, 
+          {
+            "name": "julgar, originariamente, a ação em que todos os membros da magistratura sejam direta ou indiretamente interessados"   
+          }, 
+          {
+            "name": "julgar, originariamente, a ação em que mais da metade dos membros do tribunal de origem estejam impedidos ou sejam direta ou indiretamente interessados"   
+          }, 
+          {
+            "name": "julgar, originariamente, os conflitos de competência entre o Superior Tribunal de Justiça e quaisquer tribunais"   
+          }, 
+          {
+            "name": "julgar, originariamente, os conflitos de competência entre Tribunais Superiores"   
+          }, 
+          {
+            "name": "julgar, originariamente, os conflitos de competência entre Tribunais Superiores e qualquer outro tribunal"   
+          }, 
+          {
+            "name": "julgar, originariamente, as ações contra o Conselho Nacional de Justiça e contra o Conselho Nacional do Ministério Público"   
+          }, 
+          {
+            "name": "julgar, em recurso, o habeas corpus, o mandado de segurança, o habeas data e o mandado de injunção decididos em única instância pelos Tribunais Superiores, se denegatória a decisão"   
+          }, 
+          {
+            "name": "julgar, em recurso, o crime político"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida contrariar dispositivo desta Constituição"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida declarar a inconstitucionalidade de tratado ou lei federal"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida julgar válida lei ou ato de governo local contestado em face desta Constituição"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida julgar válida lei local contestada em face de lei federal"   
+          }
+        ]
+      },
+      {
+        "name": "Compete ao Superior Tribunal de Justiça",
+        "subtopics": [
+          {
+            "name": "julgar, originariamente, nos crimes comuns, os Governadores dos Estados e do Distrito Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, nos crimes comuns e nos de responsabilidade, os desembargadores dos Tribunais de Justiça dos Estados e do Distrito Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, nos crimes comuns e nos de responsabilidade, os membros dos Tribunais de Contas dos Estados e do Distrito Federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, nos crimes comuns e nos de responsabilidade, os membros dos Tribunais Regionais Federais, Eleitorais e do Trabalho"   
+          }, 
+          {
+            "name": "julgar, originariamente, nos crimes comuns e nos de responsabilidade, os membros dos Conselhos ou Tribunais de Contas dos Municípios"   
+          }, 
+          {
+            "name": "julgar, originariamente, nos crimes comuns e nos de responsabilidade, os membros do Ministério Público da União que oficiem perante tribunais"   
+          }, 
+          {
+            "name": "julgar, originariamente, os mandados de segurança e os habeas data contra ato de Ministro de Estado, dos Comandantes da Marinha, do Exército e da Aeronáutica"   
+          }, 
+          {
+            "name": "julgar, originariamente, os mandados de segurança e os habeas data contra ato de Ministro do Superior Tribunal de Justiça"   
+          }, 
+          {
+            "name": "julgar, originariamente, a homologação de sentenças estrangeiras e a concessão de exequatur às cartas rogatórias;"   
+          }, 
+          {
+            "name": "julgar, originariamente, os conflitos entre entes federativos, ou entre estes e o Comitê Gestor do Imposto sobre Bens e Serviços"   
+          }, 
+          {
+            "name": "julgar, em recurso, os habeas corpus decididos em única ou última instância pelos Tribunais Regionais Federais ou pelos tribunais dos Estados, do Distrito Federal e Territórios, quando a decisão for denegatória"   
+          }, 
+          {
+            "name": "julgar, em recurso, os mandados de segurança decididos em única instância pelos Tribunais Regionais Federais ou pelos tribunais dos Estados, do Distrito Federal e Territórios, quando denegatória a decisão"   
+          }, 
+          {
+            "name": "julgar, em recurso, as causas em que forem partes Estado estrangeiro ou organismo internacional, de um lado, e, do outro, Município ou pessoa residente ou domiciliada no País"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida contrariar tratado ou lei federal, ou negar-lhes vigência"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida julgar válido ato de governo local contestado em face de lei federal"   
+          }, 
+          {
+            "name": "julgar, em recurso, quando a decisão recorrida der a lei federal interpretação divergente da que lhe haja atribuído outro tribunal"   
+          }
+        ]
+      },
+      {
+        "name": "Compete aos Tribunais Regionais Federais",
+        "subtopics": [
+          {
+            "name": "julgar, originariamente, nos crimes comuns e de responsabilidade os juízes federais da área de sua jurisdição, incluídos os da Justiça Militar e da Justiça do Trabalho"   
+          }, 
+          {
+            "name": "julgar, originariamente, os membros do Ministério Público da União, ressalvada a competência da Justiça Eleitoral; "   
+          }, 
+          {
+            "name": "julgar, originariamente, as revisões criminais e as ações rescisórias de julgados dos juízes federais da região"   
+          }, 
+          {
+            "name": "julgar, originariamente, os mandados de segurança e os habeas data contra ato de juiz federal"   
+          }, 
+          {
+            "name": "julgar, originariamente, os habeas corpus, quando a autoridade coatora for juiz federal"   
+          }, 
+          {
+            "name": "julgar, em recurso, as causas decididas pelos juízes federais e pelos juízes estaduais no exercício da competência federal da área de sua jurisdição "   
+          }
+        ]
+      },
+      {
+        "name": "Compete aos Juízes Federais",
+        "subtopics": [
+          {
+            "name": "julgar, originariamente, as causas em que a União, entidade autárquica ou empresa pública federal forem interessadas na condição de autoras, rés, assistentes ou oponentes, exceto as de falência, as de acidentes de trabalho e as sujeitas à Justiça Eleitoral e à Justiça do Trabalho"   
+          }, 
+          {
+            "name": "julgar, originariamente, as causas entre Estado estrangeiro ou organismo internacional e Município "   
+          }, 
+          {
+            "name": "julgar, originariamente, as causas entre Estado estrangeiro ou organismo internacional e pessoa domiciliada ou residente no País"   
+          }, 
+          {
+            "name": "julgar, originariamente, as causas fundadas em tratado ou contrato da União com Estado estrangeiro ou organismo internacional"   
+          }, 
+          {
+            "name": "julgar, originariamente, os crimes políticos e as infrações penais praticadas em detrimento de bens, serviços ou interesse da União ou de suas entidades autárquicas ou empresas públicas, excluídas as contravenções e ressalvada a competência da Justiça Militar e da Justiça Eleitoral"   
+          }, 
+          {
+            "name": "julgar, originariamente, os mandados de segurança e os habeas data contra ato de autoridade federal, excetuados os casos de competência dos tribunais federais"   
+          }, 
+          {
+            "name": "julgar, originariamente, os crimes cometidos a bordo de navios ou aeronaves, ressalvada a competência da Justiça Militar"   
+          }, 
+          {
+            "name": "julgar, originariamente, a disputa sobre direitos indígenas"   
+          }
+        ]
+      },
+      {
+        "name": "Compete à Justiça do Trabalho",
+        "subtopics": [
+          {
+            "name": "julgar, originalmente, as ações oriundas da relação de trabalho, abrangidos os entes de direito público externo e da administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios"   
+          }, 
+          {
+            "name": "julgar, originalmente, as ações que envolvam exercício do direito de greve"   
+          }, 
+          {
+            "name": "julgar, originalmente, as ações sobre representação sindical, entre sindicatos, entre sindicatos e trabalhadores, e entre sindicatos e empregadores"   
+          }
+        ]
+      }
+    ]
+  }
+}
