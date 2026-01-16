@@ -500,7 +500,7 @@
             "comment": "Camada e função"
           },
           {
-            "name": "Substituiu definitivamente protocolos inseguros eliminando transmissões em texto claro",
+            "name": "Substituiu definitivamente protocolos inseguros eliminando sessões em texto claro",
             "comment": "Evolução"
           },
           {
@@ -529,7 +529,7 @@
             "comment": "Transporte"
           },
           {
-            "name": "Transmite dados sem qualquer proteção contra interceptação ou modificação",
+            "name": "Transfere hipertextos sem qualquer proteção contra interceptação ou modificação",
             "comment": "Limitação"
           },
           {
