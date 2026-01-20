@@ -35,7 +35,7 @@
           },
           {
             "key": "5.7",
-            "name": "Inteligência de ameaças",
+            "name": "🆕 Inteligência de ameaças",
             "comment": "As informações relacionadas a ameaças à segurança da informação devem ser coletadas e analisadas para produzir inteligência de ameaças. 12 5 Controles organizacionais"
           },
           {
@@ -115,7 +115,7 @@
           },
           {
             "key": "5.23",
-            "name": "Segurança da informação para uso de serviços em nuvem",
+            "name": "🆕 Segurança da informação para uso de serviços em nuvem",
             "comment": "Os processos de aquisição, uso, gestão e saída de serviços em nuvem devem ser estabelecidos de acordo com os requisitos da segurança da informação da organização."
           },
           {
@@ -150,7 +150,7 @@
           },
           {
             "key": "5.30",
-            "name": "Prontidão de TIC para continuidade de negócios",
+            "name": "🆕 Prontidão de TIC para continuidade de negócios",
             "comment": "A prontidão de TIC deve ser planejada, implementada, mantida e testada com base nos objetivos de continuidade de negócios e nos requisitos de continuidade da TIC."
           },
           {
@@ -257,7 +257,7 @@
           },
           {
             "key": "7.4",
-            "name": "Monitoramento de segurança física",
+            "name": "🆕 Monitoramento de segurança física",
             "comment": "As instalações devem ser monitoradas continuamente quanto a acesso físico não autorizado"
           },
           {
@@ -353,22 +353,22 @@
           },
           {
             "key": "8.9",
-            "name": "Gestão de configuração",
+            "name": "🆕 Gestão de configuração",
             "comment": "As configurações, incluindo configurações de segurança, de hardware, software, serviços e redes, devem ser estabelecidas, documentadas, implementadas, monitoradas e analisadas criticamente."
           },
           {
             "key": "8.10",
-            "name": "Exclusão de informações",
+            "name": "🆕 Exclusão de informações",
             "comment": "As informações armazenadas em sistemas de informação, dispositivos ou em qualquer outra mídia de armazenamento devem ser excluídas quando não forem mais necessárias."
           },
           {
             "key": "8.11",
-            "name": "Mascaramento de dados",
+            "name": "🆕 Mascaramento de dados",
             "comment": "O mascaramento de dados deve ser usado de acordo com a política específica por tema da organização sobre o controle de acesso e outras políticas específicas por tema relacionadas e requisitos do negócio, levando em consideração a legislação aplicável."
           },
           {
             "key": "8.12",
-            "name": "Prevenção de vazamento de dados",
+            "name": "🆕 Prevenção de vazamento de dados",
             "comment": "As medidas de prevenção de vazamento de dados devem ser aplicadas a sistemas, redes e quaisquer outros dispositivos que processem, armazenem ou transmitam informações sensíveis."
           },
           {
@@ -388,7 +388,7 @@
           },
           {
             "key": "8.16",
-            "name": "Atividades de monitoramento",
+            "name": "🆕 Atividades de monitoramento",
             "comment": "As redes, sistemas e aplicações devem ser monitorados quanto a comportamentos anômalos e ações apropriadas devem ser tomadas para avaliar possíveis incidentes de segurança da informação. 20 8 Controles tecnológicos"
           },
           {
@@ -423,7 +423,7 @@
           },
           {
             "key": "8.23",
-            "name": "Filtragem da web",
+            "name": "🆕 Filtragem da web",
             "comment": "O acesso a websites externos deve ser gerenciado para reduzir a exposição a conteúdo malicioso."
           },
           {
@@ -448,7 +448,7 @@
           },
           {
             "key": "8.28",
-            "name": "Codificação segura",
+            "name": "🆕 Codificação segura",
             "comment": "Princípios de codificação segura devem ser aplicados ao desenvolvimento de software."
           },
           {
