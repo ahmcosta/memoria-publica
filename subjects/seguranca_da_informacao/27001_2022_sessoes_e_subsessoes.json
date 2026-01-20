@@ -1,0 +1,263 @@
+{
+  "subject": "ISO/IEC 27001:2022 - Seções e Subseções",
+  "subtopicsLabel": "Subseções",
+  "topics": {
+    "name": "Seções da Norma",
+    "values": [
+      {
+        "name": "0",
+        "comment": "Seção introdutória da norma",
+        "subtopics": [
+          {
+            "name": "Introdução",
+            "comment": "0"
+          },
+          {
+            "name": "Geral",
+            "comment": "0.1 Geral\n\nEste documento foi elaboradopara prover requisitos para estabelecer, implementar, manter e melhorar continuamente um sistema de gestão de segurança da informação . A adoção de um sistema de gestão de segurança da informação é uma decisão estratégica para uma organização. O estabelecimento e a implementação do sistema de gestão de segurança da informação de uma organização são influenciados pelas suas necessidades e objetivos, requisitos de segurança, processos organizacionais usados e tamanho e estrutura da organização. É esperado que todos estes fatores de influência mudem ao longo do tempo.\n\nO sistema de gestão da segurança da informação preserva a confidencialidade, integridade e disponibilidade da informação pela aplicação de um processo de gestão de riscos, e fornece confiança para as partes interessadas de que os riscos são adequadamente gerenciados.\n\nÉ importante que um sistema de gestão da segurança da informação seja parte de, e esteja integrado com, os processos da organização e a estrutura de administração global, e que a segurança da informação seja considerada no projeto dos processos, sistemas de informação e controles.\n\nÉ esperado que a implementação de um sistema de gestão de segurança da informação seja planejada de acordo com as necessidades da organização.\n\nEste documento pode ser usado por partes internas e externas para avaliar a capacidade da organização de atender aos seus próprios requisitos de segurança da informação.\n\nA ordem na qual os requisitos são apresentados neste documento não reflete sua importância nem implica na ordem em que devem ser implementados. Os itens listados são numerados apenas para fins de referência.\n\nA ISO/IEC 27000 descreve a visão geral e o vocabulário do sistema de gestão da segurança da informação e referencia a familía de normas da de sistema de gestão da segurança da informação (incluindo as ABNT NBR ISO/IEC 27003, ABNT NBR ISO/IEC 27004 e ABNT NBR ISO/IEC 27005), com termos e definições relacionados."
+          },
+          {
+            "name": "Compatibilidade com outras normas de sistemas de gestão",
+            "comment": "0.2 Compatibilidade com outras normas de sistemas de gestão\n\nEste documento aplica estrutura de alto nível, títulos de subseções idênticos, textos idênticos, termos comuns e definições básicas apresentadas no Anexo SL da ISO/IEC Directives, Part 1, Consolidated ISO Supplement, desta forma mantendo a compatibilidade com outras normas de sistemas de gestão que adotaram o Anexo SL.\n\nEsta abordagem comum especificada no Anexo SL será últil para aquelas organizações que escolhem operar um único sistema de gestão que atenda aos requisitos de duas ou mais normas de sistemas de gestão."
+          }
+        ]
+      },
+      {
+        "name": "1",
+        "comment": "Define o escopo de aplicação da norma",
+        "subtopics": [
+          {
+            "name": "Escopo",
+            "comment": "Este documento especifica os requisitos para estabelecer, implementar, manter e melhorar\ncontinuamente um sistema de gestão da segurança da informação dentro do contexto da organização.\nEste documento também inclui requisitos para a avaliação e tratamento de riscos de segurança\nda informação voltados para as necessidades da organização. Os requisitos estabelecidos neste\ndocumento são genéricos e destinam-se a ser aplicáveis a todas as organizações, independentemente\ndo tipo, tamanho ou natureza. A exclusão de quaisquer dos requisitos especificados nas Seções 4\na 10 não é aceitável quando a organização busca a conformidade com este documento."
+          }
+        ]
+      },
+      {
+        "name": "2",
+        "comment": "Documentos normativos referenciados",
+        "subtopics": [
+          {
+            "name": "Referências normativas",
+            "comment": "O documento a seguir é citado no texto de tal forma que seu conteúdo, total ou parcial, constitui\nrequisito para este Documento.. Para referências datadas, aplicam-se somente as edições citadas.\nPara referências não datadas, aplicam-se as edições mais recentes do referido documento (incluindo\nemendas).\nISO/IEC 27000, Information technology – Security techniques – Information security management\nsystems – Overview and vocabulary"
+          }
+        ]
+      },
+      {
+        "name": "3",
+        "comment": "Terminologia aplicável",
+        "subtopics": [
+          {
+            "name": "Termos e definições",
+            "comment": "Para os efeitos deste documento, aplicam-se os termos e definições da ISO/IEC 27000.\nA ISO e a IEC mantêm bases de dados terminológicos para uso na normalização nos seguintes\nendereços:\n—\nISO Online browsing plataform: disponível em http://www.iso.org/obp\n—\nIEC Electropedia: disponível em http://www.electropedia.org/"
+          }
+        ]
+      },
+      {
+        "name": "4",
+        "comment": "Compreensão do contexto organizacional",
+        "subtopics": [
+          {
+            "name": "Contexto da organização",
+            "comment": "Contexto da organização"
+          },
+          {
+            "name": "Entendendo a organização e seu contexto",
+            "comment": "A organização deve determinar as questões internas e externas que são relevantes para o seu\npropósito e que afetam sua capacidade de alcançar os resultados pretendidos do seu sistema\nde gestão da segurança da informação.\nNOTA\nA determinação destas questões refere-se ao estabelecimento do contexto interno e externo\nda organização apresentado na ABNT ISO 31000:2018, 5.4.1[5].\n1"
+          },
+          {
+            "name": "Entendendo as necessidades e as expectativas das partes interessadas",
+            "comment": "A organização deve determinar:\na)\nas partes interessadas que são relevantes para o sistema de gestão da segurança da informação;\nb)\nos requisitos relevantes dessas partes interessadas;\nc)\nquais desses requisitos serão endereçados pelo sistema de gestão da segurança da informação.\nNOTA\nOs requisitos das partes interessadas podem incluir requisitos legais e regulamentares, bem como\nobrigações contratuais."
+          },
+          {
+            "name": "Determinando o escopo do sistema de gestão da segurança da informação",
+            "comment": "A organização deve determinar os limites e a aplicabilidade do sistema de gestão da segurança\nda informação para estabelecer o seu escopo.\nAo determinar este escopo, a organização deve considerar:\na)\nas questões internas e externas referenciadas em 4.1;\nb)\nos requisitos referenciados em 4.2;\nc)\nas interfaces e dependências entre as atividades desempenhadas pela organização e aquelas\nque são desempenhadas por outras organizações.\nO escopo deve estar disponível como informação documentada."
+          },
+          {
+            "name": "Sistema de gestão da segurança da informação",
+            "comment": "A organização deve estabelecer, implementar, manter e melhorar continuamente um sistema\nde gestão da segurança da informação, incluindo os processos necessários e suas interações,\nde acordo com os requisitos deste documento."
+          }
+        ]
+      },
+      {
+        "name": "5",
+        "comment": "Papel da liderança no SGSI",
+        "subtopics": [
+          {
+            "name": "Liderança",
+            "comment": "Liderança"
+          },
+          {
+            "name": "Liderança e comprometimento",
+            "comment": "A Alta Direção deve demonstrar sua liderança e comprometimento em relação ao sistema de gestão\nda segurança da informação pelos seguintes meios:\na)\nassegurando que a política de segurança da informação e os objetivos de segurança da informação\nestejam estabelecidos e sejam compatíveis com a direção estratégica da organização;\nb)\nassegurando a integração dos requisitos do sistema de gestão da segurança da informação nos\nprocessos da organização;\nc)\nassegurando que os recursos necessários para o sistema de gestão da segurança da informação\nestejam disponíveis;\nd)\ncomunicando a importância de uma gestão eficaz da segurança da informação e da conformidade\ncom os requisitos do sistema de gestão da segurança da informação;\n2\n\f\ne)\nassegurando que o sistema de gestão da segurança da informação alcance seus resultados\npretendidos;\nf)\norientando e apoiando pessoas a contribuir para a eficácia do sistema de gestão da segurança\nda informação;\ng)\npromovendo a melhoria contínua; e\nh)\napoiando outros papéis relevantes da gestão para demonstrar como sua liderança se aplica\nàs áreas sob sua responsabilidade.\nNOTA\nReferência a “negócios” neste documento pode ser interpretada amplamente para significar\naquelas atividades que são o propósito principal da existência da organização."
+          },
+          {
+            "name": "Política",
+            "comment": "A Alta Direção deve estabelecer uma política de segurança da informação que:\na)\nseja apropriada ao propósito da organização;\nb)\ninclua os objetivos de segurança da informação (ver 6.2) ou forneça a estrutura para estabelecer\nos objetivos de segurança da informação;\nc)\ninclua o comprometimento de satisfazer os requisitos aplicáveis relacionados com a segurança\nda informação;\nd)\ninclua o comprometimento com a melhoria contínua do sistema de gestão da segurança\nda informação.\nA política da segurança da informação deve:\ne)\nestar disponível como informação documentada;\nf)\nser comunicada dentro da organização;\ng)\nestar disponível para as partes interessadas, conforme apropriado."
+          },
+          {
+            "name": "Papéis, responsabilidades e autoridades organizacionais",
+            "comment": "A Alta Direção deve assegurar que as responsabilidades e autoridades dos papéis relevantes para\na segurança da informação sejam atribuídos e comunicados dentro da organização.\nA Alta Direção deve atribuir a responsabilidade e autoridade para:\na)\nassegurar que o sistema de gestão da segurança da informação esteja em conformidade com\nos requisitos deste documento;\nb)\nrelatar sobre o desempenho do sistema de gestão da segurança da informação para a Alta\nDireção.\nNOTA\nA Alta Direção pode também atribuir responsabilidades e autoridades para relatar sobre\no desempenho do sistema de gestão da segurança da informação dentro da organização.\n3"
+          }
+        ]
+      },
+      {
+        "name": "6",
+        "comment": "Planejamento do SGSI",
+        "subtopics": [
+          {
+            "name": "Planejamento",
+            "comment": "Planejamento"
+          },
+          {
+            "name": "Ações para abordar riscos e oportunidades",
+            "comment": "Ações para abordar riscos e oportunidades"
+          },
+          {
+            "name": "Geral",
+            "comment": "Ao planejar o sistema de gestão da segurança da informação, a organização deve considerar\nas questões referenciadas em 4.1 e os requisitos estabelecidos em 4.2, e determinar os riscos\ne oportunidades que precisam ser abordados para:\na)\nassegurar que o sistema de gestão da segurança da informação possa alcançar seus resultados\npretendidos;\nb)\nprevenir ou reduzir os efeitos indesejados; e\nc)\nalcançar a melhoria contínua.\nA organização deve planejar:\nd)\nas ações para abordar estes riscos e oportunidades; e\ne)\ncomo\n1)\nintegrar e implementar as ações dentro dos processos do seu sistema de gestão da segurança\nda informação; e\n2)\navaliar a eficácia destas ações."
+          },
+          {
+            "name": "Avaliação de riscos de segurança da informação",
+            "comment": "A organização deve estabelecer e aplicar um processo de avaliação de riscos de segurança\nda informação que:\na)\nestabeleça e mantenha critérios de riscos de segurança da informação que incluam:\n1) critérios de aceitação de riscos; e\n2) critérios para realizar as avaliações de riscos de segurança da informação;\nb)\nassegure que as contínuas avaliações de riscos de segurança da informação repetidas produzam\nresultados comparáveis, válidos e consistentes;\nc)\nidentifique os riscos de segurança da informação:\n1) aplicando o processo de avaliação do risco de segurança da informação para identificar\nos riscos associados com a perda de confidencialidade, integridade e disponibilidade\nda informação dentro do escopo do sistema de gestão da segurança da informação; e\n2) identificando os proprietários dos riscos.\nd)\nanalise os riscos de segurança da informação:\n1) avaliando as consequências potenciais que podem resultar se os riscos identificados\nem 6.1.2 c) 1) forem materializados;\n2) avaliando a probabilidade realística da ocorrência dos riscos identificados em 6.1.2 c) 1); e\n3) determinando os níveis de risco;\n4\n\f\ne)\navalie os riscos de segurança da informação:\n1) comparando os resultados da análise de riscos com os critérios de riscos estabelecidos\nem 6.1.2 a); e\n2) priorizando os riscos analisados para o tratamento do risco.\nA organização deve reter informação documentada sobre o processo de avaliação de riscos\nda segurança da informação."
+          },
+          {
+            "name": "Tratamento de riscos da segurança da informação",
+            "comment": "A organização deve estabelecer e aplicar um processo de tratamento de riscos da segurança\nda informação para:\na)\nselecionar, de forma apropriada, as opções de tratamento dos riscos da segurança da informação,\nlevando em consideração os resultados da avaliação de riscos;\nb)\ndeterminar todos os controles que são necessários para implementar as opções escolhidas\ndo tratamento de riscos da segurança da informação;\nNOTA 1 As organizações podem projetar os controles, conforme requerido, ou identificá-los\nde qualquer outra fonte.\nc)\ncomparar os controles determinados em 6.1.3 b) com aqueles do Anexo A e verificar se nenhum\ncontrole necessário foi omitido;\nNOTA 2 O Anexo A contém uma lista de possíveis controles de segurança da informação. Os usuários\ndeste documento direcionados ao utilizar o Anexo A para assegurar que nenhum controle necessário\nseja omitido.\nNOTA 3 Os controles de segurança da informação listados no Anexo A não são exaustivos, e controles\nde segurança da informação adicionais podem ser incluídos, se necessário.\nd)\nelaborar uma Declaração de Aplicabilidade que contenha:\n—\nos controles necessários (ver 6.1.3 b) e c));\n—\na justificativa para inclusões;\n—\nse os controles necessários são implementados ou não; e\n—\na justificativa para a exclusão de quaisquer controles do Anexo A.\ne)\npreparar um plano para tratamento de riscos da segurança da informação; e\nf)\nobter a aprovação dos proprietários dos riscos do plano de tratamento de riscos da segurança\nda informação e a aceitação dos riscos residuais de segurança da informação.\nA organização deve reter a informação documentada relativa ao processo de tratamento de riscos\nda segurança da informação.\nNOTA 4 O processo de tratamento e a avaliação de riscos da segurança da informação deste documento\nestão alinhados com os princípios e as diretrizes gerais estabelecidos na ABNT NBR ISO 31000[5].\n5"
+          },
+          {
+            "name": "Objetivos da segurança da informação e planejamento para alcançá-los",
+            "comment": "A organização deve estabelecer os objetivos da segurança da informação para as funções e níveis\nrelevantes.\nOs objetivos da segurança da informação devem:\na)\nser consistentes com a política da segurança da informação;\nb)\nser mensuráveis (se praticável);\nc)\nlevar em conta os requisitos da segurança da informação aplicáveis e os resultados da avaliação\ne tratamento de riscos;\nd)\nser monitorados;\ne)\nser comunicados;\nf)\nser atualizados, conforme apropriado;\ng)\nser disponibilizados como informação documentada.\nA organização deve reter informação documentada dos objetivos da segurança da informação.\nAo planejar como alcançar os seus objetivos da segurança da informação, a organização deve\ndeterminar:\nh)\no que será feito;\ni)\nquais recursos serão necessários;\nj)\nquem será responsável;\nk)\nquando estará concluído; e\nl)\ncomo os resultados serão avaliados."
+          },
+          {
+            "name": "Planejamento de mudanças",
+            "comment": "Quando a organização determina necessidade para mudanças do sistema de gestão da segurança\nda informação, estas mudanças devem ser conduzidas de uma forma planejada."
+          }
+        ]
+      },
+      {
+        "name": "7",
+        "comment": "Recursos de apoio ao SGSI",
+        "subtopics": [
+          {
+            "name": "Apoio",
+            "comment": "Apoio"
+          },
+          {
+            "name": "Recursos",
+            "comment": "A organização deve determinar e prover recursos necessários para estabelecer, implementar, manter\ne melhorar continuamente o sistema de gestão da segurança da informação."
+          },
+          {
+            "name": "Competência",
+            "comment": "A organização deve:\na)\ndeterminar a competência necessária da(s) pessoa(s) que realiza(m) trabalho sob o seu controle\nque afete o desempenho da segurança da informação;\n6\n\f\nb)\nassegurar que essas pessoas sejam competentes, com base em educação, treinamento\nou experiência apropriados;\nc)\nonde aplicável, tomar ações para adquirir a competência necessária e avaliar a eficácia das\nações tomadas; e\nd)\nreter informação documentada apropriada como evidência da competência.\nNOTA\nAs ações aplicáveis ​​podem incluir, por exemplo: o fornecimento de treinamento, a mentoria\nou a reatribuição dos atuais funcionários; ou empregar ou contratar pessoas competentes."
+          },
+          {
+            "name": "Conscientização",
+            "comment": "Pessoas que realizam trabalho sob o controle da organização devem estar cientes:\na)\nda política da segurança da informação;\nb)\nda sua contribuição para a eficácia do sistema de gestão da segurança da informação, incluindo\nos benefícios da melhoria do desempenho da segurança da informação; e\nc)\ndas implicações da não conformidade com os requisitos do sistema de gestão da segurança\nda informação."
+          },
+          {
+            "name": "Comunicação",
+            "comment": "A organização deve determinar a necessidade de comunicações internas e externas relevantes para\no sistema de gestão da segurança da informação, incluindo:\na)\no que comunicar;\nb)\nquando comunicar;\nc)\ncom quem comunicar;\nd)\ncomo se comunicar."
+          },
+          {
+            "name": "Informação documentada",
+            "comment": "Informação documentada"
+          },
+          {
+            "name": "Geral",
+            "comment": "O sistema de gestão da segurança da informação da organização deve incluir:\na)\ninformação documentada requerida por este documento; e\nb)\ninformação documentada determinada pela organização como sendo necessária para a eficácia\ndo sistema de gestão da segurança da informação.\nNOTA\nA abrangência da informação documentada para o sistema de gestão da segurança da informação\npode variar de uma organização para outra devido:\n1) ao tamanho da organização e seu tipo de atividades, processos, produtos e serviços;\n2) à complexidade dos processos e suas interações; e\n3) à competência das pessoas.\n7"
+          },
+          {
+            "name": "Criando e atualizando",
+            "comment": "Ao criar e atualizar a informação documentada, a organização deve assegurar, de forma apropriados(as):\na)\nidentificação e descrição (por exemplo, título, data, autor ou um número de referência);\nb)\nformato (por exemplo, linguagem, versão do software, gráficos) e seu meio (por exemplo, papel,\neletrônico); e\nc)\nanálise crítica e aprovação para pertinência e adequação."
+          },
+          {
+            "name": "Controle da informação documentada",
+            "comment": "A informação documentada requerida pelo sistema de gestão da segurança da informação e por este\ndocumento deve ser controlada para assegurar que:\na)\nesteja disponível e adequada para o uso, onde e quando necessário; e\nb)\nesteja protegida adequadamente (por exemplo, contra perda de confidencialidade, uso indevido\nou perda de integridade).\nPara o controle da informação documentada, a organização deve considerar as seguintes atividades,\nconforme aplicável:\nc)\ndistribuição, acesso, recuperação e uso;\nd)\narmazenamento e preservação, incluindo a preservação da legibilidade;\ne)\ncontrole de mudanças (por exemplo, controle de versão); e\nf)\nretenção e disposição.\nA informação documentada de origem externa, determinada pela organização como necessária para\no planejamento e a operação do sistema de gestão da segurança da informação, deve ser identificada\ncomo apropriado, e controlada.\nNOTA\nO acesso pode implicar em uma decisão quanto à permissão para apenas ver a informação\ndocumentada, ou na permissão e autoridade para ver e alterar a informação documentada etc."
+          }
+        ]
+      },
+      {
+        "name": "8",
+        "comment": "Operação do SGSI",
+        "subtopics": [
+          {
+            "name": "Operação",
+            "comment": "Operação"
+          },
+          {
+            "name": "Planejamento e controle operacionais",
+            "comment": "A organização deve planejar, implementar e controlar os processos necessários para atender aos\nrequisitos e para implementar as ações determinadas na Seção 6:\n—\nestabelecendo critérios para os processos;\n—\nimplementando controles dos processos de acordo com os critérios.\nA informação documentada deve ser disponibilizada na abrangência necessária para gerar a confiança\nde que os processos estão sendo realizados conforme planejado.\nA organização deve controlar as mudanças planejadas e analisar criticamente as consequências\nde mudanças não intencionais, tomando ações para mitigar quaisquer efeitos adversos, conforme necessário.\n8\n\f\nA organização deve assegurar que os processos, produtos ou serviços providos externamente que são\nrelevantes para o sistema de gestão da segurança da informação sejam controlados."
+          },
+          {
+            "name": "Avaliação de riscos da segurança da informação",
+            "comment": "A organização deve realizar avaliações de riscos da segurança da informação a intervalos planejados,\nou quando mudanças significativas forem propostas ou ocorrerem, levando em conta os critérios\nestabelecidos em 6.1.2 a).\nA organização deve reter informação documentada dos resultados das avaliações de riscos\nda segurança da informação."
+          },
+          {
+            "name": "Tratamento de riscos da segurança da informação",
+            "comment": "A organização deve implementar o plano de tratamento de riscos da segurança da informação.\nA organização deve reter informação documentada dos resultados do tratamento de riscos\nda segurança da informação."
+          }
+        ]
+      },
+      {
+        "name": "9",
+        "comment": "Monitoramento e avaliação do SGSI",
+        "subtopics": [
+          {
+            "name": "Avaliação de desempenho",
+            "comment": "Avaliação de desempenho"
+          },
+          {
+            "name": "Monitoramento, medição, análise e avaliação",
+            "comment": "A organização deve determinar:\na)\no que precisa ser monitorado e medido, incluindo processos e controles da segurança\nda informação;\nb)\nos métodos para monitoramento, medição, análise e avaliação, conforme aplicável, para assegurar\nresultados válidos. Convém que os métodos selecionados produzam resultados comparáveis\ne reproduzíveis para serem considerados válidos;\nc)\nquando o monitoramento e a medição devem ser realizados;\nd)\nquem deve monitorar e medir;\ne)\nquando os resultados do monitoramento e da medição devem ser analisados e avaliados;\nf)\nquem deve analisar e avaliar estes resultados.\nInformação documentada deve ser disponibilizada como evidência dos resultados.\nA organização deve avaliar o desempenho da segurança da informação e a eficácia do sistema\nde gestão da segurança da informação."
+          },
+          {
+            "name": "Auditoria interna",
+            "comment": "Auditoria interna"
+          },
+          {
+            "name": "Geral",
+            "comment": "A organização deve conduzir auditorias internas a intervalos planejados para prover informações\nsobre se o sistema de gestão da segurança da informação:\na)\nestá em conformidade com:\n1) os próprios requisitos da organização para o seu sistema de gestão da segurança\nda informação;\n9\n\f\n2) os requisitos deste documento;\nb)\nestá efetivamente implementado e mantido."
+          },
+          {
+            "name": "Programa de auditoria interna",
+            "comment": "A organização deve planejar, estabelecer, implementar e manter programa(s) de auditoria, incluindo\nfrequência, métodos, responsabilidades, requisitos de planejamento e relato.\nAo estabelecer programa(s) de auditoria interna, a organização deve considerar a importância dos\nprocessos pertinentes e os resultados de auditorias anteriores.\nA organização deve:\na)\ndefinir os critérios e o escopo da auditoria, para cada auditoria;\nb)\nselecionar auditores e conduzir auditorias que assegurem objetividade e imparcialidade\ndo processo de auditoria;\nc)\nassegurar que os resultados das auditorias sejam relatados para a gestão pertinente.\nInformação documentada deve ser disponibilizada como evidência da implementação do(s) programa(s)\nde auditoria e dos resultados da auditoria."
+          },
+          {
+            "name": "Análise crítica pela Direção",
+            "comment": "Análise crítica pela Direção"
+          },
+          {
+            "name": "Geral",
+            "comment": "A Alta Direção deve analisar criticamente o sistema de gestão da segurança da informação\nda organização em intervalos planejados, para assegurar a sua contínua adequação, pertinência\ne eficácia."
+          },
+          {
+            "name": "Entradas da análise crítica pela Direção",
+            "comment": "A análise crítica pela Direção deve incluir considerações em relação a:\na)\nsituação das ações de análises críticas anteriores pela Direção;\nb)\nmudanças nas questões internas e externas que sejam relevantes para o sistema de gestão\nda segurança da informação;\nc)\nmudanças nas necessidades e expectativas das partes interessadas que sejam relevantes para\no sistema de gestão da segurança da informação\nd)\nfeedback sobre o desempenho da segurança da informação, incluindo tendências para:\n1) não conformidades e ações corretivas;\n2) resultados da medição e monitoramento;\n3) resultados de auditorias;\n4) cumprimento dos objetivos da segurança da informação;\ne)\n10\nfeedback das partes interessadas;\n\f\nf)\nresultados da avaliação dos riscos e situação do plano de tratamento de riscos;\ng)\noportunidades para a melhoria contínua."
+          },
+          {
+            "name": "Resultados da análise crítica pela Direção",
+            "comment": "Os resultados da análise crítica pela Direção devem incluir decisões relativas às oportunidades\npara melhoria contínua e quaisquer necessidades de mudanças do sistema de gestão da segurança\nda informação.\nInformação documentada deve ser disponibilizada como evidência dos resultados das análises críticas\npela Direção."
+          }
+        ]
+      },
+      {
+        "name": "10",
+        "comment": "Melhoria contínua do SGSI",
+        "subtopics": [
+          {
+            "name": "Melhoria",
+            "comment": "Melhoria"
+          },
+          {
+            "name": "Melhoria contínua",
+            "comment": "A organização deve melhorar continuamente a pertinência, a adequação e a eficácia do sistema\nde gestão da segurança da informação."
+          },
+          {
+            "name": "Não conformidade e ação corretiva",
+            "comment": "Quando uma não conformidade ocorre, a organização deve:\na)\nreagir à não conformidade e, conforme apropriado:\n1) tomar ações para controlá-la e corrigi-la; e\n2) lidar com as consequências;\nb)\navaliar a necessidade de ações para eliminar as causas de não conformidade, para evitar sua\nrepetição ou ocorrência em outro lugar, por um dos seguintes meios:\n1) analisando criticamente a não conformidade;\n2) determinando as causas da não conformidade; e\n3) determinando se não conformidades similares existem, ou se podem potencialmente ocorrer;\nc)\nimplementar quaisquer ações necessárias;\nd)\nanalisar criticamente a eficácia de quaisquer ações corretivas tomadas; e\ne)\nrealizar mudanças no sistema de gestão da segurança da informação, quando necessário.\nAs ações corretivas devem ser apropriadas aos efeitos das não conformidades encontradas.\nInformação documentada deve estar disponível como evidência de:\nf)\nnatureza das não conformidades e quaisquer ações subsequentes tomadas; e\ng)\nresultados de qualquer ação corretiva.\n11"
+          }
+        ]
+      }
+    ]
+  }
+}
