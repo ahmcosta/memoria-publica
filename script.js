@@ -468,7 +468,9 @@ function showModal(title, comment, image, sources) {
 
     const modalComment = document.getElementById('modal-comment');
 
-    let content = `<p>${comment}</p>`;
+    // Replace newlines with <br> tags for proper display
+    const formattedComment = comment.replace(/\n/g, '<br>');
+    let content = `<p style="white-space: pre-wrap;">${formattedComment}</p>`;
 
     if (image) {
         content += `<img src="${image}" alt="${title}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">`;
