@@ -1,0 +1,91 @@
+{
+  "subject": "CIS Controls v8 - Grupos de Implementação",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Grupos de Implementação",
+    "values": [
+      {
+        "name": "IG1",
+        "comment": "Implementation Group 1",
+        "subtopics": [
+          {
+            "name": "Pequeno a médio porte, com experiência limitada em TI e segurança cibernética dedicada à proteção de ativos e pessoal de TI",
+            "comment": "Características da empresa/pessoal"
+          },
+          {
+            "name": "Sensibilidade baixa e envolve principalmente informações financeiras e de funcionários",
+            "comment": "Sensibilidade dos dados"
+          },
+          {
+            "name": "Manter o negócio operacional, pois têm uma tolerância limitada para o tempo de paralisação",
+            "comment": "Foco de preocupação"
+          },
+          {
+            "name": "Devem ser implementáveis com experiência limitada em segurança cibernética e destinadas a impedir ataques gerais não direcionados.",
+            "comment": "Foco das medidas de segurança do CisControls"
+          },
+          {
+            "name": "Essas proteções também são tipicamente projetadas para funcionar em conjunto com soluções pequenas e domésticas de hardware e software (comercial off-the-shelf—COTS).",
+            "comment": "Dificuldade da implementação"
+          }
+        ]
+      },
+      {
+        "name": "IG2",
+        "comment": "Implementation Group 2",
+        "subtopics": [
+          {
+            "name": "Emprega indivíduos responsáveis por gerenciar e proteger a infraestrutura de TI.",
+            "comment": "Características da empresa/pessoal"
+          },
+          {
+            "name": "Geralmente armazenam e processam informações confidenciais de clientes ou empresas",
+            "comment": "Sensibilidade dos dados"
+          },
+          {
+            "name": "Pequenas unidades da empresa podem ter encargos de conformidade regulatória.",
+            "comment": "Conformidade/regulação dos dados"
+          },
+          {
+            "name": "Uma grande preocupação é a perda de confiança do público se ocorrer uma violação.",
+            "comment": "Foco de preocupação"
+          },
+          {
+            "name": "Podem resistir a curtas interrupções de serviço.",
+            "comment": "Grau de resistência a ataques"
+          },
+          {
+            "name": "Ajudam as equipes de segurança a lidar com o aumento da complexidade operacional",
+            "comment": "Foco das medidas de segurança do CisControls"
+          },
+          {
+            "name": "Algumas proteções dependerão de tecnologia de nível empresarial e conhecimento especializado para instalar e configurar adequadamente.",
+            "comment": "Dificuldade da implementação"
+          }
+        ]
+      },
+      {
+        "name": "IG3",
+        "comment": "Implementation Group 3",
+        "subtopics": [
+          {
+            "name": "Emprega especialistas em segurança especializados nas diferentes facetas da segurança cibernética (por exemplo, gestão de riscos, teste de invasão, segurança de aplicações)",
+            "comment": "Características da empresa/pessoal"
+          },
+          {
+            "name": "Contêm informações ou funções confidenciais que estão sujeitas à supervisão regulatória e de conformidade. Uma empresa IG3 deve abordar a disponibilidade dos serviços e a confidencialidade e integridade dos dados sensíveis.",
+            "comment": "Sensibilidade dos dados"
+          },
+          {
+            "name": "Ataques bem-sucedidos podem causar danos significativos ao bem público.",
+            "comment": "Foco de preocupação"
+          },
+          {
+            "name": "Diminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day",
+            "comment": "Foco das medidas de segurança do CisControls"
+          }
+        ]
+      }
+    ]
+  }
+}
