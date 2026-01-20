@@ -106,30 +106,6 @@
         "name": "Integrante Requisitante",
         "comment": "Servidor representante da Área Requisitante da solução, indicado pela autoridade competente dessa área, integrante da Equipe de Planejamento da Contratação.",
         "subtopics": [
-          {
-            "name": "definir, quando aplicáveis, os seguintes requisitos: de negócio, que independem de características tecnológicas e que definem as necessidades e os aspectos funcionais da solução de TIC",
-            "comment": "Art. 16, I, a"
-          },
-          {
-            "name": "definir, quando aplicáveis, os seguintes requisitos: de capacitação, que definem a necessidade de treinamento, de carga horária e de materiais didáticos",
-            "comment": "Art. 16, I, b"
-          },
-          {
-            "name": "definir, quando aplicáveis, os seguintes requisitos: legais, que definem as normas com as quais a solução de TIC deve estar em conformidade",
-            "comment": "Art. 16, I, c"
-          },
-          {
-            "name": "definir, quando aplicáveis, os seguintes requisitos: de manutenção, que independem de configuração tecnológica e que definem a necessidade de serviços de manutenção preventiva, corretiva, adaptativa e evolutiva (melhoria funcional)",
-            "comment": "Art. 16, I, d"
-          },
-          {
-            "name": "definir, quando aplicáveis, os seguintes requisitos: temporais, que definem datas de entrega da solução de TIC contratada",
-            "comment": "Art. 16, I, e"
-          },
-          {
-            "name": "definir, quando aplicáveis, os seguintes requisitos: sociais, ambientais e culturais, que definem requisitos que a solução de TIC deve atender para estar em conformidade com costumes, idiomas e ao meio ambiente, dentre outros",
-            "comment": "Art. 16, I, g"
-          }
         ]
       },
       {
@@ -325,8 +301,32 @@
         "comment": "Competências do Integrante Requisitante que requerem apoio do Integrante Técnico.",
         "subtopics": [
           {
+            "name": "definir, quando aplicáveis, os seguintes requisitos: de negócio, que independem de características tecnológicas e que definem as necessidades e os aspectos funcionais da solução de TIC",
+            "comment": "Art. 16, I, a"
+          },
+          {
+            "name": "definir, quando aplicáveis, os seguintes requisitos: de capacitação, que definem a necessidade de treinamento, de carga horária e de materiais didáticos",
+            "comment": "Art. 16, I, b"
+          },
+          {
+            "name": "definir, quando aplicáveis, os seguintes requisitos: legais, que definem as normas com as quais a solução de TIC deve estar em conformidade",
+            "comment": "Art. 16, I, c"
+          },
+          {
+            "name": "definir, quando aplicáveis, os seguintes requisitos: de manutenção, que independem de configuração tecnológica e que definem a necessidade de serviços de manutenção preventiva, corretiva, adaptativa e evolutiva (melhoria funcional)",
+            "comment": "Art. 16, I, d"
+          },
+          {
+            "name": "definir, quando aplicáveis, os seguintes requisitos: temporais, que definem datas de entrega da solução de TIC contratada",
+            "comment": "Art. 16, I, e"
+          },
+          {
             "name": "definir requisitos de segurança e privacidade",
             "comment": "Art. 16, I, f"
+          },
+          {
+            "name": "definir, quando aplicáveis, os seguintes requisitos: sociais, ambientais e culturais, que definem requisitos que a solução de TIC deve atender para estar em conformidade com costumes, idiomas e ao meio ambiente, dentre outros",
+            "comment": "Art. 16, I, g"
           }
         ]
       },
