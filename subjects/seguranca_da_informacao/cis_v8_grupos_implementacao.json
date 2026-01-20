@@ -38,11 +38,11 @@
           },
           {
             "name": "Implementáveis com experiência limitada em segurança cibernética",
-            "comment": "Foco das medidas de segurança do CisControls\n\nDevem ser implementáveis com experiência limitada em segurança cibernética e destinadas a impedir ataques gerais não direcionados."
+            "comment": "<strong>Foco das medidas de segurança do Cis Controls</strong>\n\nDevem ser <u>implementáveis com experiência limitada em segurança cibernética</u> e <strong>destinadas a impedir ataques gerais não direcionados</strong>."
           },
           {
             "name": "Destinadas a impedir ataques gerais não direcionados",
-            "comment": "Foco das medidas de segurança do CisControls\n\nDevem ser implementáveis com experiência limitada em segurança cibernética e destinadas a impedir ataques gerais não direcionados."
+            "comment": "<strong>Foco das medidas de segurança do Cis Controls</strong>\n\nDevem ser <u>implementáveis com experiência limitada em segurança cibernética</u> e <strong>destinadas a impedir ataques gerais não direcionados</strong>."
           },
           {
             "name": "Projetadas para funcionar com soluções pequenas e domésticas",
@@ -88,7 +88,7 @@
           },
           {
             "name": "Ajudam a lidar com o aumento da complexidade operacional",
-            "comment": "Foco das medidas de segurança do CisControls\n\nAjudam as equipes de segurança a lidar com o aumento da complexidade operacional"
+            "comment": "Foco das medidas de segurança do Cis Controls\n\nAjudam as equipes de segurança a lidar com o aumento da complexidade operacional"
           },
           {
             "name": "Dependem de tecnologia de nível empresarial",
@@ -138,11 +138,11 @@
           },
           {
             "name": "Diminuir ataques direcionados de adversários sofisticados",
-            "comment": "Foco das medidas de segurança do CisControls\n\nDiminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day"
+            "comment": "Foco das medidas de segurança do Cis Controls\n\nDiminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day"
           },
           {
             "name": "Reduzir o impacto dos ataques zero-day",
-            "comment": "Foco das medidas de segurança do CisControls\n\nDiminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day"
+            "comment": "Foco das medidas de segurança do Cis Controls\n\nDiminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day"
           }
         ]
       }
