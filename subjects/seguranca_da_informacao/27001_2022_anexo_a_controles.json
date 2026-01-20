@@ -1,0 +1,488 @@
+{
+  "subject": "ISO/IEC 27001:2022 - Anexo A - Controles de Segurança da Informação",
+  "subtopicsLabel": "Controles",
+  "topics": {
+    "name": "Tipos de Controles",
+    "values": [
+      {
+        "name": "Controles organizacionais",
+        "comment": "Controles da categoria 5",
+        "subtopics": [
+          {
+            "key": "5.2",
+            "name": "Papéis e responsabilidades pela segurança da informação",
+            "comment": "Papéis e responsabilidades pela segurança da informação devem ser definidos e alocados de acordo com as necessidades da organização."
+          },
+          {
+            "key": "5.3",
+            "name": "Segregação de funções",
+            "comment": "Funções conflitantes e áreas de responsabilidade conflitantes devem ser segregadas."
+          },
+          {
+            "key": "5.4",
+            "name": "Responsabilidades da direção",
+            "comment": "A direção deve requerer que todo o pessoal aplique a segurança da informação de acordo com a política da segurança da informação estabelecida, com as políticas específicas por tema e com os procedimentos da organização."
+          },
+          {
+            "key": "5.5",
+            "name": "Contato com autoridades",
+            "comment": "A organização deve estabelecer e manter contato com as autoridades relevantes."
+          },
+          {
+            "key": "5.6",
+            "name": "Contato com grupos de interesse especial",
+            "comment": "A organização deve estabelecer e manter contato com grupos de interesse especial ou com outros fóruns de especialistas em segurança e associações profissionais."
+          },
+          {
+            "key": "5.7",
+            "name": "Inteligência de ameaças",
+            "comment": "As informações relacionadas a ameaças à segurança da informação devem ser coletadas e analisadas para produzir inteligência de ameaças. 12 5 Controles organizacionais"
+          },
+          {
+            "key": "5.8",
+            "name": "Segurança da informação no gerenciamento de projetos",
+            "comment": "A segurança da informação deve ser integrada ao gerenciamento de projetos."
+          },
+          {
+            "key": "5.9",
+            "name": "Inventário de informações e outros ativos associados",
+            "comment": "Um inventário de informações e outros ativos associados, incluindo proprietários, deve ser desenvolvido e mantido."
+          },
+          {
+            "key": "5.10",
+            "name": "Uso aceitável de informações e outros ativos associados",
+            "comment": "Regras para o uso aceitável e procedimentos para o manuseio de informações e outros ativos associados devem ser identificados, documentados e implementados."
+          },
+          {
+            "key": "5.11",
+            "name": "Devolução de ativos",
+            "comment": "O pessoal e outras partes interessadas, conforme apropriado, devem devolver todos os ativos da organização em sua posse em mudança ou o encerramento de seu emprego, contratação ou acordo."
+          },
+          {
+            "key": "5.12",
+            "name": "Classificação das informações",
+            "comment": "As informações devem ser classificadas de acordo com as necessidades de segurança da informação da organização, com base na confidencialidade, integridade, disponibilidade e requisitos das partes interessadas relevantes."
+          },
+          {
+            "key": "5.13",
+            "name": "Rotulagem de informações",
+            "comment": "Um conjunto adequado de procedimentos para rotulagem de informações deve ser desenvolvido e implementado de acordo com o esquema de classificação de informações adotado pela organização."
+          },
+          {
+            "key": "5.14",
+            "name": "Transferência de informações",
+            "comment": "Regras, procedimentos ou acordos de transferência de informações devem ser implementados para todos os tipos de recursos de transferência dentro da organização e entre a organização e outras partes."
+          },
+          {
+            "key": "5.15",
+            "name": "Controle de acesso",
+            "comment": "Regras para controlar o acesso físico e lógico às informações e a outros ativos associados devem ser estabelecidas e implementadas com base nos requisitos de segurança da informação e de negócios."
+          },
+          {
+            "key": "5.16",
+            "name": "Gestão de identidade",
+            "comment": "O ciclo de vida completo das identidades deve ser gerenciado. 13 5 Controles organizacionais"
+          },
+          {
+            "key": "5.17",
+            "name": "Informações de autenticação",
+            "comment": "A alocação e a gestão de informações de autenticação devem ser controladas por um processo de gestão, incluindo aconselhar o pessoal sobre o manuseio adequado de informações de autenticação."
+          },
+          {
+            "key": "5.18",
+            "name": "Direitos de acesso",
+            "comment": "Os direitos de acesso às informações e a outros ativos associados devem ser provisionados, analisados criticamente, modificados e removidos de acordo com a política específica por tema e com as regras da organização para o controle de acesso."
+          },
+          {
+            "key": "5.19",
+            "name": "Segurança da informação nas relações com fornecedores",
+            "comment": "Processos e procedimentos devem ser definidos e implementados para gerenciar os riscos da segurança da informação associados com o uso dos produtos ou serviços dos fornecedores."
+          },
+          {
+            "key": "5.20",
+            "name": "Abordagem da segurança da informação nos contratos de fornecedores",
+            "comment": "Requisitos relevantes de segurança da informação devem ser estabelecidos e acordados com cada fornecedor, com base no tipo de relacionamento com o fornecedor."
+          },
+          {
+            "key": "5.21",
+            "name": "Gestão da segurança da informação na cadeia de fornecimento de tecnologia de informação e comunicação (TIC)",
+            "comment": "Processos e procedimentos devem ser definidos e implementados para gerenciar os riscos da segurança da informação associados à cadeia de fornecimento de produtos e serviços de TIC."
+          },
+          {
+            "key": "5.22",
+            "name": "Monitoramento, análise crítica e gestão de mudanças dos serviços de fornecedores",
+            "comment": "A organização deve monitorar, analisar criticamente, avaliar e gerenciar regularmente a mudança nas práticas da segurança da informação dos fornecedores e na prestação de serviços."
+          },
+          {
+            "key": "5.23",
+            "name": "Segurança da informação para uso de serviços em nuvem",
+            "comment": "Os processos de aquisição, uso, gestão e saída de serviços em nuvem devem ser estabelecidos de acordo com os requisitos da segurança da informação da organização."
+          },
+          {
+            "key": "5.24",
+            "name": "Planejamento e preparação da gestão de incidentes da segurança da informação",
+            "comment": "A organização deve planejar e se preparar para gerenciar incidentes da segurança da informação, definindo, estabelecendo e comunicando processos, papéis e responsabilidades de gestão de incidentes da segurança da informação. 14 5 Controles organizacionais"
+          },
+          {
+            "key": "5.25",
+            "name": "Avaliação e decisão sobre eventos da segurança da informação",
+            "comment": "A organização deve avaliar os eventos da segurança da informação e decidir se categoriza como incidentes da segurança da informação."
+          },
+          {
+            "key": "5.26",
+            "name": "Resposta a incidentes da segurança da informação",
+            "comment": "Os incidentes da segurança da informação devem ser respondidos de acordo com os procedimentos documentados."
+          },
+          {
+            "key": "5.27",
+            "name": "Aprendizado com incidentes de segurança da informação",
+            "comment": "O conhecimento adquirido com incidentes de segurança da informação deve ser usado para fortalecer e melhorar os controles da segurança da informação."
+          },
+          {
+            "key": "5.28",
+            "name": "Coleta de evidências",
+            "comment": "A organização deve estabelecer e implementar procedimentos para identificação, coleta, aquisição e preservação de evidências relacionadas a eventos da segurança da informação."
+          },
+          {
+            "key": "5.29",
+            "name": "Segurança da informação durante a disrupção",
+            "comment": "A organização deve planejar como manter a segurança da informação em um nível apropriado durante a disrupção."
+          },
+          {
+            "key": "5.30",
+            "name": "Prontidão de TIC para continuidade de negócios",
+            "comment": "A prontidão de TIC deve ser planejada, implementada, mantida e testada com base nos objetivos de continuidade de negócios e nos requisitos de continuidade da TIC."
+          },
+          {
+            "key": "5.31",
+            "name": "Requisitos legais, estatutários, regulamentares e contratuais",
+            "comment": "Os requisitos legais, estatutários, regulamentares e contratuais pertinentes à segurança da informação e a abordagem da organização para atender a esses requisitos devem ser identificados, documentados e atualizados."
+          },
+          {
+            "key": "5.32",
+            "name": "Direitos de propriedade intelectual",
+            "comment": "A organização deve implementar procedimentos adequados para proteger os direitos de propriedade intelectual."
+          },
+          {
+            "key": "5.33",
+            "name": "Proteção de registros",
+            "comment": "Os registros devem ser protegidos contra perdas, destruição, falsificação, acesso não autorizado e liberação não autorizada. 15 5 Controles organizacionais"
+          },
+          {
+            "key": "5.34",
+            "name": "Privacidade e proteção de DP",
+            "comment": "A organização deve identificar e atender aos requisitos relativos à preservação da privacidade e à proteção de DP, de acordo com as leis e os regulamentos aplicáveis e requisitos contratuais."
+          },
+          {
+            "key": "5.35",
+            "name": "Análise crítica independente da segurança da informação",
+            "comment": "A abordagem da organização para gerenciar a segurança da informação e sua implementação, incluindo pessoas, processos e tecnologias, devem ser analisadas criticamente, de forma independente a intervalos planejados ou quando ocorrerem mudanças significativas."
+          },
+          {
+            "key": "5.36",
+            "name": "Compliance com políticas, regras e normas para segurança da informação",
+            "comment": "O compliance com a política de segurança da informação da organização, políticas específicas por tema, regras e normas deve ser analisado criticamente a intervalos regulares."
+          },
+          {
+            "key": "5.37",
+            "name": "Documentação dos procedimentos de operação",
+            "comment": "Os procedimentos de operação dos recursos de processamento das informações devem ser documentados e disponibilizados para o pessoal que necessite deles. 6 Controles de pessoas"
+          }
+        ]
+      },
+      {
+        "name": "Controles de pessoas",
+        "comment": "Controles da categoria 6",
+        "subtopics": [
+          {
+            "key": "6.1",
+            "name": "Seleção",
+            "comment": "Verificações de antecedentes de todos os candidatos a serem contratados devem ser realizadas antes de ingressarem na organização e de modo contínuo, de acordo com as leis, os regulamentos e a ética aplicáveis, e devem ser proporcionais aos requisitos do negócio, à classificação das informações a serem acessadas e aos riscos percebidos."
+          },
+          {
+            "key": "6.2",
+            "name": "Termos e condições de contratação",
+            "comment": "Os contratos trabalhistas devem declarar as responsabilidades do pessoal e da organização para a segurança da informação."
+          },
+          {
+            "key": "6.3",
+            "name": "Conscientização, educação e treinamento em segurança da informação",
+            "comment": "O pessoal da organização e partes interessadas relevantes devem receber treinamento, educação e conscientização em segurança da informação apropriados e atualizações regulares da política de segurança da informação da organização, políticas específicas por tema e procedimentos, conforme pertinente para as suas funções. 16 6 Controles de pessoas"
+          },
+          {
+            "key": "6.4",
+            "name": "Processo disciplinar",
+            "comment": "Um processo disciplinar deve ser formalizado e comunicado, para tomar ações contra pessoal e outras partes interessadas relevantes que tenham cometido uma violação da política da segurança da informação."
+          },
+          {
+            "key": "6.5",
+            "name": "Responsabilidades após encerramento ou mudança da contratação",
+            "comment": "As responsabilidades e funções de segurança da informação que permaneçam válidas após o encerramento ou a mudança da contratação devem ser definidas, aplicadas e comunicadas ao pessoal e a outras partes interessadas pertinentes."
+          },
+          {
+            "key": "6.6",
+            "name": "Acordos de confidencialidade ou não divulgação",
+            "comment": "Acordos de confidencialidade ou não divulgação que reflitam as necessidades da organização para a proteção das informações devem ser identificados, documentados, analisados criticamente em intervalos regulares e assinados pelo pessoal e por outras partes interessadas pertinentes."
+          },
+          {
+            "key": "6.7",
+            "name": "Trabalho remoto",
+            "comment": "Medidas de segurança devem ser implementadas quando as pessoas estiverem trabalhando remotamente para proteger as informações acessadas, tratadas ou armazenadas fora das instalações da organização."
+          },
+          {
+            "key": "6.8",
+            "name": "Relato de eventos de segurança da informação",
+            "comment": "A organização deve fornecer um mecanismo para que as pessoas relatem eventos da segurança da informação observados ou suspeitos por meio de canais apropriados em tempo hábil. 7 Controles físicos"
+          }
+        ]
+      },
+      {
+        "name": "Controles físicos",
+        "comment": "Controles da categoria 7",
+        "subtopics": [
+          {
+            "key": "7.1",
+            "name": "Perímetros de segurança física",
+            "comment": "Perímetros de segurança devem ser definidos e usados para proteger áreas que contenham informações e outros ativos associados."
+          },
+          {
+            "key": "7.2",
+            "name": "Entrada física",
+            "comment": "As áreas seguras devem ser protegidas por controles de entrada e pontos de acesso apropriados."
+          },
+          {
+            "key": "7.3",
+            "name": "Segurança de escritórios, salas e instalações",
+            "comment": "Segurança física para escritórios, salas e instalações deve ser projetada e implementada 17 7 Controles físicos"
+          },
+          {
+            "key": "7.4",
+            "name": "Monitoramento de segurança física",
+            "comment": "As instalações devem ser monitoradas continuamente quanto a acesso físico não autorizado"
+          },
+          {
+            "key": "7.5",
+            "name": "Proteção contra ameaças físicas e ambientais",
+            "comment": "Proteção contra ameaças físicas e ambientais, como desastres naturais e outras ameaças físicas intencionais ou não intencionais à infraestrutura, deve ser projetada e implementada."
+          },
+          {
+            "key": "7.6",
+            "name": "Trabalho em áreas seguras",
+            "comment": "Medidas de segurança para trabalhar em áreas seguras devem ser projetadas e implementadas."
+          },
+          {
+            "key": "7.7",
+            "name": "Mesa limpa e tela limpa",
+            "comment": "Regras de mesa limpa para documentos impressos e mídia de armazenamento removível e regras de tela limpa para os recursos de processamento de informações devem ser definidas e adequadamente aplicadas."
+          },
+          {
+            "key": "7.8",
+            "name": "Localização e proteção de equipamentos",
+            "comment": "Os equipamentos devem ser posicionados com segurança e proteção."
+          },
+          {
+            "key": "7.9",
+            "name": "Segurança de ativos fora das instalações da organização",
+            "comment": "Os ativos fora das instalações da organização devem ser protegidos."
+          },
+          {
+            "key": "7.10",
+            "name": "Mídia de armazenamento",
+            "comment": "As mídias de armazenamento devem ser gerenciadas por seu ciclo de vida de aquisição, uso, transporte e descarte, de acordo com o esquema de classificação e com os requisitos de manuseio da organização."
+          },
+          {
+            "key": "7.11",
+            "name": "Serviços de infraestrutura",
+            "comment": "As instalações de processamento de informações devem ser protegidas contra falhas de energia e outras disrupções causadas por falhas nos serviços de infraestrutura."
+          },
+          {
+            "key": "7.12",
+            "name": "Segurança do cabeamento",
+            "comment": "Os cabos que transportam energia ou dados, ou que sustentam serviços de informação, devem ser protegidos contra interceptação, interferência ou danos."
+          },
+          {
+            "key": "7.13",
+            "name": "Manutenção de equipamentos",
+            "comment": "Os equipamentos devem ser mantidos corretamente para assegurar a disponibilidade, integridade e confidencialidade da informação. 18 7 Controles físicos"
+          },
+          {
+            "key": "7.14",
+            "name": "Descarte seguro ou reutilização de equipamentos  8  Controles tecnológicos  8.1  Dispositivos endpoint do usuário",
+            "comment": "Informações armazenadas, processadas ou acessíveis por meio de dispositivos endpoint do usuário devem ser protegidas."
+          }
+        ]
+      },
+      {
+        "name": "Controles tecnológicos",
+        "comment": "Controles da categoria 8",
+        "subtopics": [
+          {
+            "key": "8.1",
+            "name": "Planejamento e controle operacionais A organização deve planejar, implementar e controlar os processos necessários para atender aos requisitos e para implementar as ações determinadas na Seção 6: —  estabelecendo critérios para os processos;  —  implementando controles dos processos de acordo com os critérios.  A informação documentada deve ser disponibilizada na abrangência necessária para gerar a confiança de que os processos estão sendo realizados conforme planejado. A organização deve controlar as mudanças planejadas e analisar criticamente as consequências de mudanças não intencionais, tomando ações para mitigar quaisquer efeitos adversos, conforme necessário. 8   \f A organização deve assegurar que os processos, produtos ou serviços providos externamente que são relevantes para o sistema de gestão da segurança da informação sejam controlados.  8.2 Avaliação de riscos da segurança da informação A organização deve realizar avaliações de riscos da segurança da informação a intervalos planejados, ou quando mudanças significativas forem propostas ou ocorrerem, levando em conta os critérios estabelecidos em 6.1.2 a). A organização deve reter informação documentada dos resultados das avaliações de riscos da segurança da informação.  8.3 Tratamento de riscos da segurança da informação A organização deve implementar o plano de tratamento de riscos da segurança da informação.   A organização deve reter informação documentada dos resultados do tratamento de riscos da segurança da informação.  9 Avaliação de desempenho 9.1 Monitoramento, medição, análise e avaliação A organização deve determinar: a)  o que precisa ser monitorado e medido, incluindo processos e controles da segurança da informação;  b)  os métodos para monitoramento, medição, análise e avaliação, conforme aplicável, para assegurar resultados válidos. Convém que os métodos selecionados produzam resultados comparáveis e reproduzíveis para serem considerados válidos;  c)  quando o monitoramento e a medição devem ser realizados;  d)  quem deve monitorar e medir;  e)  quando os resultados do monitoramento e da medição devem ser analisados e avaliados;  f)  quem deve analisar e avaliar estes resultados.  Informação documentada deve ser disponibilizada como evidência dos resultados. A organização deve avaliar o desempenho da segurança da informação e a eficácia do sistema de gestão da segurança da informação.  9.2 Auditoria interna 9.2.1  Geral  A organização deve conduzir auditorias internas a intervalos planejados para prover informações sobre se o sistema de gestão da segurança da informação: a)  está em conformidade com: 1) os próprios requisitos da organização para o seu sistema de gestão da segurança da informação;   9  \f 2) os requisitos deste documento; b)  está efetivamente implementado e mantido.  9.2.2  Programa de auditoria interna  A organização deve planejar, estabelecer, implementar e manter programa(s) de auditoria, incluindo frequência, métodos, responsabilidades, requisitos de planejamento e relato. Ao estabelecer programa(s) de auditoria interna, a organização deve considerar a importância dos processos pertinentes e os resultados de auditorias anteriores.   A organização deve: a)  definir os critérios e o escopo da auditoria, para cada auditoria;  b)  selecionar auditores e conduzir auditorias que assegurem objetividade e imparcialidade do processo de auditoria;  c)  assegurar que os resultados das auditorias sejam relatados para a gestão pertinente.  Informação documentada deve ser disponibilizada como evidência da implementação do(s) programa(s) de auditoria e dos resultados da auditoria.  9.3 Análise crítica pela Direção 9.3.1  Geral  A Alta Direção deve analisar criticamente o sistema de gestão da segurança da informação da organização em intervalos planejados, para assegurar a sua contínua adequação, pertinência e eficácia. 9.3.2  Entradas da análise crítica pela Direção  A análise crítica pela Direção deve incluir considerações em relação a: a)  situação das ações de análises críticas anteriores pela Direção;  b)  mudanças nas questões internas e externas que sejam relevantes para o sistema de gestão da segurança da informação;  c)  mudanças nas necessidades e expectativas das partes interessadas que sejam relevantes para o sistema de gestão da segurança da informação  d)  feedback sobre o desempenho da segurança da informação, incluindo tendências para: 1) não conformidades e ações corretivas; 2) resultados da medição e monitoramento; 3) resultados de auditorias; 4) cumprimento dos objetivos da segurança da informação;  e) 10  feedback das partes interessadas;  \f f)  resultados da avaliação dos riscos e situação do plano de tratamento de riscos;  g)  oportunidades para a melhoria contínua.  9.3.3  Resultados da análise crítica pela Direção  Os resultados da análise crítica pela Direção devem incluir decisões relativas às oportunidades para melhoria contínua e quaisquer necessidades de mudanças do sistema de gestão da segurança da informação. Informação documentada deve ser disponibilizada como evidência dos resultados das análises críticas pela Direção.  10 Melhoria   10.1 Melhoria contínua A organização deve melhorar continuamente a pertinência, a adequação e a eficácia do sistema de gestão da segurança da informação.  10.2 Não conformidade e ação corretiva Quando uma não conformidade ocorre, a organização deve: a)  reagir à não conformidade e, conforme apropriado: 1) tomar ações para controlá-la e corrigi-la; e 2) lidar com as consequências;  b)  avaliar a necessidade de ações para eliminar as causas de não conformidade, para evitar sua repetição ou ocorrência em outro lugar, por um dos seguintes meios: 1) analisando criticamente a não conformidade; 2) determinando as causas da não conformidade; e 3) determinando se não conformidades similares existem, ou se podem potencialmente ocorrer;  c)  implementar quaisquer ações necessárias;  d)  analisar criticamente a eficácia de quaisquer ações corretivas tomadas; e  e)  realizar mudanças no sistema de gestão da segurança da informação, quando necessário.  As ações corretivas devem ser apropriadas aos efeitos das não conformidades encontradas. Informação documentada deve estar disponível como evidência de: f)  natureza das não conformidades e quaisquer ações subsequentes tomadas; e  g)  resultados de qualquer ação corretiva.   11  \f Anexo A (normativo) Referência de controles da segurança da informação Os controles da segurança da informação listados na com aqueles listados na ABNT NBR ISO/IEC 27002:2022[1], Seções 5 a 8, e devem ser usados em alinhamento com 6.1.3.   5  Controles organizacionais  5.1  Políticas de segurança da informação",
+            "comment": "A política de segurança da informação e as políticas específicas por tema devem ser definidas, aprovadas pela direção, publicadas, comunicadas e reconhecidas pelo pessoal pertinente e pelas partes interessadas pertinentes, e analisadas criticamente em intervalos planejados e quando ocorrerem mudanças significativas."
+          },
+          {
+            "key": "8.2",
+            "name": "Direitos de acessos privilegiados",
+            "comment": "A atribuição e o uso de direitos de acessos privilegiados devem ser restritos e gerenciados"
+          },
+          {
+            "key": "8.3",
+            "name": "Restrição de acesso à informação",
+            "comment": "O acesso às informações e a outros ativos associados deve ser restrito de acordo com a política específica por tema sobre controle de acesso."
+          },
+          {
+            "key": "8.4",
+            "name": "Acesso ao código-fonte",
+            "comment": "Os acessos de leitura e escrita ao código-fonte, ferramentas de desenvolvimento e bibliotecas de software devem ser adequadamente gerenciados."
+          },
+          {
+            "key": "8.5",
+            "name": "Autenticação segura",
+            "comment": "Tecnologia e procedimentos de autenticação segura devem ser implementados, com base em restrições de acesso à informação e à política específica por tema de controle de acesso."
+          },
+          {
+            "key": "8.6",
+            "name": "Gestão de capacidade",
+            "comment": "O uso dos recursos deve ser monitorado e ajustado de acordo com os requisitos de capacidade atual e esperada."
+          },
+          {
+            "key": "8.7",
+            "name": "Proteção contra malware",
+            "comment": "Proteção contra malware deve ser implementada e apoiada pela conscientização adequada do usuário. 8.8. Gestão de vulnerabilidades técnicas Controle Informações sobre vulnerabilidades técnicas dos sistemas de informação em uso devem ser obtidas; a exposição da organização a tais vulnerabilidades deve ser avaliada e medidas apropriadas devem ser tomadas Controle Os itens dos equipamentos que contenham mídia de armazenamento devem ser verificados para assegurar que quaisquer dados sensíveis e software licenciado tenham sido removidos ou sobrescritos com segurança antes do descarte ou reutilização. 19 8 Controles tecnológicos"
+          },
+          {
+            "key": "8.9",
+            "name": "Gestão de configuração",
+            "comment": "As configurações, incluindo configurações de segurança, de hardware, software, serviços e redes, devem ser estabelecidas, documentadas, implementadas, monitoradas e analisadas criticamente."
+          },
+          {
+            "key": "8.10",
+            "name": "Exclusão de informações",
+            "comment": "As informações armazenadas em sistemas de informação, dispositivos ou em qualquer outra mídia de armazenamento devem ser excluídas quando não forem mais necessárias."
+          },
+          {
+            "key": "8.11",
+            "name": "Mascaramento de dados",
+            "comment": "O mascaramento de dados deve ser usado de acordo com a política específica por tema da organização sobre o controle de acesso e outras políticas específicas por tema relacionadas e requisitos do negócio, levando em consideração a legislação aplicável."
+          },
+          {
+            "key": "8.12",
+            "name": "Prevenção de vazamento de dados",
+            "comment": "As medidas de prevenção de vazamento de dados devem ser aplicadas a sistemas, redes e quaisquer outros dispositivos que processem, armazenem ou transmitam informações sensíveis."
+          },
+          {
+            "key": "8.13",
+            "name": "Backup das informações",
+            "comment": "Cópias de backup de informações, software e sistemas devem ser mantidas e testadas regularmente de acordo com a política específica por tema acordada sobre backup."
+          },
+          {
+            "key": "8.14",
+            "name": "Redundância dos recursos de processamento de informações",
+            "comment": "Recursos de processamento de informações devem ser implementados com redundância suficiente para atender aos requisitos de disponibilidade."
+          },
+          {
+            "key": "8.15",
+            "name": "Log",
+            "comment": "Logs que registrem atividades, exceções, falhas e outros eventos relevantes devem ser produzidos, armazenados, protegidos e analisados."
+          },
+          {
+            "key": "8.16",
+            "name": "Atividades de monitoramento",
+            "comment": "As redes, sistemas e aplicações devem ser monitorados quanto a comportamentos anômalos e ações apropriadas devem ser tomadas para avaliar possíveis incidentes de segurança da informação. 20 8 Controles tecnológicos"
+          },
+          {
+            "key": "8.17",
+            "name": "Sincronização do relógio",
+            "comment": "Os relógios dos sistemas de processamento de informações utilizados pela organização devem ser sincronizados com fontes de tempo aprovadas."
+          },
+          {
+            "key": "8.18",
+            "name": "Uso de programas utilitários privilegiados",
+            "comment": "O uso de programas utilitários que possam ser capazes de se sobrepor a controles de sistema e de aplicações deve ser restrito e rigorosamente controlado."
+          },
+          {
+            "key": "8.19",
+            "name": "Instalação de software em sistemas operacionais",
+            "comment": "Procedimentos e medidas devem ser implementados para gerenciar com segurança a instalação de software em sistemas operacionais."
+          },
+          {
+            "key": "8.20",
+            "name": "Segurança de redes",
+            "comment": "Redes e dispositivos de rede devem ser protegidos, gerenciados e controlados para proteger as informações em sistemas e aplicações."
+          },
+          {
+            "key": "8.21",
+            "name": "Segurança dos serviços de rede",
+            "comment": "Mecanismos de segurança, níveis de serviço e requisitos de serviços de rede devem ser identificados, implementados e monitorados."
+          },
+          {
+            "key": "8.22",
+            "name": "Segregação de redes",
+            "comment": "Grupos de serviços de informação, usuários e sistemas de informação devem ser segregados nas redes da organização."
+          },
+          {
+            "key": "8.23",
+            "name": "Filtragem da web",
+            "comment": "O acesso a websites externos deve ser gerenciado para reduzir a exposição a conteúdo malicioso."
+          },
+          {
+            "key": "8.24",
+            "name": "Uso de criptografia",
+            "comment": "Regras para o uso efetivo da criptografia, incluindo o gerenciamento de chaves criptográfica devem ser definidas e implementadas."
+          },
+          {
+            "key": "8.25",
+            "name": "Ciclo de vida de desenvolvimento seguro",
+            "comment": "Regras para o desenvolvimento seguro de software e sistemas devem ser estabelecidas e aplicadas."
+          },
+          {
+            "key": "8.26",
+            "name": "Requisitos de segurança da aplicação",
+            "comment": "Requisitos de segurança da informação devem ser identificados, especificados e aprovados ao desenvolver ou adquirir aplicações. 21 8 Controles tecnológicos"
+          },
+          {
+            "key": "8.27",
+            "name": "Princípios de arquitetura e engenharia de sistemas seguros",
+            "comment": "Princípios para engenharia de sistemas seguros devem ser estabelecidos, documentados, mantidos e aplicados a qualquer atividade de desenvolvimento de sistemas."
+          },
+          {
+            "key": "8.28",
+            "name": "Codificação segura",
+            "comment": "Princípios de codificação segura devem ser aplicados ao desenvolvimento de software."
+          },
+          {
+            "key": "8.29",
+            "name": "Testes de segurança em desenvolvimento e aceitação",
+            "comment": "Processos de teste de segurança devem ser definidos e implementados no ciclo de vida do desenvolvimento."
+          },
+          {
+            "key": "8.30",
+            "name": "Desenvolvimento terceirizado",
+            "comment": "A organização deve dirigir, monitorar e analisar criticamente as atividades relacionadas à terceirização de desenvolvimento de sistemas."
+          },
+          {
+            "key": "8.31",
+            "name": "Separação dos ambientes de desenvolvimento, teste e produção",
+            "comment": "Ambientes de desenvolvimento, testes e produção devem ser separados e protegidos."
+          },
+          {
+            "key": "8.32",
+            "name": "Gestão de mudanças",
+            "comment": "Mudanças nos recursos de tratamento de informações e sistemas de informação devem estar sujeitas a procedimentos de gestão de mudanças."
+          },
+          {
+            "key": "8.33",
+            "name": "Informações de teste",
+            "comment": "Informações de teste devem ser adequadamente selecionadas, protegidas e gerenciadas."
+          },
+          {
+            "key": "8.34",
+            "name": "Proteção de sistemas de informação durante os testes de auditoria",
+            "comment": "Testes de auditoria e outras atividades de garantia envolvendo a avaliação de sistemas operacionais devem ser planejados e acordados entre o testador e a gestão apropriada. 22"
+          }
+        ]
+      }
+    ]
+  }
+}
