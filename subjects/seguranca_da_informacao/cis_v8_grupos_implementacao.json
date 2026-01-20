@@ -1,0 +1,151 @@
+{
+  "subject": "CIS Controls v8 - Grupos de Implementação",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Grupos de Implementação",
+    "values": [
+      {
+        "name": "IG1",
+        "comment": "Implementation Group 1",
+        "subtopics": [
+          {
+            "name": "Empresa de pequeno a médio porte",
+            "comment": "Características da empresa/pessoal\n\nPequeno a médio porte, com experiência limitada em TI e segurança cibernética dedicada à proteção de ativos e pessoal de TI"
+          },
+          {
+            "name": "Experiência limitada em TI",
+            "comment": "Características da empresa/pessoal\n\nPequeno a médio porte, com experiência limitada em TI e segurança cibernética dedicada à proteção de ativos e pessoal de TI"
+          },
+          {
+            "name": "Segurança cibernética dedicada à proteção de ativos e pessoal de TI",
+            "comment": "Características da empresa/pessoal\n\nPequeno a médio porte, com experiência limitada em TI e segurança cibernética dedicada à proteção de ativos e pessoal de TI"
+          },
+          {
+            "name": "Sensibilidade baixa dos dados",
+            "comment": "Sensibilidade dos dados\n\nSensibilidade baixa e envolve principalmente informações financeiras e de funcionários"
+          },
+          {
+            "name": "Envolve principalmente informações financeiras e de funcionários",
+            "comment": "Sensibilidade dos dados\n\nSensibilidade baixa e envolve principalmente informações financeiras e de funcionários"
+          },
+          {
+            "name": "Foco em manter o negócio operacional",
+            "comment": "Foco de preocupação\n\nManter o negócio operacional, pois têm uma tolerância limitada para o tempo de paralisação"
+          },
+          {
+            "name": "Tolerância limitada para tempo de paralisação",
+            "comment": "Foco de preocupação\n\nManter o negócio operacional, pois têm uma tolerância limitada para o tempo de paralisação"
+          },
+          {
+            "name": "Implementáveis com experiência limitada em segurança cibernética",
+            "comment": "Foco das medidas de segurança do CisControls\n\nDevem ser implementáveis com experiência limitada em segurança cibernética e destinadas a impedir ataques gerais não direcionados."
+          },
+          {
+            "name": "Destinadas a impedir ataques gerais não direcionados",
+            "comment": "Foco das medidas de segurança do CisControls\n\nDevem ser implementáveis com experiência limitada em segurança cibernética e destinadas a impedir ataques gerais não direcionados."
+          },
+          {
+            "name": "Projetadas para funcionar com soluções pequenas e domésticas",
+            "comment": "Dificuldade da implementação\n\nEssas proteções também são tipicamente projetadas para funcionar em conjunto com soluções pequenas e domésticas de hardware e software (comercial off-the-shelf—COTS)."
+          },
+          {
+            "name": "Utilizam hardware e software comercial off-the-shelf (COTS)",
+            "comment": "Dificuldade da implementação\n\nEssas proteções também são tipicamente projetadas para funcionar em conjunto com soluções pequenas e domésticas de hardware e software (comercial off-the-shelf—COTS)."
+          }
+        ]
+      },
+      {
+        "name": "IG2",
+        "comment": "Implementation Group 2",
+        "subtopics": [
+          {
+            "name": "Emprega indivíduos responsáveis por gerenciar a infraestrutura de TI",
+            "comment": "Características da empresa/pessoal\n\nEmprega indivíduos responsáveis por gerenciar e proteger a infraestrutura de TI."
+          },
+          {
+            "name": "Emprega indivíduos responsáveis por proteger a infraestrutura de TI",
+            "comment": "Características da empresa/pessoal\n\nEmprega indivíduos responsáveis por gerenciar e proteger a infraestrutura de TI."
+          },
+          {
+            "name": "Armazenam informações confidenciais de clientes ou empresas",
+            "comment": "Sensibilidade dos dados\n\nGeralmente armazenam e processam informações confidenciais de clientes ou empresas"
+          },
+          {
+            "name": "Processam informações confidenciais de clientes ou empresas",
+            "comment": "Sensibilidade dos dados\n\nGeralmente armazenam e processam informações confidenciais de clientes ou empresas"
+          },
+          {
+            "name": "Podem ter encargos de conformidade regulatória",
+            "comment": "Conformidade/regulação dos dados\n\nPequenas unidades da empresa podem ter encargos de conformidade regulatória."
+          },
+          {
+            "name": "Preocupação com a perda de confiança do público em caso de violação",
+            "comment": "Foco de preocupação\n\nUma grande preocupação é a perda de confiança do público se ocorrer uma violação."
+          },
+          {
+            "name": "Podem resistir a curtas interrupções de serviço",
+            "comment": "Grau de resistência a ataques\n\nPodem resistir a curtas interrupções de serviço."
+          },
+          {
+            "name": "Ajudam a lidar com o aumento da complexidade operacional",
+            "comment": "Foco das medidas de segurança do CisControls\n\nAjudam as equipes de segurança a lidar com o aumento da complexidade operacional"
+          },
+          {
+            "name": "Dependem de tecnologia de nível empresarial",
+            "comment": "Dificuldade da implementação\n\nAlgumas proteções dependerão de tecnologia de nível empresarial e conhecimento especializado para instalar e configurar adequadamente."
+          },
+          {
+            "name": "Requerem conhecimento especializado para instalar e configurar",
+            "comment": "Dificuldade da implementação\n\nAlgumas proteções dependerão de tecnologia de nível empresarial e conhecimento especializado para instalar e configurar adequadamente."
+          }
+        ]
+      },
+      {
+        "name": "IG3",
+        "comment": "Implementation Group 3",
+        "subtopics": [
+          {
+            "name": "Emprega especialistas em gestão de riscos",
+            "comment": "Características da empresa/pessoal\n\nEmprega especialistas em segurança especializados nas diferentes facetas da segurança cibernética (por exemplo, gestão de riscos, teste de invasão, segurança de aplicações)"
+          },
+          {
+            "name": "Emprega especialistas em teste de invasão",
+            "comment": "Características da empresa/pessoal\n\nEmprega especialistas em segurança especializados nas diferentes facetas da segurança cibernética (por exemplo, gestão de riscos, teste de invasão, segurança de aplicações)"
+          },
+          {
+            "name": "Emprega especialistas em segurança de aplicações",
+            "comment": "Características da empresa/pessoal\n\nEmprega especialistas em segurança especializados nas diferentes facetas da segurança cibernética (por exemplo, gestão de riscos, teste de invasão, segurança de aplicações)"
+          },
+          {
+            "name": "Contêm informações confidenciais sujeitas à supervisão regulatória",
+            "comment": "Sensibilidade dos dados\n\nContêm informações ou funções confidenciais que estão sujeitas à supervisão regulatória e de conformidade. Uma empresa IG3 deve abordar a disponibilidade dos serviços e a confidencialidade e integridade dos dados sensíveis."
+          },
+          {
+            "name": "Devem abordar a disponibilidade dos serviços",
+            "comment": "Sensibilidade dos dados\n\nContêm informações ou funções confidenciais que estão sujeitas à supervisão regulatória e de conformidade. Uma empresa IG3 deve abordar a disponibilidade dos serviços e a confidencialidade e integridade dos dados sensíveis."
+          },
+          {
+            "name": "Devem abordar a confidencialidade dos dados sensíveis",
+            "comment": "Sensibilidade dos dados\n\nContêm informações ou funções confidenciais que estão sujeitas à supervisão regulatória e de conformidade. Uma empresa IG3 deve abordar a disponibilidade dos serviços e a confidencialidade e integridade dos dados sensíveis."
+          },
+          {
+            "name": "Devem abordar a integridade dos dados sensíveis",
+            "comment": "Sensibilidade dos dados\n\nContêm informações ou funções confidenciais que estão sujeitas à supervisão regulatória e de conformidade. Uma empresa IG3 deve abordar a disponibilidade dos serviços e a confidencialidade e integridade dos dados sensíveis."
+          },
+          {
+            "name": "Ataques bem-sucedidos podem causar danos significativos ao bem público",
+            "comment": "Foco de preocupação\n\nAtaques bem-sucedidos podem causar danos significativos ao bem público."
+          },
+          {
+            "name": "Diminuir ataques direcionados de adversários sofisticados",
+            "comment": "Foco das medidas de segurança do CisControls\n\nDiminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day"
+          },
+          {
+            "name": "Reduzir o impacto dos ataques zero-day",
+            "comment": "Foco das medidas de segurança do CisControls\n\nDiminuir os ataques direcionados de um adversário sofisticado e reduzir o impacto dos ataques zero-day"
+          }
+        ]
+      }
+    ]
+  }
+}
