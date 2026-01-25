@@ -1,0 +1,71 @@
+{
+  "subject": "IN SGD 94/2022 - Modelos de Execução e Gestão do Contrato",
+  "subtopicsLabel": "Elementos dos Modelos",
+  "topics": {
+    "name": "Modelos de Contrato",
+    "values": [
+      {
+        "name": "Modelo de Execução do Contrato",
+        "comment": "Define como o contrato deverá produzir os resultados pretendidos desde o seu início até o seu encerramento.",
+        "subtopics": [
+          {
+            "name": "fixação das rotinas de execução, com a definição de processos e procedimentos de fornecimento da solução de TIC, envolvendo prazos, horários, locais de entrega, documentação mínima exigida e papéis e responsabilidades",
+            "comment": "Art. 18, I - fixação das rotinas de execução, com a definição de processos e procedimentos de fornecimento da solução de TIC, envolvendo: a) prazos, horários de fornecimento de bens ou prestação dos serviços e locais de entrega, quando aplicáveis; b) documentação mínima exigida, observando modelos adotados pela contratante, padrões de qualidade e completude das informações, a exemplo de modelos de desenvolvimento de software, relatórios de execução de serviço e/ou fornecimento, controles por parte da contratada, ocorrências, etc.; e c) papéis e responsabilidades, por parte da contratante e da contratada, quando couber",
+            "key": "Art. 18, I"
+          },
+          {
+            "name": "quantificação ou estimativa prévia do volume de serviços demandados ou quantidade de bens a serem fornecidos, para comparação e controle",
+            "comment": "Art. 18, II - quantificação ou estimativa prévia do volume de serviços demandados ou quantidade de bens a serem fornecidos, para comparação e controle",
+            "key": "Art. 18, II"
+          },
+          {
+            "name": "definição de mecanismos formais de comunicação a serem utilizados para troca de informações entre a contratada e a Administração, adotando-se preferencialmente as Ordens de Serviço ou Fornecimento de Bens",
+            "comment": "Art. 18, III - definição de mecanismos formais de comunicação a serem utilizados para troca de informações entre a contratada e a Administração, adotando-se preferencialmente as Ordens de Serviço ou Fornecimento de Bens",
+            "key": "Art. 18, III"
+          },
+          {
+            "name": "forma de pagamento, que será efetuado em função dos resultados obtidos",
+            "comment": "Art. 18, IV - forma de pagamento, que será efetuado em função dos resultados obtidos",
+            "key": "Art. 18, IV"
+          },
+          {
+            "name": "elaboração de Termo de Compromisso e Termo de Ciência para contratações de serviços de TIC",
+            "comment": "Art. 18, V - elaboração dos seguintes modelos de documentos, em se tratando de contratações de serviços de TIC: a) Termo de Compromisso, contendo declaração de manutenção de sigilo e respeito às normas de segurança vigentes no órgão ou entidade, a ser assinado pelo representante legal da contratada; e b) Termo de Ciência da declaração de manutenção de sigilo e das normas de segurança vigentes no órgão ou entidade, a ser assinado por todos os empregados da contratada diretamente envolvidos na contratação",
+            "key": "Art. 18, V"
+          }
+        ]
+      },
+      {
+        "name": "Modelo de Gestão do Contrato",
+        "comment": "Descreve como a execução do objeto será acompanhada e fiscalizada pelo órgão ou entidade.",
+        "subtopics": [
+          {
+            "name": "fixação dos critérios de aceitação dos serviços prestados ou bens fornecidos, abrangendo métricas, indicadores e níveis mínimos de serviços",
+            "comment": "Art. 19, I - fixação dos critérios de aceitação dos serviços prestados ou bens fornecidos, abrangendo métricas, indicadores e níveis mínimos de serviços com os valores aceitáveis para os principais elementos que compõe a solução de TIC",
+            "key": "Art. 19, I"
+          },
+          {
+            "name": "procedimentos de teste e inspeção para avaliação do cumprimento das exigências técnicas e conformidade do material, incluindo metodologia, ferramentas, listas de verificação e disponibilidade de recursos humanos",
+            "comment": "Art. 19, II - procedimentos de teste e inspeção para fins da avaliação do cumprimento das exigências de caráter técnico nos termos da alínea a do inciso I do art. 140 da Lei nº 14.133, de 2021, e para fins da avaliação da conformidade do material com as exigências contratuais, nos termos da alínea a do inciso II do art. 140 da Lei nº 14.133, de 2021, abrangendo: a) metodologia, formas de avaliação da qualidade e adequação da solução de TIC às especificações funcionais e tecnológicas; b) disponibilidade de recursos humanos necessários às atividades de gestão e fiscalização do contrato",
+            "key": "Art. 19, II"
+          },
+          {
+            "name": "fixação dos valores e procedimentos para retenção ou glosa no pagamento quando a contratada não atingir valores mínimos, não produzir resultados ou deixar de utilizar recursos exigidos",
+            "comment": "Art. 19, III - fixação dos valores e procedimentos para retenção ou glosa no pagamento, sem prejuízo das sanções cabíveis, que só deverá ocorrer quando a contratada: a) não atingir os valores mínimos aceitáveis fixados nos critérios de aceitação, não produzir os resultados ou deixar de executar as atividades contratadas; ou b) deixar de utilizar materiais e recursos humanos exigidos para fornecimento da solução de TIC, ou utilizá-los com qualidade ou quantidade inferior à demandada",
+            "key": "Art. 19, III"
+          },
+          {
+            "name": "definição clara e detalhada das sanções administrativas, observando vinculação aos termos contratuais, proporcionalidade, situações de advertências, multas, rescisão, suspensão e declaração de inidoneidade",
+            "comment": "Art. 19, IV - definição clara e detalhada das sanções administrativas, de acordo com os arts. 155 a 163 da Lei nº 14.133, de 2021, observando: a) vinculação aos termos contratuais; b) proporcionalidade das sanções previstas ao grau do prejuízo causado pelo descumprimento das respectivas obrigações; c) as situações em que advertências serão aplicadas; d) as situações em que as multas serão aplicadas, com seus percentuais correspondentes, que obedecerão a uma escala gradual para as sanções recorrentes; e) as situações em que o contrato será rescindido por parte da Administração devido ao não atendimento de termos contratuais, da recorrência de aplicação de multas ou outros motivos; f) as situações em que a contratada terá suspensa a participação em licitações e impedimento para contratar com a Administração; e g) as situações em que a contratada será declarada inidônea para licitar ou contratar com a Administração, conforme previsto em Lei",
+            "key": "Art. 19, IV"
+          },
+          {
+            "name": "procedimentos para o pagamento, descontados os valores oriundos da aplicação de eventuais glosas ou sanções",
+            "comment": "Art. 19, V - procedimentos para o pagamento, descontados os valores oriundos da aplicação de eventuais glosas ou sanções",
+            "key": "Art. 19, V"
+          }
+        ]
+      }
+    ]
+  }
+}
