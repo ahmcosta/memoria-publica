@@ -157,7 +157,7 @@ function showHelp() {
     document.getElementById('topics-header').textContent = t('howToUse');
 
     document.getElementById('subtopics-list').innerHTML = `
-        <div style="padding: 20px; text-align: center;">
+        <div style="padding: 20px; text-align: justify;">
             <h3 data-i18n="welcome">Welcome!</h3>
             <p data-i18n="clickToStart">Click "Load JSON File" to start learning.</p>
             <br>
@@ -170,7 +170,7 @@ function showHelp() {
     `;
 
     document.getElementById('topics-container').innerHTML = `
-        <div style="padding: 20px; text-align: center; color: #666;">
+        <div style="padding: 20px; text-align: justify; color: #666;">
             <p data-i18n="topicBoxesAppear">Topic boxes will appear here after loading a JSON file.</p>
             <br>
             <p data-i18n="tryFiles">Try loading one of these example files:</p>
@@ -196,16 +196,16 @@ function updateLabels() {
 function createSubtopics(useOnlyMissed = false) {
     const container = document.getElementById('subtopics-list');
     container.innerHTML = '';
-    
+
     // Add search input
     const searchContainer = document.createElement('div');
     searchContainer.className = 'search-container';
     searchContainer.innerHTML = `
-        <input type="text" id="topic-search" placeholder="Digite para filtrar tópicos..." 
+        <input type="text" id="topic-search" placeholder="Digite para filtrar tópicos..."
                style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
     `;
     container.appendChild(searchContainer);
-    
+
     const allSubtopics = [];
 
     // Collect all subtopics from simplified structure
@@ -272,7 +272,7 @@ function createSubtopics(useOnlyMissed = false) {
             div.addEventListener('dragstart', handleDragStart);
         }
     });
-    
+
     // Add search functionality
     const searchInput = document.getElementById('topic-search');
     searchInput.addEventListener('input', filterTopics);
@@ -281,16 +281,16 @@ function createSubtopics(useOnlyMissed = false) {
 function createTopicBoxes() {
     const container = document.getElementById('topics-container');
     container.innerHTML = '';
-    
+
     // Add search input for topics
     const searchContainer = document.createElement('div');
     searchContainer.className = 'search-container';
     searchContainer.innerHTML = `
-        <input type="text" id="subtopic-search" placeholder="Digite para filtrar subtópicos..." 
+        <input type="text" id="subtopic-search" placeholder="Digite para filtrar subtópicos..."
                style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
     `;
     container.appendChild(searchContainer);
-    
+
     // Create container for topic boxes
     const topicsContainer = document.createElement('div');
     topicsContainer.id = 'topics-items';
@@ -345,7 +345,7 @@ function createTopicBoxes() {
 
         topicsContainer.appendChild(div);
     });
-    
+
     // Add search functionality for subtopics
     const subtopicSearch = document.getElementById('subtopic-search');
     subtopicSearch.addEventListener('input', filterSubtopics);
@@ -390,13 +390,13 @@ function handleDrop(e) {
         const clickableDiv = document.createElement('div');
         clickableDiv.textContent = draggedElement.textContent;
         clickableDiv.className = 'placed-subtopic';
-        
+
         // Check if this subtopic was previously wrong
         const wasWrong = missedSubtopics.some(item => item.name === draggedElement.textContent);
         if (wasWrong) {
             clickableDiv.classList.add('was-wrong');
         }
-        
+
         clickableDiv.dataset.originalOrder = draggedElement.dataset.originalOrder;
         if (draggedElement.dataset.sources) clickableDiv.dataset.sources = draggedElement.dataset.sources;
         console.log('Sources data:', draggedElement.dataset.sources, 'copied to clickable:', clickableDiv.dataset.sources);
@@ -694,16 +694,16 @@ function showRetryOptionsModal() {
 function createSubtopicsFromList(subtopicsList) {
     const container = document.getElementById('subtopics-list');
     container.innerHTML = '';
-    
+
     // Add search input
     const searchContainer = document.createElement('div');
     searchContainer.className = 'search-container';
     searchContainer.innerHTML = `
-        <input type="text" id="topic-search" placeholder="Digite para filtrar tópicos..." 
+        <input type="text" id="topic-search" placeholder="Digite para filtrar tópicos..."
                style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
     `;
     container.appendChild(searchContainer);
-    
+
     // Create container for subtopics
     const subtopicsContainer = document.createElement('div');
     subtopicsContainer.id = 'subtopics-items';
@@ -743,7 +743,7 @@ function createSubtopicsFromList(subtopicsList) {
             div.addEventListener('dragstart', handleDragStart);
         }
     });
-    
+
     // Add search functionality
     const searchInput = document.getElementById('topic-search');
     searchInput.addEventListener('input', filterTopics);
@@ -786,7 +786,7 @@ function startRetry(onlyMissed) {
 
 function printResults() {
     if (!data) return;
-    
+
     let printContent = `
         <html>
         <head>
@@ -811,38 +811,38 @@ function printResults() {
                 <strong>Resultado:</strong> ${correctCount} corretos, ${wrongCount} erros
             </div>
     `;
-    
+
     // Get all topic boxes and their placed subtopics
     const topicBoxes = document.querySelectorAll('.topic-box');
-    
+
     topicBoxes.forEach(topicBox => {
         const topicName = topicBox.dataset.topic;
         const placedSubtopics = topicBox.querySelectorAll('.placed-subtopic');
-        
+
         if (placedSubtopics.length > 0) {
             printContent += `<div class="topic">`;
             printContent += `<div class="topic-title">${topicName}</div>`;
-            
+
             placedSubtopics.forEach(subtopic => {
                 const wasWrong = subtopic.classList.contains('was-wrong');
                 const subtopicClass = wasWrong ? 'subtopic was-wrong' : 'subtopic';
-                
+
                 printContent += `<div class="${subtopicClass}">`;
                 printContent += `<strong>${subtopic.textContent}</strong>`;
-                
+
                 if (wasWrong) {
                     printContent += ` <span class="error-mark">[ERRO]</span>`;
                 }
-                
+
                 printContent += `</div>`;
             });
-            
+
             printContent += `</div>`;
         }
     });
-    
+
     printContent += `</body></html>`;
-    
+
     const printWindow = window.open('', '_blank');
     printWindow.document.write(printContent);
     printWindow.document.close();
@@ -851,13 +851,13 @@ function printResults() {
 
 function solveAll() {
     if (!data) return;
-    
+
     const subtopics = document.querySelectorAll('.subtopic');
-    
+
     subtopics.forEach(subtopic => {
         const correctTopicName = subtopic.dataset.correctTopic;
         const targetTopicBox = document.querySelector(`[data-topic="${correctTopicName}"]`);
-        
+
         if (targetTopicBox) {
             // Create clickable element in topic box
             const clickableDiv = document.createElement('div');
@@ -865,7 +865,7 @@ function solveAll() {
             clickableDiv.className = 'placed-subtopic';
             clickableDiv.dataset.originalOrder = subtopic.dataset.originalOrder;
             if (subtopic.dataset.sources) clickableDiv.dataset.sources = subtopic.dataset.sources;
-            
+
             if (subtopic.dataset.comment) {
                 clickableDiv.onclick = () => {
                     const title = subtopic.dataset.key ?
@@ -876,28 +876,28 @@ function solveAll() {
                     showModal(title, subtopic.dataset.comment, image, sources);
                 };
             }
-            
+
             // Find correct position to insert based on original order
             const existingItems = Array.from(targetTopicBox.querySelectorAll('.placed-subtopic'));
             const insertPosition = existingItems.findIndex(item =>
                 parseInt(item.dataset.originalOrder) > parseInt(clickableDiv.dataset.originalOrder)
             );
-            
+
             const content = targetTopicBox.querySelector('.topic-content');
             if (insertPosition === -1) {
                 content.appendChild(clickableDiv);
             } else {
                 content.insertBefore(clickableDiv, existingItems[insertPosition]);
             }
-            
+
             correctCount++;
         }
-        
+
         subtopic.remove();
     });
-    
+
     document.getElementById('correct').textContent = correctCount;
-    
+
     // Show completion modal after a short delay
     if (document.querySelectorAll('.subtopic').length === 0) {
         setTimeout(() => showGameCompleteModal(), 500);
@@ -908,11 +908,11 @@ function solveAll() {
 function filterTopics() {
     const searchTerm = document.getElementById('topic-search').value.toLowerCase();
     const subtopics = document.querySelectorAll('#subtopics-items .subtopic');
-    
+
     subtopics.forEach(subtopic => {
         const text = subtopic.textContent.toLowerCase();
         const correctTopic = subtopic.dataset.correctTopic.toLowerCase();
-        
+
         if (text.includes(searchTerm) || correctTopic.includes(searchTerm)) {
             subtopic.style.display = 'block';
         } else {
@@ -924,12 +924,12 @@ function filterTopics() {
 function filterSubtopics() {
     const searchTerm = document.getElementById('subtopic-search').value.toLowerCase();
     const topicBoxes = document.querySelectorAll('#topics-items .topic-box');
-    
+
     topicBoxes.forEach(topicBox => {
         const topicName = topicBox.dataset.topic.toLowerCase();
         const placedSubtopics = topicBox.querySelectorAll('.placed-subtopic');
         let hasMatch = topicName.includes(searchTerm);
-        
+
         // Check if any placed subtopics match
         placedSubtopics.forEach(subtopic => {
             const subtopicText = subtopic.textContent.toLowerCase();
@@ -937,7 +937,7 @@ function filterSubtopics() {
                 hasMatch = true;
             }
         });
-        
+
         if (hasMatch) {
             topicBox.style.display = 'block';
         } else {
