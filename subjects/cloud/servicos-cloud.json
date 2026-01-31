@@ -87,8 +87,8 @@
             "comment": "Portabilidade"
           },
           {
-            "name": "Usado internamente pela Microsoft para serviços como Azure SQL Database e Cosmos DB",
-            "comment": "Maturidade"
+            "name": "Reliable Collections oferece estado distribuído com transações ACID entre nós do cluster",
+            "comment": "Estado distribuído"
           }
         ]
       },
@@ -109,8 +109,8 @@
             "comment": "Serverless"
           },
           {
-            "name": "App Mesh oferece service mesh para observabilidade e controle de tráfego entre microsserviços",
-            "comment": "Service Mesh"
+            "name": "Task definitions com suporte a múltiplos containers e volumes EFS compartilhados por tarefa",
+            "comment": "Configuração"
           }
         ]
       },
@@ -127,11 +127,11 @@
             "comment": "Multi-cloud"
           },
           {
-            "name": "GKE Autopilot cobra apenas pelos pods em execução, não por nodes provisionados",
+            "name": "Autopilot cobra apenas pelos pods em execução, não por nodes provisionados",
             "comment": "Pricing"
           },
           {
-            "name": "Suporte a Workload Identity para autenticação segura entre pods e serviços GCP",
+            "name": "Workload Identity vincula service accounts do Kubernetes diretamente a identidades IAM do GCP",
             "comment": "Segurança"
           }
         ]
@@ -153,8 +153,8 @@
             "comment": "Governança"
           },
           {
-            "name": "Integração SSO com Azure AD e controle de acesso baseado em RBAC do Azure",
-            "comment": "Segurança Azure"
+            "name": "Notebooks colaborativos com versionamento Git integrado e execução agendada",
+            "comment": "Colaboração"
           }
         ]
       },
@@ -171,7 +171,7 @@
             "comment": "Serverless"
           },
           {
-            "name": "Integração com EC2 Spot Instances para redução de custos de até 90%",
+            "name": "Integração com EC2 Spot Instances para redução de custos de até 90% em task nodes",
             "comment": "Custo"
           },
           {
@@ -189,7 +189,7 @@
             "comment": "Velocidade"
           },
           {
-            "name": "Cobrança por segundo com desligamento automático de clusters ociosos",
+            "name": "Cobrança por segundo com desligamento automático de clusters ociosos configurado por política",
             "comment": "Pricing granular"
           },
           {
