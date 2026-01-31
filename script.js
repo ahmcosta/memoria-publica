@@ -402,33 +402,41 @@ function handleTopicContainerDragOver(e) {
     e.dataTransfer.dropEffect = 'move';
     
     const afterElement = getDragAfterElement(e.currentTarget, e.clientX, e.clientY);
+    const container = e.currentTarget;
+    
     if (afterElement == null) {
-        e.currentTarget.appendChild(draggedTopicIcon);
+        container.appendChild(draggedTopicIcon);
     } else {
-        e.currentTarget.insertBefore(draggedTopicIcon, afterElement);
+        container.insertBefore(draggedTopicIcon, afterElement);
     }
-}
-
-function handleTopicContainerDrop(e) {
-    if (!draggedTopicIcon) return;
-    e.preventDefault();
 }
 
 function getDragAfterElement(container, x, y) {
     const draggableElements = [...container.querySelectorAll('.topic-icon:not(.dragging-topic)')];
     
-    return draggableElements.reduce((closest, child) => {
+    let closestElement = null;
+    let closestDistance = Number.POSITIVE_INFINITY;
+    
+    draggableElements.forEach(child => {
         const box = child.getBoundingClientRect();
-        const offsetX = x - box.left - box.width / 2;
-        const offsetY = y - box.top - box.height / 2;
-        const offset = Math.sqrt(offsetX * offsetX + offsetY * offsetY);
+        const centerX = box.left + box.width / 2;
+        const centerY = box.top + box.height / 2;
         
-        if (offset < 0 && offset > closest.offset) {
-            return { offset: offset, element: child };
-        } else {
-            return closest;
+        if (x < centerX || (x < box.right && y < centerY)) {
+            const distance = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestElement = child;
+            }
         }
-    }, { offset: Number.NEGATIVE_INFINITY }).element;
+    });
+    
+    return closestElement;
+}
+
+function handleTopicContainerDrop(e) {
+    if (!draggedTopicIcon) return;
+    e.preventDefault();
 }
 
 function restoreTopicOrder() {
@@ -983,20 +991,24 @@ function printResults() {
                 .subtopic { margin: 5px 0 5px 20px; padding: 5px; background: #f5f5f5; border-left: 3px solid #2196f3; }
                 .subtopic.was-wrong { background: #ffcdd2; border-left: 3px solid #f44336; }
                 .error-mark { color: #f44336; font-weight: bold; }
-                .comment { font-style: italic; color: #666; font-size: 12px; }
                 .stats { margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px; }
-                @media print { body { margin: 15px; } }
+                .print-btn { background: #2196f3; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; margin: 20px 0; }
+                .print-btn:hover { background: #1976d2; }
+                @media print { 
+                    body { margin: 15px; }
+                    .print-btn { display: none; }
+                }
             </style>
         </head>
         <body>
+            <button class="print-btn" onclick="window.print()">🖨️ Imprimir</button>
             <h1>${data.subject}</h1>
             <div class="stats">
                 <strong>Resultado:</strong> ${correctCount} corretos, ${wrongCount} erros
             </div>
     `;
 
-    // Get all topic boxes and their placed subtopics
-    const topicBoxes = document.querySelectorAll('.topic-box');
+    const topicBoxes = document.querySelectorAll('.topic-box, .topic-icon');
 
     topicBoxes.forEach(topicBox => {
         const topicName = topicBox.dataset.topic;
@@ -1024,12 +1036,11 @@ function printResults() {
         }
     });
 
-    printContent += `</body></html>`;
+    printContent += `<button class="print-btn" onclick="window.print()">🖨️ Imprimir</button></body></html>`;
 
     const printWindow = window.open('', '_blank');
     printWindow.document.write(printContent);
     printWindow.document.close();
-    printWindow.print();
 }
 
 function solveAll() {
