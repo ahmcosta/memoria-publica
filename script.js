@@ -278,43 +278,64 @@ function createSubtopics(useOnlyMissed = false) {
     searchInput.addEventListener('input', filterTopics);
 }
 
+let originalTopicOrder = [];
+
+function getRandomColor() {
+    const colors = ['#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#00bcd4', '#009688', '#4caf50', '#ff9800', '#ff5722', '#795548', '#607d8b'];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function getContrastColor(bgColor) {
+    const hex = bgColor.replace('#', '');
+    const r = parseInt(hex.substr(0, 2), 16);
+    const g = parseInt(hex.substr(2, 2), 16);
+    const b = parseInt(hex.substr(4, 2), 16);
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+    return brightness > 128 ? '#000000' : '#ffffff';
+}
+
 function createTopicBoxes() {
     const container = document.getElementById('topics-container');
     container.innerHTML = '';
 
-    // Add search input for topics
     const searchContainer = document.createElement('div');
     searchContainer.className = 'search-container';
     searchContainer.innerHTML = `
         <input type="text" id="subtopic-search" placeholder="Digite para filtrar subtópicos..."
                style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+        <button onclick="restoreTopicOrder()" style="padding: 8px 16px; background: #607d8b; color: white; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 10px;">Restaurar Ordem</button>
     `;
     container.appendChild(searchContainer);
 
-    // Create container for topic boxes
     const topicsContainer = document.createElement('div');
     topicsContainer.id = 'topics-items';
+    topicsContainer.style.display = 'grid';
+    topicsContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(200px, 1fr))';
+    topicsContainer.style.gap = '15px';
     container.appendChild(topicsContainer);
 
-    data.topics.values.forEach(topic => {
+    originalTopicOrder = [];
+    data.topics.values.forEach((topic, index) => {
+        const bgColor = getRandomColor();
+        const textColor = getContrastColor(bgColor);
+        
         const div = document.createElement('div');
-        div.className = 'topic-box';
+        div.className = 'topic-icon';
         div.dataset.topic = topic.name;
-
-        const header = document.createElement('div');
-        header.className = 'topic-header';
+        div.dataset.originalIndex = index;
+        div.draggable = true;
+        div.style.backgroundColor = bgColor;
+        div.style.color = textColor;
+        
+        originalTopicOrder.push(topic.name);
 
         const titleContainer = document.createElement('div');
-        titleContainer.style.display = 'flex';
-        titleContainer.style.alignItems = 'center';
-
-        const title = document.createElement('h3');
-        title.textContent = topic.name;
-        titleContainer.appendChild(title);
+        titleContainer.className = 'topic-icon-title';
+        titleContainer.textContent = topic.name;
 
         if (topic.comment) {
             const infoIcon = document.createElement('span');
-            infoIcon.className = 'info-icon';
+            infoIcon.className = 'info-icon-small';
             infoIcon.textContent = 'ℹ️';
             infoIcon.onclick = (e) => {
                 e.stopPropagation();
@@ -324,31 +345,190 @@ function createTopicBoxes() {
             titleContainer.appendChild(infoIcon);
         }
 
-        const collapseIcon = document.createElement('span');
-        collapseIcon.className = 'collapse-icon';
-        collapseIcon.textContent = '▼';
-
-        header.appendChild(titleContainer);
-        header.appendChild(collapseIcon);
-
         const content = document.createElement('div');
-        content.className = 'topic-content';
+        content.className = 'topic-icon-content hidden';
 
-        header.onclick = () => toggleTopicBox(div, content, collapseIcon);
-
-        div.appendChild(header);
+        div.appendChild(titleContainer);
         div.appendChild(content);
 
-        div.addEventListener('dragover', handleDragOver);
-        div.addEventListener('drop', handleDrop);
+        div.onclick = (e) => {
+            if (e.target.classList.contains('info-icon-small')) return;
+            toggleTopicIcon(div, content);
+        };
+
+        div.addEventListener('dragstart', handleTopicDragStart);
+        div.addEventListener('dragend', handleTopicDragEnd);
+        div.addEventListener('dragover', handleSubtopicDragOver);
+        div.addEventListener('drop', handleSubtopicDrop);
         div.addEventListener('dragleave', handleDragLeave);
 
         topicsContainer.appendChild(div);
     });
 
-    // Add search functionality for subtopics
     const subtopicSearch = document.getElementById('subtopic-search');
     subtopicSearch.addEventListener('input', filterSubtopics);
+    
+    topicsContainer.addEventListener('dragover', handleTopicContainerDragOver);
+    topicsContainer.addEventListener('drop', handleTopicContainerDrop);
+}
+
+function toggleTopicIcon(icon, content) {
+    const isExpanded = !content.classList.contains('hidden');
+    if (isExpanded) {
+        content.classList.add('hidden');
+        icon.classList.remove('expanded');
+    } else {
+        content.classList.remove('hidden');
+        icon.classList.add('expanded');
+    }
+}
+
+let draggedTopicIcon = null;
+
+function handleTopicDragStart(e) {
+    draggedTopicIcon = e.target;
+    e.target.classList.add('dragging-topic');
+    e.dataTransfer.effectAllowed = 'move';
+}
+
+function handleTopicDragEnd(e) {
+    e.target.classList.remove('dragging-topic');
+    draggedTopicIcon = null;
+}
+
+function handleTopicContainerDragOver(e) {
+    if (!draggedTopicIcon) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    
+    const afterElement = getDragAfterElement(e.currentTarget, e.clientX, e.clientY);
+    if (afterElement == null) {
+        e.currentTarget.appendChild(draggedTopicIcon);
+    } else {
+        e.currentTarget.insertBefore(draggedTopicIcon, afterElement);
+    }
+}
+
+function handleTopicContainerDrop(e) {
+    if (!draggedTopicIcon) return;
+    e.preventDefault();
+}
+
+function getDragAfterElement(container, x, y) {
+    const draggableElements = [...container.querySelectorAll('.topic-icon:not(.dragging-topic)')];
+    
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offsetX = x - box.left - box.width / 2;
+        const offsetY = y - box.top - box.height / 2;
+        const offset = Math.sqrt(offsetX * offsetX + offsetY * offsetY);
+        
+        if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+        } else {
+            return closest;
+        }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
+
+function restoreTopicOrder() {
+    const container = document.getElementById('topics-items');
+    const icons = Array.from(container.querySelectorAll('.topic-icon'));
+    
+    icons.sort((a, b) => {
+        return parseInt(a.dataset.originalIndex) - parseInt(b.dataset.originalIndex);
+    });
+    
+    icons.forEach(icon => container.appendChild(icon));
+}
+
+function handleSubtopicDragOver(e) {
+    if (draggedTopicIcon) return;
+    e.preventDefault();
+    e.target.closest('.topic-icon').classList.add('drag-over');
+}
+
+function handleSubtopicDrop(e) {
+    if (draggedTopicIcon) return;
+    e.preventDefault();
+    const topicIcon = e.target.closest('.topic-icon');
+    topicIcon.classList.remove('drag-over');
+
+    const draggedElement = document.querySelector('.dragging');
+    const droppedTopic = topicIcon.dataset.topic;
+    const correctTopic = draggedElement.dataset.correctTopic;
+
+    if (droppedTopic === correctTopic) {
+        correctCount++;
+        document.getElementById('correct').textContent = correctCount;
+        topicIcon.classList.add('correct');
+
+        const clickableDiv = document.createElement('div');
+        clickableDiv.textContent = draggedElement.textContent;
+        clickableDiv.className = 'placed-subtopic';
+
+        const wasWrong = missedSubtopics.some(item => item.name === draggedElement.textContent);
+        if (wasWrong) {
+            clickableDiv.classList.add('was-wrong');
+        }
+
+        clickableDiv.dataset.originalOrder = draggedElement.dataset.originalOrder;
+        if (draggedElement.dataset.sources) clickableDiv.dataset.sources = draggedElement.dataset.sources;
+        if (draggedElement.dataset.comment) {
+            clickableDiv.onclick = () => {
+                const title = draggedElement.dataset.key ?
+                    `${draggedElement.dataset.key} - ${draggedElement.textContent}` :
+                    draggedElement.textContent;
+                const image = draggedElement.dataset.image || null;
+                const sources = clickableDiv.dataset.sources ? JSON.parse(clickableDiv.dataset.sources) : null;
+                showModal(title, draggedElement.dataset.comment, image, sources);
+            };
+        }
+
+        const existingItems = Array.from(topicIcon.querySelectorAll('.placed-subtopic'));
+        const insertPosition = existingItems.findIndex(item =>
+            parseInt(item.dataset.originalOrder) > parseInt(clickableDiv.dataset.originalOrder)
+        );
+
+        const content = topicIcon.querySelector('.topic-icon-content');
+        if (insertPosition === -1) {
+            content.appendChild(clickableDiv);
+        } else {
+            content.insertBefore(clickableDiv, existingItems[insertPosition]);
+        }
+
+        draggedElement.remove();
+        setTimeout(() => topicIcon.classList.remove('correct'), 500);
+
+        if (document.querySelectorAll('.subtopic').length === 0) {
+            setTimeout(() => showGameCompleteModal(), 1000);
+        }
+    } else {
+        wrongCount++;
+        const missedItem = {
+            name: draggedElement.textContent,
+            correctTopic: correctTopic,
+            comment: draggedElement.dataset.comment,
+            key: draggedElement.dataset.key,
+            image: draggedElement.dataset.image,
+            sources: draggedElement.dataset.sources ? JSON.parse(draggedElement.dataset.sources) : null
+        };
+
+        if (!missedSubtopics.some(item => item.name === missedItem.name)) {
+            missedSubtopics.push(missedItem);
+        }
+
+        wrongLog.push({
+            subtopic: draggedElement.textContent,
+            droppedIn: droppedTopic,
+            correctTopic: correctTopic,
+            timestamp: new Date().toLocaleTimeString()
+        });
+        document.getElementById('wrong').textContent = wrongCount;
+        topicIcon.classList.add('incorrect');
+
+        setTimeout(() => topicIcon.classList.remove('incorrect'), 500);
+    }
 }
 
 function handleDragStart(e) {
@@ -361,17 +541,20 @@ function handleDragEnd(e) {
 }
 
 function handleDragOver(e) {
+    if (draggedTopicIcon) return;
     e.preventDefault();
-    e.target.closest('.topic-box').classList.add('drag-over');
+    e.target.closest('.topic-box, .topic-icon').classList.add('drag-over');
 }
 
 function handleDragLeave(e) {
-    if (!e.target.closest('.topic-box').contains(e.relatedTarget)) {
-        e.target.closest('.topic-box').classList.remove('drag-over');
+    const target = e.target.closest('.topic-box, .topic-icon');
+    if (target && !target.contains(e.relatedTarget)) {
+        target.classList.remove('drag-over');
     }
 }
 
 function handleDrop(e) {
+    if (draggedTopicIcon) return;
     e.preventDefault();
     const topicBox = e.target.closest('.topic-box');
     topicBox.classList.remove('drag-over');
@@ -859,7 +1042,6 @@ function solveAll() {
         const targetTopicBox = document.querySelector(`[data-topic="${correctTopicName}"]`);
 
         if (targetTopicBox) {
-            // Create clickable element in topic box
             const clickableDiv = document.createElement('div');
             clickableDiv.textContent = subtopic.textContent;
             clickableDiv.className = 'placed-subtopic';
@@ -877,13 +1059,12 @@ function solveAll() {
                 };
             }
 
-            // Find correct position to insert based on original order
             const existingItems = Array.from(targetTopicBox.querySelectorAll('.placed-subtopic'));
             const insertPosition = existingItems.findIndex(item =>
                 parseInt(item.dataset.originalOrder) > parseInt(clickableDiv.dataset.originalOrder)
             );
 
-            const content = targetTopicBox.querySelector('.topic-content');
+            const content = targetTopicBox.querySelector('.topic-content, .topic-icon-content');
             if (insertPosition === -1) {
                 content.appendChild(clickableDiv);
             } else {
@@ -898,7 +1079,6 @@ function solveAll() {
 
     document.getElementById('correct').textContent = correctCount;
 
-    // Show completion modal after a short delay
     if (document.querySelectorAll('.subtopic').length === 0) {
         setTimeout(() => showGameCompleteModal(), 500);
     }
@@ -923,14 +1103,13 @@ function filterTopics() {
 
 function filterSubtopics() {
     const searchTerm = document.getElementById('subtopic-search').value.toLowerCase();
-    const topicBoxes = document.querySelectorAll('#topics-items .topic-box');
+    const topicBoxes = document.querySelectorAll('#topics-items .topic-box, #topics-items .topic-icon');
 
     topicBoxes.forEach(topicBox => {
         const topicName = topicBox.dataset.topic.toLowerCase();
         const placedSubtopics = topicBox.querySelectorAll('.placed-subtopic');
         let hasMatch = topicName.includes(searchTerm);
 
-        // Check if any placed subtopics match
         placedSubtopics.forEach(subtopic => {
             const subtopicText = subtopic.textContent.toLowerCase();
             if (subtopicText.includes(searchTerm)) {
