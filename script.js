@@ -281,17 +281,12 @@ function createSubtopics(useOnlyMissed = false) {
 let originalTopicOrder = [];
 
 function getRandomColor() {
-    const colors = ['#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#00bcd4', '#009688', '#4caf50', '#ff9800', '#ff5722', '#795548', '#607d8b'];
+    const colors = ['#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF', '#E0BBE4', '#FFDFD3', '#C7CEEA', '#D4F1F4', '#FFE5B4', '#E6E6FA', '#F0E68C'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
 function getContrastColor(bgColor) {
-    const hex = bgColor.replace('#', '');
-    const r = parseInt(hex.substr(0, 2), 16);
-    const g = parseInt(hex.substr(2, 2), 16);
-    const b = parseInt(hex.substr(4, 2), 16);
-    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-    return brightness > 128 ? '#000000' : '#ffffff';
+    return '#000000';
 }
 
 function createTopicBoxes() {

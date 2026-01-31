@@ -159,13 +159,13 @@ header {
 }
 
 .placed-subtopic.was-wrong {
-    background: #ffcdd2 !important;
-    border-left: 4px solid #f44336 !important;
-    color: #d32f2f !important;
+    background: #f44336 !important;
+    color: white !important;
+    border-left: none !important;
 }
 
 .placed-subtopic.was-wrong:hover {
-    background: #ffb3ba !important;
+    background: #e53935 !important;
 }
 
 .placed-subtopic.wrong-placement {
@@ -446,7 +446,8 @@ header {
 }
 
 .placed-subtopic {
-    background: #c8e6c9;
+    background: #4caf50;
+    color: white;
     padding: 5px 10px;
     margin: 5px;
     border-radius: 4px;
@@ -456,7 +457,7 @@ header {
 }
 
 .placed-subtopic:hover {
-    background: #a5d6a7;
+    background: #45a049;
 }
 
 .error-table {
