@@ -1,0 +1,351 @@
+{
+  "subject": "Serviços de Cloud Computing - Azure, AWS e GCP",
+  "subtopicsLabel": "Características e Diferenciais",
+  "topics": {
+    "name": "Serviços Cloud",
+    "values": [
+      {
+        "name": "Azure Data Factory",
+        "comment": "Serviço de integração de dados - Azure",
+        "subtopics": [
+          {
+            "name": "Orquestração ETL/ELT serverless com interface visual drag-and-drop integrada ao portal",
+            "comment": "Interface"
+          },
+          {
+            "name": "Integração nativa com mais de 90 conectores incluindo serviços Microsoft (Dynamics, Office 365)",
+            "comment": "Conectividade"
+          },
+          {
+            "name": "Suporte a SSIS (SQL Server Integration Services) packages via Integration Runtime",
+            "comment": "Migração"
+          },
+          {
+            "name": "Cobrança baseada em execuções de pipeline, atividades e Data Flow compute",
+            "comment": "Pricing"
+          }
+        ]
+      },
+      {
+        "name": "AWS Glue",
+        "comment": "Serviço de integração de dados - AWS",
+        "subtopics": [
+          {
+            "name": "Catálogo de dados automático com crawlers que descobrem schemas em S3, RDS e Redshift",
+            "comment": "Descoberta"
+          },
+          {
+            "name": "Jobs ETL serverless escritos em Python ou Scala usando Apache Spark",
+            "comment": "Processamento"
+          },
+          {
+            "name": "Glue DataBrew oferece preparação visual de dados sem código para analistas",
+            "comment": "Interface"
+          },
+          {
+            "name": "Integração nativa com Lake Formation para governança de data lakes",
+            "comment": "Governança"
+          }
+        ]
+      },
+      {
+        "name": "Google Cloud Dataflow",
+        "comment": "Serviço de integração de dados - GCP",
+        "subtopics": [
+          {
+            "name": "Baseado em Apache Beam com suporte a streaming e batch unificados no mesmo pipeline",
+            "comment": "Arquitetura"
+          },
+          {
+            "name": "Auto-scaling horizontal automático baseado em backlog de mensagens e throughput",
+            "comment": "Escalabilidade"
+          },
+          {
+            "name": "Suporte nativo a SQL para transformações via Beam SQL",
+            "comment": "Linguagem"
+          },
+          {
+            "name": "Integração com Pub/Sub para processamento de eventos em tempo real",
+            "comment": "Streaming"
+          }
+        ]
+      },
+      {
+        "name": "Azure Service Fabric",
+        "comment": "Plataforma de microsserviços - Azure",
+        "subtopics": [
+          {
+            "name": "Orquestrador de microsserviços stateful e stateless com gerenciamento de estado distribuído",
+            "comment": "Arquitetura"
+          },
+          {
+            "name": "Suporte a Reliable Services e Reliable Actors (modelo de programação baseado em atores)",
+            "comment": "Modelo de programação"
+          },
+          {
+            "name": "Pode ser executado on-premises, Azure ou outras clouds com mesmo código",
+            "comment": "Portabilidade"
+          },
+          {
+            "name": "Usado internamente pela Microsoft para serviços como Azure SQL Database e Cosmos DB",
+            "comment": "Maturidade"
+          }
+        ]
+      },
+      {
+        "name": "AWS ECS/EKS",
+        "comment": "Plataforma de microsserviços - AWS",
+        "subtopics": [
+          {
+            "name": "ECS oferece orquestração proprietária com integração profunda aos serviços AWS",
+            "comment": "Orquestração nativa"
+          },
+          {
+            "name": "EKS fornece Kubernetes gerenciado com controle total sobre configurações do cluster",
+            "comment": "Kubernetes"
+          },
+          {
+            "name": "Fargate permite execução serverless de containers sem gerenciar instâncias EC2",
+            "comment": "Serverless"
+          },
+          {
+            "name": "App Mesh oferece service mesh para observabilidade e controle de tráfego entre microsserviços",
+            "comment": "Service Mesh"
+          }
+        ]
+      },
+      {
+        "name": "Google Kubernetes Engine (GKE)",
+        "comment": "Plataforma de microsserviços - GCP",
+        "subtopics": [
+          {
+            "name": "Kubernetes gerenciado com Autopilot mode que elimina gerenciamento de nodes completamente",
+            "comment": "Automação"
+          },
+          {
+            "name": "Integração nativa com Anthos para gerenciamento multi-cloud e híbrido de clusters",
+            "comment": "Multi-cloud"
+          },
+          {
+            "name": "GKE Autopilot cobra apenas pelos pods em execução, não por nodes provisionados",
+            "comment": "Pricing"
+          },
+          {
+            "name": "Suporte a Workload Identity para autenticação segura entre pods e serviços GCP",
+            "comment": "Segurança"
+          }
+        ]
+      },
+      {
+        "name": "Azure Databricks",
+        "comment": "Plataforma de analytics - Azure",
+        "subtopics": [
+          {
+            "name": "Apache Spark otimizado com Photon engine para queries SQL até 12x mais rápidas",
+            "comment": "Performance"
+          },
+          {
+            "name": "Delta Lake integrado para transações ACID em data lakes com time travel",
+            "comment": "Confiabilidade"
+          },
+          {
+            "name": "Unity Catalog oferece governança unificada de dados, ML models e notebooks",
+            "comment": "Governança"
+          },
+          {
+            "name": "Integração SSO com Azure AD e controle de acesso baseado em RBAC do Azure",
+            "comment": "Segurança Azure"
+          }
+        ]
+      },
+      {
+        "name": "AWS EMR",
+        "comment": "Plataforma de analytics - AWS",
+        "subtopics": [
+          {
+            "name": "Suporte a múltiplos frameworks: Spark, Hadoop, Presto, Hive, HBase e Flink",
+            "comment": "Frameworks"
+          },
+          {
+            "name": "EMR Serverless elimina gerenciamento de clusters com auto-scaling baseado em workload",
+            "comment": "Serverless"
+          },
+          {
+            "name": "Integração com EC2 Spot Instances para redução de custos de até 90%",
+            "comment": "Custo"
+          },
+          {
+            "name": "EMR Studio oferece IDE baseado em Jupyter com colaboração em tempo real",
+            "comment": "Desenvolvimento"
+          }
+        ]
+      },
+      {
+        "name": "Google Cloud Dataproc",
+        "comment": "Plataforma de analytics - GCP",
+        "subtopics": [
+          {
+            "name": "Clusters Spark/Hadoop gerenciados com provisionamento em menos de 90 segundos",
+            "comment": "Velocidade"
+          },
+          {
+            "name": "Cobrança por segundo com desligamento automático de clusters ociosos",
+            "comment": "Pricing granular"
+          },
+          {
+            "name": "Dataproc Serverless executa jobs Spark sem criar clusters explicitamente",
+            "comment": "Serverless"
+          },
+          {
+            "name": "Integração com BigQuery via Spark-BigQuery connector para queries federadas",
+            "comment": "Integração"
+          }
+        ]
+      },
+      {
+        "name": "Amazon S3",
+        "comment": "Armazenamento de objetos - AWS",
+        "subtopics": [
+          {
+            "name": "11 noves de durabilidade (99.999999999%) com replicação automática entre AZs",
+            "comment": "Durabilidade"
+          },
+          {
+            "name": "S3 Intelligent-Tiering move objetos automaticamente entre tiers baseado em padrões de acesso",
+            "comment": "Otimização de custo"
+          },
+          {
+            "name": "Versionamento de objetos com proteção MFA Delete para compliance",
+            "comment": "Proteção"
+          },
+          {
+            "name": "S3 Select permite queries SQL diretamente em objetos sem baixar dados completos",
+            "comment": "Query in-place"
+          },
+          {
+            "name": "Object Lock oferece WORM (Write Once Read Many) para retenção regulatória",
+            "comment": "Compliance"
+          }
+        ]
+      },
+      {
+        "name": "Azure Blob Storage",
+        "comment": "Armazenamento de objetos - Azure",
+        "subtopics": [
+          {
+            "name": "Três tipos de blobs: Block (até 190.7 TB), Append (logs) e Page (discos VHD)",
+            "comment": "Tipos"
+          },
+          {
+            "name": "Tiers Hot, Cool e Archive com políticas de lifecycle management automáticas",
+            "comment": "Tiers"
+          },
+          {
+            "name": "Integração nativa com Azure AD para autenticação baseada em identidade sem chaves",
+            "comment": "Autenticação"
+          },
+          {
+            "name": "Blob versioning e soft delete com retenção configurável até 365 dias",
+            "comment": "Recuperação"
+          },
+          {
+            "name": "Suporte a NFSv3 para workloads que requerem acesso via protocolo de arquivos",
+            "comment": "Protocolo"
+          }
+        ]
+      },
+      {
+        "name": "Google Cloud Storage (GCS)",
+        "comment": "Armazenamento de objetos - GCP",
+        "subtopics": [
+          {
+            "name": "Classes Autoclass que movem objetos automaticamente entre Standard, Nearline, Coldline e Archive",
+            "comment": "Automação"
+          },
+          {
+            "name": "Consistência forte global para todas as operações incluindo leitura após escrita",
+            "comment": "Consistência"
+          },
+          {
+            "name": "Turbo replication replica objetos entre regiões em menos de 15 minutos (SLA)",
+            "comment": "Replicação"
+          },
+          {
+            "name": "Integração com BigQuery para análise direta de dados em CSV, JSON, Avro e Parquet",
+            "comment": "Analytics"
+          },
+          {
+            "name": "Object Lifecycle Management com 13 condições diferentes incluindo número de versões",
+            "comment": "Lifecycle"
+          }
+        ]
+      },
+      {
+        "name": "Azure AI Services",
+        "comment": "Integração com IA - Azure",
+        "subtopics": [
+          {
+            "name": "Azure OpenAI Service oferece GPT-4, GPT-3.5 e DALL-E com SLA empresarial",
+            "comment": "LLMs"
+          },
+          {
+            "name": "Cognitive Services unificado com 30+ APIs para visão, fala, linguagem e decisão",
+            "comment": "APIs"
+          },
+          {
+            "name": "Azure Machine Learning integrado com Databricks, Synapse e Data Factory",
+            "comment": "MLOps"
+          },
+          {
+            "name": "Responsible AI dashboard para análise de fairness, explicabilidade e erros de modelos",
+            "comment": "IA Responsável"
+          }
+        ]
+      },
+      {
+        "name": "AWS AI/ML Services",
+        "comment": "Integração com IA - AWS",
+        "subtopics": [
+          {
+            "name": "SageMaker oferece notebooks, training distribuído, deployment e monitoring de modelos ML",
+            "comment": "Plataforma ML"
+          },
+          {
+            "name": "Bedrock fornece acesso a LLMs da Anthropic, AI21, Stability AI via API unificada",
+            "comment": "LLMs"
+          },
+          {
+            "name": "Rekognition, Comprehend, Transcribe e Translate como serviços gerenciados de IA",
+            "comment": "APIs especializadas"
+          },
+          {
+            "name": "SageMaker Feature Store centraliza features para reutilização entre modelos ML",
+            "comment": "Feature engineering"
+          }
+        ]
+      },
+      {
+        "name": "Google Cloud AI Platform",
+        "comment": "Integração com IA - GCP",
+        "subtopics": [
+          {
+            "name": "Vertex AI unifica AutoML, custom training, deployment e feature store em plataforma única",
+            "comment": "Plataforma unificada"
+          },
+          {
+            "name": "Acesso a modelos PaLM 2, Gemini e Imagen via Model Garden",
+            "comment": "LLMs Google"
+          },
+          {
+            "name": "TPUs (Tensor Processing Units) customizados para training e inferência de modelos grandes",
+            "comment": "Hardware especializado"
+          },
+          {
+            "name": "BigQuery ML permite criar e executar modelos ML usando apenas SQL",
+            "comment": "ML simplificado"
+          }
+        ]
+      }
+    ]
+  }
+}
