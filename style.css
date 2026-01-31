@@ -539,3 +539,82 @@ header {
     border-radius: 3px;
     font-family: monospace;
 }
+
+.theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.theme-toggle:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+body.dark-mode {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container,
+body.dark-mode header,
+body.dark-mode .subtopics-panel,
+body.dark-mode .topics-panel {
+    background: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .subtopic {
+    background: #1e3a5f;
+    color: #e0e0e0;
+}
+
+body.dark-mode .subtopic:hover {
+    background: #2a4a7a;
+}
+
+body.dark-mode .topic-box,
+body.dark-mode .topic-icon {
+    background: #3a3a3a;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode .topic-box h3,
+body.dark-mode .topic-icon-title {
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-content {
+    background: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .close {
+    color: #999;
+}
+
+body.dark-mode .close:hover {
+    color: #fff;
+}
+
+body.dark-mode input {
+    background: #3a3a3a;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode .error-table th {
+    background: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .error-table tr:hover {
+    background: #3a3a3a;
+}
+
+body.dark-mode .version-info {
+    background: rgba(45,45,45,0.8);
+    color: #999;
+}
