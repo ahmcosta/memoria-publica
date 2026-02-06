@@ -1,0 +1,296 @@
+{
+  "subject": "Dispositivos de Segurança de Rede",
+  "subtopicsLabel": "Características e Funcionalidades",
+  "topics": {
+    "name": "Tecnologias de Segurança",
+    "values": [
+      {
+        "name": "Firewall NGFW",
+        "comment": "<strong>Next Generation Firewall</strong><br><br>Firewall de próxima geração que vai além da inspeção de portas e protocolos. Realiza <em>Deep Packet Inspection</em> (DPI) para analisar o conteúdo completo dos pacotes, identifica aplicações independente da porta utilizada, e integra funcionalidades de IPS, antimalware e inteligência de ameaças.<br><br>Diferente dos firewalls tradicionais (filtro de pacotes), o NGFW atua em múltiplas camadas do modelo OSI, incluindo a camada de aplicação, permitindo controle granular baseado em identidade de usuários e grupos.",
+        "subtopics": [
+          {
+            "name": "Deep Packet Inspection (DPI) examina conteúdo completo dos pacotes além de cabeçalhos",
+            "comment": "<strong>Inspeção profunda</strong><br>Analisa o <em>payload completo</em> dos pacotes, não apenas headers. Examina conteúdo da camada de aplicação para identificar ameaças ocultas em tráfego aparentemente legítimo."
+          },
+          {
+            "name": "Stateful inspection mantém tabela de estados para rastrear conexões TCP estabelecidas",
+            "comment": "<strong>Controle de estado</strong><br>Mantém <em>tabela de estados</em> rastreando conexões TCP ativas. Abre e fecha portas dinamicamente conforme evolução da comunicação, permitindo fluxos bidirecionais automaticamente."
+          },
+          {
+            "name": "Identity Awareness aplica políticas baseadas em usuários e grupos, não apenas IPs",
+            "comment": "<strong>Controle por identidade</strong><br>Aplica regras baseadas em <em>usuários e grupos</em> via integração com AD/LDAP, não apenas endereços IP. Permite políticas granulares por pessoa independente do dispositivo usado."
+          },
+          {
+            "name": "Integração nativa com threat intelligence feeds para atualização contínua de assinaturas",
+            "comment": "<strong>Inteligência de ameaças</strong><br>Integra <em>feeds externos</em> de IPs e domínios maliciosos conhecidos. Atualização contínua de assinaturas de ataques emergentes para proteção proativa contra novas ameaças."
+          },
+          {
+            "name": "Capacidade de descriptografar e inspecionar tráfego SSL/TLS em tempo real",
+            "comment": "<strong>Inspeção criptografada</strong><br>Realiza <em>SSL/TLS interception</em> descriptografando tráfego HTTPS com certificados intermediários. Inspeciona conteúdo e recriptografa antes de encaminhar, detectando malware em conexões seguras."
+          }
+        ]
+      },
+      {
+        "name": "IDS (Intrusion Detection System)",
+        "comment": "<strong>Sistema de Detecção de Intrusão</strong><br><br>Sistema que monitora o tráfego de rede ou atividades em hosts para identificar possíveis incidentes de segurança. Opera em <strong>modo passivo</strong>, recebendo cópias do tráfego via SPAN port (espelhamento de porta) ou TAP (Test Access Point).<br><br>Utiliza dois métodos principais: <em>detecção baseada em assinaturas</em> (compara com padrões conhecidos) e <em>detecção baseada em anomalias</em> (identifica desvios do comportamento normal). <strong>Não bloqueia tráfego</strong>, apenas gera alertas para análise posterior.",
+        "subtopics": [
+          {
+            "name": "Opera em modo passivo monitorando cópias do tráfego via SPAN port ou TAP",
+            "comment": "<strong>Modo de operação</strong><br>Opera em <em>modo passivo</em> recebendo cópias do tráfego. <strong>SPAN port</strong>: espelhamento configurado no switch. <strong>TAP</strong>: dispositivo físico de cópia instalado no cabo. Não interfere no fluxo original."
+          },
+          {
+            "name": "Detecção baseada em assinaturas compara padrões conhecidos de ataques em banco de dados",
+            "comment": "<strong>Método signature-based</strong><br>Compara padrões de tráfego com <em>banco de ataques conhecidos</em>. Eficaz contra ameaças catalogadas mas vulnerável a ataques zero-day. Requer atualização constante de assinaturas."
+          },
+          {
+            "name": "Detecção baseada em anomalias identifica desvios do comportamento normal estabelecido",
+            "comment": "<strong>Método anomaly-based</strong><br>Estabelece <em>baseline de comportamento normal</em> da rede. Detecta desvios estatísticos que podem indicar ataques desconhecidos. Gera mais falsos positivos mas identifica ameaças novas."
+          },
+          {
+            "name": "Gera alertas e logs sem bloquear tráfego suspeito automaticamente",
+            "comment": "<strong>Ação reativa</strong><br>Apenas <em>gera alertas e logs</em> para análise posterior pela equipe de segurança. Não bloqueia tráfego automaticamente, evitando interrupções mas exigindo resposta manual."
+          },
+          {
+            "name": "NIDS monitora segmentos de rede inteiros enquanto HIDS protege hosts individuais",
+            "comment": "<strong>Tipos de implantação</strong><br><em>NIDS</em> (Network-based): monitora segmentos de rede inteiros via sensores. <em>HIDS</em> (Host-based): instalado em hosts individuais, monitora logs do sistema e integridade de arquivos."
+          }
+        ]
+      },
+      {
+        "name": "IPS (Intrusion Prevention System)",
+        "comment": "<strong>Sistema de Prevenção de Intrusão</strong><br><br>Evolução do IDS que atua em <strong>modo inline</strong>, posicionado diretamente no fluxo de tráfego. Diferente do IDS, o IPS <strong>bloqueia automaticamente</strong> ameaças detectadas antes que atinjam o destino.<br><br>Além da detecção por assinaturas e anomalias, implementa <em>protocol anomaly detection</em> para validar conformidade com RFCs. Pode causar latência adicional e representa um ponto único de falha se mal dimensionado, exigindo planejamento cuidadoso de capacidade.",
+        "subtopics": [
+          {
+            "name": "Posicionado inline no fluxo de tráfego para bloqueio ativo de ameaças",
+            "comment": "<strong>Modo inline</strong><br>Posicionado <em>diretamente no fluxo de tráfego</em>. Todo pacote passa pelo dispositivo antes de chegar ao destino. Permite bloqueio imediato mas pode causar latência e representa ponto único de falha."
+          },
+          {
+            "name": "Bloqueia automaticamente pacotes maliciosos antes de atingirem o destino",
+            "comment": "<strong>Ação proativa</strong><br><em>Bloqueia automaticamente</em> pacotes maliciosos antes de atingirem o alvo. Descarta tráfego suspeito, reseta conexões TCP, ou bloqueia IPs de origem temporariamente sem intervenção humana."
+          },
+          {
+            "name": "Utiliza rate limiting e throttling para mitigar ataques de negação de serviço",
+            "comment": "<strong>Proteção DDoS</strong><br>Implementa <em>rate limiting</em> (limita taxa de pacotes) e <em>throttling</em> (reduz velocidade) por origem. Mitiga ataques de negação de serviço distribuídos antes de saturar recursos."
+          },
+          {
+            "name": "Protocol anomaly detection valida conformidade com RFCs dos protocolos de rede",
+            "comment": "<strong>Validação de protocolo</strong><br><em>Protocol anomaly detection</em> verifica conformidade com RFCs dos protocolos. Detecta desvios nas especificações que podem indicar exploits ou malformações maliciosas."
+          },
+          {
+            "name": "Pode causar latência adicional e single point of failure se mal dimensionado",
+            "comment": "<strong>Considerações de desempenho</strong><br>Pode gerar <em>latência adicional</em> pela inspeção inline. Representa <strong>SPOF</strong> (Single Point of Failure) se mal dimensionado. Requer planejamento de capacidade e redundância."
+          }
+        ]
+      },
+      {
+        "name": "Proxy Server",
+        "comment": "<strong>Servidor Intermediário</strong><br><br>Atua como intermediário entre clientes e servidores, estabelecendo <strong>duas conexões separadas</strong>: cliente-proxy e proxy-servidor. Elimina comunicação direta, adicionando camada de segurança por obscuridade.<br><br>Oferece <em>cache de conteúdo estático</em> para otimizar desempenho, filtragem de URLs por categoria, e controle de acesso granular. Pode operar em modo <strong>transparente</strong> (sem configuração nos clientes) ou explícito. <strong>SQUID</strong> é a implementação open-source mais popular em ambientes Linux/Unix.",
+        "subtopics": [
+          {
+            "name": "Estabelece duas conexões separadas eliminando comunicação direta cliente-servidor",
+            "comment": "<strong>Arquitetura de conexão</strong><br>Estabelece <em>duas conexões separadas</em>: cliente conecta ao proxy, proxy conecta ao servidor. Elimina comunicação direta, adicionando camada de segurança e controle centralizado."
+          },
+          {
+            "name": "Cache de conteúdo estático reduz latência e consumo de banda para requisições repetidas",
+            "comment": "<strong>Otimização de desempenho</strong><br><em>Cache de conteúdo estático</em> armazena objetos localmente (imagens, CSS, JS). Reduz latência e consumo de banda para requisições repetidas ao mesmo recurso."
+          },
+          {
+            "name": "Filtragem por URL e categorização de conteúdo web baseada em listas ACL",
+            "comment": "<strong>Controle de acesso</strong><br>Filtragem por <em>URL e categorização</em> de conteúdo web. Bloqueia domínios por categoria (redes sociais, streaming) ou URLs específicas usando listas ACL (Access Control Lists)."
+          },
+          {
+            "name": "Proxy transparente não requer configuração nos clientes através de redirecionamento automático",
+            "comment": "<strong>Modo transparente</strong><br>Não requer <em>configuração nos clientes</em>. Redirecionamento automático via WCCP (Web Cache Communication Protocol) ou policy routing no roteador. Invisível para usuários finais."
+          },
+          {
+            "name": "SQUID é implementação open-source mais utilizada em ambientes Linux/Unix",
+            "comment": "<strong>Solução popular</strong><br><strong>SQUID</strong> é o proxy <em>open-source</em> mais utilizado em ambientes Linux/Unix. Oferece cache HTTP/HTTPS, ACLs robustas, e suporte a autenticação integrada."
+          }
+        ]
+      },
+      {
+        "name": "Proxy Reverso",
+        "comment": "<strong>Reverse Proxy</strong><br><br>Proxy posicionado na <strong>frente de servidores web</strong> para proteger infraestrutura interna. Oculta topologia da rede, distribui carga entre múltiplos backends, e centraliza processamento SSL/TLS (<em>SSL offloading</em>).<br><br>Serve conteúdo estático diretamente do cache sem consultar servidores de aplicação, reduzindo carga. Implementa autenticação centralizada (SSO, OAuth, SAML) antes de encaminhar requisições aos backends. Funciona como <strong>gateway de aplicação</strong> com recursos de segurança e desempenho.",
+        "subtopics": [
+          {
+            "name": "Posicionado na frente de servidores web para ocultar topologia interna da rede",
+            "comment": "<strong>Proteção de infraestrutura</strong><br>Posicionado na frente de servidores web, <em>oculta IPs internos</em> dos servidores. Clientes externos só veem o IP do proxy reverso, protegendo topologia da rede."
+          },
+          {
+            "name": "Load balancing distribui requisições entre múltiplos servidores backend usando algoritmos",
+            "comment": "<strong>Balanceamento de carga</strong><br>Distribui requisições entre múltiplos backends usando algoritmos: <em>round-robin</em> (rodízio), <em>least connections</em> (menos conexões), <em>IP hash</em> (persistência por IP)."
+          },
+          {
+            "name": "Offloading SSL/TLS centraliza processamento criptográfico liberando recursos dos servidores",
+            "comment": "<strong>Otimização SSL</strong><br><em>SSL offloading</em>: proxy faz handshake TLS, servidores backend recebem HTTP puro. Centraliza processamento criptográfico liberando recursos dos servidores de aplicação."
+          },
+          {
+            "name": "Serve conteúdo estático diretamente do cache sem consultar servidores de aplicação",
+            "comment": "<strong>Cache de conteúdo</strong><br>Serve <em>conteúdo estático</em> (imagens, CSS, JavaScript) diretamente do cache sem consultar servidores de aplicação. Reduz carga nos backends e melhora tempo de resposta."
+          },
+          {
+            "name": "Implementa autenticação centralizada antes de encaminhar requisições aos backends",
+            "comment": "<strong>Gateway de autenticação</strong><br>Implementa <em>autenticação centralizada</em> (SSO, OAuth, SAML) antes de encaminhar requisições. Valida credenciais uma vez, backends confiam no proxy para controle de acesso."
+          }
+        ]
+      },
+      {
+        "name": "NAC (Network Access Control)",
+        "comment": "<strong>Controle de Acesso à Rede</strong><br><br>Solução que controla quais dispositivos podem acessar a rede corporativa baseado em políticas de conformidade. Implementa <strong>pre-admission control</strong> (valida antes de permitir acesso) e <strong>post-admission control</strong> (monitora continuamente após conexão).<br><br>Verifica status de antivírus, nível de patches, e configurações de segurança. Dispositivos não conformes são automaticamente isolados em <em>VLAN de quarentena</em> para remediação. Utiliza autenticação <strong>802.1X</strong> com RADIUS para controle por porta física do switch.",
+        "subtopics": [
+          {
+            "name": "Pre-admission control valida conformidade de dispositivos antes de conceder acesso à rede",
+            "comment": "<strong>Controle pré-admissão</strong><br>Valida <em>conformidade antes de permitir acesso</em> à rede. Verifica antivírus ativo, patches instalados, firewall habilitado. Dispositivos não conformes são bloqueados ou isolados."
+          },
+          {
+            "name": "Post-admission control monitora continuamente dispositivos já conectados para compliance",
+            "comment": "<strong>Monitoramento contínuo</strong><br><em>Reavalia compliance periodicamente</em> mesmo após conexão estabelecida. Detecta mudanças no status de segurança (antivírus desabilitado, patches removidos) e reage automaticamente."
+          },
+          {
+            "name": "Quarentena automática isola dispositivos não conformes em VLAN restrita para remediação",
+            "comment": "<strong>Isolamento de não-conformes</strong><br>Dispositivos que falham na validação são movidos para <em>VLAN de quarentena</em> restrita. Acesso limitado apenas a recursos de remediação (servidor de patches, portal de atualização)."
+          },
+          {
+            "name": "Integração com MDM e antivírus para verificar patch level e status de proteção",
+            "comment": "<strong>Validação de segurança</strong><br>Integração com <em>MDM</em> (Mobile Device Management) e antivírus corporativo. Verifica patch level do sistema operacional, status de proteção ativa, e configurações de segurança obrigatórias."
+          },
+          {
+            "name": "Suporte a autenticação 802.1X com RADIUS para controle granular por porta de switch",
+            "comment": "<strong>Autenticação de porta</strong><br>Suporte a <em>802.1X</em> com servidor RADIUS para controle granular. Autenticação por porta física do switch, permitindo políticas diferentes por localização ou tipo de dispositivo conectado."
+          }
+        ]
+      },
+      {
+        "name": "SIEM (Security Information and Event Management)",
+        "comment": "<strong>Gerenciamento de Eventos e Informações de Segurança</strong><br><br>Solução que combina <em>SEM</em> (Security Event Management) e <em>SIM</em> (Security Information Management) para análise centralizada de segurança. Coleta logs de múltiplas fontes via syslog, SNMP e APIs.<br><br>Realiza <strong>normalização</strong> (padroniza formatos heterogêneos) e <strong>correlação de eventos</strong> (cruza dados de fontes distintas para identificar padrões). Utiliza <em>machine learning</em> para detectar anomalias sem assinaturas prévias. Gera dashboards de compliance para auditorias regulatórias (PCI-DSS, LGPD, SOX).",
+        "subtopics": [
+          {
+            "name": "Coleta centralizada de logs de múltiplas fontes incluindo firewalls, servidores e aplicações",
+            "comment": "<strong>Agregação de dados</strong><br>Coleta logs de <em>múltiplas fontes</em> via syslog (UDP/514 ou TCP/6514), SNMP traps, e APIs REST. Centraliza eventos de firewalls, servidores, aplicações e dispositivos de rede."
+          },
+          {
+            "name": "Normalização padroniza formatos heterogêneos de logs para análise unificada",
+            "comment": "<strong>Padronização</strong><br><em>Normalização</em> converte formatos heterogêneos (JSON, XML, syslog, CEF) para schema único. Facilita correlação entre eventos de diferentes vendors e tecnologias."
+          },
+          {
+            "name": "Correlação de eventos identifica padrões suspeitos cruzando dados de fontes distintas",
+            "comment": "<strong>Análise correlacionada</strong><br><em>Correlação de eventos</em> combina dados de múltiplas fontes para identificar padrões. Eventos isolados insignificantes podem revelar ataques complexos quando correlacionados temporalmente."
+          },
+          {
+            "name": "Machine learning detecta anomalias comportamentais sem assinaturas predefinidas",
+            "comment": "<strong>Detecção por IA</strong><br><em>Machine learning</em> identifica anomalias comportamentais sem assinaturas predefinidas. Aprende padrões normais e detecta desvios que podem indicar ataques desconhecidos ou insider threats."
+          },
+          {
+            "name": "Dashboards de compliance geram relatórios automatizados para auditorias regulatórias",
+            "comment": "<strong>Conformidade</strong><br>Dashboards e <em>relatórios automatizados</em> para auditorias regulatórias. Evidências de compliance com PCI-DSS, LGPD, SOX, HIPAA. Trilhas de auditoria completas para investigações forenses."
+          }
+        ]
+      },
+      {
+        "name": "Antivírus",
+        "comment": "<strong>Proteção contra Malware</strong><br><br>Software que detecta, previne e remove códigos maliciosos (vírus, worms, trojans, ransomware). Utiliza <strong>detecção baseada em assinaturas</strong> (compara hash MD5/SHA com banco de malware) e <strong>análise heurística</strong> (identifica comportamentos suspeitos).<br><br>Implementa <em>sandbox</em> para executar arquivos suspeitos em ambiente isolado. Atualizações de definições são baixadas automaticamente da cloud. <strong>Scan on-access</strong> intercepta arquivos em tempo real durante abertura ou execução, antes que possam causar danos.",
+        "subtopics": [
+          {
+            "name": "Detecção baseada em assinaturas compara código executável com banco de malware conhecido",
+            "comment": "<strong>Signature-based</strong><br>Compara <em>hash MD5/SHA</em> de arquivos executáveis com banco de malware conhecido. Rápido e eficaz contra ameaças catalogadas mas ineficaz contra variantes polimórficas."
+          },
+          {
+            "name": "Análise heurística identifica comportamentos suspeitos sem assinaturas prévias",
+            "comment": "<strong>Heuristic analysis</strong><br>Analisa <em>comportamento suspeito</em> do código sem assinaturas prévias. Detecta tentativas de modificar registro, criar processos ocultos, ou acessar áreas críticas do sistema."
+          },
+          {
+            "name": "Sandbox executa arquivos suspeitos em ambiente isolado para observar comportamento",
+            "comment": "<strong>Execução controlada</strong><br><em>Sandbox</em> executa arquivos suspeitos em ambiente virtualizado isolado. Observa comportamento real sem risco ao sistema. Detecta malware que só se ativa em condições específicas."
+          },
+          {
+            "name": "Atualização automática de definições via cloud para proteção contra zero-day threats",
+            "comment": "<strong>Atualização contínua</strong><br>Signatures baixadas automaticamente da <em>cloud em tempo real</em>. Proteção contra zero-day threats minutos após descoberta. Reduz janela de vulnerabilidade drasticamente."
+          },
+          {
+            "name": "Scan on-access verifica arquivos em tempo real durante abertura ou execução",
+            "comment": "<strong>Proteção em tempo real</strong><br><em>Scan on-access</em> intercepta arquivos durante abertura ou execução. Verifica antes de permitir acesso, bloqueando malware antes que possa executar código malicioso."
+          }
+        ]
+      },
+      {
+        "name": "Antispam",
+        "comment": "<strong>Filtragem de E-mail Indesejado</strong><br><br>Conjunto de técnicas para identificar e bloquear spam (mensagens não solicitadas). Utiliza <strong>blacklists/RBLs</strong> (Spamhaus, SORBS) para bloquear IPs conhecidos, <strong>greylisting</strong> (força reenvio temporário), e <strong>filtro bayesiano</strong> (análise probabilística que aprende).<br><br>Implementa validação de autenticidade com <em>SPF</em> (Sender Policy Framework - registro DNS) e <em>DKIM</em> (Domain Keys Identified Mail - assinatura criptográfica). Atua em MTAs (Mail Transfer Agents) e pode usar porta 587 para submissão autenticada.",
+        "subtopics": [
+          {
+            "name": "Blacklists bloqueiam IPs de servidores conhecidos por enviar spam via MTA",
+            "comment": "<strong>Listas negras</strong><br><em>RBLs</em> (Realtime Blackhole Lists) como Spamhaus, SORBS bloqueiam IPs de servidores conhecidos por enviar spam. MTAs consultam RBLs via DNS antes de aceitar mensagens."
+          },
+          {
+            "name": "Greylisting força reenvio temporário rejeitando primeira tentativa de servidores desconhecidos",
+            "comment": "<strong>Validação por reenvio</strong><br><em>Greylisting</em> rejeita temporariamente primeira tentativa de servidores desconhecidos. Spammers não reenviam, servidores legítimos sim (conforme RFC). Reduz spam sem blacklists."
+          },
+          {
+            "name": "Filtro bayesiano usa probabilidade estatística para classificar mensagens como spam",
+            "comment": "<strong>Análise probabilística</strong><br><em>Filtro bayesiano</em> usa estatística para classificar mensagens. Aprende com classificações do usuário (spam/não-spam), melhorando precisão continuamente. Adapta-se a novos padrões."
+          },
+          {
+            "name": "SPF valida IP do remetente contra registros DNS autorizados pelo domínio",
+            "comment": "<strong>Sender Policy Framework</strong><br>Valida IP do remetente contra <em>registro TXT no DNS</em> do domínio. Domínio publica lista de IPs autorizados a enviar e-mail. Combate spoofing de endereço de retorno."
+          },
+          {
+            "name": "DKIM autentica mensagens usando assinatura digital com chaves públicas no DNS",
+            "comment": "<strong>Domain Keys Identified Mail</strong><br>Autentica mensagens usando <em>assinatura criptográfica</em> no header. Chave privada assina, chave pública no DNS valida. Garante integridade e autenticidade do remetente."
+          }
+        ]
+      },
+      {
+        "name": "Segmentação de Rede",
+        "comment": "<strong>Isolamento de Zonas de Segurança</strong><br><br>Prática de dividir a rede em segmentos isolados para limitar propagação de ameaças. Utiliza <strong>VLANs</strong> (802.1Q) para segmentação em camada 2, criando domínios de broadcast separados.<br><br><em>DMZ</em> (Demilitarized Zone) posiciona servidores públicos entre dois firewalls. <strong>Microsegmentação</strong> aplica políticas granulares entre workloads individuais. <em>Screened subnet</em> implementa defesa em profundidade com dual firewall. Separa redes de gerenciamento, produção, backup e storage em segmentos funcionais distintos.",
+        "subtopics": [
+          {
+            "name": "VLANs segregam tráfego em camada 2 criando domínios de broadcast isolados",
+            "comment": "<strong>Segmentação L2</strong><br><em>VLANs</em> (802.1Q) segregam tráfego em camada 2 criando domínios de broadcast isolados. Dispositivos em VLANs diferentes não se comunicam sem roteamento, mesmo no mesmo switch físico."
+          },
+          {
+            "name": "DMZ posiciona servidores públicos entre dois firewalls isolando rede interna",
+            "comment": "<strong>Zona desmilitarizada</strong><br><em>DMZ</em> posiciona servidores públicos (web, e-mail) entre dois firewalls. Isolamento da rede interna: comprometimento da DMZ não expõe recursos internos diretamente."
+          },
+          {
+            "name": "Microsegmentação aplica políticas granulares entre workloads individuais",
+            "comment": "<strong>Segmentação granular</strong><br><em>Microsegmentação</em> aplica políticas entre workloads individuais (containers, VMs). Controle fino de comunicação aplicação-a-aplicação, limitando movimento lateral de atacantes."
+          },
+          {
+            "name": "Screened subnet usa dual firewall criando perímetro de segurança em profundidade",
+            "comment": "<strong>Defesa em camadas</strong><br><em>Screened subnet</em> usa dual firewall com DMZ entre eles. Atacante precisa comprometer dois firewalls independentes. Implementa conceito de defesa em profundidade.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/DMZ_network_diagram_2_firewalls.png"
+          },
+          {
+            "name": "Separação de redes de gerenciamento, produção, backup e storage em segmentos distintos",
+            "comment": "<strong>Isolamento funcional</strong><br>Separação de <em>redes dedicadas</em> por função: gerenciamento (out-of-band), produção, backup, storage (SAN/NAS). Previne que problemas em uma rede afetem outras."
+          }
+        ]
+      },
+      {
+        "name": "Hardening",
+        "comment": "<strong>Fortalecimento de Sistemas</strong><br><br>Processo de redução da superfície de ataque em servidores e dispositivos. Desabilita serviços desnecessários, portas e daemons não utilizados. Implementa <strong>patch management</strong> automatizado (WSUS, Ansible, Chef) para atualizações sistemáticas.<br><br>Configura <em>bastion hosts</em> (jump servers) com acesso restrito para serviços externos. Aplica princípio de <strong>least privilege</strong> (PoLP) garantindo permissões mínimas. Valida compliance com benchmarks <em>CIS</em> (Center for Internet Security) ou <em>STIG</em> (Security Technical Implementation Guide) usando ferramentas como Lynis e OpenSCAP.",
+        "subtopics": [
+          {
+            "name": "Desabilitação de serviços desnecessários reduz superfície de ataque em servidores",
+            "comment": "<strong>Redução de serviços</strong><br>Desativa <em>portas e daemons não usados</em>. Cada serviço ativo é potencial vetor de ataque. Princípio: instalar apenas o necessário para a função do servidor."
+          },
+          {
+            "name": "Patch management automatizado aplica atualizações de segurança sistematicamente",
+            "comment": "<strong>Gestão de patches</strong><br><em>Patch management automatizado</em> usando WSUS (Windows), Ansible, Chef, Puppet. Aplica atualizações de segurança sistematicamente, reduzindo janela de exposição a vulnerabilidades conhecidas."
+          },
+          {
+            "name": "Configuração de bastion hosts com acesso restrito e auditoria rigorosa para serviços externos",
+            "comment": "<strong>Servidores fortificados</strong><br><em>Bastion hosts</em> (jump servers) com acesso restrito e auditoria rigorosa. Único ponto de entrada para administração de servidores internos. Logs detalhados de todas as sessões."
+          },
+          {
+            "name": "Implementação de least privilege garante permissões mínimas necessárias por usuário",
+            "comment": "<strong>Privilégio mínimo</strong><br>Princípio de <em>least privilege (PoLP)</em>: usuários e processos recebem apenas permissões mínimas necessárias. Limita danos de contas comprometidas ou erros humanos."
+          },
+          {
+            "name": "Auditoria de configuração valida compliance com benchmarks CIS ou STIG",
+            "comment": "<strong>Validação de baseline</strong><br>Auditoria de configuração valida compliance com benchmarks <em>CIS</em> (Center for Internet Security) ou <em>STIG</em> (Security Technical Implementation Guide). Ferramentas: Lynis, OpenSCAP."
+          }
+        ]
+      }
+    ]
+  }
+}
