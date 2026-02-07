@@ -1,0 +1,111 @@
+{
+  "subject": "Mecanismos de Alta Disponibilidade",
+  "subtopicsLabel": "Características",
+  "topics": {
+    "name": "Técnicas de HA",
+    "values": [
+      {
+        "name": "Failover",
+        "comment": "<strong>Transferência Automática de Serviços</strong><br><br>Processo de transferir automaticamente serviços de um nó primário com falha para um nó secundário. Pode ser <strong>ativo-passivo</strong> (standby aguarda) ou <strong>ativo-ativo</strong> (ambos processam). <em>Failback</em> retorna serviços ao nó original após recuperação.<br><br>Tempo de failover (RTO) varia de segundos a minutos. Utiliza <em>VIP</em> (Virtual IP) para transparência. Requer detecção de falha via heartbeat e sincronização de estado entre nós.",
+        "subtopics": [
+          {
+            "name": "Transferência automática de serviços do nó primário para secundário quando detectada falha",
+            "comment": "<strong>Comutação automática</strong><br>Transfere automaticamente serviços do nó primário com falha para nó secundário. Processo transparente para usuários usando VIP (Virtual IP) que migra entre nós."
+          },
+          {
+            "name": "Modo ativo-passivo mantém nó secundário em standby aguardando falha do primário",
+            "comment": "<strong>Hot standby</strong><br>Configuração <em>ativo-passivo</em>: nó secundário em standby aguarda falha do primário. Recursos do standby ficam ociosos até ativação. Failover mais lento mas configuração mais simples."
+          },
+          {
+            "name": "Modo ativo-ativo distribui carga entre nós que assumem serviços uns dos outros em falha",
+            "comment": "<strong>Load balancing com HA</strong><br>Configuração <em>ativo-ativo</em>: ambos os nós processam requisições simultaneamente. Em falha, nó sobrevivente assume toda carga. Melhor utilização de recursos mas maior complexidade."
+          },
+          {
+            "name": "Failback retorna serviços ao nó original após recuperação e sincronização de estado",
+            "comment": "<strong>Retorno ao primário</strong><br><em>Failback</em> retorna serviços ao nó original após recuperação. Requer sincronização de estado e pode ser automático ou manual. Evita deixar nó primário ocioso permanentemente."
+          },
+          {
+            "name": "RTO determina tempo máximo aceitável para conclusão do processo de failover",
+            "comment": "<strong>Recovery Time Objective</strong><br><em>RTO</em> define tempo máximo aceitável para failover. Varia de segundos (cluster) a minutos (DR). Influencia escolha de tecnologia e custo da solução de HA."
+          },
+          {
+            "name": "Virtual IP migra entre nós garantindo transparência de failover para clientes",
+            "comment": "<strong>Endereço flutuante</strong><br><em>VIP</em> (Virtual IP) migra entre nós durante failover. Clientes conectam ao VIP, não ao IP físico. Gratuitous ARP atualiza tabelas de switches após migração."
+          },
+          {
+            "name": "Sincronização de estado replica dados de sessão entre nós para continuidade de serviço",
+            "comment": "<strong>State replication</strong><br>Sincronização de estado replica dados de sessão (conexões ativas, transações) entre nós. Permite failover sem perda de sessões. Essencial para serviços stateful."
+          }
+        ]
+      },
+      {
+        "name": "Heartbeat",
+        "comment": "<strong>Monitoramento de Disponibilidade</strong><br><br>Mecanismo de detecção de falhas através de sinais periódicos entre nós de um cluster. Envia pacotes UDP ou ICMP em intervalos regulares (tipicamente 1-2 segundos). <strong>Timeout</strong> configura quantos heartbeats perdidos indicam falha.<br><br>Pode usar <em>múltiplos canais</em> (rede dedicada, serial, multicast) para evitar falsos positivos. <strong>Split-brain</strong> ocorre quando heartbeat falha mas nós continuam ativos. Implementado por soluções como <em>Pacemaker</em>, <em>Keepalived</em> e <em>Corosync</em>.",
+        "subtopics": [
+          {
+            "name": "Envio periódico de pacotes UDP ou ICMP entre nós para verificar disponibilidade",
+            "comment": "<strong>Pulso de vida</strong><br>Envia pacotes <em>UDP ou ICMP</em> periodicamente (1-2 segundos) entre nós. Confirma que nó está ativo e acessível. Base para detecção de falhas em clusters."
+          },
+          {
+            "name": "Timeout configura quantos heartbeats consecutivos perdidos indicam falha do nó",
+            "comment": "<strong>Limiar de falha</strong><br><em>Timeout</em> define quantos heartbeats perdidos consecutivos indicam falha. Valor baixo: detecção rápida mas risco de falsos positivos. Valor alto: mais tolerante mas failover mais lento."
+          },
+          {
+            "name": "Múltiplos canais de heartbeat em redes dedicadas evitam falsos positivos por falha de rede",
+            "comment": "<strong>Redundância de monitoramento</strong><br>Usa <em>múltiplos canais</em> (rede dedicada, serial, multicast) para heartbeat. Evita falsos positivos: falha declarada apenas se todos os canais falharem. Aumenta confiabilidade."
+          },
+          {
+            "name": "Split-brain ocorre quando heartbeat falha mas ambos os nós continuam ativos e assumem primário",
+            "comment": "<strong>Cenário de duplo primário</strong><br><em>Split-brain</em>: heartbeat falha mas ambos os nós continuam ativos. Ambos assumem papel primário, causando corrupção de dados. Prevenido por quorum e fencing."
+          },
+          {
+            "name": "Pacemaker e Corosync implementam heartbeat e gerenciamento de recursos em clusters Linux",
+            "comment": "<strong>Stack de clustering</strong><br><em>Pacemaker</em> gerencia recursos, <em>Corosync</em> fornece heartbeat e comunicação de cluster. Stack padrão para HA em Linux. Suporta quorum, fencing e múltiplos recursos."
+          },
+          {
+            "name": "Keepalived usa VRRP para heartbeat e failover de Virtual IP entre nós",
+            "comment": "<strong>VRRP para HA</strong><br><em>Keepalived</em> implementa VRRP (Virtual Router Redundancy Protocol) para heartbeat e failover de VIP. Solução leve para HA de load balancers e roteadores. Prioridade define nó master."
+          },
+          {
+            "name": "Intervalo de heartbeat balanceia detecção rápida de falhas com overhead de rede",
+            "comment": "<strong>Tuning de intervalo</strong><br>Intervalo de heartbeat balanceia detecção rápida (1s) com overhead de rede. Intervalos muito curtos geram tráfego excessivo. Intervalos longos atrasam detecção de falhas."
+          }
+        ]
+      },
+      {
+        "name": "Fencing",
+        "comment": "<strong>Isolamento Forçado de Nós com Falha</strong><br><br>Mecanismo de proteção que força isolamento de nó com falha para prevenir corrupção de dados. <strong>STONITH</strong> (Shoot The Other Node In The Head) desliga nó via hardware. <em>Fencing por rede</em> isola nó bloqueando acesso a recursos compartilhados.<br><br>Essencial para prevenir <strong>split-brain</strong> em clusters. Usa <em>PDU</em> (Power Distribution Unit), <em>IPMI</em>, <em>iLO</em>, <em>iDRAC</em> para controle remoto. <strong>Quorum</strong> determina qual partição do cluster sobrevive. Fencing garante que apenas um nó acesse storage compartilhado simultaneamente.",
+        "subtopics": [
+          {
+            "name": "STONITH desliga nó com falha via hardware para prevenir corrupção de dados compartilhados",
+            "comment": "<strong>Shoot The Other Node In The Head</strong><br><em>STONITH</em> desliga forçadamente nó com falha via hardware. Garante que nó problemático não acesse storage compartilhado. Última linha de defesa contra split-brain."
+          },
+          {
+            "name": "Fencing por rede isola nó bloqueando acesso a storage e recursos compartilhados via SAN",
+            "comment": "<strong>Isolamento lógico</strong><br><em>Fencing por rede</em> isola nó bloqueando acesso a LUNs no storage SAN. Usa zoning de FC ou masking de LUN. Alternativa quando desligamento físico não é possível."
+          },
+          {
+            "name": "PDU permite desligamento remoto de nó via controle de energia pela rede",
+            "comment": "<strong>Power Distribution Unit</strong><br><em>PDU</em> gerenciável permite desligar remotamente nó via rede. Corta energia física do servidor. Método confiável de fencing quando IPMI não está disponível."
+          },
+          {
+            "name": "IPMI, iLO e iDRAC fornecem controle out-of-band para power cycle e fencing de servidores",
+            "comment": "<strong>Gerenciamento out-of-band</strong><br><em>IPMI</em> (Intelligent Platform Management Interface), <em>iLO</em> (HP), <em>iDRAC</em> (Dell) fornecem controle independente do SO. Permitem power cycle remoto para fencing. Rede de gerenciamento dedicada."
+          },
+          {
+            "name": "Quorum determina qual partição do cluster sobrevive em split-brain usando votação de nós",
+            "comment": "<strong>Votação de maioria</strong><br><em>Quorum</em> usa votação: partição com maioria de votos sobrevive, outras são isoladas via fencing. Previne split-brain. Número ímpar de nós ou quorum device evita empate."
+          },
+          {
+            "name": "Fencing garante exclusão mútua impedindo acesso simultâneo ao storage compartilhado",
+            "comment": "<strong>Mutual exclusion</strong><br>Fencing garante que apenas um nó acesse storage compartilhado simultaneamente. Previne corrupção de filesystem e dados. Essencial para clusters com shared storage (SAN, NAS)."
+          },
+          {
+            "name": "Quorum device externo fornece voto de desempate em clusters com número par de nós",
+            "comment": "<strong>Tiebreaker</strong><br><em>Quorum device</em> (QDevice) externo fornece voto adicional em clusters com número par de nós. Previne empate em split-brain. Pode ser appliance dedicado ou serviço leve em terceiro servidor."
+          }
+        ]
+      }
+    ]
+  }
+}
