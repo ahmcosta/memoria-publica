@@ -44,72 +44,72 @@
           {
             "name": "Gerenciar a Estrutura de Gestão de TI",
             "key": "APO01",
-            "comment": "Estabelecer estruturas organizacionais, papéis e responsabilidades para TI."
+            "comment": "<strong>[APO01] Manage the IT Management Framework</strong><br>Estabelecer estruturas organizacionais, papéis e responsabilidades para TI. Define governança, comitês, autoridades e processos de tomada de decisão.<br><br><em>Relacionado ITIL 4:</em> Arquitetura de Gestão"
           },
           {
             "name": "Gerenciar a Estratégia",
             "key": "APO02",
-            "comment": "Definir e implementar estratégias de TI alinhadas aos objetivos de negócio."
+            "comment": "<strong>[APO02] Manage Strategy</strong><br>Definir e implementar estratégias de TI alinhadas aos objetivos de negócio. Traduz visão corporativa em planos táticos e operacionais de TI.<br><br><em>Equivalente ITIL 4:</em> Gestão de Estratégia"
           },
           {
             "name": "Gerenciar a Arquitetura da Organização",
             "key": "APO03",
-            "comment": "Estabelecer e manter a arquitetura empresarial e de TI."
+            "comment": "<strong>[APO03] Manage Enterprise Architecture</strong><br>Estabelecer e manter a arquitetura empresarial e de TI. Define frameworks (TOGAF, Zachman), modelos de referência e roadmaps tecnológicos.<br><br><em>Equivalente ITIL 4:</em> Arquitetura de Gestão"
           },
           {
             "name": "Gerenciar Inovação",
             "key": "APO04",
-            "comment": "Promover e gerenciar inovações tecnológicas e de processos."
+            "comment": "<strong>[APO04] Manage Innovation</strong><br>Promover e gerenciar inovações tecnológicas e de processos. Identifica tendências emergentes, avalia viabilidade e implementa provas de conceito (PoC).<br><br><em>Relacionado ITIL 4:</em> Melhoria Contínua"
           },
           {
             "name": "Gerenciar Portfólio",
             "key": "APO05",
-            "comment": "Gerenciar o portfólio de investimentos e projetos de TI."
+            "comment": "<strong>[APO05] Manage Portfolio</strong><br>Gerenciar o portfólio de investimentos e projetos de TI. Prioriza iniciativas baseado em valor, risco, alinhamento estratégico e restrições de recursos.<br><br><em>Equivalente ITIL 4:</em> Gestão de Portfólio"
           },
           {
             "name": "Gerenciar Orçamento e Custos",
             "key": "APO06",
-            "comment": "Planejar e controlar orçamentos e custos de TI."
+            "comment": "<strong>[APO06] Manage Budget and Costs</strong><br>Planejar e controlar orçamentos e custos de TI. Implementa contabilidade de custos, TCO (Total Cost of Ownership) e análise de variações orçamentárias.<br><br><em>Equivalente ITIL 4:</em> Gestão Financeira de Serviços"
           },
           {
             "name": "Gerenciar Recursos Humanos",
             "key": "APO07",
-            "comment": "Gerenciar competências, capacidades e recursos humanos de TI."
+            "comment": "<strong>[APO07] Manage Human Resources</strong><br>Gerenciar competências, capacidades e recursos humanos de TI. Inclui planejamento de workforce, treinamento, avaliação de desempenho e gestão de talentos.<br><br><em>Equivalente ITIL 4:</em> Gestão de Talentos e Força de Trabalho"
           },
           {
             "name": "Gerenciar Relacionamentos",
             "key": "APO08",
-            "comment": "Gerenciar relacionamentos entre TI e as áreas de negócio."
+            "comment": "<strong>[APO08] Manage Relationships</strong><br>Gerenciar relacionamentos entre TI e as áreas de negócio. Estabelece canais de comunicação, identifica necessidades e mantém satisfação dos stakeholders.<br><br><em>Equivalente ITIL 4:</em> Gestão de Relacionamento"
           },
           {
             "name": "Gerenciar Contratos de Prestação de Serviços",
             "key": "APO09",
-            "comment": "Estabelecer e gerenciar acordos de nível de serviço."
+            "comment": "<strong>[APO09] Manage Service Agreements</strong><br>Estabelecer e gerenciar acordos de nível de serviço. Define SLAs, OLAs (Operational Level Agreements) e UCs (Underpinning Contracts) com métricas mensuráveis.<br><br><em>Equivalente ITIL 4:</em> Gestão de Nível de Serviço"
           },
           {
             "name": "Gerenciar Fornecedores",
             "key": "APO10",
-            "comment": "Gerenciar relacionamentos e contratos com fornecedores de TI."
+            "comment": "<strong>[APO10] Manage Suppliers</strong><br>Gerenciar relacionamentos e contratos com fornecedores de TI. Avalia performance, negocia contratos, gerencia riscos de terceiros e garante compliance contratual.<br><br><em>Equivalente ITIL 4:</em> Gestão de Fornecedores"
           },
           {
             "name": "Gerenciar Qualidade",
             "key": "APO11",
-            "comment": "Estabelecer e manter padrões de qualidade para serviços de TI."
+            "comment": "<strong>[APO11] Manage Quality</strong><br>Estabelecer e manter padrões de qualidade para serviços de TI. Implementa QMS (Quality Management System), auditorias, métricas de qualidade e melhoria contínua.<br><br><em>Relacionado ITIL 4:</em> Melhoria Contínua | Validação e Teste de Serviços"
           },
           {
             "name": "Gerenciar Riscos",
             "key": "APO12",
-            "comment": "Identificar, avaliar e gerenciar riscos relacionados à TI."
+            "comment": "<strong>[APO12] Manage Risk</strong><br>Identificar, avaliar e gerenciar riscos relacionados à TI. Utiliza frameworks (ISO 31000, NIST), matriz de risco, planos de mitigação e monitoramento contínuo.<br><br><em>Equivalente ITIL 4:</em> Gestão de Riscos"
           },
           {
             "name": "Gerenciar Segurança",
             "key": "APO13",
-            "comment": "Estabelecer e manter um sistema de gestão de segurança da informação."
+            "comment": "<strong>[APO13] Manage Security</strong><br>Estabelecer e manter um sistema de gestão de segurança da informação. Implementa ISMS baseado em ISO 27001, políticas de segurança e controles de CIA (Confidencialidade, Integridade, Disponibilidade).<br><br><em>Equivalente ITIL 4:</em> Segurança da Informação"
           },
           {
             "name": "Gerenciar Dados",
             "key": "APO14",
-            "comment": "Gerenciar a arquitetura, qualidade e segurança dos dados."
+            "comment": "<strong>[APO14] Manage Data</strong><br>Gerenciar a arquitetura, qualidade e segurança dos dados. Implementa data governance, master data management (MDM), data quality e compliance com LGPD/GDPR.<br><br><em>Relacionado ITIL 4:</em> Gestão do Conhecimento"
           }
         ]
       },
@@ -121,57 +121,57 @@
           {
             "name": "Gerenciar Programas",
             "key": "BAI01",
-            "comment": "Gerenciar programas de investimento em TI de forma integrada."
+            "comment": "<strong>[BAI01] Manage Programmes</strong><br>Gerenciar programas de investimento em TI de forma integrada. Coordena múltiplos projetos relacionados para entregar benefícios estratégicos alinhados ao negócio.<br><br><em>Equivalente ITIL 4:</em> Gestão de Projetos | Gestão de Portfólio"
           },
           {
             "name": "Gerenciar Definição de Requisitos",
             "key": "BAI02",
-            "comment": "Definir e gerenciar requisitos de negócio e funcionais."
+            "comment": "<strong>[BAI02] Manage Requirements Definition</strong><br>Definir e gerenciar requisitos de negócio e funcionais. Captura necessidades dos stakeholders, documenta especificações e valida requisitos antes do desenvolvimento.<br><br><em>Equivalente ITIL 4:</em> Análise de Negócio"
           },
           {
             "name": "Gerenciar Identificação e Desenvolvimento de Soluções",
             "key": "BAI03",
-            "comment": "Identificar e desenvolver soluções tecnológicas adequadas."
+            "comment": "<strong>[BAI03] Manage Solutions Identification and Build</strong><br>Identificar e desenvolver soluções tecnológicas adequadas. Avalia alternativas (build vs buy), desenvolve ou customiza sistemas e integra componentes.<br><br><em>Equivalente ITIL 4:</em> Desenvolvimento e Gestão de Software"
           },
           {
             "name": "Gerenciar Disponibilidade Organizacional",
             "key": "BAI04",
-            "comment": "Garantir que a organização esteja preparada para mudanças."
+            "comment": "<strong>[BAI04] Manage Availability and Capacity</strong><br>Garantir que a organização esteja preparada para mudanças. Avalia prontidão organizacional, capacidade de absorver mudanças e disponibilidade de recursos.<br><br><em>Relacionado ITIL 4:</em> Gestão de Capacidade e Desempenho | Gestão de Disponibilidade"
           },
           {
             "name": "Gerenciar a Mudança Organizacional",
             "key": "BAI05",
-            "comment": "Facilitar a adoção de mudanças organizacionais e tecnológicas."
+            "comment": "<strong>[BAI05] Manage Organisational Change</strong><br>Facilitar a adoção de mudanças organizacionais e tecnológicas. Gerencia aspectos humanos, comunicação, treinamento e resistência à mudança usando modelos como ADKAR.<br><br><em>Equivalente ITIL 4:</em> Gestão Organizacional de Mudanças"
           },
           {
             "name": "Gerenciar Mudanças de TI",
             "key": "BAI06",
-            "comment": "Controlar mudanças na infraestrutura e sistemas de TI."
+            "comment": "<strong>[BAI06] Manage IT Changes</strong><br>Controlar mudanças na infraestrutura e sistemas de TI. Utiliza processo formal com RFC (Request for Change), avaliação de impacto, aprovação e rollback plan.<br><br><em>Equivalente ITIL 4:</em> Habilitação de Mudanças"
           },
           {
             "name": "Gerenciar Aceitação e Transição de Mudanças de TI",
             "key": "BAI07",
-            "comment": "Garantir aceitação e transição suave de novas soluções."
+            "comment": "<strong>[BAI07] Manage IT Change Acceptance and Transitioning</strong><br>Garantir aceitação e transição suave de novas soluções. Executa UAT (User Acceptance Testing), migração de dados, cutover e handover para operações.<br><br><em>Equivalente ITIL 4:</em> Gestão de Liberação | Validação e Teste de Serviços"
           },
           {
             "name": "Gerenciar Conhecimento",
             "key": "BAI08",
-            "comment": "Capturar, organizar e compartilhar conhecimento organizacional."
+            "comment": "<strong>[BAI08] Manage Knowledge</strong><br>Capturar, organizar e compartilhar conhecimento organizacional. Implementa knowledge base, documentação técnica, lições aprendidas e comunidades de prática.<br><br><em>Equivalente ITIL 4:</em> Gestão do Conhecimento"
           },
           {
             "name": "Gerenciar Ativos",
             "key": "BAI09",
-            "comment": "Gerenciar ativos de TI durante todo seu ciclo de vida."
+            "comment": "<strong>[BAI09] Manage Assets</strong><br>Gerenciar ativos de TI durante todo seu ciclo de vida. Controla aquisição, deployment, manutenção, otimização e descarte de hardware, software e licenças.<br><br><em>Equivalente ITIL 4:</em> Gestão de Ativos de TI"
           },
           {
             "name": "Gerenciar Configuração",
             "key": "BAI10",
-            "comment": "Manter informações sobre configuração de ativos de TI."
+            "comment": "<strong>[BAI10] Manage Configuration</strong><br>Manter informações sobre configuração de ativos de TI. Mantém CMDB atualizado com CIs, atributos, relacionamentos e histórico de mudanças.<br><br><em>Equivalente ITIL 4:</em> Gestão de Configuração de Serviços"
           },
           {
             "name": "Gerenciar Projetos",
             "key": "BAI11",
-            "comment": "Gerenciar projetos de TI de acordo com metodologias estabelecidas."
+            "comment": "<strong>[BAI11] Manage Projects</strong><br>Gerenciar projetos de TI de acordo com metodologias estabelecidas. Aplica PMBOK, PRINCE2 ou Agile para controlar escopo, cronograma, custos, qualidade e riscos.<br><br><em>Equivalente ITIL 4:</em> Gestão de Projetos"
           }
         ]
       },
@@ -183,32 +183,32 @@
           {
             "name": "Gerenciar Operações",
             "key": "DSS01",
-            "comment": "Coordenar e executar atividades operacionais de TI."
+            "comment": "<strong>[DSS01] Manage Operations</strong><br>Coordenar e executar atividades operacionais de TI. Inclui job scheduling, backup, monitoramento de infraestrutura, gestão de capacidade e performance operacional.<br><br><em>Relacionado ITIL 4:</em> Gestão de Infraestrutura e Plataforma | Monitoramento e Gestão de Eventos"
           },
           {
             "name": "Gerenciar Solicitações de Serviços e Incidentes",
             "key": "DSS02",
-            "comment": "Responder a solicitações de usuários e resolver incidentes."
+            "comment": "<strong>[DSS02] Manage Service Requests and Incidents</strong><br>Responder a solicitações de usuários e resolver incidentes. Registra tickets, classifica por prioridade, escalona e restaura serviço normal rapidamente.<br><br><em>Equivalente ITIL 4:</em> Gestão de Incidentes | Gestão de Solicitações de Serviço | Central de Serviços"
           },
           {
             "name": "Gerenciar Problemas",
             "key": "DSS03",
-            "comment": "Identificar e resolver causas raiz de problemas recorrentes."
+            "comment": "<strong>[DSS03] Manage Problems</strong><br>Identificar e resolver causas raiz de problemas recorrentes. Realiza análise de tendências, RCA (Root Cause Analysis), implementa workarounds e soluções permanentes.<br><br><em>Equivalente ITIL 4:</em> Gestão de Problemas"
           },
           {
             "name": "Gerenciar Continuidade",
             "key": "DSS04",
-            "comment": "Garantir continuidade dos serviços de TI em situações adversas."
+            "comment": "<strong>[DSS04] Manage Continuity</strong><br>Garantir continuidade dos serviços de TI em situações adversas. Desenvolve BCP (Business Continuity Plan), DRP (Disaster Recovery Plan), define RPO/RTO e realiza testes periódicos.<br><br><em>Relacionado ITIL 4:</em> Gestão de Disponibilidade"
           },
           {
             "name": "Gerenciar Serviços de Segurança",
             "key": "DSS05",
-            "comment": "Proteger informações e infraestrutura contra ameaças de segurança."
+            "comment": "<strong>[DSS05] Manage Security Services</strong><br>Proteger informações e infraestrutura contra ameaças de segurança. Implementa controles preventivos, detectivos e corretivos, monitora eventos de segurança (SIEM) e responde a incidentes.<br><br><em>Equivalente ITIL 4:</em> Segurança da Informação"
           },
           {
             "name": "Gerenciar Controles do Processo de Negócio",
             "key": "DSS06",
-            "comment": "Implementar controles automatizados nos processos de negócio."
+            "comment": "<strong>[DSS06] Manage Business Process Controls</strong><br>Implementar controles automatizados nos processos de negócio. Garante que aplicações implementem controles adequados de segregação de funções, autorização e auditoria.<br><br><em>Relacionado ITIL 4:</em> Desenvolvimento e Gestão de Software"
           }
         ]
       },
@@ -220,22 +220,22 @@
           {
             "name": "Gerenciar o Monitoramento do Desempenho e da Conformidade",
             "key": "MEA01",
-            "comment": "Monitorar e medir o desempenho de TI e conformidade com objetivos."
+            "comment": "<strong>[MEA01] Manage Performance and Conformance Monitoring</strong><br>Monitorar e medir o desempenho de TI e conformidade com objetivos. Coleta KPIs, gera dashboards, analisa desvios e reporta resultados para stakeholders.<br><br><em>Equivalente ITIL 4:</em> Medição e Relatórios | Gestão de Capacidade e Desempenho"
           },
           {
             "name": "Gerenciar o Sistema de Controle Interno",
             "key": "MEA02",
-            "comment": "Estabelecer e manter sistema de controles internos efetivos."
+            "comment": "<strong>[MEA02] Manage the Internal Control System</strong><br>Estabelecer e manter sistema de controles internos efetivos. Implementa framework de controles (COSO), monitora eficácia e identifica deficiências de controle.<br><br><em>Relacionado ITIL 4:</em> Gestão de Riscos"
           },
           {
             "name": "Gerenciar Conformidade com Requisitos Externos",
             "key": "MEA03",
-            "comment": "Garantir conformidade com leis, regulamentos e contratos."
+            "comment": "<strong>[MEA03] Manage Compliance with External Requirements</strong><br>Garantir conformidade com leis, regulamentos e contratos. Monitora mudanças regulatórias (LGPD, SOX, PCI-DSS), implementa controles e evidencia compliance.<br><br><em>Relacionado ITIL 4:</em> Gestão de Riscos | Segurança da Informação"
           },
           {
             "name": "Gerenciar a Garantia",
             "key": "MEA04",
-            "comment": "Obter garantia independente sobre eficácia dos controles de TI."
+            "comment": "<strong>[MEA04] Manage Assurance</strong><br>Obter garantia independente sobre eficácia dos controles de TI. Coordena auditorias internas/externas, avaliações de terceiros e certificações (ISO 27001, SOC 2).<br><br><em>Relacionado ITIL 4:</em> Gestão de Riscos | Melhoria Contínua"
           }
         ]
       }

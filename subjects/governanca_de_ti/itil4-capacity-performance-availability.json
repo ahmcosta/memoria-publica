@@ -1,0 +1,111 @@
+{
+  "subject": "ITIL 4 - Gerenciamento de Capacidade, Desempenho e Disponibilidade",
+  "subtopicsLabel": "Práticas e Atividades",
+  "topics": {
+    "name": "Práticas de Gerenciamento",
+    "values": [
+      {
+        "name": "Capacity Management",
+        "comment": "<strong>Gerenciamento de Capacidade</strong><br><br>Prática que garante que serviços e infraestrutura tenham capacidade suficiente para atender demandas atuais e futuras de forma custo-efetiva. Divide-se em <strong>Business Capacity Management</strong> (demanda futura), <strong>Service Capacity Management</strong> (serviços atuais) e <strong>Component Capacity Management</strong> (infraestrutura técnica).<br><br>Utiliza <em>Capacity Plan</em> documentando previsões e investimentos necessários. Monitora utilização de recursos (CPU, memória, storage, rede) e identifica gargalos. Implementa <strong>demand management</strong> para influenciar padrões de uso e otimizar recursos.",
+        "subtopics": [
+          {
+            "name": "Business Capacity Management traduz requisitos de negócio em necessidades de capacidade futura",
+            "comment": "<strong>Planejamento estratégico</strong><br><em>Business Capacity Management</em> traduz planos de negócio em requisitos de capacidade. Analisa crescimento esperado, novos serviços e sazonalidade. Foco em demanda futura de longo prazo."
+          },
+          {
+            "name": "Service Capacity Management monitora desempenho e capacidade de serviços de TI atuais",
+            "comment": "<strong>Gestão de serviços</strong><br><em>Service Capacity Management</em> monitora desempenho de serviços atuais. Garante que SLAs sejam atendidos. Identifica serviços que precisam ajuste de capacidade."
+          },
+          {
+            "name": "Component Capacity Management gerencia capacidade de componentes técnicos individuais da infraestrutura",
+            "comment": "<strong>Gestão de componentes</strong><br><em>Component Capacity Management</em> gerencia CPU, memória, storage, rede. Monitora utilização de recursos técnicos individuais. Identifica gargalos em hardware e software."
+          },
+          {
+            "name": "Capacity Plan documenta capacidade atual, previsões de demanda e investimentos necessários",
+            "comment": "<strong>Plano de capacidade</strong><br><em>Capacity Plan</em> documenta capacidade atual, tendências históricas, previsões e recomendações de investimento. Atualizado periodicamente. Base para decisões de aquisição."
+          },
+          {
+            "name": "Threshold monitoring define limites de utilização que disparam alertas preventivos",
+            "comment": "<strong>Monitoramento de limiares</strong><br><em>Threshold monitoring</em> define limites (ex: CPU > 80%) que disparam alertas. Permite ação preventiva antes que capacidade seja excedida. Evita degradação de serviço."
+          },
+          {
+            "name": "Demand management influencia padrões de uso através de políticas e incentivos",
+            "comment": "<strong>Gestão de demanda</strong><br><em>Demand management</em> influencia quando e como usuários consomem serviços. Usa políticas (quotas), incentivos (preços diferenciados) e educação. Suaviza picos de demanda."
+          },
+          {
+            "name": "Capacity modeling simula cenários futuros usando técnicas analíticas e preditivas",
+            "comment": "<strong>Modelagem preditiva</strong><br><em>Capacity modeling</em> usa modelos matemáticos e simulações para prever necessidades futuras. Testa cenários what-if. Baseia-se em dados históricos e tendências."
+          }
+        ]
+      },
+      {
+        "name": "Performance Management",
+        "comment": "<strong>Gerenciamento de Desempenho</strong><br><br>Prática focada em monitorar, medir e otimizar desempenho de serviços e componentes para atender requisitos de negócio. Estabelece <strong>KPIs</strong> (Key Performance Indicators) e <strong>métricas</strong> alinhadas aos objetivos de serviço.<br><br>Utiliza ferramentas de <em>APM</em> (Application Performance Monitoring) e <em>NPM</em> (Network Performance Monitoring). Implementa <strong>performance tuning</strong> para otimização contínua. Analisa <em>response time</em>, <em>throughput</em>, <em>latência</em> e <em>utilização de recursos</em>. Identifica degradação antes que impacte usuários.",
+        "subtopics": [
+          {
+            "name": "KPIs medem desempenho de serviços alinhados aos objetivos de negócio e SLAs",
+            "comment": "<strong>Indicadores chave</strong><br><em>KPIs</em> (Key Performance Indicators) medem aspectos críticos do desempenho. Exemplos: tempo de resposta, transações/segundo, taxa de erro. Alinhados aos SLAs e objetivos de negócio."
+          },
+          {
+            "name": "APM monitora desempenho de aplicações rastreando transações e identificando gargalos",
+            "comment": "<strong>Application Performance Monitoring</strong><br><em>APM</em> rastreia transações através de camadas da aplicação. Identifica gargalos em código, queries SQL, APIs. Ferramentas: New Relic, Dynatrace, AppDynamics."
+          },
+          {
+            "name": "Response time mede tempo entre requisição do usuário e resposta completa do sistema",
+            "comment": "<strong>Tempo de resposta</strong><br><em>Response time</em> mede latência percebida pelo usuário. Inclui tempo de rede, processamento e renderização. Métrica crítica para experiência do usuário."
+          },
+          {
+            "name": "Throughput mede quantidade de transações ou requisições processadas por unidade de tempo",
+            "comment": "<strong>Taxa de processamento</strong><br><em>Throughput</em> mede volume processado (transações/segundo, requisições/minuto). Indica capacidade de processamento do sistema. Essencial para dimensionamento."
+          },
+          {
+            "name": "Performance tuning otimiza configurações de sistema, queries e código para melhor desempenho",
+            "comment": "<strong>Otimização contínua</strong><br><em>Performance tuning</em> ajusta configurações de SO, banco de dados, aplicação. Otimiza queries SQL, índices, cache. Processo iterativo de melhoria contínua."
+          },
+          {
+            "name": "Baseline estabelece padrão de desempenho normal para detectar anomalias e degradação",
+            "comment": "<strong>Linha de base</strong><br><em>Baseline</em> documenta desempenho normal do sistema. Permite detectar desvios e degradação. Atualizada periodicamente para refletir mudanças no ambiente."
+          },
+          {
+            "name": "Latency monitoring rastreia atrasos em rede, storage e processamento que afetam experiência",
+            "comment": "<strong>Monitoramento de latência</strong><br><em>Latency monitoring</em> mede atrasos em cada camada (rede, disco, CPU). Identifica onde tempo é perdido. Crítico para aplicações distribuídas e cloud."
+          }
+        ]
+      },
+      {
+        "name": "Availability Management",
+        "comment": "<strong>Gerenciamento de Disponibilidade</strong><br><br>Prática que garante que serviços entreguem níveis acordados de disponibilidade para atender necessidades de negócio. Define e monitora <strong>SLA</strong> (Service Level Agreement) com métricas como <em>uptime</em>, <em>MTBF</em> (Mean Time Between Failures) e <em>MTTR</em> (Mean Time To Repair).<br><br>Implementa <strong>redundância</strong>, <em>failover</em> e <em>disaster recovery</em>. Realiza <strong>SPOF analysis</strong> (Single Point of Failure) para identificar vulnerabilidades. Calcula disponibilidade usando fórmula: Availability = (Uptime / (Uptime + Downtime)) × 100%. Estabelece <em>maintenance windows</em> para mudanças planejadas.",
+        "subtopics": [
+          {
+            "name": "SLA define níveis acordados de disponibilidade entre provedor e cliente de serviço",
+            "comment": "<strong>Service Level Agreement</strong><br><em>SLA</em> documenta níveis de serviço acordados, incluindo disponibilidade (ex: 99.9%). Define responsabilidades, métricas e penalidades. Base para gerenciamento de expectativas."
+          },
+          {
+            "name": "MTBF mede tempo médio entre falhas consecutivas de um componente ou serviço",
+            "comment": "<strong>Mean Time Between Failures</strong><br><em>MTBF</em> indica confiabilidade: quanto maior, mais confiável. Calculado dividindo tempo total de operação pelo número de falhas. Usado para planejamento de manutenção preventiva."
+          },
+          {
+            "name": "MTTR mede tempo médio para restaurar serviço após falha ou incidente",
+            "comment": "<strong>Mean Time To Repair</strong><br><em>MTTR</em> mede eficiência de recuperação. Inclui detecção, diagnóstico, reparo e restauração. MTTR baixo indica processos de recuperação eficientes."
+          },
+          {
+            "name": "SPOF analysis identifica pontos únicos de falha que podem causar indisponibilidade total",
+            "comment": "<strong>Single Point of Failure</strong><br><em>SPOF analysis</em> identifica componentes sem redundância cuja falha derruba o serviço. Prioriza implementação de redundância. Essencial para alta disponibilidade."
+          },
+          {
+            "name": "Redundância implementa componentes duplicados para eliminar SPOFs e aumentar disponibilidade",
+            "comment": "<strong>Componentes redundantes</strong><br><em>Redundância</em> duplica componentes críticos (servidores, links, storage). Configurações N+1, 2N ou ativo-ativo. Elimina SPOFs mas aumenta custos."
+          },
+          {
+            "name": "Maintenance window agenda janelas de manutenção planejada minimizando impacto ao negócio",
+            "comment": "<strong>Janela de manutenção</strong><br><em>Maintenance window</em> agenda mudanças em horários de baixo impacto. Downtime planejado não conta contra SLA. Comunicado antecipadamente aos usuários."
+          },
+          {
+            "name": "Availability calculation usa fórmula Uptime dividido por tempo total multiplicado por 100",
+            "comment": "<strong>Cálculo de disponibilidade</strong><br>Fórmula: <em>Availability = (Uptime / (Uptime + Downtime)) × 100%</em>. 99.9% = 8.76h downtime/ano. 99.99% = 52.6min/ano. Cada 9 adicional aumenta custo significativamente."
+          }
+        ]
+      }
+    ]
+  }
+}

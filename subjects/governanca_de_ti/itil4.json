@@ -10,59 +10,59 @@
         "subtopics": [
           {
             "name": "Arquitetura de Gestão",
-            "comment": "Fornecer uma compreensão de todos os diferentes elementos que compõem uma organização e como eles se relacionam."
+            "comment": "<strong>Architecture Management</strong><br>Fornecer uma compreensão de todos os diferentes elementos que compõem uma organização e como eles se relacionam. Estabelece modelos de arquitetura empresarial e de TI para guiar decisões estratégicas.<br><br><em>Equivalente COBIT 2019:</em> APO03 - Gerenciar a Arquitetura da Organização"
           },
           {
             "name": "Melhoria Contínua",
-            "comment": "Alinhar as práticas e serviços da organização com as necessidades de negócio em mudança."
+            "comment": "<strong>Continual Improvement</strong><br>Alinhar as práticas e serviços da organização com as necessidades de negócio em mudança. Utiliza ciclo PDCA para identificar oportunidades de melhoria e implementar mudanças incrementais.<br><br><em>Relacionado COBIT 2019:</em> MEA01 - Gerenciar o Monitoramento do Desempenho e da Conformidade"
           },
           {
             "name": "Segurança da Informação",
-            "comment": "Proteger as informações necessárias para a organização conduzir seus negócios."
+            "comment": "<strong>Information Security Management</strong><br>Proteger as informações necessárias para a organização conduzir seus negócios. Implementa controles de confidencialidade, integridade e disponibilidade (CIA) alinhados à ISO 27001.<br><br><em>Equivalente COBIT 2019:</em> APO13 - Gerenciar Segurança | DSS05 - Gerenciar Serviços de Segurança"
           },
           {
             "name": "Gestão do Conhecimento",
-            "comment": "Manter e melhorar o uso efetivo de informações e conhecimento em toda a organização."
+            "comment": "<strong>Knowledge Management</strong><br>Manter e melhorar o uso efetivo de informações e conhecimento em toda a organização. Captura lições aprendidas, documenta procedimentos e facilita compartilhamento de expertise.<br><br><em>Equivalente COBIT 2019:</em> BAI08 - Gerenciar Conhecimento"
           },
           {
             "name": "Medição e Relatórios",
-            "comment": "Apoiar a boa tomada de decisão e melhoria contínua diminuindo os níveis de incerteza."
+            "comment": "<strong>Measurement and Reporting</strong><br>Apoiar a boa tomada de decisão e melhoria contínua diminuindo os níveis de incerteza. Define KPIs, coleta métricas e gera relatórios para stakeholders.<br><br><em>Equivalente COBIT 2019:</em> MEA01 - Gerenciar o Monitoramento do Desempenho e da Conformidade"
           },
           {
             "name": "Gestão Organizacional de Mudanças",
-            "comment": "Garantir que as mudanças sejam implementadas de forma suave e bem-sucedida."
+            "comment": "<strong>Organizational Change Management</strong><br>Garantir que as mudanças sejam implementadas de forma suave e bem-sucedida. Gerencia aspectos humanos e culturais das transformações organizacionais.<br><br><em>Equivalente COBIT 2019:</em> BAI05 - Gerenciar a Mudança Organizacional"
           },
           {
             "name": "Gestão de Portfólio",
-            "comment": "Garantir a combinação certa de programas, projetos e serviços para executar a estratégia."
+            "comment": "<strong>Portfolio Management</strong><br>Garantir a combinação certa de programas, projetos e serviços para executar a estratégia. Prioriza investimentos baseado em valor de negócio, risco e alinhamento estratégico.<br><br><em>Equivalente COBIT 2019:</em> APO05 - Gerenciar Portfólio"
           },
           {
             "name": "Gestão de Projetos",
-            "comment": "Garantir que todos os projetos da organização sejam entregues com sucesso."
+            "comment": "<strong>Project Management</strong><br>Garantir que todos os projetos da organização sejam entregues com sucesso. Aplica metodologias (PMBOK, PRINCE2, Agile) para controlar escopo, tempo, custo e qualidade.<br><br><em>Equivalente COBIT 2019:</em> BAI11 - Gerenciar Projetos | BAI01 - Gerenciar Programas"
           },
           {
             "name": "Gestão de Relacionamento",
-            "comment": "Estabelecer vínculos entre a organização e suas partes interessadas."
+            "comment": "<strong>Relationship Management</strong><br>Estabelecer vínculos entre a organização e suas partes interessadas. Mantém comunicação regular com clientes, usuários e fornecedores para entender necessidades e expectativas.<br><br><em>Equivalente COBIT 2019:</em> APO08 - Gerenciar Relacionamentos"
           },
           {
             "name": "Gestão de Riscos",
-            "comment": "Garantir que a organização compreenda e lide efetivamente com os riscos."
+            "comment": "<strong>Risk Management</strong><br>Garantir que a organização compreenda e lide efetivamente com os riscos. Identifica, avalia, trata e monitora riscos usando frameworks como ISO 31000.<br><br><em>Equivalente COBIT 2019:</em> APO12 - Gerenciar Riscos | EDM03 - Garantir a Otimização de Riscos"
           },
           {
             "name": "Gestão Financeira de Serviços",
-            "comment": "Apoiar estratégias de negócio através da gestão financeira de recursos e serviços."
+            "comment": "<strong>Service Financial Management</strong><br>Apoiar estratégias de negócio através da gestão financeira de recursos e serviços. Inclui orçamento, contabilidade de custos, cobrança (chargeback/showback) e ROI.<br><br><em>Equivalente COBIT 2019:</em> APO06 - Gerenciar Orçamento e Custos"
           },
           {
             "name": "Gestão de Estratégia",
-            "comment": "Formular os objetivos e direção da organização."
+            "comment": "<strong>Strategy Management</strong><br>Formular os objetivos e direção da organização. Define visão, missão e estratégias de TI alinhadas aos objetivos corporativos usando ferramentas como Balanced Scorecard.<br><br><em>Equivalente COBIT 2019:</em> APO02 - Gerenciar a Estratégia"
           },
           {
             "name": "Gestão de Fornecedores",
-            "comment": "Garantir que fornecedores e seu desempenho sejam gerenciados adequadamente."
+            "comment": "<strong>Supplier Management</strong><br>Garantir que fornecedores e seu desempenho sejam gerenciados adequadamente. Gerencia contratos, SLAs, avaliação de desempenho e relacionamento com terceiros.<br><br><em>Equivalente COBIT 2019:</em> APO10 - Gerenciar Fornecedores"
           },
           {
             "name": "Gestão de Talentos e Força de Trabalho",
-            "comment": "Garantir que a organização tenha as pessoas certas com habilidades apropriadas."
+            "comment": "<strong>Workforce and Talent Management</strong><br>Garantir que a organização tenha as pessoas certas com habilidades apropriadas. Inclui recrutamento, desenvolvimento, retenção e planejamento de sucessão.<br><br><em>Equivalente COBIT 2019:</em> APO07 - Gerenciar Recursos Humanos"
           }
         ]
       },
@@ -72,59 +72,59 @@
         "subtopics": [
           {
             "name": "Gestão de Disponibilidade",
-            "comment": "Garantir que serviços entreguem níveis acordados de disponibilidade."
+            "comment": "<strong>Availability Management</strong><br>Garantir que serviços entreguem níveis acordados de disponibilidade. Define SLAs, implementa redundância, monitora uptime e calcula MTBF/MTTR.<br><br><em>Relacionado COBIT 2019:</em> DSS01 - Gerenciar Operações | DSS04 - Gerenciar Continuidade"
           },
           {
             "name": "Análise de Negócio",
-            "comment": "Analisar um negócio para definir necessidades e recomendar soluções."
+            "comment": "<strong>Business Analysis</strong><br>Analisar um negócio para definir necessidades e recomendar soluções. Identifica requisitos, mapeia processos e avalia viabilidade de mudanças.<br><br><em>Equivalente COBIT 2019:</em> BAI02 - Gerenciar Definição de Requisitos"
           },
           {
             "name": "Gestão de Capacidade e Desempenho",
-            "comment": "Garantir que serviços alcancem níveis acordados de desempenho."
+            "comment": "<strong>Capacity and Performance Management</strong><br>Garantir que serviços alcancem níveis acordados de desempenho. Monitora utilização de recursos, prevê demanda futura e otimiza throughput e response time.<br><br><em>Relacionado COBIT 2019:</em> DSS01 - Gerenciar Operações | MEA01 - Gerenciar o Monitoramento do Desempenho"
           },
           {
             "name": "Habilitação de Mudanças",
-            "comment": "Maximizar mudanças bem-sucedidas garantindo avaliação adequada de riscos."
+            "comment": "<strong>Change Enablement</strong><br>Maximizar mudanças bem-sucedidas garantindo avaliação adequada de riscos. Utiliza CAB (Change Advisory Board) para aprovar mudanças e minimizar impacto em produção.<br><br><em>Equivalente COBIT 2019:</em> BAI06 - Gerenciar Mudanças de TI"
           },
           {
             "name": "Gestão de Incidentes",
-            "comment": "Minimizar impacto de incidentes restaurando operação normal rapidamente."
+            "comment": "<strong>Incident Management</strong><br>Minimizar impacto de incidentes restaurando operação normal rapidamente. Classifica por prioridade (impacto × urgência), escalona e documenta resolução.<br><br><em>Equivalente COBIT 2019:</em> DSS02 - Gerenciar Solicitações de Serviços e Incidentes"
           },
           {
             "name": "Gestão de Ativos de TI",
-            "comment": "Planejar e gerenciar o ciclo de vida completo de ativos de TI."
+            "comment": "<strong>IT Asset Management</strong><br>Planejar e gerenciar o ciclo de vida completo de ativos de TI. Controla hardware, software, licenças desde aquisição até descarte (ITAM).<br><br><em>Equivalente COBIT 2019:</em> BAI09 - Gerenciar Ativos"
           },
           {
             "name": "Monitoramento e Gestão de Eventos",
-            "comment": "Observar sistematicamente serviços e registrar mudanças de estado."
+            "comment": "<strong>Monitoring and Event Management</strong><br>Observar sistematicamente serviços e registrar mudanças de estado. Detecta eventos, filtra alertas e aciona resposta automatizada ou manual.<br><br><em>Relacionado COBIT 2019:</em> DSS01 - Gerenciar Operações | MEA01 - Gerenciar o Monitoramento do Desempenho"
           },
           {
             "name": "Gestão de Problemas",
-            "comment": "Reduzir probabilidade de incidentes identificando causas reais e potenciais."
+            "comment": "<strong>Problem Management</strong><br>Reduzir probabilidade de incidentes identificando causas reais e potenciais. Realiza análise de causa raiz (RCA) e implementa workarounds ou soluções permanentes.<br><br><em>Equivalente COBIT 2019:</em> DSS03 - Gerenciar Problemas"
           },
           {
             "name": "Gestão de Liberação",
-            "comment": "Disponibilizar serviços novos e alterados para uso."
+            "comment": "<strong>Release Management</strong><br>Disponibilizar serviços novos e alterados para uso. Planeja releases, coordena deployment e valida que mudanças funcionem conforme esperado.<br><br><em>Equivalente COBIT 2019:</em> BAI07 - Gerenciar Aceitação e Transição de Mudanças de TI"
           },
           {
             "name": "Gestão de Configuração de Serviços",
-            "comment": "Garantir informações precisas sobre configuração de serviços."
+            "comment": "<strong>Service Configuration Management</strong><br>Garantir informações precisas sobre configuração de serviços. Mantém CMDB (Configuration Management Database) com CIs (Configuration Items) e relacionamentos.<br><br><em>Equivalente COBIT 2019:</em> BAI10 - Gerenciar Configuração"
           },
           {
             "name": "Central de Serviços",
-            "comment": "Capturar demanda por resolução de incidentes e solicitações."
+            "comment": "<strong>Service Desk</strong><br>Capturar demanda por resolução de incidentes e solicitações. Ponto único de contato (SPOC) entre usuários e TI, registra tickets e fornece suporte de 1º nível.<br><br><em>Relacionado COBIT 2019:</em> DSS02 - Gerenciar Solicitações de Serviços e Incidentes"
           },
           {
             "name": "Gestão de Nível de Serviço",
-            "comment": "Definir metas claras baseadas no negócio para desempenho do serviço."
+            "comment": "<strong>Service Level Management</strong><br>Definir metas claras baseadas no negócio para desempenho do serviço. Negocia SLAs, monitora cumprimento e reporta métricas de qualidade.<br><br><em>Equivalente COBIT 2019:</em> APO09 - Gerenciar Contratos de Prestação de Serviços"
           },
           {
             "name": "Gestão de Solicitações de Serviço",
-            "comment": "Apoiar qualidade acordada lidando com solicitações predefinidas."
+            "comment": "<strong>Service Request Management</strong><br>Apoiar qualidade acordada lidando com solicitações predefinidas. Processa requisições padrão (acesso, equipamento) através de catálogo de serviços e workflows automatizados.<br><br><em>Equivalente COBIT 2019:</em> DSS02 - Gerenciar Solicitações de Serviços e Incidentes"
           },
           {
             "name": "Validação e Teste de Serviços",
-            "comment": "Garantir que produtos e serviços atendam aos requisitos definidos."
+            "comment": "<strong>Service Validation and Testing</strong><br>Garantir que produtos e serviços atendam aos requisitos definidos. Executa testes funcionais, não-funcionais, UAT e validação em ambientes controlados.<br><br><em>Relacionado COBIT 2019:</em> BAI07 - Gerenciar Aceitação e Transição de Mudanças de TI"
           }
         ]
       },
@@ -134,15 +134,15 @@
         "subtopics": [
           {
             "name": "Gestão de Implantação",
-            "comment": "Mover componentes novos ou alterados para ambientes ativos."
+            "comment": "<strong>Deployment Management</strong><br>Mover componentes novos ou alterados para ambientes ativos. Executa deployment usando estratégias como blue-green, canary ou rolling updates.<br><br><em>Relacionado COBIT 2019:</em> BAI07 - Gerenciar Aceitação e Transição de Mudanças de TI"
           },
           {
             "name": "Gestão de Infraestrutura e Plataforma",
-            "comment": "Supervisionar infraestrutura e plataformas usadas pela organização."
+            "comment": "<strong>Infrastructure and Platform Management</strong><br>Supervisionar infraestrutura e plataformas usadas pela organização. Gerencia servidores, redes, storage, cloud e virtualização para garantir disponibilidade e desempenho.<br><br><em>Relacionado COBIT 2019:</em> DSS01 - Gerenciar Operações"
           },
           {
             "name": "Desenvolvimento e Gestão de Software",
-            "comment": "Garantir que aplicações atendam necessidades em funcionalidade e confiabilidade."
+            "comment": "<strong>Software Development and Management</strong><br>Garantir que aplicações atendam necessidades em funcionalidade e confiabilidade. Aplica SDLC, DevOps, CI/CD e práticas de desenvolvimento seguro (DevSecOps).<br><br><em>Equivalente COBIT 2019:</em> BAI03 - Gerenciar Identificação e Desenvolvimento de Soluções"
           }
         ]
       }
