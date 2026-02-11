@@ -183,11 +183,7 @@
             "comment": "Técnica"
           }
         ]
-      }
-    ]
-  }
-}
-,
+      },
       {
         "name": "TA0003 - Persistence",
         "comment": "Persistência",
@@ -567,8 +563,7 @@
             "comment": "Técnica"
           }
         ]
-      }
-,
+      },
       {
         "name": "TA0007 - Discovery",
         "comment": "Descoberta",
@@ -809,8 +804,7 @@
             "comment": "Técnica"
           }
         ]
-      }
-,
+      },
       {
         "name": "TA0011 - Command and Control",
         "comment": "Comando e Controle",
