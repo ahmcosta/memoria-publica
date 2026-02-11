@@ -39,7 +39,12 @@
             "key": "A01:2025"
           },
           {
-            "name": "Elevação de privilégio. Agir como um usuário sem estar logado ou agir como um administrador quando logado como um usuário.",
+            "name": "Elevação de privilégio.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Agir como um usuário sem estar logado ou agir como um administrador quando logado como um usuário.",
             "comment": "Vulnerabilidades",
             "key": "A01:2025"
           },
@@ -99,7 +104,17 @@
             "key": "A01:2025"
           },
           {
-            "name": "Os identificadores de sessão com estado devem ser invalidados no servidor após o logout. Os tokens JWT sem estado devem ter vida curta, para que a janela de oportunidade para um invasor seja minimizada. Para JWTs de longa duração, é altamente recomendável seguir os padrões OAuth para revogar o acesso.",
+            "name": "Os identificadores de sessão com estado devem ser invalidados no servidor após o logout.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Os tokens JWT sem estado devem ter vida curta, para que a janela de oportunidade para um invasor seja minimizada.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Para JWTs de longa duração, é altamente recomendável seguir os padrões OAuth para revogar o acesso.",
             "comment": "Prevenção",
             "key": "A01:2025"
           },
@@ -120,7 +135,7 @@
         "comment": "Falhas criptográficas",
         "subtopics": [
           {
-            "name": "Relaciona-se a falhas na criptografia (ou falta dela) que frequentemente levam à exposição de dados sensíveis.",
+            "name": "Falhas na criptografia (ou falta dela) frequentemente levam à exposição de dados sensíveis.",
             "comment": "Descrição",
             "key": "A02:2025"
           },
@@ -130,7 +145,12 @@
             "key": "A02:2025"
           },
           {
-            "name": "Dados transmitidos em texto claro. Isso diz respeito a protocolos como HTTP, SMTP, FTP que também usam upgrades TLS como STARTTLS.",
+            "name": "Dados transmitidos em texto claro.",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Isso diz respeito a protocolos como HTTP, SMTP, FTP que também usam upgrades TLS como STARTTLS.",
             "comment": "Vulnerabilidades",
             "key": "A02:2025"
           },
@@ -165,7 +185,17 @@
             "key": "A02:2025"
           },
           {
-            "name": "Não armazene dados sensíveis desnecessariamente. Descarte-os o mais rápido possível ou use tokenização compatível com PCI DSS ou até truncamento. Dados que não são retidos não podem ser roubados.",
+            "name": "Não armazene dados sensíveis desnecessariamente.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Descarte-os o mais rápido possível ou use tokenização compatível com PCI DSS ou até truncamento.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Dados que não são retidos não podem ser roubados.",
             "comment": "Prevenção",
             "key": "A02:2025"
           },
@@ -175,7 +205,12 @@
             "key": "A02:2025"
           },
           {
-            "name": "Garanta que algoritmos, protocolos e chaves padrão atualizados e fortes estejam em uso; utilize gerenciamento adequado de chaves.",
+            "name": "Garanta que algoritmos, protocolos e chaves padrão atualizados e fortes estejam em uso.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Utilize gerenciamento adequado de chaves.",
             "comment": "Prevenção",
             "key": "A02:2025"
           },
@@ -221,7 +256,7 @@
         "comment": "Injeção de código",
         "subtopics": [
           {
-            "name": "Uma aplicação é vulnerável a ataques quando dados fornecidos pelo usuário não são validados, filtrados ou sanitizados pela aplicação.",
+            "name": "Vulnerável a ataques quando dados fornecidos pelo usuário não são validados, filtrados ou sanitizados.",
             "comment": "Descrição",
             "key": "A03:2025"
           },
@@ -236,7 +271,12 @@
             "key": "A03:2025"
           },
           {
-            "name": "Dados hostis são usados diretamente ou concatenados. O SQL ou comando contém a estrutura e dados hostis em consultas dinâmicas, comandos ou procedimentos armazenados.",
+            "name": "Dados hostis são usados diretamente ou concatenados.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "O SQL ou comando contém a estrutura e dados hostis em consultas dinâmicas, comandos ou procedimentos armazenados.",
             "comment": "Vulnerabilidades",
             "key": "A03:2025"
           },
@@ -277,17 +317,27 @@
         "comment": "Design inseguro",
         "subtopics": [
           {
-            "name": "Design inseguro é uma categoria ampla representando diferentes fraquezas, expressas como design de controle ausente ou ineficaz.",
+            "name": "Categoria ampla representando diferentes fraquezas, expressas como design de controle ausente ou ineficaz.",
             "comment": "Descrição",
             "key": "A04:2025"
           },
           {
-            "name": "Há uma diferença entre design inseguro e implementação insegura. Diferenciamos entre falhas de design e defeitos de implementação por um motivo, eles têm causas raiz e remediação diferentes.",
+            "name": "Há uma diferença entre design inseguro e implementação insegura.",
             "comment": "Descrição",
             "key": "A04:2025"
           },
           {
-            "name": "Um design seguro ainda pode ter defeitos de implementação levando a vulnerabilidades que podem ser exploradas. Um design inseguro não pode ser corrigido por uma implementação perfeita.",
+            "name": "Diferenciamos entre falhas de design e defeitos de implementação por um motivo, eles têm causas raiz e remediação diferentes.",
+            "comment": "Descrição",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Um design seguro ainda pode ter defeitos de implementação levando a vulnerabilidades que podem ser exploradas.",
+            "comment": "Descrição",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Um design inseguro não pode ser corrigido por uma implementação perfeita.",
             "comment": "Descrição",
             "key": "A04:2025"
           },
@@ -317,7 +367,12 @@
             "key": "A04:2025"
           },
           {
-            "name": "Escreva testes unitários e de integração para validar que todos os fluxos críticos são resistentes ao modelo de ameaças. Compile casos de uso e casos de uso indevido para cada camada do seu aplicativo.",
+            "name": "Escreva testes unitários e de integração para validar que todos os fluxos críticos são resistentes ao modelo de ameaças.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Compile casos de uso e casos de uso indevido para cada camada do seu aplicativo.",
             "comment": "Prevenção",
             "key": "A04:2025"
           },
@@ -338,7 +393,7 @@
         "comment": "Configuração incorreta de segurança",
         "subtopics": [
           {
-            "name": "A aplicação pode ser vulnerável se estiver faltando endurecimento de segurança apropriado em qualquer parte da pilha de aplicação ou permissões configuradas incorretamente em serviços de nuvem.",
+            "name": "Vulnerável se estiver faltando endurecimento de segurança apropriado em qualquer parte da pilha de aplicação ou permissões configuradas incorretamente em serviços de nuvem.",
             "comment": "Descrição",
             "key": "A05:2025"
           },
@@ -378,12 +433,27 @@
             "key": "A05:2025"
           },
           {
-            "name": "Um processo de endurecimento repetível torna rápido e fácil implantar outro ambiente que esteja apropriadamente bloqueado. Ambientes de desenvolvimento, QA e produção devem ser configurados identicamente, com credenciais diferentes usadas em cada ambiente. Este processo deve ser automatizado para minimizar o esforço necessário para configurar um novo ambiente seguro.",
+            "name": "Um processo de endurecimento repetível torna rápido e fácil implantar outro ambiente que esteja apropriadamente bloqueado.",
             "comment": "Prevenção",
             "key": "A05:2025"
           },
           {
-            "name": "Uma plataforma mínima sem recursos, componentes, documentação e amostras desnecessários. Remova ou não instale recursos e frameworks não utilizados.",
+            "name": "Ambientes de desenvolvimento, QA e produção devem ser configurados identicamente, com credenciais diferentes usadas em cada ambiente.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Este processo deve ser automatizado para minimizar o esforço necessário para configurar um novo ambiente seguro.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Uma plataforma mínima sem recursos, componentes, documentação e amostras desnecessários.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Remova ou não instale recursos e frameworks não utilizados.",
             "comment": "Prevenção",
             "key": "A05:2025"
           },
@@ -429,12 +499,22 @@
         "comment": "Componentes vulneráveis e desatualizados",
         "subtopics": [
           {
-            "name": "Você provavelmente é vulnerável se não conhece as versões de todos os componentes que usa (tanto do lado do cliente quanto do servidor). Isso inclui componentes que você usa diretamente, bem como dependências aninhadas.",
+            "name": "Provavelmente vulnerável se não conhece as versões de todos os componentes que usa (tanto do lado do cliente quanto do servidor).",
             "comment": "Descrição",
             "key": "A06:2025"
           },
           {
-            "name": "Se o software é vulnerável, sem suporte ou desatualizado. Isso inclui o SO, servidor web/aplicativo, sistema de gerenciamento de banco de dados (DBMS), aplicações, APIs e todos os componentes, ambientes de tempo de execução e bibliotecas.",
+            "name": "Isso inclui componentes que você usa diretamente, bem como dependências aninhadas.",
+            "comment": "Descrição",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Se o software é vulnerável, sem suporte ou desatualizado.",
+            "comment": "Vulnerabilidades",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Isso inclui o SO, servidor web/aplicativo, sistema de gerenciamento de banco de dados (DBMS), aplicações, APIs e todos os componentes, ambientes de tempo de execução e bibliotecas.",
             "comment": "Vulnerabilidades",
             "key": "A06:2025"
           },
@@ -444,7 +524,12 @@
             "key": "A06:2025"
           },
           {
-            "name": "Se você não corrige ou atualiza a plataforma subjacente, frameworks e dependências de maneira oportuna e baseada em risco. Isso geralmente acontece em ambientes onde o patching é uma tarefa mensal ou trimestral sob controle de mudanças, deixando as organizações abertas a dias ou meses de exposição desnecessária a vulnerabilidades corrigidas.",
+            "name": "Se você não corrige ou atualiza a plataforma subjacente, frameworks e dependências de maneira oportuna e baseada em risco.",
+            "comment": "Vulnerabilidades",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Isso geralmente acontece em ambientes onde o patching é uma tarefa mensal ou trimestral sob controle de mudanças, deixando as organizações abertas a dias ou meses de exposição desnecessária a vulnerabilidades corrigidas.",
             "comment": "Vulnerabilidades",
             "key": "A06:2025"
           },
@@ -474,7 +559,12 @@
             "key": "A06:2025"
           },
           {
-            "name": "Monitore bibliotecas e componentes que estão sem manutenção ou não criam patches de segurança para versões antigas. Se o patching não for possível, considere implantar um patch virtual para monitorar, detectar ou proteger contra o problema descoberto.",
+            "name": "Monitore bibliotecas e componentes que estão sem manutenção ou não criam patches de segurança para versões antigas.",
+            "comment": "Prevenção",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Se o patching não for possível, considere implantar um patch virtual para monitorar, detectar ou proteger contra o problema descoberto.",
             "comment": "Prevenção",
             "key": "A06:2025"
           },
@@ -540,7 +630,12 @@
             "key": "A07:2025"
           },
           {
-            "name": "Não invalida corretamente IDs de sessão. Sessões de usuário ou tokens de autenticação (principalmente tokens de logon único (SSO)) não são invalidados adequadamente durante o logout ou um período de inatividade.",
+            "name": "Não invalida corretamente IDs de sessão.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Sessões de usuário ou tokens de autenticação (principalmente tokens de logon único (SSO)) não são invalidados adequadamente durante o logout ou um período de inatividade.",
             "comment": "Vulnerabilidades",
             "key": "A07:2025"
           },
@@ -570,12 +665,22 @@
             "key": "A07:2025"
           },
           {
-            "name": "Limite ou atrase progressivamente tentativas de login falhadas, mas tenha cuidado para não criar um cenário de negação de serviço. Registre todas as falhas em log e alerte administradores quando credential stuffing, força bruta ou outros ataques forem detectados.",
+            "name": "Limite ou atrase progressivamente tentativas de login falhadas, mas tenha cuidado para não criar um cenário de negação de serviço.",
             "comment": "Prevenção",
             "key": "A07:2025"
           },
           {
-            "name": "Use um gerenciador de sessão do lado do servidor, seguro e integrado que gera um novo ID de sessão aleatório com alta entropia após o login. O identificador de sessão não deve estar na URL, ser armazenado com segurança e invalidado após logout, ociosidade e tempos limite absolutos.",
+            "name": "Registre todas as falhas em log e alerte administradores quando credential stuffing, força bruta ou outros ataques forem detectados.",
+            "comment": "Prevenção",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Use um gerenciador de sessão do lado do servidor, seguro e integrado que gera um novo ID de sessão aleatório com alta entropia após o login.",
+            "comment": "Prevenção",
+            "key": "A07:2025"
+          },
+          {
+            "name": "O identificador de sessão não deve estar na URL, ser armazenado com segurança e invalidado após logout, ociosidade e tempos limite absolutos.",
             "comment": "Prevenção",
             "key": "A07:2025"
           },
@@ -601,17 +706,27 @@
         "comment": "Falhas de integridade de software e dados",
         "subtopics": [
           {
-            "name": "Falhas de integridade de software e dados relacionam-se a código e infraestrutura que não protegem contra violações de integridade.",
+            "name": "Código e infraestrutura que não protegem contra violações de integridade.",
             "comment": "Descrição",
             "key": "A08:2025"
           },
           {
-            "name": "Um exemplo disso é quando uma aplicação depende de plugins, bibliotecas ou módulos de fontes não confiáveis, repositórios e redes de distribuição de conteúdo (CDNs). Um pipeline de CI/CD inseguro pode introduzir o potencial para acesso não autorizado, código malicioso ou comprometimento do sistema.",
+            "name": "Exemplo: aplicação depende de plugins, bibliotecas ou módulos de fontes não confiáveis, repositórios e redes de distribuição de conteúdo (CDNs).",
             "comment": "Descrição",
             "key": "A08:2025"
           },
           {
-            "name": "Atualizações automáticas, onde as atualizações são baixadas sem verificação de integridade suficiente e aplicadas ao aplicativo anteriormente confiável. Atacantes podem potencialmente fazer upload de suas próprias atualizações para serem distribuídas e executadas em todas as instalações.",
+            "name": "Um pipeline de CI/CD inseguro pode introduzir o potencial para acesso não autorizado, código malicioso ou comprometimento do sistema.",
+            "comment": "Descrição",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Atualizações automáticas, onde as atualizações são baixadas sem verificação de integridade suficiente e aplicadas ao aplicativo anteriormente confiável.",
+            "comment": "Vulnerabilidades",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Atacantes podem potencialmente fazer upload de suas próprias atualizações para serem distribuídas e executadas em todas as instalações.",
             "comment": "Vulnerabilidades",
             "key": "A08:2025"
           },
@@ -626,7 +741,12 @@
             "key": "A08:2025"
           },
           {
-            "name": "Garanta que bibliotecas e dependências, como npm ou Maven, estejam consumindo repositórios confiáveis. Se você tem um perfil de risco maior, considere hospedar um repositório interno conhecido como bom que foi verificado.",
+            "name": "Garanta que bibliotecas e dependências, como npm ou Maven, estejam consumindo repositórios confiáveis.",
+            "comment": "Prevenção",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Se você tem um perfil de risco maior, considere hospedar um repositório interno conhecido como bom que foi verificado.",
             "comment": "Prevenção",
             "key": "A08:2025"
           },
@@ -667,7 +787,12 @@
         "comment": "Falhas de registro e monitoramento de segurança",
         "subtopics": [
           {
-            "name": "Retornando à lista OWASP Top 10 2021, esta categoria é para ajudar a detectar, escalar e responder a violações ativas. Sem registro e monitoramento, violações não podem ser detectadas.",
+            "name": "Esta categoria é para ajudar a detectar, escalar e responder a violações ativas.",
+            "comment": "Descrição",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Sem registro e monitoramento, violações não podem ser detectadas.",
             "comment": "Descrição",
             "key": "A09:2025"
           },
@@ -758,17 +883,27 @@
         "comment": "Falsificação de requisição do lado do servidor",
         "subtopics": [
           {
-            "name": "Falhas SSRF ocorrem sempre que uma aplicação web está buscando um recurso remoto sem validar a URL fornecida pelo usuário.",
+            "name": "Falhas ocorrem sempre que uma aplicação web está buscando um recurso remoto sem validar a URL fornecida pelo usuário.",
             "comment": "Descrição",
             "key": "A10:2025"
           },
           {
-            "name": "Isso permite que um atacante coaja a aplicação a enviar uma requisição criada para um destino inesperado, mesmo quando protegida por firewall, VPN ou outro tipo de lista de controle de acesso de rede (ACL).",
+            "name": "Permite que um atacante coaja a aplicação a enviar uma requisição criada para um destino inesperado.",
             "comment": "Descrição",
             "key": "A10:2025"
           },
           {
-            "name": "Como as aplicações web modernas fornecem aos usuários finais recursos convenientes, buscar uma URL torna-se um cenário comum. Como resultado, a incidência de SSRF está aumentando.",
+            "name": "Isso ocorre mesmo quando protegida por firewall, VPN ou outro tipo de lista de controle de acesso de rede (ACL).",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Como as aplicações web modernas fornecem aos usuários finais recursos convenientes, buscar uma URL torna-se um cenário comum.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Como resultado, a incidência de SSRF está aumentando.",
             "comment": "Descrição",
             "key": "A10:2025"
           },
@@ -803,7 +938,12 @@
             "key": "A10:2025"
           },
           {
-            "name": "Não mitigue SSRF via uso de uma lista de negação ou expressão regular. Atacantes têm listas de payloads, ferramentas e habilidades para contornar listas de negação.",
+            "name": "Não mitigue SSRF via uso de uma lista de negação ou expressão regular.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Atacantes têm listas de payloads, ferramentas e habilidades para contornar listas de negação.",
             "comment": "Prevenção",
             "key": "A10:2025"
           },
