@@ -261,7 +261,7 @@ function createSubtopics(useOnlyMissed = false) {
     allSubtopics.forEach(item => {
         const div = document.createElement('div');
         div.className = 'subtopic';
-        div.textContent = item.name;
+        div.innerHTML = item.name;
         div.draggable = true;
         div.dataset.correctTopic = item.correctTopic;
         div.dataset.originalOrder = item.originalOrder;
@@ -488,7 +488,7 @@ function handleSubtopicDrop(e) {
         topicIcon.classList.add('correct');
 
         const clickableDiv = document.createElement('div');
-        clickableDiv.textContent = draggedElement.textContent;
+        clickableDiv.innerHTML = draggedElement.innerHTML;
         clickableDiv.className = 'placed-subtopic';
 
         const wasWrong = missedSubtopics.some(item => item.name === draggedElement.textContent);
@@ -595,7 +595,7 @@ function handleDrop(e) {
 
         // Create clickable element in topic box
         const clickableDiv = document.createElement('div');
-        clickableDiv.textContent = draggedElement.textContent;
+        clickableDiv.innerHTML = draggedElement.innerHTML;
         clickableDiv.className = 'placed-subtopic';
 
         // Check if this subtopic was previously wrong
@@ -923,7 +923,7 @@ function createSubtopicsFromList(subtopicsList) {
     shuffledList.forEach(item => {
         const div = document.createElement('div');
         div.className = 'subtopic';
-        div.textContent = item.name;
+        div.innerHTML = item.name;
         div.draggable = true;
         div.dataset.correctTopic = item.correctTopic;
         div.dataset.originalOrder = item.originalOrder || 0;
@@ -1070,7 +1070,7 @@ function solveAll() {
 
         if (targetTopicBox) {
             const clickableDiv = document.createElement('div');
-            clickableDiv.textContent = subtopic.textContent;
+            clickableDiv.innerHTML = subtopic.innerHTML;
             clickableDiv.className = 'placed-subtopic';
             clickableDiv.dataset.originalOrder = subtopic.dataset.originalOrder;
             if (subtopic.dataset.sources) clickableDiv.dataset.sources = subtopic.dataset.sources;
