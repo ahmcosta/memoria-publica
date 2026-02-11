@@ -1,0 +1,993 @@
+{
+  "subject": "MITRE ATT&CK Framework v18",
+  "subtopicsLabel": "Técnicas",
+  "topics": {
+    "name": "Táticas",
+    "values": [
+      {
+        "name": "TA0043 - Reconnaissance",
+        "comment": "Reconhecimento",
+        "sources": "https://attack.mitre.org/tactics/TA0043/",
+        "subtopics": [
+          {
+            "name": "T1595 - Active Scanning: O adversário realiza varreduras ativas para coletar informações que podem ser usadas durante o direcionamento, incluindo varredura de vulnerabilidades e portas abertas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1592 - Gather Victim Host Information: Coleta de informações sobre hosts da vítima que podem ser usadas durante o direcionamento, como configurações de hardware e software",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1589 - Gather Victim Identity Information: Coleta de informações sobre identidades da vítima que podem ser usadas durante o direcionamento, como credenciais e endereços de e-mail",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1590 - Gather Victim Network Information: Coleta de informações sobre a rede da vítima que podem ser usadas durante o direcionamento, como topologia e configurações de rede",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1591 - Gather Victim Org Information: Coleta de informações sobre a organização da vítima que podem ser usadas durante o direcionamento, como estrutura organizacional e relacionamentos comerciais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1598 - Phishing for Information: Envio de mensagens de phishing para obter informações sensíveis que podem ser usadas durante o direcionamento",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1597 - Search Closed Sources: Busca em fontes fechadas de informação sobre vítimas que podem ser usadas durante o direcionamento, como dados de violações e inteligência de ameaças",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1596 - Search Open Technical Databases: Busca em bancos de dados técnicos abertos para informações sobre vítimas que podem ser usadas durante o direcionamento, como WHOIS e certificados digitais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1593 - Search Open Websites/Domains: Busca em sites e domínios abertos para informações sobre vítimas que podem ser usadas durante o direcionamento",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1594 - Search Victim-Owned Websites: Busca em sites de propriedade da vítima para informações que podem ser usadas durante o direcionamento",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0042 - Resource Development",
+        "comment": "Desenvolvimento de Recursos",
+        "sources": "https://attack.mitre.org/tactics/TA0042/",
+        "subtopics": [
+          {
+            "name": "T1583 - Acquire Infrastructure: Compra, aluguel ou comprometimento de infraestrutura que pode ser usada durante o direcionamento, como servidores e domínios",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1586 - Compromise Accounts: Comprometimento de contas que podem ser usadas durante o direcionamento, incluindo contas de redes sociais e e-mail",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1584 - Compromise Infrastructure: Comprometimento de infraestrutura de terceiros que pode ser usada durante o direcionamento",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1587 - Develop Capabilities: Desenvolvimento ou criação de capacidades que podem ser usadas durante o direcionamento, como malware e exploits",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1585 - Establish Accounts: Criação de contas que podem ser usadas durante o direcionamento, incluindo contas de e-mail e redes sociais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1588 - Obtain Capabilities: Obtenção de capacidades que podem ser usadas durante o direcionamento, como compra de malware e exploits",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1608 - Stage Capabilities: Upload de malware ou outras ferramentas para infraestrutura controlada pelo adversário para preparação de operações",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0001 - Initial Access",
+        "comment": "Acesso Inicial",
+        "sources": "https://attack.mitre.org/tactics/TA0001/",
+        "subtopics": [
+          {
+            "name": "T1189 - Drive-by Compromise: Comprometimento de sistemas quando usuários visitam sites maliciosos ou legítimos comprometidos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1190 - Exploit Public-Facing Application: Exploração de vulnerabilidades em aplicações voltadas para a Internet, como servidores web e bancos de dados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1133 - External Remote Services: Uso de serviços remotos externos como VPNs, Citrix e outros gateways para obter acesso inicial",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1200 - Hardware Additions: Introdução de hardware malicioso como dispositivos USB ou adaptadores de rede para obter acesso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1566 - Phishing: Envio de mensagens de phishing via spearphishing attachment, spearphishing link ou spearphishing via service",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1091 - Replication Through Removable Media: Cópia de malware para mídias removíveis que executam automaticamente quando inseridas em outro sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1195 - Supply Chain Compromise: Manipulação de produtos ou entrega de produtos durante a cadeia de suprimentos para comprometer dados ou sistemas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1199 - Trusted Relationship: Exploração de relações de confiança entre organizações para obter acesso, como provedores de serviços gerenciados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1078 - Valid Accounts: Uso de credenciais válidas para obter acesso inicial, incluindo contas default, locais, de domínio e cloud",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0002 - Execution",
+        "comment": "Execução",
+        "sources": "https://attack.mitre.org/tactics/TA0002/",
+        "subtopics": [
+          {
+            "name": "T1059 - Command and Scripting Interpreter: Execução de comandos, scripts ou binários através de interpretadores como PowerShell, Python, JavaScript, Unix Shell e Visual Basic",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1609 - Container Administration Command: Uso de comandos de administração de containers para executar comandos dentro de containers",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1610 - Deploy Container: Implantação de container para execução de processos ou ferramentas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1203 - Exploitation for Client Execution: Exploração de vulnerabilidades em software cliente para executar código",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1559 - Inter-Process Communication: Abuso de mecanismos de comunicação entre processos para execução de código local",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1106 - Native API: Interação com APIs nativas do sistema operacional para executar comportamentos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1053 - Scheduled Task/Job: Abuso de utilitários de agendamento de tarefas para executar código em momento específico ou intervalo",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1129 - Shared Modules: Execução de código malicioso através de carregamento de módulos compartilhados ou DLLs",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1072 - Software Deployment Tools: Acesso e uso de ferramentas de implantação de software de terceiros instaladas em ambientes corporativos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1569 - System Services: Abuso de serviços do sistema para executar comandos ou programas, incluindo Launchctl e Service Execution",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1204 - User Execution: Dependência de ação do usuário para executar código malicioso, como abrir anexos ou clicar em links",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1047 - Windows Management Instrumentation: Abuso do WMI para executar código malicioso localmente ou remotamente",
+            "comment": "Técnica"
+          }
+        ]
+      }
+    ]
+  }
+}
+,
+      {
+        "name": "TA0003 - Persistence",
+        "comment": "Persistência",
+        "sources": "https://attack.mitre.org/tactics/TA0003/",
+        "subtopics": [
+          {
+            "name": "T1098 - Account Manipulation: Manipulação de contas para manter acesso a credenciais e permissões, incluindo adição de credenciais e modificação de permissões",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1197 - BITS Jobs: Abuso do Background Intelligent Transfer Service (BITS) para persistência através de jobs BITS",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1547 - Boot or Logon Autostart Execution: Configuração de código para execução automática durante boot ou logon através de Registry Run Keys, Startup Folder, etc",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1037 - Boot or Logon Initialization Scripts: Uso de scripts executados durante inicialização ou logon para persistência",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1176 - Browser Extensions: Instalação de extensões maliciosas de navegador para persistência e coleta de dados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1554 - Compromise Client Software Binary: Modificação de binários de software cliente para manter persistência",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1136 - Create Account: Criação de contas para manter acesso a sistemas, incluindo contas locais, de domínio e cloud",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1543 - Create or Modify System Process: Criação ou modificação de processos do sistema para executar automaticamente programas, incluindo Windows Service e Systemd Service",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1546 - Event Triggered Execution: Estabelecimento de persistência através de execução de código malicioso em resposta a eventos, como Change Default File Association e Accessibility Features",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1133 - External Remote Services: Uso de serviços remotos externos legítimos como VPNs e Citrix para persistência",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1574 - Hijack Execution Flow: Sequestro do fluxo de execução para executar código malicioso, incluindo DLL Search Order Hijacking e Path Interception",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1525 - Implant Internal Image: Implantação de imagem de container, VM ou máquina com backdoor em infraestrutura para persistência",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1556 - Modify Authentication Process: Modificação de processos de autenticação para obter acesso a credenciais ou permitir acesso sem credenciais válidas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1137 - Office Application Startup: Uso de recursos de inicialização do Microsoft Office para persistência, como Office Template Macros e Add-ins",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1542 - Pre-OS Boot: Uso de mecanismos pré-boot para estabelecer persistência, incluindo System Firmware e Bootkit",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1053 - Scheduled Task/Job: Agendamento de tarefas para execução de código malicioso em intervalos específicos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1505 - Server Software Component: Abuso de componentes de software de servidor legítimos para estabelecer persistência, como Web Shell e SQL Stored Procedures",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1078 - Valid Accounts: Uso de credenciais válidas para manter acesso persistente a sistemas",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0004 - Privilege Escalation",
+        "comment": "Escalação de Privilégios",
+        "sources": "https://attack.mitre.org/tactics/TA0004/",
+        "subtopics": [
+          {
+            "name": "T1548 - Abuse Elevation Control Mechanism: Contorno de mecanismos de controle de elevação de privilégios como UAC e sudo",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1134 - Access Token Manipulation: Manipulação de tokens de acesso para personificar usuários ou obter privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1547 - Boot or Logon Autostart Execution: Configuração de execução automática durante boot ou logon para obter privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1037 - Boot or Logon Initialization Scripts: Uso de scripts de inicialização para escalação de privilégios",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1543 - Create or Modify System Process: Criação ou modificação de processos do sistema para executar com privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1484 - Domain or Tenant Policy Modification: Modificação de políticas de domínio ou tenant para obter privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1611 - Escape to Host: Escape de container ou ambiente virtualizado para obter acesso ao host subjacente",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1546 - Event Triggered Execution: Estabelecimento de escalação através de execução de código em resposta a eventos do sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1068 - Exploitation for Privilege Escalation: Exploração de vulnerabilidades de software para obter privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1574 - Hijack Execution Flow: Sequestro do fluxo de execução para executar código com privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1055 - Process Injection: Injeção de código em processos para evasão de defesas e escalação de privilégios",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1053 - Scheduled Task/Job: Abuso de tarefas agendadas para executar código com privilégios elevados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1078 - Valid Accounts: Uso de contas válidas com privilégios elevados para escalação",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0005 - Defense Evasion",
+        "comment": "Evasão de Defesa",
+        "sources": "https://attack.mitre.org/tactics/TA0005/",
+        "subtopics": [
+          {
+            "name": "T1548 - Abuse Elevation Control Mechanism: Contorno de mecanismos de controle de elevação para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1134 - Access Token Manipulation: Manipulação de tokens de acesso para evitar detecção e personificar usuários legítimos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1197 - BITS Jobs: Uso de BITS para download de arquivos de forma furtiva",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1612 - Build Image on Host: Construção de imagem de container diretamente no host para evitar defesas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1140 - Deobfuscate/Decode Files or Information: Decodificação ou desofuscação de informações para evitar detecção durante transferência ou armazenamento",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1610 - Deploy Container: Implantação de container para evitar defesas e executar processos isolados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1006 - Direct Volume Access: Acesso direto a volumes lógicos para ler arquivos e evitar controles de acesso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1484 - Domain or Tenant Policy Modification: Modificação de políticas para enfraquecer defesas de segurança",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1480 - Execution Guardrails: Uso de guardrails de execução para limitar execução de malware apenas em ambientes específicos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1211 - Exploitation for Defense Evasion: Exploração de vulnerabilidades para contornar técnicas de segurança",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1222 - File and Directory Permissions Modification: Modificação de permissões de arquivos e diretórios para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1564 - Hide Artifacts: Ocultação de artefatos para evitar detecção, incluindo Hidden Files and Directories e Hidden Window",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1574 - Hijack Execution Flow: Sequestro do fluxo de execução para evitar defesas e executar código malicioso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1562 - Impair Defenses: Comprometimento de defesas de segurança como antivírus, firewall e logging",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1070 - Indicator Removal: Remoção de indicadores e artefatos que podem auxiliar na detecção, incluindo Clear Windows Event Logs e File Deletion",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1202 - Indirect Command Execution: Execução indireta de comandos através de utilitários para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1036 - Masquerading: Manipulação de características de artefatos para fazer parecerem legítimos ou diferentes do que são",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1556 - Modify Authentication Process: Modificação de processos de autenticação para contornar mecanismos de acesso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1578 - Modify Cloud Compute Infrastructure: Modificação de infraestrutura de computação em nuvem para evitar defesas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1112 - Modify Registry: Modificação do registro do Windows para ocultar configuração e evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1601 - Modify System Image: Modificação de imagem do sistema para evitar detecção e manter persistência",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1599 - Network Boundary Bridging: Ponte de limites de rede para evitar defesas de segmentação",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1027 - Obfuscated Files or Information: Ofuscação de arquivos ou informações para dificultar análise e detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1647 - Plist File Modification: Modificação de arquivos plist para executar código e evitar detecção em sistemas macOS",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1542 - Pre-OS Boot: Uso de mecanismos pré-boot para evitar defesas de segurança",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1055 - Process Injection: Injeção de código em processos legítimos para evitar detecção baseada em processos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1620 - Reflective Code Loading: Carregamento de código diretamente na memória para evitar detecção baseada em arquivos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1207 - Rogue Domain Controller: Registro de controlador de domínio falso para contornar defesas de autenticação",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1014 - Rootkit: Uso de rootkit para ocultar presença de malware e atividades maliciosas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1218 - System Binary Proxy Execution: Contorno de controles de segurança através de execução de binários do sistema assinados para executar código malicioso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1216 - System Script Proxy Execution: Uso de scripts do sistema para executar código malicioso e contornar defesas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1221 - Template Injection: Criação ou modificação de referências em documentos de template para ocultar código malicioso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1205 - Traffic Signaling: Uso de sinais de tráfego de rede para ocultar comunicação de comando e controle",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1127 - Trusted Developer Utilities Proxy Execution: Invocação de utilitários de desenvolvedor para executar código malicioso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1535 - Unused/Unsupported Cloud Regions: Uso de regiões cloud não utilizadas ou não suportadas para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1550 - Use Alternate Authentication Material: Uso de material de autenticação alternativo como Pass the Hash e Pass the Ticket para evitar autenticação normal",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1078 - Valid Accounts: Uso de credenciais válidas para evitar detecção e manter acesso legítimo",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1497 - Virtualization/Sandbox Evasion: Detecção e evasão de ambientes virtualizados e sandboxes",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1600 - Weaken Encryption: Redução da força de criptografia de comunicações ou dados criptografados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1220 - XSL Script Processing: Processamento de arquivos XSL para executar código malicioso e evitar defesas",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0006 - Credential Access",
+        "comment": "Acesso a Credenciais",
+        "sources": "https://attack.mitre.org/tactics/TA0006/",
+        "subtopics": [
+          {
+            "name": "T1110 - Brute Force: Tentativas sistemáticas de adivinhar credenciais através de Password Guessing, Password Cracking e Password Spraying",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1555 - Credentials from Password Stores: Obtenção de credenciais de armazenamentos de senhas como Keychain, Password Managers e Credentials from Web Browsers",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1212 - Exploitation for Credential Access: Exploração de vulnerabilidades de software para obter acesso a credenciais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1187 - Forced Authentication: Forçar usuário ou sistema a autenticar em sistema controlado pelo adversário para capturar credenciais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1606 - Forge Web Credentials: Falsificação de credenciais web como SAML Tokens e Web Cookies para obter acesso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1056 - Input Capture: Captura de entrada do usuário para obter credenciais, incluindo Keylogging e GUI Input Capture",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1557 - Adversary-in-the-Middle: Posicionamento entre dois ou mais sistemas em rede para interceptar credenciais através de ARP Spoofing e LLMNR/NBT-NS Poisoning",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1556 - Modify Authentication Process: Modificação de processos de autenticação para capturar credenciais ou permitir acesso sem credenciais válidas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1111 - Multi-Factor Authentication Interception: Interceptação de autenticação multi-fator para obter acesso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1621 - Multi-Factor Authentication Request Generation: Geração de múltiplas solicitações MFA para cansar usuário e obter aprovação",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1040 - Network Sniffing: Captura de tráfego de rede para obter credenciais transmitidas em texto claro ou fracamente criptografadas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1003 - OS Credential Dumping: Dump de credenciais do sistema operacional através de LSASS Memory, Security Account Manager, NTDS e DCSync",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1528 - Steal Application Access Token: Roubo de tokens de acesso de aplicações para obter acesso a recursos protegidos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1649 - Steal or Forge Authentication Certificates: Roubo ou falsificação de certificados de autenticação para obter acesso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1558 - Steal or Forge Kerberos Tickets: Roubo ou falsificação de tickets Kerberos através de Golden Ticket, Silver Ticket e Kerberoasting",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1539 - Steal Web Session Cookie: Roubo de cookies de sessão web para obter acesso a aplicações web sem credenciais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1552 - Unsecured Credentials: Busca por credenciais deixadas inseguras em Credentials In Files, Credentials in Registry e Private Keys",
+            "comment": "Técnica"
+          }
+        ]
+      }
+,
+      {
+        "name": "TA0007 - Discovery",
+        "comment": "Descoberta",
+        "sources": "https://attack.mitre.org/tactics/TA0007/",
+        "subtopics": [
+          {
+            "name": "T1087 - Account Discovery: Obtenção de lista de contas no sistema, domínio ou serviço cloud",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1010 - Application Window Discovery: Obtenção de lista de janelas de aplicações abertas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1217 - Browser Information Discovery: Enumeração de informações sobre navegadores para aprender sobre atividades do usuário",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1580 - Cloud Infrastructure Discovery: Obtenção de informações sobre infraestrutura e recursos cloud",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1538 - Cloud Service Dashboard: Acesso a dashboards de serviços cloud para obter informações sobre recursos e configurações",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1526 - Cloud Service Discovery: Tentativa de enumerar serviços cloud em uso",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1613 - Container and Resource Discovery: Descoberta de containers e recursos relacionados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1622 - Debugger Evasion: Técnicas para detectar e evitar debuggers durante análise",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1482 - Domain Trust Discovery: Obtenção de informações sobre relações de confiança de domínio",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1083 - File and Directory Discovery: Enumeração de arquivos e diretórios no sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1615 - Group Policy Discovery: Coleta de informações sobre Group Policies",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1046 - Network Service Discovery: Enumeração de serviços de rede através de port scanning",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1135 - Network Share Discovery: Busca por compartilhamentos de rede disponíveis",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1040 - Network Sniffing: Captura de tráfego de rede para descobrir informações sobre ambiente",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1201 - Password Policy Discovery: Obtenção de políticas de senha para auxiliar em ataques de credenciais",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1120 - Peripheral Device Discovery: Coleta de informações sobre dispositivos periféricos conectados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1069 - Permission Groups Discovery: Descoberta de grupos de permissões locais e de domínio",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1057 - Process Discovery: Obtenção de informações sobre processos em execução",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1012 - Query Registry: Interação com registro do Windows para coletar informações",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1018 - Remote System Discovery: Identificação de sistemas remotos na rede",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1518 - Software Discovery: Obtenção de lista de software e versões instaladas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1082 - System Information Discovery: Coleta de informações detalhadas sobre o sistema operacional e hardware",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1614 - System Location Discovery: Coleta de informações sobre localização do sistema através de System Language Discovery",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1016 - System Network Configuration Discovery: Busca por detalhes de configuração de rede do sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1049 - System Network Connections Discovery: Obtenção de lista de conexões de rede ativas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1033 - System Owner/User Discovery: Identificação do usuário primário, proprietário ou usuários atualmente logados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1007 - System Service Discovery: Obtenção de informações sobre serviços registrados no sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1124 - System Time Discovery: Coleta de informações sobre hora do sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1497 - Virtualization/Sandbox Evasion: Detecção de ambientes virtualizados ou sandboxes para evitar análise",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0008 - Lateral Movement",
+        "comment": "Movimento Lateral",
+        "sources": "https://attack.mitre.org/tactics/TA0008/",
+        "subtopics": [
+          {
+            "name": "T1210 - Exploitation of Remote Services: Exploração de vulnerabilidades em serviços remotos para obter acesso a sistemas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1534 - Internal Spearphishing: Envio de mensagens de spearphishing para usuários internos após comprometimento inicial",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1570 - Lateral Tool Transfer: Transferência de ferramentas ou arquivos entre sistemas em ambiente comprometido",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1563 - Remote Service Session Hijacking: Sequestro de sessões de serviços remotos legítimas como RDP e SSH",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1021 - Remote Services: Uso de serviços remotos válidos para movimento lateral, incluindo RDP, SSH, SMB/Windows Admin Shares e VNC",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1091 - Replication Through Removable Media: Cópia de malware para mídias removíveis para movimento lateral",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1072 - Software Deployment Tools: Uso de ferramentas de implantação de software para movimento lateral",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1080 - Taint Shared Content: Injeção de conteúdo malicioso em recursos compartilhados acessíveis por múltiplos sistemas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1550 - Use Alternate Authentication Material: Uso de material de autenticação alternativo como Pass the Hash, Pass the Ticket e Application Access Token para movimento lateral",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0009 - Collection",
+        "comment": "Coleta",
+        "sources": "https://attack.mitre.org/tactics/TA0009/",
+        "subtopics": [
+          {
+            "name": "T1557 - Adversary-in-the-Middle: Posicionamento entre sistemas para interceptar e coletar informações de comunicações",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1560 - Archive Collected Data: Compactação ou criptografia de dados coletados antes da exfiltração",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1123 - Audio Capture: Captura de áudio através de microfone ou outros dispositivos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1119 - Automated Collection: Uso de técnicas automatizadas para coletar dados internos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1185 - Browser Session Hijacking: Acesso a cookies de sessão de navegador e outras informações para sequestrar sessões",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1115 - Clipboard Data: Coleta de dados da área de transferência do sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1530 - Data from Cloud Storage: Acesso a armazenamento cloud para coletar dados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1602 - Data from Configuration Repository: Coleta de dados de repositórios de configuração como Network Device Configuration Dump",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1213 - Data from Information Repositories: Busca por dados em repositórios de informação como Confluence, SharePoint e Code Repositories",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1005 - Data from Local System: Busca por dados em armazenamento local do sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1039 - Data from Network Shared Drive: Busca por dados em drives de rede compartilhados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1025 - Data from Removable Media: Busca por dados em mídias removíveis conectadas ao sistema",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1074 - Data Staged: Agregação de dados coletados em local central antes da exfiltração",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1114 - Email Collection: Acesso a servidores ou clientes de e-mail para coletar mensagens e anexos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1056 - Input Capture: Captura de entrada do usuário através de Keylogging, GUI Input Capture e Web Portal Capture",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1113 - Screen Capture: Captura de screenshots da tela do usuário",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1125 - Video Capture: Captura de vídeo através de webcam ou outros dispositivos",
+            "comment": "Técnica"
+          }
+        ]
+      }
+,
+      {
+        "name": "TA0011 - Command and Control",
+        "comment": "Comando e Controle",
+        "sources": "https://attack.mitre.org/tactics/TA0011/",
+        "subtopics": [
+          {
+            "name": "T1071 - Application Layer Protocol: Comunicação usando protocolos de camada de aplicação como HTTP, HTTPS, DNS e Mail Protocols para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1092 - Communication Through Removable Media: Comunicação através de mídias removíveis para comando e controle",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1132 - Data Encoding: Codificação de dados de comando e controle para dificultar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1001 - Data Obfuscation: Ofuscação de dados de comando e controle através de Junk Data, Steganography e Protocol Impersonation",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1568 - Dynamic Resolution: Resolução dinâmica de endereços de C2 através de Fast Flux DNS e Domain Generation Algorithms",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1573 - Encrypted Channel: Uso de criptografia para ocultar tráfego de comando e controle",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1008 - Fallback Channels: Uso de canais alternativos de comunicação caso canal primário falhe",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1105 - Ingress Tool Transfer: Transferência de ferramentas ou arquivos de sistema externo para sistema comprometido",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1104 - Multi-Stage Channels: Uso de múltiplos canais sequencialmente para comando e controle",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1095 - Non-Application Layer Protocol: Uso de protocolos que não são de camada de aplicação para comunicação",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1571 - Non-Standard Port: Uso de portas não padrão para comunicação de comando e controle",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1572 - Protocol Tunneling: Tunelamento de protocolo de rede dentro de outro protocolo",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1090 - Proxy: Uso de conexão proxy para direcionar tráfego de rede através de External Proxy, Internal Proxy, Multi-hop Proxy e Domain Fronting",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1219 - Remote Access Software: Uso de software de acesso remoto legítimo para comando e controle",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1205 - Traffic Signaling: Uso de sinais de tráfego de rede para ocultar comandos através de Port Knocking e Magic Packets",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1102 - Web Service: Uso de serviços web legítimos como Bidirectional Communication, One-Way Communication e Dead Drop Resolver",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0010 - Exfiltration",
+        "comment": "Exfiltração",
+        "sources": "https://attack.mitre.org/tactics/TA0010/",
+        "subtopics": [
+          {
+            "name": "T1020 - Automated Exfiltration: Uso de técnicas automatizadas para exfiltrar dados, incluindo Traffic Duplication",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1030 - Data Transfer Size Limits: Exfiltração de dados em pedaços de tamanho fixo para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1048 - Exfiltration Over Alternative Protocol: Exfiltração através de protocolos alternativos como FTP, SMB e protocolos não criptografados",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1041 - Exfiltration Over C2 Channel: Exfiltração de dados através do canal de comando e controle existente",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1011 - Exfiltration Over Other Network Medium: Exfiltração através de meio de rede diferente do canal de comando e controle, como Bluetooth",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1052 - Exfiltration Over Physical Medium: Exfiltração através de mídia física como USB e dispositivos externos",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1567 - Exfiltration Over Web Service: Exfiltração através de serviços web como Exfiltration to Cloud Storage e Exfiltration to Code Repository",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1029 - Scheduled Transfer: Agendamento de transferência de dados em intervalos específicos para evitar detecção",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1537 - Transfer Data to Cloud Account: Transferência de dados para conta cloud controlada pelo adversário",
+            "comment": "Técnica"
+          }
+        ]
+      },
+      {
+        "name": "TA0040 - Impact",
+        "comment": "Impacto",
+        "sources": "https://attack.mitre.org/tactics/TA0040/",
+        "subtopics": [
+          {
+            "name": "T1531 - Account Access Removal: Interrupção de acesso a contas através de mudança de credenciais ou remoção de contas",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1485 - Data Destruction: Destruição de dados e arquivos em sistemas específicos ou em grande número de sistemas em rede",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1486 - Data Encrypted for Impact: Criptografia de dados no sistema alvo para interromper disponibilidade, como ransomware",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1565 - Data Manipulation: Inserção, exclusão ou manipulação de dados para influenciar eventos externos ou ocultar atividades através de Stored Data Manipulation e Runtime Data Manipulation",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1491 - Defacement: Modificação de conteúdo visual disponível interna ou externamente através de Internal Defacement e External Defacement",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1561 - Disk Wipe: Limpeza ou corrupção de dados brutos de disco através de Disk Content Wipe e Disk Structure Wipe",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1499 - Endpoint Denial of Service: Execução de ataques de negação de serviço contra endpoints através de OS Exhaustion Flood, Service Exhaustion Flood e Application Exhaustion Flood",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1657 - Financial Theft: Roubo de recursos financeiros através de acesso não autorizado a contas financeiras",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1495 - Firmware Corruption: Sobrescrita ou corrupção de firmware para tornar sistemas inoperáveis",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1490 - Inhibit System Recovery: Exclusão ou desabilitação de recursos que auxiliam na recuperação de sistemas, como backups e shadow copies",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1498 - Network Denial of Service: Execução de ataques de negação de serviço em nível de rede através de Direct Network Flood e Reflection Amplification",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1496 - Resource Hijacking: Uso de recursos de sistemas comprometidos para mineração de criptomoedas ou processamento distribuído",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1489 - Service Stop: Parada ou desabilitação de serviços em sistema para causar impacto",
+            "comment": "Técnica"
+          },
+          {
+            "name": "T1529 - System Shutdown/Reboot: Desligamento ou reinicialização de sistemas para interromper acesso ou auxiliar na destruição de dados",
+            "comment": "Técnica"
+          }
+        ]
+      }
+    ]
+  }
+}
