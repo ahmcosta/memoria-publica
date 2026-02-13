@@ -148,6 +148,8 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
 }
 
 .topics-panel {
@@ -156,6 +158,8 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
 }
 
 .placed-subtopic.was-wrong {
@@ -199,6 +203,16 @@ header {
     cursor: grab;
     border: 2px solid transparent;
     position: relative;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.subtopic pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .subtopic:hover {
