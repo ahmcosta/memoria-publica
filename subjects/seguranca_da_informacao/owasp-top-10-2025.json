@@ -6,7 +6,7 @@
     "values": [
       {
         "name": "A01:2025 - Quebra de Controle de Acesso",
-        "comment": "Falhas no controle de acesso",
+        "comment": "Controle de acesso impõe políticas para que usuários não possam agir fora de suas permissões. Falhas levam à divulgação, modificação ou destruição não autorizada de dados. Subiu da 5ª posição em 2021 para 1ª em 2025, com 94% das aplicações testadas apresentando alguma forma desta vulnerabilidade.",
         "subtopics": [
           {
             "name": "Impõe a política de modo que os usuários não possam agir fora de suas permissões pretendidas.",
@@ -132,7 +132,7 @@
       },
       {
         "name": "A02:2025 - Falhas Criptográficas",
-        "comment": "Falhas criptográficas",
+        "comment": "Falhas relacionadas à criptografia (ou falta dela) que levam à exposição de dados sensíveis. Anteriormente conhecida como Exposição de Dados Sensíveis. Subiu uma posição para #2, focando na causa raiz: falhas relacionadas à criptografia que frequentemente levam à exposição de dados sensíveis.",
         "subtopics": [
           {
             "name": "Falhas na criptografia (ou falta dela) frequentemente levam à exposição de dados sensíveis.",
@@ -253,7 +253,7 @@
       },
       {
         "name": "A03:2025 - Injeção",
-        "comment": "Injeção de código",
+        "comment": "Ocorre quando dados não confiáveis são enviados a um interpretador como parte de comando ou consulta. Dados hostis podem enganar o interpretador para executar comandos não intencionais ou acessar dados sem autorização. Desceu da 1ª posição em 2021 para 3ª em 2025, com 94% das aplicações testadas para alguma forma de injeção.",
         "subtopics": [
           {
             "name": "Vulnerável a ataques quando dados fornecidos pelo usuário não são validados, filtrados ou sanitizados.",
@@ -314,7 +314,7 @@
       },
       {
         "name": "A04:2025 - Design Inseguro",
-        "comment": "Design inseguro",
+        "comment": "Nova categoria em 2021, foca em riscos relacionados a falhas de design. Representa diferentes fraquezas expressas como design de controle ausente ou ineficaz. Diferencia-se de implementação insegura: um design seguro ainda pode ter defeitos de implementação, mas um design inseguro não pode ser corrigido por implementação perfeita.",
         "subtopics": [
           {
             "name": "Categoria ampla representando diferentes fraquezas, expressas como design de controle ausente ou ineficaz.",
@@ -390,7 +390,7 @@
       },
       {
         "name": "A05:2025 - Configuração Incorreta de Segurança",
-        "comment": "Configuração incorreta de segurança",
+        "comment": "Aplicação pode ser vulnerável se falta endurecimento de segurança apropriado ou permissões mal configuradas. Subiu da 6ª posição em 2021, com 90% das aplicações testadas para alguma forma de má configuração. Com mais mudança para software altamente configurável, não é surpresa ver esta categoria subir.",
         "subtopics": [
           {
             "name": "Vulnerável se estiver faltando endurecimento de segurança apropriado em qualquer parte da pilha de aplicação ou permissões configuradas incorretamente em serviços de nuvem.",
@@ -496,7 +496,7 @@
       },
       {
         "name": "A06:2025 - Componentes Vulneráveis e Desatualizados",
-        "comment": "Componentes vulneráveis e desatualizados",
+        "comment": "Vulnerável se não conhece versões de componentes usados (cliente e servidor), incluindo dependências aninhadas. Se software é vulnerável, sem suporte ou desatualizado. Anteriormente 'Uso de Componentes com Vulnerabilidades Conhecidas', é #2 na pesquisa da comunidade Top 10, mas também tinha dados suficientes para entrar no Top 10 via análise de dados.",
         "subtopics": [
           {
             "name": "Provavelmente vulnerável se não conhece as versões de todos os componentes que usa (tanto do lado do cliente quanto do servidor).",
@@ -582,7 +582,7 @@
       },
       {
         "name": "A07:2025 - Falhas de Identificação e Autenticação",
-        "comment": "Falhas de identificação e autenticação",
+        "comment": "Confirmação de identidade, autenticação e gerenciamento de sessão são críticos para proteger contra ataques relacionados à autenticação. Pode haver fraquezas se aplicação permite ataques automatizados como credential stuffing ou força bruta. Anteriormente 'Quebra de Autenticação', desceu da 2ª posição, agora incluindo CWEs relacionados a falhas de identificação.",
         "subtopics": [
           {
             "name": "A confirmação da identidade do usuário, autenticação e gerenciamento de sessão é crítico para proteger contra ataques relacionados à autenticação.",
@@ -703,7 +703,7 @@
       },
       {
         "name": "A08:2025 - Falhas de Integridade de Software e Dados",
-        "comment": "Falhas de integridade de software e dados",
+        "comment": "Nova categoria em 2021, foca em fazer suposições relacionadas a atualizações de software, dados críticos e pipelines CI/CD sem verificar integridade. Relaciona-se a código e infraestrutura que não protege contra violações de integridade. Exemplo: aplicação depende de plugins, bibliotecas ou módulos de fontes não confiáveis.",
         "subtopics": [
           {
             "name": "Código e infraestrutura que não protegem contra violações de integridade.",
@@ -784,7 +784,7 @@
       },
       {
         "name": "A09:2025 - Falhas de Registro e Monitoramento de Segurança",
-        "comment": "Falhas de registro e monitoramento de segurança",
+        "comment": "Retorna à lista Top 10 2021 para ajudar a detectar, escalar e responder a violações ativas. Sem registro e monitoramento, violações não podem ser detectadas. Registro, detecção, monitoramento e resposta ativa insuficientes ocorrem a qualquer momento. Anteriormente 'Registro e Monitoramento Insuficientes', expandida para incluir mais tipos de falhas.",
         "subtopics": [
           {
             "name": "Esta categoria é para ajudar a detectar, escalar e responder a violações ativas.",
@@ -880,7 +880,7 @@
       },
       {
         "name": "A10:2025 - Falsificação de Requisição do Lado do Servidor (SSRF)",
-        "comment": "Falsificação de requisição do lado do servidor",
+        "comment": "Nova categoria em 2021 adicionada pela pesquisa da comunidade Top 10. Dados mostram incidência relativamente baixa com cobertura de teste acima da média e classificações de potencial de exploração e impacto acima da média. Ocorre quando aplicação web busca recurso remoto sem validar URL fornecida pelo usuário, permitindo que atacante coaja aplicação a enviar requisição para destino inesperado.",
         "subtopics": [
           {
             "name": "Falhas ocorrem sempre que uma aplicação web está buscando um recurso remoto sem validar a URL fornecida pelo usuário.",
