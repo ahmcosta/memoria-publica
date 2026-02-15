@@ -65,7 +65,7 @@ function loadFile() {
                 if (!data.subject || !data.topics) {
                     throw new Error('Invalid format');
                 }
-                resetGame();
+                fullResetGame();
                 initializeApp();
             } catch (error) {
                 alert(t('invalidJson'));
