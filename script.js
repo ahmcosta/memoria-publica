@@ -2,8 +2,7 @@ let correctCount = 0;
 let wrongCount = 0;
 let wrongLog = [];
 let missedSubtopics = [];
-let errorHistory = []; // Tracks error sets from each round
-let initialSubtopicsCount = 0; // Count at start of round
+let previousRoundErrors = null;
 let currentLanguage = localStorage.getItem('language') || 'pt_BR';
 let translations = {};
 let darkMode = localStorage.getItem('darkMode') !== 'false';
@@ -97,7 +96,7 @@ function resetGame() {
 
 function fullResetGame() {
     resetGame();
-    errorHistory = [];
+    previousRoundErrors = null;
 }
 
 function initializeApp() {
@@ -255,9 +254,6 @@ function createSubtopics(useOnlyMissed = false) {
             }
         });
     });
-
-    // Set initial count for this round
-    initialSubtopicsCount = allSubtopics.length;
 
     // Shuffle subtopics
     allSubtopics.sort(() => Math.random() - 0.5);
@@ -861,14 +857,6 @@ function hideImageTooltip(e) {
 }
 
 function showGameCompleteModal() {
-    // Save error count and errors to history if there were any
-    if (missedSubtopics.length > 0) {
-        errorHistory.push({
-            count: missedSubtopics.length,
-            errors: [...missedSubtopics]
-        });
-    }
-
     const title = 'Jogo Concluído!';
     const message = `
         <p>Parabéns! Você completou o jogo.</p>
@@ -889,12 +877,10 @@ function showGameCompleteModal() {
 
 function handleRetryChoice(retry) {
     document.getElementById('modal').style.display = 'none';
-
     if (retry) {
-        if (errorHistory.length > 0) {
+        if (missedSubtopics.length > 0 || previousRoundErrors) {
             showRetryOptionsModal();
         } else {
-            // No errors in history, restart with all
             restartGame();
         }
     }
@@ -902,20 +888,20 @@ function handleRetryChoice(retry) {
 
 function showRetryOptionsModal() {
     const title = 'Opções de Repetição';
-    const lastRound = errorHistory[errorHistory.length - 1];
-    const lastErrorCount = lastRound.count;
+    const currentErrorCount = missedSubtopics.length;
     
     let buttons = `<button onclick="startRetry('all')" style="background: #2196f3; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Todos os subtópicos</button>`;
     
-    // Add buttons for each error round in reverse order (most recent first)
-    for (let i = errorHistory.length - 1; i >= 0; i--) {
-        const errorCount = errorHistory[i].count;
-        const roundLabel = i === errorHistory.length - 1 ? 'que errei' : 'que havia errado';
-        buttons += `<button onclick="startRetry(${i})" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os ${roundLabel} (${errorCount})</button>`;
+    if (currentErrorCount > 0) {
+        buttons += `<button onclick="startRetry('current')" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os que errei (${currentErrorCount})</button>`;
+    }
+    
+    if (previousRoundErrors) {
+        buttons += `<button onclick="startRetry('previous')" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os que havia errado (${previousRoundErrors.length})</button>`;
     }
     
     const message = `
-        <p>Você teve ${lastErrorCount} erro(s). Como deseja repetir?</p>
+        <p>Você teve ${currentErrorCount} erro(s). Como deseja repetir?</p>
         <br>
         <div style="text-align: center;">
             ${buttons}
@@ -1002,24 +988,22 @@ function toggleTopicBox(topicBox, content, collapseIcon) {
 function startRetry(option) {
     document.getElementById('modal').style.display = 'none';
 
-    let subtopicsToRetry = [];
-
     if (option === 'all') {
-        // Reset everything and start fresh
         fullResetGame();
-        createSubtopics(false);
+        createSubtopics();
         createTopicBoxes();
-        return;
-    } else {
-        // option is an index into errorHistory
-        const errorIndex = parseInt(option);
-        subtopicsToRetry = [...errorHistory[errorIndex].errors];
+    } else if (option === 'current') {
+        const errorsToRetry = [...missedSubtopics];
+        previousRoundErrors = errorsToRetry;
+        resetGame();
+        createSubtopicsFromList(errorsToRetry);
+        createTopicBoxes();
+    } else if (option === 'previous') {
+        const errorsToRetry = [...previousRoundErrors];
+        resetGame();
+        createSubtopicsFromList(errorsToRetry);
+        createTopicBoxes();
     }
-
-    resetGame();
-    initialSubtopicsCount = subtopicsToRetry.length;
-    createSubtopicsFromList(subtopicsToRetry);
-    createTopicBoxes();
 }
 
 function printResults() {
