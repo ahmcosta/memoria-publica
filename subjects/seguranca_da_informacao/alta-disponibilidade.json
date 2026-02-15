@@ -60,7 +60,13 @@
           },
           {
             "name": "Pacemaker e Corosync implementam heartbeat e gerenciamento de recursos em clusters Linux",
-            "comment": "<strong>Stack de clustering</strong><br><em>Pacemaker</em> gerencia recursos, <em>Corosync</em> fornece heartbeat e comunicação de cluster. Stack padrão para HA em Linux. Suporta quorum, fencing e múltiplos recursos."
+            "comment": "<strong>Stack de clustering</strong><br><em>Pacemaker</em> gerencia recursos, <em>Corosync</em> fornece heartbeat e comunicação de cluster. Stack padrão para HA em Linux. Suporta quorum, fencing e múltiplos recursos.",
+            "sources": [
+              "https://www.ibm.com/docs/pt-br/db2/11.5.x?topic=software-pacemaker-linux",
+              "https: //blog.4linux.com.br/o-que-e-pacemaker-corosync/",
+              "https://clusterlabs.org/projects/",
+              "https://corosync.github.io/corosync/"
+            ]
           },
           {
             "name": "Keepalived usa VRRP para heartbeat e failover de Virtual IP entre nós",
