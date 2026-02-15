@@ -861,10 +861,10 @@ function hideImageTooltip(e) {
 }
 
 function showGameCompleteModal() {
-    // Save initial count and errors to history if there were any
+    // Save error count and errors to history if there were any
     if (missedSubtopics.length > 0) {
         errorHistory.push({
-            count: initialSubtopicsCount,
+            count: missedSubtopics.length,
             errors: [...missedSubtopics]
         });
     }
