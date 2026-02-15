@@ -1,0 +1,944 @@
+{
+  "subject": "OWASP Top 10 - 2025",
+  "subtopicsLabel": "Vulnerabilidades e Controles",
+  "topics": {
+    "name": "Controles de Segurança",
+    "values": [
+      {
+        "name": "A01:2025 - Quebra de Controle de Acesso",
+        "comment": "Mantém posição #1. 100% das aplicações testadas apresentaram alguma forma de quebra de controle de acesso. Categoria com maior número de ocorrências nos dados contribuídos e segundo maior número de CVEs relacionados.",
+        "subtopics": [
+          {
+            "name": "Impõe política para que usuários não possam agir fora de suas permissões pretendidas.",
+            "comment": "Descrição",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Falhas normalmente levam à divulgação, modificação ou destruição não autorizada de informações ou execução de função comercial fora dos limites do usuário.",
+            "comment": "Descrição",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Violação do princípio de privilégio mínimo ou negação por padrão, onde acesso deve ser concedido apenas para recursos específicos mas está disponível para qualquer pessoa.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Ignorar verificações de controle de acesso modificando URL (adulteração de parâmetros ou navegação forçada), estado interno da aplicação, página HTML ou usando ferramenta de ataque que modifica requisições de API.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Permitir visualização ou edição da conta de outrem mediante disponibilização do seu identificador único (referências diretas não seguras a objetos).",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Acessar API sem controles de acesso para POST, PUT e DELETE.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Elevação de privilégio.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Agir como usuário sem estar logado ou agir como administrador quando logado como usuário.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Manipulação de metadados, como reproduzir ou adulterar token JWT, cookie ou campo oculto manipulado para elevar privilégios ou abusar da invalidação de JWT.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Configuração incorreta do CORS permite acesso à API de origens não autorizadas/não confiáveis.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Forçar navegação para páginas autenticadas como usuário não autenticado ou para páginas privilegiadas como usuário padrão.",
+            "comment": "Vulnerabilidades",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Só é eficaz em código confiável do lado do servidor ou API sem servidor, onde invasor não pode modificar verificação de controle de acesso ou metadados.",
+            "comment": "Eficácia",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Exceto para recursos públicos, negar por padrão.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Implemente mecanismos de controle de acesso uma vez e reutilize em toda aplicação, incluindo minimização do uso de CORS.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Controles de acesso ao modelo devem impor propriedade do registro em vez de aceitar que usuário possa criar, ler, atualizar ou excluir qualquer registro.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Requisitos de limite de negócios de aplicativos exclusivos devem ser impostos por modelos de domínio.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Desabilite listagem de diretórios do servidor web e certifique-se de que metadados de arquivo (ex: .git) e arquivos de backup não estejam presentes nas raízes web.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Registre falhas de controle de acesso e alerte administradores quando apropriado (ex: falhas repetidas).",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Limite taxa de acesso da API e controlador para minimizar danos de ferramentas de ataque automatizado.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Identificadores de sessão com estado devem ser invalidados no servidor após logout.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Tokens JWT sem estado devem ter vida curta para minimizar janela de oportunidade para invasor.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Para JWTs de longa duração, é altamente recomendável seguir padrões OAuth para revogar acesso.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Use toolkits ou padrões bem estabelecidos que forneçam controles de acesso declarativos simples.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Desenvolvedores e equipe de QA devem incluir controle de acesso funcional em seus testes unitários e de integração.",
+            "comment": "Prevenção",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Cenário #1: Aplicação usa dados não verificados em chamada SQL acessando informações de conta: <pre>pstmt.setString(1, request.getParameter(\"acct\"));</pre> Invasor modifica parâmetro 'acct' do navegador para enviar qualquer número de conta. Se não verificado corretamente, invasor pode acessar conta de qualquer usuário: <pre>https://example.com/app/accountInfo?acct=notmyacct</pre>",
+            "comment": "Cenários de Ataque",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Cenário #2: Invasor força navegação para URLs de destino. Direitos de admin são necessários para acessar página de administração: <pre>https://example.com/app/getappInfo\nhttps://example.com/app/admin_getappInfo</pre> Se usuário não autenticado pode acessar qualquer página, é uma falha. Se não-admin pode acessar página de admin, isso é uma falha.",
+            "comment": "Cenários de Ataque",
+            "key": "A01:2025"
+          },
+          {
+            "name": "Cenário #3: Aplicação coloca todo controle de acesso no front-end. Embora invasor não possa acessar via navegador devido a código JavaScript, pode simplesmente executar: <pre>$ curl https://example.com/app/admin_getappInfo</pre> da linha de comando.",
+            "comment": "Cenários de Ataque",
+            "key": "A01:2025"
+          }
+        ]
+      },
+      {
+        "name": "A02:2025 - Configuração Incorreta de Segurança",
+        "comment": "Subiu da 5ª posição em 2021 para 2ª em 2025. Aplicação pode ser vulnerável se falta endurecimento de segurança apropriado ou permissões mal configuradas. Com mais mudança para software altamente configurável, não é surpresa ver esta categoria subir.",
+        "subtopics": [
+          {
+            "name": "Vulnerável se estiver faltando endurecimento de segurança apropriado em qualquer parte da pilha de aplicação ou permissões configuradas incorretamente em serviços de nuvem.",
+            "comment": "Descrição",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Recursos desnecessários estão habilitados ou instalados (ex: portas, serviços, páginas, contas ou privilégios desnecessários).",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Contas padrão e suas senhas ainda estão habilitadas e inalteradas.",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Tratamento de erros revela rastros de pilha ou outras mensagens de erro excessivamente informativas aos usuários.",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Para sistemas atualizados, recursos de segurança mais recentes estão desabilitados ou não configurados com segurança.",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Configurações de segurança em servidores de aplicativos, frameworks, bibliotecas, bancos de dados, etc., não estão definidas para valores seguros.",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Servidor não envia cabeçalhos ou diretivas de segurança, ou não estão definidos para valores seguros.",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Software está desatualizado ou vulnerável (veja A03:2025-Falhas de Cadeia de Suprimentos de Software).",
+            "comment": "Vulnerabilidades",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Processo de endurecimento repetível torna rápido e fácil implantar outro ambiente que esteja apropriadamente bloqueado.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Ambientes de desenvolvimento, QA e produção devem ser configurados identicamente, com credenciais diferentes usadas em cada ambiente.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Este processo deve ser automatizado para minimizar esforço necessário para configurar novo ambiente seguro.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Plataforma mínima sem recursos, componentes, documentação e amostras desnecessários.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Remova ou não instale recursos e frameworks não utilizados.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Tarefa para revisar e atualizar configurações apropriadas para todas notas de segurança, atualizações e patches como parte do processo de gerenciamento de patches.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Revise permissões de armazenamento em nuvem (ex: permissões de bucket S3).",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Arquitetura de aplicação segmentada fornece separação eficaz e segura entre componentes ou inquilinos, com segmentação, containerização ou grupos de segurança em nuvem (ACLs).",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Envio de diretivas de segurança para clientes, ex: Security Headers.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Processo automatizado para verificar eficácia das configurações e ajustes em todos os ambientes.",
+            "comment": "Prevenção",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Cenário #1: Servidor de aplicação vem com aplicações de exemplo não removidas do servidor de produção. Essas aplicações têm falhas de segurança conhecidas que atacantes usam para comprometer servidor. Se uma dessas aplicações for console de admin e contas padrão não foram alteradas, atacante faz login com senhas padrão e assume controle.",
+            "comment": "Cenários de Ataque",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Cenário #2: Listagem de diretórios não está desabilitada no servidor. Atacante descobre que pode simplesmente listar diretórios, encontra e baixa classes Java compiladas, descompila e faz engenharia reversa para visualizar código. Atacante então encontra falha grave de controle de acesso na aplicação.",
+            "comment": "Cenários de Ataque",
+            "key": "A02:2025"
+          },
+          {
+            "name": "Cenário #3: Configuração do servidor de aplicação permite que rastros de pilha detalhados, por exemplo mensagens de erro, sejam retornados aos usuários. Isso potencialmente expõe informações sensíveis ou falhas subjacentes, como versões de componentes que são conhecidas por serem vulneráveis.",
+            "comment": "Cenários de Ataque",
+            "key": "A02:2025"
+          }
+        ]
+      },
+      {
+        "name": "A03:2025 - Falhas de Cadeia de Suprimentos de Software",
+        "comment": "Classificada #1 na pesquisa da comunidade Top 10 com exatamente 50% dos respondentes. Desde aparição inicial em 2013 como 'A9 - Uso de Componentes com Vulnerabilidades Conhecidas', risco cresceu em escopo para incluir todas falhas de cadeia de suprimentos. Tem maior taxa média de incidência em 5,19%.",
+        "subtopics": [
+          {
+            "name": "Falhas de cadeia de suprimentos de software são quebras ou outros comprometimentos no processo de construir, distribuir ou atualizar software.",
+            "comment": "Descrição",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Frequentemente causadas por vulnerabilidades ou mudanças maliciosas em código de terceiros, ferramentas ou outras dependências que sistema depende.",
+            "comment": "Descrição",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Não rastreia cuidadosamente versões de todos componentes usados (tanto cliente quanto servidor). Isso inclui componentes usados diretamente e dependências aninhadas (transitivas).",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Software é vulnerável, sem suporte ou desatualizado. Isso inclui SO, servidor web/aplicativo, DBMS, aplicações, APIs e todos componentes, ambientes de tempo de execução e bibliotecas.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Não verifica vulnerabilidades regularmente e não assina boletins de segurança relacionados aos componentes usados.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Não tem processo de gerenciamento de mudanças ou rastreamento de mudanças dentro da cadeia de suprimentos, incluindo rastreamento de IDEs, extensões de IDE e atualizações, mudanças no repositório de código da organização, sandboxes, repositórios de imagem e biblioteca, forma como artefatos são criados e armazenados, etc.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Não endureceu cada parte da cadeia de suprimentos, com foco especial em controle de acesso e aplicação de privilégio mínimo.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Sistemas de cadeia de suprimentos não têm separação de funções. Nenhuma pessoa única deve poder escrever código e promovê-lo até produção sem supervisão de outro ser humano.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Componentes de fontes não confiáveis, em qualquer parte da pilha tecnológica, são usados ou podem impactar ambientes de produção.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Não corrige ou atualiza plataforma subjacente, frameworks e dependências de maneira oportuna e baseada em risco.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Isso geralmente acontece em ambientes onde patching é tarefa mensal ou trimestral sob controle de mudanças, deixando organizações abertas a dias ou meses de exposição desnecessária antes de corrigir vulnerabilidades.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Desenvolvedores de software não testam compatibilidade de bibliotecas atualizadas, atualizadas ou corrigidas.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Não protege configurações de cada parte do sistema (veja A02:2025-Configuração Incorreta de Segurança).",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Pipeline CI/CD tem segurança mais fraca que sistemas que constrói e implanta, especialmente se for complexo.",
+            "comment": "Vulnerabilidades",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Gere e gerencie centralmente Software Bill of Materials (SBOM) de todo seu software.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Rastreie não apenas dependências diretas, mas suas dependências (transitivas), e assim por diante.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Reduza superfície de ataque removendo dependências não utilizadas, recursos desnecessários, componentes, arquivos e documentação.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Inventarie continuamente versões de componentes cliente e servidor (ex: frameworks, bibliotecas) e suas dependências usando ferramentas como OWASP Dependency Track, OWASP Dependency Check, retire.js, etc.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Monitore continuamente fontes como CVE, NVD e OSV para vulnerabilidades nos componentes usados. Use análise de composição de software, cadeia de suprimentos de software ou ferramentas SBOM focadas em segurança para automatizar processo.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Assine alertas para vulnerabilidades de segurança relacionadas aos componentes usados.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Obtenha componentes apenas de fontes oficiais (confiáveis) por links seguros. Prefira pacotes assinados para reduzir chance de incluir componente modificado e malicioso.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Escolha deliberadamente qual versão de dependência usar e atualize apenas quando houver necessidade.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Monitore bibliotecas e componentes que estão sem manutenção ou não criam patches de segurança para versões antigas. Se patching não for possível, considere migrar para alternativa. Se isso não for possível, considere implantar patch virtual.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Atualize CI/CD, IDE e qualquer outra ferramenta de desenvolvedor regularmente.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Evite implantar atualizações em todos sistemas simultaneamente. Use rollouts em estágios ou implantações canary para limitar exposição caso fornecedor confiável seja comprometido.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Deve haver processo de gerenciamento de mudanças ou sistema de rastreamento para rastrear mudanças em: configurações CI/CD, repositórios de código, áreas sandbox, IDEs de desenvolvedor, ferramentas SBOM e artefatos criados, sistemas de logging e logs, integrações de terceiros como SaaS, repositórios de artefatos, registros de contêineres.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Endureça sistemas incluindo habilitar MFA e bloquear IAM: repositório de código (não fazer check-in de secrets, proteger branches, backups), estações de trabalho de desenvolvedores (patching regular, MFA, monitoramento), servidor de build e CI/CD (separação de funções, controle de acesso, builds assinados, secrets com escopo de ambiente, logs à prova de adulteração), artefatos (garantir integridade via proveniência, assinatura e timestamp, promover artefatos em vez de reconstruir para cada ambiente), infraestrutura como código (gerenciada como todo código, incluindo uso de PRs e controle de versão).",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Toda organização deve garantir plano contínuo para monitorar, triar e aplicar atualizações ou mudanças de configuração durante vida útil da aplicação ou portfólio.",
+            "comment": "Prevenção",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Cenário #1: Fornecedor confiável é comprometido com malware, levando a sistemas de computador serem comprometidos ao atualizar. Exemplo mais famoso é provavelmente compromisso SolarWinds 2019 que levou a ~18.000 organizações serem comprometidas.",
+            "comment": "Cenários de Ataque",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Cenário #2: Fornecedor confiável é comprometido de modo que se comporta maliciosamente apenas sob condição específica. Roubo Bybit 2025 de $1,5 bilhão foi causado por ataque de cadeia de suprimentos em software de carteira que só executava quando carteira alvo estava sendo usada.",
+            "comment": "Cenários de Ataque",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Cenário #3: Ataque de cadeia de suprimentos 'Shai-Hulud' em 2025 foi primeiro worm npm auto-propagante bem-sucedido. Ataques semearam versões maliciosas de pacotes populares, que usaram script pós-instalação para coletar e exfiltrar dados sensíveis para repositórios GitHub públicos. Malware também detectava tokens npm no ambiente vítima e automaticamente os usava para enviar versões maliciosas de qualquer pacote acessível. Worm atingiu mais de 500 versões de pacotes antes de ser interrompido pelo npm.",
+            "comment": "Cenários de Ataque",
+            "key": "A03:2025"
+          },
+          {
+            "name": "Cenário #4: Componentes tipicamente executam com mesmos privilégios da própria aplicação, então falhas em qualquer componente podem resultar em impacto sério. Exemplos: CVE-2017-5638, vulnerabilidade de execução remota de código Struts 2 que permite execução de código arbitrário no servidor; CVE-2021-44228 ('Log4Shell'), vulnerabilidade zero-day de execução remota de código Apache Log4j.",
+            "comment": "Cenários de Ataque",
+            "key": "A03:2025"
+          }
+        ]
+      },
+      {
+        "name": "A04:2025 - Falhas Criptográficas",
+        "comment": "Desceu duas posições para #4. Foca em falhas relacionadas à falta de criptografia, criptografia insuficientemente forte, vazamento de chaves criptográficas e erros relacionados.",
+        "subtopics": [
+          {
+            "name": "Dados transmitidos em texto claro. Isso diz respeito a protocolos como HTTP, SMTP, FTP que também usam upgrades TLS como STARTTLS.",
+            "comment": "Vulnerabilidades",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Algoritmos criptográficos antigos ou fracos usados por padrão ou em código antigo.",
+            "comment": "Vulnerabilidades",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Chaves criptográficas padrão em uso, chaves fracas geradas ou reutilizadas, ou gerenciamento de chaves adequado ou rotação ausente.",
+            "comment": "Vulnerabilidades",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Criptografia não é aplicada, por exemplo, diretivas de segurança do agente de usuário (navegador) ou cabeçalhos estão faltando.",
+            "comment": "Vulnerabilidades",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Certificado do servidor recebido e cadeia de confiança não são devidamente validados.",
+            "comment": "Vulnerabilidades",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Vetores de inicialização ignoram, reutilizam ou não são gerados suficientemente seguros para modo de operação criptográfica.",
+            "comment": "Vulnerabilidades",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Classifique dados processados, armazenados ou transmitidos. Identifique quais dados são sensíveis de acordo com leis de privacidade, requisitos regulatórios ou necessidades de negócio.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Não armazene dados sensíveis desnecessariamente. Descarte-os o mais rápido possível ou use tokenização compatível com PCI DSS ou truncamento.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Certifique-se de criptografar todos dados sensíveis em repouso.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Garanta que algoritmos, protocolos e chaves padrão atualizados e fortes estejam em uso. Utilize gerenciamento adequado de chaves.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Criptografe todos dados em trânsito com protocolos seguros como TLS com cifras de sigilo futuro (FS), priorização de cifras pelo servidor e parâmetros seguros.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          },
+          {
+            "name": "Desabilite cache para respostas que contenham dados sensíveis.",
+            "comment": "Prevenção",
+            "key": "A04:2025"
+          }
+        ]
+      },
+      {
+        "name": "A05:2025 - Injeção",
+        "comment": "Cai dois pontos da #3 para #5. Injeção é uma das categorias mais testadas com 100% das aplicações testadas para alguma forma de injeção. Teve maior número de CVEs para qualquer categoria, com 37 CWEs. Inclui Cross-site Scripting (alta frequência/baixo impacto) com mais de 30k CVEs e SQL Injection (baixa frequência/alto impacto) com mais de 14k CVEs.",
+        "subtopics": [
+          {
+            "name": "Vulnerabilidade de injeção é falha de aplicação que permite entrada de usuário não confiável ser enviada a interpretador (ex: navegador, banco de dados, linha de comando) e faz interpretador executar partes dessa entrada como comandos.",
+            "comment": "Descrição",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Dados fornecidos pelo usuário não são validados, filtrados ou sanitizados pela aplicação.",
+            "comment": "Vulnerabilidades",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Consultas dinâmicas ou chamadas não parametrizadas sem escape consciente de contexto são usadas diretamente no interpretador.",
+            "comment": "Vulnerabilidades",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Dados não sanitizados são usados dentro de parâmetros de pesquisa ORM para extrair registros adicionais e sensíveis.",
+            "comment": "Vulnerabilidades",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Dados potencialmente hostis são usados diretamente ou concatenados. SQL ou comando contém estrutura e dados maliciosos em consultas dinâmicas, comandos ou procedimentos armazenados.",
+            "comment": "Vulnerabilidades",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Injeções mais comuns são SQL, NoSQL, comando OS, ORM, LDAP e Expression Language (EL) ou Object Graph Navigation Library (OGNL).",
+            "comment": "Descrição",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Classe relacionada de vulnerabilidades de injeção tornou-se comum em LLMs. Estas são discutidas separadamente no OWASP LLM Top 10, especificamente LLM01:2025 Prompt Injection.",
+            "comment": "Descrição",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Opção preferida é usar API segura que evita usar interpretador completamente, fornece interface parametrizada ou migra para ORMs.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Use validação de entrada positiva do lado do servidor. Esta não é defesa completa, pois muitas aplicações requerem caracteres especiais.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Para quaisquer consultas dinâmicas residuais, escape caracteres especiais usando sintaxe de escape específica para aquele interpretador.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          },
+          {
+            "name": "Use LIMIT e outros controles SQL dentro de consultas para prevenir divulgação em massa de registros em caso de injeção SQL.",
+            "comment": "Prevenção",
+            "key": "A05:2025"
+          }
+        ]
+      },
+      {
+        "name": "A06:2025 - Design Inseguro",
+        "comment": "Desliza dois pontos da #4 para #6 conforme A02 e A03 o ultrapassam. Introduzida em 2021, indústria mostrou melhorias notáveis relacionadas a modelagem de ameaças e maior ênfase em design seguro. Foca em riscos relacionados a falhas de design e arquitetura.",
+        "subtopics": [
+          {
+            "name": "Categoria ampla representando diferentes fraquezas, expressas como design de controle ausente ou ineficaz.",
+            "comment": "Descrição",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Há diferença entre design inseguro e implementação insegura. Design seguro ainda pode ter defeitos de implementação levando a vulnerabilidades. Design inseguro não pode ser corrigido por implementação perfeita.",
+            "comment": "Descrição",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Um dos fatores que contribui para design inseguro é falta de perfil de risco de negócio inerente ao software ou sistema sendo desenvolvido.",
+            "comment": "Descrição",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Estabeleça e use ciclo de vida de desenvolvimento seguro com profissionais de AppSec para ajudar a avaliar e projetar controles relacionados à segurança e privacidade.",
+            "comment": "Prevenção",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Estabeleça e use biblioteca de padrões de design seguros ou componentes prontos para uso.",
+            "comment": "Prevenção",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Use modelagem de ameaças para autenticação crítica, controle de acesso, lógica de negócio e fluxos-chave.",
+            "comment": "Prevenção",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Integre linguagem e controles de segurança nas histórias de usuário.",
+            "comment": "Prevenção",
+            "key": "A06:2025"
+          },
+          {
+            "name": "Escreva testes unitários e de integração para validar que todos fluxos críticos são resistentes ao modelo de ameaças.",
+            "comment": "Prevenção",
+            "key": "A06:2025"
+          }
+        ]
+      },
+      {
+        "name": "A07:2025 - Falhas de Autenticação",
+        "comment": "Mantém posição #7 com leve mudança de nome para refletir mais precisamente os 36 CWEs nesta categoria. Apesar de benefícios de frameworks padronizados, esta categoria manteve sua classificação #7 de 2021.",
+        "subtopics": [
+          {
+            "name": "Quando invasor consegue enganar sistema para reconhecer usuário inválido ou incorreto como legítimo, esta vulnerabilidade está presente.",
+            "comment": "Descrição",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Permite ataques automatizados como credential stuffing, onde invasor tem lista violada de nomes de usuário e senhas válidos.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Recentemente este tipo de ataque foi expandido para incluir ataques híbridos de senha (também conhecidos como ataques de spray de senha), onde invasor usa variações ou incrementos de credenciais vazadas.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Permite força bruta ou outros ataques automatizados e com script que não são rapidamente bloqueados.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Permite senhas padrão, fracas ou bem conhecidas, como 'Password1' ou nome de usuário 'admin' com senha 'admin'.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Permite que usuários criem novas contas com credenciais já conhecidas como violadas.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Usa processos de recuperação de credenciais e esquecimento de senha fracos ou ineficazes, como 'respostas baseadas em conhecimento', que não podem ser tornadas seguras.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Usa armazenamentos de dados de senhas em texto simples, criptografadas ou com hash fraco.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Tem autenticação multifator ausente ou ineficaz.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Expõe identificador de sessão na URL, campo oculto ou outro local inseguro acessível ao cliente.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Reutiliza mesmo identificador de sessão após login bem-sucedido.",
+            "comment": "Vulnerabilidades",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Sempre que possível, implemente autenticação multifator para prevenir credential stuffing automatizado, força bruta e ataques de reutilização de credenciais roubadas.",
+            "comment": "Prevenção",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Não envie ou implante com quaisquer credenciais padrão, particularmente para usuários admin.",
+            "comment": "Prevenção",
+            "key": "A07:2025"
+          },
+          {
+            "name": "Implemente verificações de senhas fracas, como testar senhas novas ou alteradas contra lista das 10.000 piores senhas.",
+            "comment": "Prevenção",
+            "key": "A07:2025"
+          }
+        ]
+      },
+      {
+        "name": "A08:2025 - Falhas de Integridade de Software ou Dados",
+        "comment": "Continua em #8, com leve mudança de nome esclarecedora de 'Software e Dados' para 'Software ou Dados'. Foca na falha em manter limites de confiança e verificar integridade de software, código e artefatos de dados em nível inferior a Falhas de Cadeia de Suprimentos de Software.",
+        "subtopics": [
+          {
+            "name": "Falhas de integridade de software e dados relacionam-se a código e infraestrutura que não protege contra código ou dados inválidos ou não confiáveis sendo tratados como confiáveis e válidos.",
+            "comment": "Descrição",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Exemplo é onde aplicação depende de plugins, bibliotecas ou módulos de fontes não confiáveis, repositórios e CDNs.",
+            "comment": "Descrição",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Pipeline CI/CD inseguro sem consumir e fornecer verificações de integridade de software pode introduzir potencial para acesso não autorizado, código inseguro ou malicioso, ou comprometimento do sistema.",
+            "comment": "Descrição",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Muitas aplicações agora incluem funcionalidade de atualização automática, onde atualizações são baixadas sem verificação de integridade suficiente e aplicadas à aplicação anteriormente confiável.",
+            "comment": "Descrição",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Invasores poderiam potencialmente fazer upload de suas próprias atualizações para serem distribuídas e executadas em todas instalações.",
+            "comment": "Vulnerabilidades",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Objetos ou dados são codificados ou serializados em estrutura que invasor pode ver e modificar é vulnerável à desserialização insegura.",
+            "comment": "Vulnerabilidades",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Use assinaturas digitais ou mecanismos similares para verificar se software ou dados são da fonte esperada e não foram alterados.",
+            "comment": "Prevenção",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Garanta que bibliotecas e dependências, como npm ou Maven, estejam consumindo apenas repositórios confiáveis.",
+            "comment": "Prevenção",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Garanta que haja processo de revisão para mudanças de código e configuração para minimizar chance de que código ou configuração maliciosa possa ser introduzida no pipeline de software.",
+            "comment": "Prevenção",
+            "key": "A08:2025"
+          },
+          {
+            "name": "Garanta que pipeline CI/CD tenha segregação, configuração e controle de acesso adequados para garantir integridade do código fluindo pelos processos de build e deploy.",
+            "comment": "Prevenção",
+            "key": "A08:2025"
+          }
+        ]
+      },
+      {
+        "name": "A09:2025 - Falhas de Registro e Alerta de Segurança",
+        "comment": "Mantém posição #9. Leve mudança de nome para enfatizar função de alerta necessária para induzir ação em eventos de registro relevantes. Sempre será sub-representada nos dados, e pela terceira vez votada em posição na lista pelos participantes da pesquisa da comunidade. Incrivelmente difícil de testar e tem representação mínima nos dados CVE/CVSS (apenas 723 CVEs).",
+        "subtopics": [
+          {
+            "name": "Sem registro e monitoramento, ataques e violações não podem ser detectados, e sem alerta é muito difícil responder rápida e efetivamente durante incidente de segurança.",
+            "comment": "Descrição",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Eventos auditáveis, como logins, logins falhados e transações de alto valor, não são registrados ou registrados inconsistentemente (ex: registrar apenas logins bem-sucedidos, mas não tentativas falhadas).",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Avisos e erros não geram mensagens de log, ou geram mensagens inadequadas ou pouco claras.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Integridade dos logs não é adequadamente protegida contra adulteração.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Logs de aplicações e APIs não são monitorados para atividades suspeitas.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Logs são armazenados apenas localmente e não têm backup adequado.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Limites de alerta apropriados e processos de escalonamento de resposta não estão em vigor ou não são eficazes. Alertas não são recebidos ou revisados dentro de tempo razoável.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Testes de penetração e varreduras por ferramentas DAST (como Burp ou ZAP) não acionam alertas.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Aplicação não consegue detectar, escalar ou alertar sobre ataques ativos em tempo real ou quase em tempo real.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Vulnerável a vazamento de informações sensíveis tornando eventos de registro e alerta visíveis a usuário ou invasor, ou registrando informações sensíveis que não deveriam ser registradas (como PII ou PHI).",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Vulnerável a injeções ou ataques nos sistemas de registro ou monitoramento se dados de log não são codificados corretamente.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Aplicação está perdendo ou tratando mal erros e outras condições excepcionais, de modo que sistema não sabe que houve erro e portanto não consegue registrar que houve problema.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Casos de uso adequados para emitir alertas estão faltando ou desatualizados para reconhecer situação especial.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Muitos alertas falsos positivos tornam impossível distinguir alertas importantes de não importantes, resultando em serem reconhecidos tarde demais ou não serem reconhecidos (sobrecarga física da equipe SOC).",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Alertas detectados não podem ser processados corretamente porque playbook para caso de uso está incompleto, desatualizado ou faltando.",
+            "comment": "Vulnerabilidades",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Garanta que todos logins, controle de acesso e falhas de validação de entrada do lado do servidor possam ser registrados com contexto de usuário suficiente para identificar contas suspeitas ou maliciosas.",
+            "comment": "Prevenção",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Garanta que logs sejam gerados em formato que soluções de gerenciamento de log possam consumir facilmente.",
+            "comment": "Prevenção",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Garanta que dados de log sejam codificados corretamente para prevenir injeções ou ataques nos sistemas de registro ou monitoramento.",
+            "comment": "Prevenção",
+            "key": "A09:2025"
+          },
+          {
+            "name": "Garanta que transações de alto valor tenham trilha de auditoria com controles de integridade para prevenir adulteração ou exclusão.",
+            "comment": "Prevenção",
+            "key": "A09:2025"
+          }
+        ]
+      },
+      {
+        "name": "A10:2025 - Tratamento Inadequado de Condições Excepcionais",
+        "comment": "Nova categoria para 2025. Contém 24 CWEs e foca em tratamento inadequado de erros, erros lógicos, falha aberta e outros cenários relacionados decorrentes de condições anormais que sistemas podem encontrar. Esta categoria tem alguns CWEs que anteriormente eram associados a qualidade de código ruim.",
+        "subtopics": [
+          {
+            "name": "Tratamento inadequado de condições excepcionais em software acontece quando programas falham em prevenir, detectar e responder a situações incomuns e imprevisíveis, o que leva a crashes, comportamento inesperado e às vezes vulnerabilidades.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Pode envolver uma ou mais das seguintes 3 falhas: aplicação não previne situação incomum de acontecer, não identifica situação conforme está acontecendo, e/ou responde mal ou não responde à situação depois.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Condições excepcionais podem ser causadas por validação de entrada ausente, ruim ou incompleta, ou tratamento de erro tardio e de alto nível em vez de nas funções onde ocorrem.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Estados ambientais inesperados como problemas de memória, privilégio ou rede, tratamento de exceção inconsistente, ou exceções que não são tratadas de forma alguma, permitindo que sistema caia em estado desconhecido e imprevisível.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Sempre que aplicação não tem certeza de sua próxima instrução, condição excepcional foi tratada inadequadamente.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Muitas vulnerabilidades de segurança diferentes podem acontecer quando tratamos inadequadamente condições excepcionais, como bugs lógicos, overflows, condições de corrida, transações fraudulentas ou problemas com memória, estado, recurso, timing, autenticação e autorização.",
+            "comment": "Descrição",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Para tratar condição excepcional adequadamente devemos planejar tais situações (esperar o pior). Devemos 'capturar' todo possível erro de sistema diretamente no lugar onde ocorrem e então tratá-lo.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Como parte do tratamento, devemos incluir lançamento de erro (para informar usuário de forma compreensível), registro do evento, bem como emissão de alerta se sentirmos que é justificado.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Devemos também ter tratador de exceção global em vigor caso haja algo que perdemos.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Idealmente, também teríamos ferramentas ou funcionalidade de monitoramento e/ou observabilidade que observa erros repetidos ou padrões que indicam ataque em andamento.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Capturar e tratar condições excepcionais garante que infraestrutura subjacente de nossos programas não seja deixada para lidar com situações imprevisíveis.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Se você está no meio de transação de qualquer tipo, é extremamente importante que você reverta cada parte da transação e comece novamente (também conhecido como falha fechada).",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Sempre que possível, adicione limitação de taxa, cotas de recursos, throttling e outros limites onde possível, para prevenir condições excepcionais em primeiro lugar.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Nada em tecnologia da informação deve ser ilimitado, pois isso leva a falta de resiliência de aplicação, negação de serviço, ataques de força bruta bem-sucedidos e contas de nuvem extraordinárias.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Considere se erros repetidos idênticos, acima de certa taxa, devem ser apenas exibidos como estatísticas mostrando com que frequência ocorreram e em que período de tempo.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Além disso, queremos incluir validação de entrada estrita (com sanitização ou escape para caracteres potencialmente perigosos que devemos aceitar), e tratamento de erro, registro, monitoramento e alerta centralizados, e tratador de exceção global.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Uma aplicação não deve ter múltiplas funções para tratar condições excepcionais, deve ser realizado em um lugar, da mesma forma cada vez.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Se possível, toda sua organização deve tratar condições excepcionais da mesma forma, pois torna mais fácil revisar e auditar código para erros neste importante controle de segurança.",
+            "comment": "Prevenção",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Cenário #1: Esgotamento de recursos via tratamento inadequado de condições excepcionais (Negação de Serviço) poderia ser causado se aplicação captura exceções quando arquivos são carregados, mas não libera adequadamente recursos depois. Cada nova exceção deixa recursos bloqueados ou indisponíveis, até que todos recursos sejam usados.",
+            "comment": "Cenários de Ataque",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Cenário #2: Exposição de dados sensíveis via tratamento inadequado de erros de banco de dados que revela erro completo do sistema ao usuário. Invasor continua a forçar erros para usar informações sensíveis do sistema para criar melhor ataque de injeção SQL. Dados sensíveis nas mensagens de erro do usuário são reconhecimento.",
+            "comment": "Cenários de Ataque",
+            "key": "A10:2025"
+          },
+          {
+            "name": "Cenário #3: Corrupção de estado em transações financeiras poderia ser causada por invasor interrompendo transação de múltiplas etapas via interrupções de rede. Se sistema não reverter adequadamente toda transação (falha fechada) quando há erro no meio, invasor poderia potencialmente drenar conta do usuário, ou possivelmente condição de corrida que permite ao invasor enviar dinheiro para destino múltiplas vezes.",
+            "comment": "Cenários de Ataque",
+            "key": "A10:2025"
+          }
+        ]
+      }
+    ]
+  }
+}
