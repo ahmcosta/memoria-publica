@@ -1,0 +1,115 @@
+{
+  "subject": "Níveis de Maturidade do DMBoK v2",
+  "subtopicsLabel": "Características dos Níveis",
+  "topics": {
+    "name": "Níveis de Maturidade",
+    "values": [
+      {
+        "name": "Nível 1 - Inicial/Ad Hoc",
+        "comment": "Processos imprevisíveis, pouco controlados e reativos. Sucesso depende de esforços individuais heroicos. Ausência de estrutura formal de gestão de dados",
+        "subtopics": [
+          {
+            "name": "Pouca ou nenhuma governança",
+            "comment": "Ausência de estrutura formal de governança de dados, decisões tomadas de forma descentralizada e inconsistente"
+          },
+          {
+            "name": "Conjunto limitado de ferramentas",
+            "comment": "Ferramentas básicas e isoladas, sem integração ou padronização entre áreas"
+          },
+          {
+            "name": "Papéis definidos dentro de silos",
+            "comment": "Responsabilidades fragmentadas por departamentos sem coordenação ou visão integrada"
+          },
+          {
+            "name": "Controles aplicados de forma inconsistente, quando aplicados",
+            "comment": "Controles de dados aplicados esporadicamente, dependendo de iniciativas individuais"
+          },
+          {
+            "name": "Problemas de qualidade de dados não são tratados",
+            "comment": "Questões de qualidade ignoradas ou tratadas apenas quando causam problemas críticos"
+          }
+        ]
+      },
+      {
+        "name": "Nível 2 - Repetível",
+        "comment": "Processos caracterizados para projetos e frequentemente reativos. Disciplina de processo para repetir sucessos anteriores. Início da formalização",
+        "subtopics": [
+          {
+            "name": "Governança emergente",
+            "comment": "Primeiras iniciativas de governança sendo estabelecidas, ainda em fase inicial de implementação"
+          },
+          {
+            "name": "Introdução de um conjunto consistente de ferramentas",
+            "comment": "Padronização inicial de ferramentas, começando a reduzir a fragmentação tecnológica"
+          },
+          {
+            "name": "Alguns papéis e processos definidos",
+            "comment": "Definição parcial de responsabilidades e processos, ainda não abrangendo toda a organização"
+          },
+          {
+            "name": "Crescente conscientização sobre o impacto dos problemas de qualidade de dados",
+            "comment": "Reconhecimento organizacional da importância da qualidade de dados e seus impactos no negócio"
+          }
+        ]
+      },
+      {
+        "name": "Nível 3 - Definido",
+        "comment": "Processos proativos e caracterizados para a organização. Padrões, descrições de processos e procedimentos estabelecidos. Dados como ativo estratégico",
+        "subtopics": [
+          {
+            "name": "Dados vistos como um facilitador organizacional",
+            "comment": "Mudança cultural: dados reconhecidos como ativo estratégico que habilita objetivos de negócio"
+          },
+          {
+            "name": "Processos e ferramentas escaláveis; redução de processos manuais",
+            "comment": "Automação e padronização permitem crescimento sem aumento proporcional de esforço manual"
+          },
+          {
+            "name": "Resultados dos processos, incluindo qualidade de dados, são mais previsíveis",
+            "comment": "Processos maduros geram resultados consistentes e confiáveis, reduzindo surpresas e retrabalho"
+          }
+        ]
+      },
+      {
+        "name": "Nível 4 - Gerenciável",
+        "comment": "Processos medidos e controlados. Métricas detalhadas de processo e qualidade coletadas e analisadas. Gestão quantitativa da qualidade",
+        "subtopics": [
+          {
+            "name": "Planejamento e governança centralizados",
+            "comment": "Estrutura centralizada coordena estratégia, políticas e padrões de dados em toda organização"
+          },
+          {
+            "name": "Gerenciamento de riscos relacionados a dados",
+            "comment": "Identificação, avaliação e mitigação proativa de riscos associados a dados e seu gerenciamento"
+          },
+          {
+            "name": "Métricas de desempenho de Gerenciamento de Dados",
+            "comment": "KPIs e métricas estabelecidos para monitorar e avaliar eficácia das práticas de gestão de dados"
+          },
+          {
+            "name": "Melhorias mensuráveis na qualidade de dados",
+            "comment": "Evidências quantitativas de aumento da qualidade através de medições sistemáticas e comparações temporais"
+          }
+        ]
+      },
+      {
+        "name": "Nível 5 - Otimizável",
+        "comment": "Foco em melhoria contínua do processo. Feedback quantitativo e testes de ideias e tecnologias inovadoras. Otimização baseada em dados",
+        "subtopics": [
+          {
+            "name": "Processos altamente previsíveis",
+            "comment": "Processos maduros e estáveis com variação mínima, permitindo planejamento preciso e confiável"
+          },
+          {
+            "name": "Risco reduzido",
+            "comment": "Gestão proativa e eficaz minimiza riscos relacionados a dados a níveis muito baixos"
+          },
+          {
+            "name": "Métricas bem compreendidas para gerenciar qualidade de dados e qualidade de processos",
+            "comment": "Métricas internalizadas e utilizadas ativamente para otimização contínua e tomada de decisão baseada em dados"
+          }
+        ]
+      }
+    ]
+  }
+}
