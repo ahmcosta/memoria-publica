@@ -195,6 +195,9 @@ function showHelp() {
         <div style="padding: 20px; text-align: justify; color: #666;">
             <p data-i18n="topicBoxesAppear">Topic boxes will appear here after loading a JSON file.</p>
             <br>
+            <p><strong>📚 Arquivos de memorização disponíveis:</strong></p>
+            <p>Acesse <a href="https://github.com/ahmcosta/memoria-publica/tree/main/subjects" target="_blank" style="color: #2196f3; text-decoration: none;">github.com/ahmcosta/memoria-publica/tree/main/subjects</a> para baixar arquivos JSON prontos para estudo.</p>
+            <br>
             <p data-i18n="tryFiles">Try loading one of these example files:</p>
             <p>• cobit2019_clean.json</p>
             <p>• itil4.json</p>
