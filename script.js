@@ -3,6 +3,7 @@ let wrongCount = 0;
 let wrongLog = [];
 let missedSubtopics = [];
 let errorHistory = []; // Tracks error sets from each round
+let initialSubtopicsCount = 0; // Count at start of round
 let currentLanguage = localStorage.getItem('language') || 'pt_BR';
 let translations = {};
 let darkMode = localStorage.getItem('darkMode') !== 'false';
@@ -254,6 +255,9 @@ function createSubtopics(useOnlyMissed = false) {
             }
         });
     });
+
+    // Set initial count for this round
+    initialSubtopicsCount = allSubtopics.length;
 
     // Shuffle subtopics
     allSubtopics.sort(() => Math.random() - 0.5);
@@ -857,9 +861,12 @@ function hideImageTooltip(e) {
 }
 
 function showGameCompleteModal() {
-    // Save current errors to history if there were any
+    // Save initial count and errors to history if there were any
     if (missedSubtopics.length > 0) {
-        errorHistory.push([...missedSubtopics]);
+        errorHistory.push({
+            count: initialSubtopicsCount,
+            errors: [...missedSubtopics]
+        });
     }
 
     const title = 'Jogo Concluído!';
@@ -895,13 +902,14 @@ function handleRetryChoice(retry) {
 
 function showRetryOptionsModal() {
     const title = 'Opções de Repetição';
-    const lastErrorCount = errorHistory[errorHistory.length - 1].length;
+    const lastRound = errorHistory[errorHistory.length - 1];
+    const lastErrorCount = lastRound.count;
     
     let buttons = `<button onclick="startRetry('all')" style="background: #2196f3; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Todos os subtópicos</button>`;
     
     // Add buttons for each error round in reverse order (most recent first)
     for (let i = errorHistory.length - 1; i >= 0; i--) {
-        const errorCount = errorHistory[i].length;
+        const errorCount = errorHistory[i].count;
         const roundLabel = i === errorHistory.length - 1 ? 'que errei' : 'que havia errado';
         buttons += `<button onclick="startRetry(${i})" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os ${roundLabel} (${errorCount})</button>`;
     }
@@ -1005,10 +1013,11 @@ function startRetry(option) {
     } else {
         // option is an index into errorHistory
         const errorIndex = parseInt(option);
-        subtopicsToRetry = [...errorHistory[errorIndex]];
+        subtopicsToRetry = [...errorHistory[errorIndex].errors];
     }
 
     resetGame();
+    initialSubtopicsCount = subtopicsToRetry.length;
     createSubtopicsFromList(subtopicsToRetry);
     createTopicBoxes();
 }
