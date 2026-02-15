@@ -2,6 +2,7 @@ let correctCount = 0;
 let wrongCount = 0;
 let wrongLog = [];
 let missedSubtopics = [];
+let errorHistory = []; // Tracks error sets from each round
 let currentLanguage = localStorage.getItem('language') || 'pt_BR';
 let translations = {};
 let darkMode = localStorage.getItem('darkMode') !== 'false';
@@ -77,7 +78,7 @@ function loadFile() {
 
 function restartGame() {
     if (!data) return;
-    resetGame();
+    fullResetGame();
     createSubtopics();
     createTopicBoxes();
 }
@@ -91,6 +92,11 @@ function resetGame() {
     document.getElementById('wrong').textContent = '0';
     document.getElementById('subtopics-list').innerHTML = '';
     document.getElementById('topics-container').innerHTML = '';
+}
+
+function fullResetGame() {
+    resetGame();
+    errorHistory = [];
 }
 
 function initializeApp() {
@@ -851,6 +857,11 @@ function hideImageTooltip(e) {
 }
 
 function showGameCompleteModal() {
+    // Save current errors to history if there were any
+    if (missedSubtopics.length > 0) {
+        errorHistory.push([...missedSubtopics]);
+    }
+
     const title = 'Jogo Concluído!';
     const message = `
         <p>Parabéns! Você completou o jogo.</p>
@@ -873,10 +884,10 @@ function handleRetryChoice(retry) {
     document.getElementById('modal').style.display = 'none';
 
     if (retry) {
-        if (missedSubtopics.length > 0) {
+        if (errorHistory.length > 0) {
             showRetryOptionsModal();
         } else {
-            // No missed subtopics, restart with all
+            // No errors in history, restart with all
             restartGame();
         }
     }
@@ -884,12 +895,22 @@ function handleRetryChoice(retry) {
 
 function showRetryOptionsModal() {
     const title = 'Opções de Repetição';
+    const lastErrorCount = errorHistory[errorHistory.length - 1].length;
+    
+    let buttons = `<button onclick="startRetry('all')" style="background: #2196f3; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Todos os subtópicos</button>`;
+    
+    // Add buttons for each error round in reverse order (most recent first)
+    for (let i = errorHistory.length - 1; i >= 0; i--) {
+        const errorCount = errorHistory[i].length;
+        const roundLabel = i === errorHistory.length - 1 ? 'que errei' : 'que havia errado';
+        buttons += `<button onclick="startRetry(${i})" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os ${roundLabel} (${errorCount})</button>`;
+    }
+    
     const message = `
-        <p>Você teve ${missedSubtopics.length} erro(s). Como deseja repetir?</p>
+        <p>Você teve ${lastErrorCount} erro(s). Como deseja repetir?</p>
         <br>
         <div style="text-align: center;">
-            <button onclick="startRetry(false)" style="background: #2196f3; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Todos os subtópicos</button>
-            <button onclick="startRetry(true)" style="background: #ff9800; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 4px; cursor: pointer; display: block; width: 100%;">Apenas os que errei (${missedSubtopics.length})</button>
+            ${buttons}
         </div>
     `;
 
@@ -970,24 +991,25 @@ function toggleTopicBox(topicBox, content, collapseIcon) {
     }
 }
 
-function startRetry(onlyMissed) {
+function startRetry(option) {
     document.getElementById('modal').style.display = 'none';
 
-    // Store missed subtopics before reset if needed
-    const savedMissedSubtopics = onlyMissed ? [...missedSubtopics] : [];
+    let subtopicsToRetry = [];
 
-    resetGame();
-
-    // If using only missed ones, restore them but clear the tracking array
-    // so we can track new mistakes in this retry session
-    if (onlyMissed) {
-        const subtopicsToRetry = savedMissedSubtopics;
-        missedSubtopics = []; // Clear to track only new mistakes
-        createSubtopicsFromList(subtopicsToRetry);
-    } else {
+    if (option === 'all') {
+        // Reset everything and start fresh
+        fullResetGame();
         createSubtopics(false);
+        createTopicBoxes();
+        return;
+    } else {
+        // option is an index into errorHistory
+        const errorIndex = parseInt(option);
+        subtopicsToRetry = [...errorHistory[errorIndex]];
     }
 
+    resetGame();
+    createSubtopicsFromList(subtopicsToRetry);
     createTopicBoxes();
 }
 
