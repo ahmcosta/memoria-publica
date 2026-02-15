@@ -1,0 +1,141 @@
+{
+  "subject": "COBIT 2019 - Níveis de Capacidade e Maturidade",
+  "subtopicsLabel": "Descrições dos Níveis",
+  "topics": {
+    "name": "Níveis",
+    "values": [
+      {
+        "name": "Capacidade 0",
+        "comment": "É uma medida de quão bem um processo é implementado e está atingindo sua finalidade, ou seja, uma medida da qualidade de implementação e desempenho do processo.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-1.png",
+        "subtopics": [
+          {
+            "name": "O processo <strong>não tem nenhuma capacidade básica</strong> e <em>não atinge seu propósito</em>.",
+            "key": "0"
+          }
+        ]
+      },
+      {
+        "name": "Capacidade 1",
+        "comment": "É uma medida de quão bem um processo é implementado e está atingindo sua finalidade, ou seja, uma medida da qualidade de implementação e desempenho do processo.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-1.png",
+        "subtopics": [
+          {
+            "name": "O processo <strong>atinge seu propósito</strong> de maneira <em>não muito organizada</em>, com <em>atividades incompletas</em>.",
+            "key": "1"
+          }
+        ]
+      },
+      {
+        "name": "Capacidade 2",
+        "comment": "É uma medida de quão bem um processo é implementado e está atingindo sua finalidade, ou seja, uma medida da qualidade de implementação e desempenho do processo.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-1.png",
+        "subtopics": [
+          {
+            "name": "O processo <strong>atinge seu propósito</strong> com <em>atividades básicas, porém completas</em>. É considerado <strong>executado</strong>.",
+            "key": "2"
+          }
+        ]
+      },
+      {
+        "name": "Capacidade 3",
+        "comment": "É uma medida de quão bem um processo é implementado e está atingindo sua finalidade, ou seja, uma medida da qualidade de implementação e desempenho do processo.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-1.png",
+        "subtopics": [
+          {
+            "name": "O processo <strong>atinge seu propósito</strong> utilizando <em>ativos organizacionais</em>. É considerado <strong>definido</strong>.",
+            "key": "3"
+          }
+        ]
+      },
+      {
+        "name": "Capacidade 4",
+        "comment": "É uma medida de quão bem um processo é implementado e está atingindo sua finalidade, ou seja, uma medida da qualidade de implementação e desempenho do processo.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-1.png",
+        "subtopics": [
+          {
+            "name": "O processo <strong>atinge seu propósito</strong> e é <em>quantitativamente mensurado</em>.",
+            "key": "4"
+          }
+        ]
+      },
+      {
+        "name": "Capacidade 5",
+        "comment": "É uma medida de quão bem um processo é implementado e está atingindo sua finalidade, ou seja, uma medida da qualidade de implementação e desempenho do processo.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-1.png",
+        "subtopics": [
+          {
+            "name": "O processo <strong>atinge seu propósito</strong> e <em>recebe melhorias</em>.",
+            "key": "5"
+          }
+        ]
+      },
+      {
+        "name": "Maturidade 0",
+        "comment": "Estão associados a Áreas Focais. Um nível de maturidade em determinada área focal é alcançado quando todos os processos daquela área atingem um determinado nível de capacidade.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-2.png",
+        "subtopics": [
+          {
+            "name": "O trabalho <strong>ainda não está completo</strong> para alcançar os <em>objetivos da área</em>.",
+            "key": "Incompleto"
+          }
+        ]
+      },
+      {
+        "name": "Maturidade 1",
+        "comment": "Estão associados a Áreas Focais. Um nível de maturidade em determinada área focal é alcançado quando todos os processos daquela área atingem um determinado nível de capacidade.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-2.png",
+        "subtopics": [
+          {
+            "name": "O trabalho <strong>está completo</strong>, mas a <em>totalidade dos objetivos da área focal</em> ainda não foi alcançada.",
+            "key": "Inicial"
+          }
+        ]
+      },
+      {
+        "name": "Maturidade 2",
+        "comment": "Estão associados a Áreas Focais. Um nível de maturidade em determinada área focal é alcançado quando todos os processos daquela área atingem um determinado nível de capacidade.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-2.png",
+        "subtopics": [
+          {
+            "name": "<strong>Planejamento e medições de desempenho</strong>, mas ainda de uma maneira <em>não padronizada</em>.",
+            "key": "Gerenciado"
+          }
+        ]
+      },
+      {
+        "name": "Maturidade 3",
+        "comment": "Estão associados a Áreas Focais. Um nível de maturidade em determinada área focal é alcançado quando todos os processos daquela área atingem um determinado nível de capacidade.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-2.png",
+        "subtopics": [
+          {
+            "name": "<strong>Padrões da organização</strong> guiam o trabalho.",
+            "key": "Definido"
+          }
+        ]
+      },
+      {
+        "name": "Maturidade 4",
+        "comment": "Estão associados a Áreas Focais. Um nível de maturidade em determinada área focal é alcançado quando todos os processos daquela área atingem um determinado nível de capacidade.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-2.png",
+        "subtopics": [
+          {
+            "name": "<strong>Melhorias de desempenho</strong> <em>quantitativas</em>.",
+            "key": "Quantitativo"
+          }
+        ]
+      },
+      {
+        "name": "Maturidade 5",
+        "comment": "Estão associados a Áreas Focais. Um nível de maturidade em determinada área focal é alcançado quando todos os processos daquela área atingem um determinado nível de capacidade.",
+        "image": "https://www.isaca.org/-/media/images/isacadp/project/isaca/articles/cobit-focus/2020/cf-27-july-2020-2.png",
+        "subtopics": [
+          {
+            "name": "A organização é focada em <strong>melhorias contínuas</strong>.",
+            "key": "Em Otimização"
+          }
+        ]
+      }
+    ]
+  }
+}
